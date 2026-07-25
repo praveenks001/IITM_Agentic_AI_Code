@@ -14,3 +14,7 @@
 2026-07-25 17:01:13.335 [info] > pyenv which python
 2026-07-25 17:01:13.335 [info] cwd: .
 2026-07-25 17:01:14.438 [info] Starting Jedi language server for work.
+2026-07-25 17:19:48.553 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/practice_examples/week01/hello_llm.py
+2026-07-25 17:19:52.487 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/practice_examples/week01/hello_llm.py
+2026-07-25 17:19:56.311 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/practice_examples/week01/hello_llm.py
+2026-07-25 17:19:58.690 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/practice_examples/week01/hello_llm.py
