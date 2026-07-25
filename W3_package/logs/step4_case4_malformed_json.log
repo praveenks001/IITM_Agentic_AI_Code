@@ -1,0 +1,27 @@
+STEP:        step4_case4_malformed_json
+DESCRIPTION: Lab §3a Case 4: malformed JSON → 422 or 400
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:56:15+00:00
+COMMAND:
+    out=$(curl -s -i -X POST http://localhost:8000/ask \
+                       -H 'Content-Type: application/json' \
+                       -d '{"question": "What is the leave policy?"')
+        echo "$out"
+        if echo "$out" | head -1 | grep -qE '4(00|22)'; then
+            echo 'PASS — got 4xx as expected'
+        else
+            echo 'EXPECTED 422 or 400'
+            exit 1
+        fi
+--- OUTPUT ---
+HTTP/1.1 422 Unprocessable Entity
+date: Sat, 20 Jun 2026 18:56:14 GMT
+server: uvicorn
+content-length: 133
+content-type: application/json
+
+{"detail":[{"type":"json_invalid","loc":["body",40],"msg":"JSON decode error","input":{},"ctx":{"error":"Expecting ',' delimiter"}}]}
+PASS — got 4xx as expected
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS

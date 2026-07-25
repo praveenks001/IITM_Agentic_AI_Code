@@ -1,0 +1,11 @@
+STEP:        step0_imports_ok
+DESCRIPTION: All required packages importable
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:55:28+00:00
+COMMAND:
+    python -c "import openai, pydantic, dotenv, httpx, fastapi, uvicorn, pytest, requests; print('OK · fastapi', fastapi.__version__, '· pytest', pytest.__version__, '· httpx', httpx.__version__)"
+--- OUTPUT ---
+OK · fastapi 0.116.1 · pytest 9.0.3 · httpx 0.28.1
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS

@@ -1,0 +1,21 @@
+STEP:        step1_layout_complete
+DESCRIPTION: All canonical files exist at expected paths
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:55:42+00:00
+COMMAND:
+    for f in api/main.py src/pipeline/pipeline.py src/pipeline/settings.py tests/conftest.py tests/test_pipeline.py tests/test_api.py scripts/stress_test.py pytest.ini data/questions.csv; do
+            if [ -f "$f" ]; then echo "  ✓  $f"; else echo "  ✗  MISSING: $f" && exit 1; fi
+        done
+--- OUTPUT ---
+  ✓  api/main.py
+  ✓  src/pipeline/pipeline.py
+  ✓  src/pipeline/settings.py
+  ✓  tests/conftest.py
+  ✓  tests/test_pipeline.py
+  ✓  tests/test_api.py
+  ✓  scripts/stress_test.py
+  ✓  pytest.ini
+  ✓  data/questions.csv
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS

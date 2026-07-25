@@ -1,0 +1,31 @@
+STEP:        step2_ask_streaming
+DESCRIPTION: POST /ask streaming returns chunks
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:55:47+00:00
+COMMAND:
+    python -c "
+    import sys; sys.path.insert(0, '.')
+    from fastapi.testclient import TestClient
+    from api.main import app
+    client = TestClient(app)
+    with client.stream('POST', '/ask', json={'question': 'What is RAG?'}) as r:
+        print('status:', r.status_code)
+        assert r.status_code == 200
+        chunks = []
+        for chunk in r.iter_text():
+            chunks.append(chunk)
+        full = ''.join(chunks)
+        print('chunks received:', len(chunks))
+        print('content head:', full[:80])
+        assert len(full) > 0, 'streaming response was empty'
+    "
+--- OUTPUT ---
+2026-06-20 18:55:47,594  INFO  ask  question='What is RAG?'
+2026-06-20 18:55:47,949  INFO  asked: What is RAG?
+2026-06-20 18:55:49,154  INFO  HTTP Request: POST http://testserver/ask "HTTP/1.1 200 OK"
+status: 200
+chunks received: 1
+content head: RAG combines retrieval over a document corpus with an LLM, so answers are ground
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS

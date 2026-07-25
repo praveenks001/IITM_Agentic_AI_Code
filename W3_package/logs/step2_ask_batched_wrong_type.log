@@ -1,0 +1,22 @@
+STEP:        step2_ask_batched_wrong_type
+DESCRIPTION: POST /ask_batched with wrong type → 422
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:55:46+00:00
+COMMAND:
+    python -c "
+    import sys; sys.path.insert(0, '.')
+    from fastapi.testclient import TestClient
+    from api.main import app
+    client = TestClient(app)
+    r = client.post('/ask_batched', json={'question': 42})
+    print('status:', r.status_code)
+    assert r.status_code == 422
+    print('PASS — 422 returned as expected')
+    "
+--- OUTPUT ---
+2026-06-20 18:55:46,930  INFO  HTTP Request: POST http://testserver/ask_batched "HTTP/1.1 422 Unprocessable Entity"
+status: 422
+PASS — 422 returned as expected
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS

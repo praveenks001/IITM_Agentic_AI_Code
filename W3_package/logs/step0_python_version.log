@@ -1,0 +1,11 @@
+STEP:        step0_python_version
+DESCRIPTION: Python version
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:54:56+00:00
+COMMAND:
+    python --version
+--- OUTPUT ---
+Python 3.10.14
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS

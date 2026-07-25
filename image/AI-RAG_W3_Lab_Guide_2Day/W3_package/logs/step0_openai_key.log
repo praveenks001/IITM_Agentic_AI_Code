@@ -1,0 +1,11 @@
+STEP:        step0_openai_key
+DESCRIPTION: OPENAI_API_KEY present
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:54:56+00:00
+COMMAND:
+    python -c "import os; ok=bool(os.getenv('OPENAI_API_KEY')); print('OPENAI_API_KEY present:', ok); raise SystemExit(0 if ok else 1)"
+--- OUTPUT ---
+OPENAI_API_KEY present: True
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS

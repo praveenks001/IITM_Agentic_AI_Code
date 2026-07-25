@@ -1,0 +1,545 @@
+2026-07-25 13:32:38.762 [info] [main] Log level: Info
+2026-07-25 13:32:38.762 [info] [main] Validating found git in: "git"
+2026-07-25 13:32:38.762 [info] [main] Using git "2.25.1" from "git"
+2026-07-25 13:32:38.762 [info] [Model][doInitialScan] Initial repository scan started
+2026-07-25 13:32:38.762 [info] > git rev-parse --show-toplevel [4ms]
+2026-07-25 13:32:38.762 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-07-25 13:32:38.762 [info] > git rev-parse --show-toplevel [5ms]
+2026-07-25 13:32:38.762 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-07-25 13:32:38.762 [info] > git rev-parse --show-toplevel [4ms]
+2026-07-25 13:32:38.762 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-07-25 13:32:38.762 [info] > git rev-parse --show-toplevel [6ms]
+2026-07-25 13:32:38.762 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-07-25 13:32:38.762 [info] > git rev-parse --show-toplevel [4ms]
+2026-07-25 13:32:38.762 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-07-25 13:32:38.762 [info] > git rev-parse --show-toplevel [3ms]
+2026-07-25 13:32:38.762 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-07-25 13:32:38.762 [info] > git rev-parse --show-toplevel [5ms]
+2026-07-25 13:32:38.762 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-07-25 13:32:38.762 [info] > git rev-parse --show-toplevel [3ms]
+2026-07-25 13:32:38.762 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-07-25 13:32:38.762 [info] > git rev-parse --show-toplevel [5ms]
+2026-07-25 13:32:38.762 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-07-25 13:32:38.762 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2026-07-25 13:32:39.508 [info] > git rev-parse --show-toplevel [605ms]
+2026-07-25 13:32:39.508 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-07-25 13:32:39.522 [info] > git rev-parse --show-toplevel [2ms]
+2026-07-25 13:32:39.522 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-07-25 13:32:42.185 [info] > git rev-parse --show-toplevel [3ms]
+2026-07-25 13:32:42.185 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-07-25 13:32:45.147 [info] > git rev-parse --show-toplevel [2ms]
+2026-07-25 13:32:45.147 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-07-25 14:43:08.008 [info] > git rev-parse --show-toplevel [8ms]
+2026-07-25 14:43:08.025 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [11ms]
+2026-07-25 14:43:08.034 [info] [Model][openRepository] Opened repository (path): /voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai
+2026-07-25 14:43:08.034 [info] [Model][openRepository] Opened repository (real path): /voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai
+2026-07-25 14:43:08.034 [info] [Model][openRepository] Opened repository (kind): repository
+2026-07-25 14:43:08.063 [info] > git config --get commit.template [16ms]
+2026-07-25 14:43:08.070 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [20ms]
+2026-07-25 14:43:08.070 [warning] [Git][getBranch] No such branch: master
+2026-07-25 14:43:08.103 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [23ms]
+2026-07-25 14:43:08.109 [info] > git status -z -uall [33ms]
+2026-07-25 14:43:08.138 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [23ms]
+2026-07-25 14:43:08.138 [warning] [Git][getBranch] No such branch: master
+2026-07-25 14:43:08.138 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2026-07-25 14:43:08.149 [info] > git config --get commit.template [12ms]
+2026-07-25 14:43:08.162 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [14ms]
+2026-07-25 14:43:08.162 [warning] [Git][getBranch] No such branch: master
+2026-07-25 14:43:08.178 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [11ms]
+2026-07-25 14:43:08.181 [info] > git status -z -uall [17ms]
+2026-07-25 14:43:54.794 [info] > git config --get commit.template [9ms]
+2026-07-25 14:43:54.816 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [27ms]
+2026-07-25 14:43:54.818 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 14:43:54.830 [info] > git rev-parse refs/remotes/origin/main [12ms]
+2026-07-25 14:43:54.858 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [24ms]
+2026-07-25 14:43:54.915 [info] > git status -z -uall [83ms]
+2026-07-25 14:43:54.942 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [21ms]
+2026-07-25 14:43:54.951 [info] > git config --get --local branch.main.vscode-merge-base [5ms]
+2026-07-25 14:43:54.951 [warning] [Git][config] git config failed: Failed to execute git
+2026-07-25 14:43:54.977 [info] > git reflog main --grep-reflog=branch: Created from *. [23ms]
+2026-07-25 14:43:55.005 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [25ms]
+2026-07-25 14:43:55.027 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [19ms]
+2026-07-25 14:43:55.064 [info] > git config --add --local branch.main.vscode-merge-base origin/main [34ms]
+2026-07-25 14:43:55.076 [info] > git config --get commit.template [9ms]
+2026-07-25 14:43:55.090 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [20ms]
+2026-07-25 14:43:55.092 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 14:43:55.100 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 14:43:55.158 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [54ms]
+2026-07-25 14:43:55.209 [info] > git status -z -uall [107ms]
+2026-07-25 14:43:55.230 [info] > git merge-base refs/heads/main refs/remotes/origin/main [15ms]
+2026-07-25 14:43:55.233 [info] > git merge-base refs/heads/main refs/remotes/origin/main [17ms]
+2026-07-25 14:43:55.255 [info] > git diff --name-status -z --diff-filter=ADMR 5d6efe24e740f8bc66e2009a4843978c573085bc...refs/remotes/origin/main [23ms]
+2026-07-25 14:43:55.259 [info] > git diff --name-status -z --diff-filter=ADMR 5d6efe24e740f8bc66e2009a4843978c573085bc...refs/remotes/origin/main [23ms]
+2026-07-25 14:43:58.232 [info] > git check-ignore -v -z --stdin [13ms]
+2026-07-25 14:43:59.934 [info] > git config --get commit.template [8ms]
+2026-07-25 14:43:59.953 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [24ms]
+2026-07-25 14:43:59.955 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 14:43:59.964 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 14:43:59.990 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 14:44:00.052 [info] > git status -z -uall [86ms]
+2026-07-25 14:44:01.611 [info] > git check-ignore -v -z --stdin [12ms]
+2026-07-25 14:44:44.872 [info] > git config --get commit.template [7ms]
+2026-07-25 14:44:44.893 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [25ms]
+2026-07-25 14:44:44.896 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 14:44:44.904 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 14:44:44.932 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [23ms]
+2026-07-25 14:44:45.000 [info] > git status -z -uall [93ms]
+2026-07-25 14:44:46.557 [info] > git check-ignore -v -z --stdin [23ms]
+2026-07-25 16:02:44.524 [info] > git check-ignore -v -z --stdin [17ms]
+2026-07-25 16:02:46.747 [info] > git ls-files --stage -- practice_examples/week01/hello_llm.py [13ms]
+2026-07-25 16:02:46.763 [info] > git show --textconv :practice_examples/week01/hello_llm.py [32ms]
+2026-07-25 16:02:46.771 [info] > git cat-file -s a62a90db55abee127dfcd001c0e6a2d14f13d632 [21ms]
+2026-07-25 16:23:20.757 [info] > git check-ignore -v -z --stdin [16ms]
+2026-07-25 16:23:22.500 [info] > git check-ignore -v -z --stdin [13ms]
+2026-07-25 16:23:24.556 [info] > git check-ignore -v -z --stdin [17ms]
+2026-07-25 16:23:26.957 [info] > git ls-files --stage -- docs/runs/week1-hello-llm-sample.txt [12ms]
+2026-07-25 16:23:26.971 [info] > git show --textconv :docs/runs/week1-hello-llm-sample.txt [29ms]
+2026-07-25 16:23:26.979 [info] > git cat-file -s a21ba04dc5c8c7c3992f52a4ab0da0ad4b419a61 [18ms]
+2026-07-25 16:25:00.017 [info] > git ls-files --stage -- practice_examples/week01/hello_llm.py [12ms]
+2026-07-25 16:25:00.031 [info] > git show --textconv :practice_examples/week01/hello_llm.py [28ms]
+2026-07-25 16:25:00.034 [info] > git cat-file -s a62a90db55abee127dfcd001c0e6a2d14f13d632 [13ms]
+2026-07-25 16:25:04.840 [info] > git blame --root --incremental 5d6efe24e740f8bc66e2009a4843978c573085bc -- practice_examples/week01/hello_llm.py [27ms]
+2026-07-25 16:25:20.077 [info] > git config --get commit.template [8ms]
+2026-07-25 16:25:20.095 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:25:20.098 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:25:20.106 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:25:20.135 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [23ms]
+2026-07-25 16:25:20.197 [info] > git status -z -uall [88ms]
+2026-07-25 16:25:32.995 [info] > git config --get commit.template [7ms]
+2026-07-25 16:25:33.012 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [21ms]
+2026-07-25 16:25:33.015 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:25:33.022 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:25:33.048 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-07-25 16:25:33.092 [info] > git status -z -uall [67ms]
+2026-07-25 16:25:41.362 [info] > git config --get commit.template [8ms]
+2026-07-25 16:25:41.380 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [21ms]
+2026-07-25 16:25:41.382 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:25:41.391 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:25:41.418 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 16:25:41.463 [info] > git status -z -uall [70ms]
+2026-07-25 16:25:46.478 [info] > git config --get commit.template [11ms]
+2026-07-25 16:25:46.496 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [26ms]
+2026-07-25 16:25:46.499 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:25:46.507 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:25:46.534 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 16:25:46.578 [info] > git status -z -uall [68ms]
+2026-07-25 16:25:51.592 [info] > git config --get commit.template [8ms]
+2026-07-25 16:25:51.608 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [21ms]
+2026-07-25 16:25:51.611 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:25:51.619 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:25:51.644 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-07-25 16:25:51.687 [info] > git status -z -uall [66ms]
+2026-07-25 16:25:57.183 [info] > git config --get commit.template [8ms]
+2026-07-25 16:25:57.200 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:25:57.203 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:25:57.211 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:25:57.237 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 16:25:57.283 [info] > git status -z -uall [70ms]
+2026-07-25 16:26:02.298 [info] > git config --get commit.template [9ms]
+2026-07-25 16:26:02.315 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [23ms]
+2026-07-25 16:26:02.318 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:26:02.327 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:26:02.355 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [23ms]
+2026-07-25 16:26:02.402 [info] > git status -z -uall [72ms]
+2026-07-25 16:26:32.027 [info] > git config --get commit.template [8ms]
+2026-07-25 16:26:32.047 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [24ms]
+2026-07-25 16:26:32.049 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:26:32.058 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:26:32.084 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-07-25 16:26:32.145 [info] > git status -z -uall [85ms]
+2026-07-25 16:26:39.983 [info] > git config --get commit.template [9ms]
+2026-07-25 16:26:40.001 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:26:40.004 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:26:40.012 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:26:40.039 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-07-25 16:26:40.083 [info] > git status -z -uall [67ms]
+2026-07-25 16:26:45.134 [info] > git config --get commit.template [8ms]
+2026-07-25 16:26:45.152 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:26:45.154 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:26:45.163 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:26:45.189 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 16:26:45.235 [info] > git status -z -uall [70ms]
+2026-07-25 16:26:55.516 [info] > git config --get commit.template [7ms]
+2026-07-25 16:26:55.532 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [21ms]
+2026-07-25 16:26:55.534 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:26:55.544 [info] > git rev-parse refs/remotes/origin/main [10ms]
+2026-07-25 16:26:55.569 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-07-25 16:26:55.612 [info] > git status -z -uall [66ms]
+2026-07-25 16:27:00.625 [info] > git config --get commit.template [7ms]
+2026-07-25 16:27:00.643 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:27:00.646 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:27:00.655 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:27:00.681 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-07-25 16:27:00.728 [info] > git status -z -uall [71ms]
+2026-07-25 16:29:08.110 [info] > git check-ignore -v -z --stdin [16ms]
+2026-07-25 16:35:10.368 [info] > git config --get commit.template [9ms]
+2026-07-25 16:35:10.388 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [26ms]
+2026-07-25 16:35:10.390 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:35:10.399 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:35:10.425 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 16:35:10.496 [info] > git status -z -uall [94ms]
+2026-07-25 16:35:12.891 [info] > git check-ignore -v -z --stdin [14ms]
+2026-07-25 16:35:27.429 [info] > git config --get commit.template [8ms]
+2026-07-25 16:35:27.445 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [21ms]
+2026-07-25 16:35:27.447 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:35:27.455 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:35:27.481 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-07-25 16:35:27.529 [info] > git status -z -uall [71ms]
+2026-07-25 16:36:28.544 [info] > git check-ignore -v -z --stdin [21ms]
+2026-07-25 16:37:14.397 [info] > git config --get commit.template [8ms]
+2026-07-25 16:37:14.417 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [25ms]
+2026-07-25 16:37:14.420 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:37:14.428 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:37:14.453 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-07-25 16:37:14.521 [info] > git status -z -uall [91ms]
+2026-07-25 16:37:17.767 [info] > git check-ignore -v -z --stdin [13ms]
+2026-07-25 16:37:19.534 [info] > git config --get commit.template [8ms]
+2026-07-25 16:37:19.551 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [20ms]
+2026-07-25 16:37:19.553 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:37:19.562 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:37:19.588 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 16:37:19.630 [info] > git status -z -uall [66ms]
+2026-07-25 16:37:41.018 [info] > git ls-files --stage -- practice_examples/week01/hello_llm.py [11ms]
+2026-07-25 16:37:41.030 [info] > git show --textconv :practice_examples/week01/hello_llm.py [26ms]
+2026-07-25 16:37:41.035 [info] > git cat-file -s a62a90db55abee127dfcd001c0e6a2d14f13d632 [14ms]
+2026-07-25 16:37:46.118 [info] > git config --get commit.template [8ms]
+2026-07-25 16:37:46.134 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [21ms]
+2026-07-25 16:37:46.136 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:37:46.145 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:37:46.171 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 16:37:46.216 [info] > git status -z -uall [69ms]
+2026-07-25 16:37:57.103 [info] > git config --get commit.template [8ms]
+2026-07-25 16:37:57.120 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:37:57.122 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:37:57.130 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:37:57.156 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-07-25 16:37:57.201 [info] > git status -z -uall [69ms]
+2026-07-25 16:38:02.216 [info] > git config --get commit.template [10ms]
+2026-07-25 16:38:02.237 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [28ms]
+2026-07-25 16:38:02.240 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:38:02.251 [info] > git rev-parse refs/remotes/origin/main [11ms]
+2026-07-25 16:38:02.284 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [28ms]
+2026-07-25 16:38:02.347 [info] > git status -z -uall [94ms]
+2026-07-25 16:38:11.826 [info] > git config --get commit.template [7ms]
+2026-07-25 16:38:11.843 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [21ms]
+2026-07-25 16:38:11.845 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:38:11.853 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:38:11.878 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-07-25 16:38:11.923 [info] > git status -z -uall [68ms]
+2026-07-25 16:38:16.937 [info] > git config --get commit.template [8ms]
+2026-07-25 16:38:16.956 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [24ms]
+2026-07-25 16:38:16.959 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:38:16.968 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:38:16.995 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 16:38:17.042 [info] > git status -z -uall [72ms]
+2026-07-25 16:38:25.577 [info] > git config --get commit.template [8ms]
+2026-07-25 16:38:25.593 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [21ms]
+2026-07-25 16:38:25.596 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:38:25.605 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:38:25.629 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [20ms]
+2026-07-25 16:38:25.673 [info] > git status -z -uall [66ms]
+2026-07-25 16:38:34.377 [info] > git config --get commit.template [7ms]
+2026-07-25 16:38:34.396 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [23ms]
+2026-07-25 16:38:34.399 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:38:34.409 [info] > git rev-parse refs/remotes/origin/main [10ms]
+2026-07-25 16:38:34.438 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [24ms]
+2026-07-25 16:38:34.486 [info] > git status -z -uall [75ms]
+2026-07-25 16:38:39.500 [info] > git config --get commit.template [8ms]
+2026-07-25 16:38:39.517 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:38:39.519 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:38:39.528 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:38:39.556 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [24ms]
+2026-07-25 16:38:39.607 [info] > git status -z -uall [76ms]
+2026-07-25 16:38:44.620 [info] > git config --get commit.template [9ms]
+2026-07-25 16:38:44.637 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:38:44.640 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:38:44.648 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:38:44.675 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 16:38:44.720 [info] > git status -z -uall [69ms]
+2026-07-25 16:38:49.734 [info] > git config --get commit.template [8ms]
+2026-07-25 16:38:49.749 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [20ms]
+2026-07-25 16:38:49.752 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:38:49.760 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:38:49.786 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 16:38:49.832 [info] > git status -z -uall [70ms]
+2026-07-25 16:38:54.872 [info] > git config --get commit.template [8ms]
+2026-07-25 16:38:54.889 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:38:54.892 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:38:54.901 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:38:54.927 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 16:38:54.971 [info] > git status -z -uall [68ms]
+2026-07-25 16:39:22.861 [info] > git config --get commit.template [7ms]
+2026-07-25 16:39:22.879 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:39:22.882 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:39:22.891 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:39:22.916 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-07-25 16:39:22.962 [info] > git status -z -uall [69ms]
+2026-07-25 16:39:30.447 [info] > git config --get commit.template [8ms]
+2026-07-25 16:39:30.463 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [21ms]
+2026-07-25 16:39:30.465 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:39:30.473 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:39:30.497 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [20ms]
+2026-07-25 16:39:30.545 [info] > git status -z -uall [70ms]
+2026-07-25 16:39:53.639 [info] > git config --get commit.template [9ms]
+2026-07-25 16:39:53.657 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [24ms]
+2026-07-25 16:39:53.659 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:39:53.668 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:39:53.695 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [23ms]
+2026-07-25 16:39:53.748 [info] > git status -z -uall [78ms]
+2026-07-25 16:39:58.761 [info] > git config --get commit.template [7ms]
+2026-07-25 16:39:58.778 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:39:58.780 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:39:58.789 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:39:58.813 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [20ms]
+2026-07-25 16:39:58.858 [info] > git status -z -uall [67ms]
+2026-07-25 16:40:20.889 [info] > git config --get commit.template [7ms]
+2026-07-25 16:40:20.906 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [21ms]
+2026-07-25 16:40:20.909 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:40:20.918 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:40:20.947 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [23ms]
+2026-07-25 16:40:20.996 [info] > git status -z -uall [75ms]
+2026-07-25 16:40:27.852 [info] > git config --get commit.template [8ms]
+2026-07-25 16:40:27.872 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [25ms]
+2026-07-25 16:40:27.875 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:40:27.884 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:40:27.909 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [20ms]
+2026-07-25 16:40:27.953 [info] > git status -z -uall [66ms]
+2026-07-25 16:40:32.965 [info] > git config --get commit.template [8ms]
+2026-07-25 16:40:32.982 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:40:32.985 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:40:32.993 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:40:33.021 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [24ms]
+2026-07-25 16:40:33.064 [info] > git status -z -uall [69ms]
+2026-07-25 16:40:44.129 [info] > git config --get commit.template [8ms]
+2026-07-25 16:40:44.145 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [21ms]
+2026-07-25 16:40:44.147 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:40:44.156 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:40:44.182 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 16:40:44.227 [info] > git status -z -uall [69ms]
+2026-07-25 16:40:49.314 [info] > git config --get commit.template [8ms]
+2026-07-25 16:40:49.333 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [23ms]
+2026-07-25 16:40:49.335 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:40:49.344 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:40:49.369 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [20ms]
+2026-07-25 16:40:49.413 [info] > git status -z -uall [67ms]
+2026-07-25 16:41:02.178 [info] > git config --get commit.template [9ms]
+2026-07-25 16:41:02.195 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [23ms]
+2026-07-25 16:41:02.198 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:41:02.207 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:41:02.236 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [24ms]
+2026-07-25 16:41:02.286 [info] > git status -z -uall [77ms]
+2026-07-25 16:41:07.300 [info] > git config --get commit.template [8ms]
+2026-07-25 16:41:07.316 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [21ms]
+2026-07-25 16:41:07.319 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:41:07.328 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:41:07.354 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-07-25 16:41:07.402 [info] > git status -z -uall [72ms]
+2026-07-25 16:41:12.416 [info] > git config --get commit.template [9ms]
+2026-07-25 16:41:12.433 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:41:12.435 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:41:12.444 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:41:12.470 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 16:41:12.515 [info] > git status -z -uall [69ms]
+2026-07-25 16:41:44.675 [info] > git config --get commit.template [8ms]
+2026-07-25 16:41:44.696 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [25ms]
+2026-07-25 16:41:44.698 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:41:44.707 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:41:44.730 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [20ms]
+2026-07-25 16:41:44.777 [info] > git status -z -uall [69ms]
+2026-07-25 16:41:48.036 [info] > git check-ignore -v -z --stdin [15ms]
+2026-07-25 16:41:49.790 [info] > git config --get commit.template [8ms]
+2026-07-25 16:41:49.808 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [23ms]
+2026-07-25 16:41:49.812 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:41:49.820 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:41:49.848 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 16:41:49.894 [info] > git status -z -uall [71ms]
+2026-07-25 16:42:14.053 [info] > git ls-files --stage -- practice_examples/week01/hello_llm.py [11ms]
+2026-07-25 16:42:14.063 [info] > git show --textconv :practice_examples/week01/hello_llm.py [24ms]
+2026-07-25 16:42:14.070 [info] > git cat-file -s a62a90db55abee127dfcd001c0e6a2d14f13d632 [13ms]
+2026-07-25 16:42:20.465 [info] > git config --get commit.template [8ms]
+2026-07-25 16:42:20.482 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [21ms]
+2026-07-25 16:42:20.485 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:42:20.493 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:42:20.521 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [23ms]
+2026-07-25 16:42:20.565 [info] > git status -z -uall [69ms]
+2026-07-25 16:42:25.579 [info] > git config --get commit.template [7ms]
+2026-07-25 16:42:25.597 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:42:25.600 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:42:25.609 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:42:25.636 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [23ms]
+2026-07-25 16:42:25.681 [info] > git status -z -uall [70ms]
+2026-07-25 16:42:32.412 [info] > git config --get commit.template [7ms]
+2026-07-25 16:42:32.431 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:42:32.435 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:42:32.443 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:42:32.472 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-07-25 16:42:32.518 [info] > git status -z -uall [72ms]
+2026-07-25 16:42:35.740 [info] > git check-ignore -v -z --stdin [14ms]
+2026-07-25 16:42:51.846 [info] > git config --get commit.template [9ms]
+2026-07-25 16:42:51.864 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [23ms]
+2026-07-25 16:42:51.868 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:42:51.876 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:42:51.905 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 16:42:51.952 [info] > git status -z -uall [72ms]
+2026-07-25 16:43:04.240 [info] > git config --get commit.template [7ms]
+2026-07-25 16:43:04.257 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [21ms]
+2026-07-25 16:43:04.260 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:43:04.268 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:43:04.295 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 16:43:04.339 [info] > git status -z -uall [68ms]
+2026-07-25 16:43:09.852 [info] > git ls-files --stage -- practice_examples/week01/hello_llm.py [11ms]
+2026-07-25 16:43:09.860 [info] > git show --textconv :practice_examples/week01/hello_llm.py [21ms]
+2026-07-25 16:43:09.868 [info] > git cat-file -s a62a90db55abee127dfcd001c0e6a2d14f13d632 [14ms]
+2026-07-25 16:43:40.046 [info] > git config --get commit.template [9ms]
+2026-07-25 16:43:40.065 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [24ms]
+2026-07-25 16:43:40.069 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:43:40.078 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:43:40.109 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [25ms]
+2026-07-25 16:43:40.189 [info] > git status -z -uall [108ms]
+2026-07-25 16:44:26.225 [info] > git config --get commit.template [8ms]
+2026-07-25 16:44:26.242 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:44:26.245 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:44:26.253 [info] > git rev-parse refs/remotes/origin/main [9ms]
+2026-07-25 16:44:26.280 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-07-25 16:44:26.332 [info] > git status -z -uall [77ms]
+2026-07-25 16:44:29.271 [info] > git check-ignore -v -z --stdin [14ms]
+2026-07-25 16:44:31.345 [info] > git config --get commit.template [8ms]
+2026-07-25 16:44:31.361 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [21ms]
+2026-07-25 16:44:31.363 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:44:31.371 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:44:31.397 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-07-25 16:44:31.442 [info] > git status -z -uall [69ms]
+2026-07-25 16:44:36.796 [info] > git ls-files --stage -- practice_examples/week01/hello_llm.py [11ms]
+2026-07-25 16:44:36.805 [info] > git show --textconv :practice_examples/week01/hello_llm.py [23ms]
+2026-07-25 16:44:36.812 [info] > git cat-file -s a62a90db55abee127dfcd001c0e6a2d14f13d632 [13ms]
+2026-07-25 16:44:58.390 [info] > git config --get commit.template [8ms]
+2026-07-25 16:44:58.407 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:44:58.410 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:44:58.418 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:44:58.444 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-07-25 16:44:58.488 [info] > git status -z -uall [67ms]
+2026-07-25 16:45:03.502 [info] > git config --get commit.template [9ms]
+2026-07-25 16:45:03.519 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [23ms]
+2026-07-25 16:45:03.522 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:45:03.532 [info] > git rev-parse refs/remotes/origin/main [10ms]
+2026-07-25 16:45:03.560 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [24ms]
+2026-07-25 16:45:03.607 [info] > git status -z -uall [73ms]
+2026-07-25 16:45:08.621 [info] > git config --get commit.template [7ms]
+2026-07-25 16:45:08.639 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2026-07-25 16:45:08.642 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:45:08.650 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:45:08.676 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [20ms]
+2026-07-25 16:45:08.719 [info] > git status -z -uall [66ms]
+2026-07-25 16:45:13.732 [info] > git config --get commit.template [8ms]
+2026-07-25 16:45:13.748 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [21ms]
+2026-07-25 16:45:13.750 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/.git/refs/remotes/origin/main'
+2026-07-25 16:45:13.758 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2026-07-25 16:45:13.784 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-07-25 16:45:13.828 [info] > git status -z -uall [67ms]
+2026-07-25 16:48:19.999 [info] > git rev-parse --show-toplevel [8ms]
+2026-07-25 16:48:20.012 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [10ms]
+2026-07-25 16:48:20.016 [info] [Model][openRepository] Opened repository (path): /voc/work
+2026-07-25 16:48:20.016 [info] [Model][openRepository] Opened repository (real path): /voc/work
+2026-07-25 16:48:20.016 [info] [Model][openRepository] Opened repository (kind): repository
+2026-07-25 16:48:20.020 [info] [Git][getRemotes] No remotes found in the git config file
+2026-07-25 16:48:20.031 [info] > git config --get commit.template [7ms]
+2026-07-25 16:48:20.038 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [13ms]
+2026-07-25 16:48:20.039 [warning] [Git][getBranch] No such branch: master
+2026-07-25 16:48:20.062 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [14ms]
+2026-07-25 16:48:20.308 [info] > git status -z -uall [263ms]
+2026-07-25 16:48:20.322 [info] [Git][getRemotes] No remotes found in the git config file
+2026-07-25 16:48:20.327 [info] > git config --get commit.template [8ms]
+2026-07-25 16:48:20.327 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [12ms]
+2026-07-25 16:48:20.328 [warning] [Git][getBranch] No such branch: master
+2026-07-25 16:48:20.328 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2026-07-25 16:48:20.336 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [14ms]
+2026-07-25 16:48:20.336 [warning] [Git][getBranch] No such branch: master
+2026-07-25 16:48:20.352 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [11ms]
+2026-07-25 16:48:20.394 [info] > git status -z -uall [55ms]
+2026-07-25 16:48:20.819 [info] > git check-ignore -v -z --stdin [11ms]
+2026-07-25 16:48:20.827 [info] > git check-ignore -v -z --stdin [22ms]
+2026-07-25 16:48:22.950 [info] [Git][getRemotes] No remotes found in the git config file
+2026-07-25 16:48:22.956 [info] > git config --get commit.template [7ms]
+2026-07-25 16:48:22.963 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [11ms]
+2026-07-25 16:48:22.963 [warning] [Git][getBranch] No such branch: master
+2026-07-25 16:48:22.984 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [12ms]
+2026-07-25 16:48:23.025 [info] > git status -z -uall [55ms]
+2026-07-25 16:48:28.032 [info] [Git][getRemotes] No remotes found in the git config file
+2026-07-25 16:48:28.040 [info] > git config --get commit.template [9ms]
+2026-07-25 16:48:28.047 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [12ms]
+2026-07-25 16:48:28.047 [warning] [Git][getBranch] No such branch: master
+2026-07-25 16:48:28.068 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [14ms]
+2026-07-25 16:48:28.150 [info] > git status -z -uall [99ms]
+2026-07-25 16:48:44.504 [info] [Git][getRemotes] No remotes found in the git config file
+2026-07-25 16:48:44.513 [info] > git config --get commit.template [10ms]
+2026-07-25 16:48:44.522 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [14ms]
+2026-07-25 16:48:44.522 [warning] [Git][getBranch] No such branch: master
+2026-07-25 16:48:44.541 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [14ms]
+2026-07-25 16:48:44.641 [info] > git status -z -uall [117ms]
+2026-07-25 16:48:49.649 [info] [Git][getRemotes] No remotes found in the git config file
+2026-07-25 16:48:49.656 [info] > git config --get commit.template [8ms]
+2026-07-25 16:48:49.662 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [11ms]
+2026-07-25 16:48:49.662 [warning] [Git][getBranch] No such branch: master
+2026-07-25 16:48:49.678 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [12ms]
+2026-07-25 16:48:49.742 [info] > git status -z -uall [78ms]
+2026-07-25 16:48:54.752 [info] [Git][getRemotes] No remotes found in the git config file
+2026-07-25 16:48:54.757 [info] > git config --get commit.template [9ms]
+2026-07-25 16:48:54.764 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [13ms]
+2026-07-25 16:48:54.764 [warning] [Git][getBranch] No such branch: master
+2026-07-25 16:48:54.780 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [12ms]
+2026-07-25 16:48:54.857 [info] > git status -z -uall [91ms]
+2026-07-25 16:48:59.865 [info] [Git][getRemotes] No remotes found in the git config file
+2026-07-25 16:48:59.872 [info] > git config --get commit.template [7ms]
+2026-07-25 16:48:59.879 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [12ms]
+2026-07-25 16:48:59.879 [warning] [Git][getBranch] No such branch: master
+2026-07-25 16:48:59.894 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [11ms]
+2026-07-25 16:48:59.968 [info] > git status -z -uall [87ms]
+2026-07-25 16:49:17.851 [info] [Git][getRemotes] No remotes found in the git config file
+2026-07-25 16:49:17.858 [info] > git config --get commit.template [8ms]
+2026-07-25 16:49:17.866 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [13ms]
+2026-07-25 16:49:17.866 [warning] [Git][getBranch] No such branch: master
+2026-07-25 16:49:17.881 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [11ms]
+2026-07-25 16:49:17.963 [info] > git status -z -uall [95ms]
+2026-07-25 16:49:22.972 [info] [Git][getRemotes] No remotes found in the git config file
+2026-07-25 16:49:22.979 [info] > git config --get commit.template [8ms]
+2026-07-25 16:49:22.988 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [13ms]
+2026-07-25 16:49:22.989 [warning] [Git][getBranch] No such branch: master
+2026-07-25 16:49:23.012 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [14ms]
+2026-07-25 16:49:23.090 [info] > git status -z -uall [94ms]
+2026-07-25 16:49:28.100 [info] [Git][getRemotes] No remotes found in the git config file
+2026-07-25 16:49:28.104 [info] > git config --get commit.template [8ms]
+2026-07-25 16:49:28.112 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [13ms]
+2026-07-25 16:49:28.112 [warning] [Git][getBranch] No such branch: master
+2026-07-25 16:49:28.129 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [12ms]
+2026-07-25 16:49:28.205 [info] > git status -z -uall [90ms]
+2026-07-25 16:49:33.213 [info] [Git][getRemotes] No remotes found in the git config file
+2026-07-25 16:49:33.220 [info] > git config --get commit.template [8ms]
+2026-07-25 16:49:33.226 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [11ms]
+2026-07-25 16:49:33.226 [warning] [Git][getBranch] No such branch: master
+2026-07-25 16:49:33.245 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [14ms]
+2026-07-25 16:49:33.324 [info] > git status -z -uall [95ms]
+2026-07-25 16:49:56.513 [info] [Git][getRemotes] No remotes found in the git config file
+2026-07-25 16:49:56.519 [info] > git config --get commit.template [10ms]
+2026-07-25 16:49:56.526 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [14ms]
+2026-07-25 16:49:56.526 [warning] [Git][getBranch] No such branch: master
+2026-07-25 16:49:56.543 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [13ms]
+2026-07-25 16:49:56.617 [info] > git status -z -uall [89ms]
+2026-07-25 16:50:01.627 [info] [Git][getRemotes] No remotes found in the git config file
+2026-07-25 16:50:01.632 [info] > git config --get commit.template [9ms]
+2026-07-25 16:50:01.639 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [12ms]
+2026-07-25 16:50:01.640 [warning] [Git][getBranch] No such branch: master
+2026-07-25 16:50:01.657 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [13ms]
+2026-07-25 16:50:01.699 [info] > git status -z -uall [56ms]

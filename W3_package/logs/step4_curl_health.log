@@ -1,0 +1,21 @@
+STEP:        step4_curl_health
+DESCRIPTION: curl GET /health → 200 / {status:ok}
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:56:13+00:00
+COMMAND:
+    set -o pipefail
+        out=$(curl -s -i http://localhost:8000/health)
+        echo "$out"
+        echo "$out" | head -1 | grep -q '200' || { echo 'EXPECTED 200'; exit 1; }
+        echo "$out" | tail -1 | grep -q '"status":"ok"' || { echo 'EXPECTED status:ok in body'; exit 1; }
+--- OUTPUT ---
+HTTP/1.1 200 OK
+date: Sat, 20 Jun 2026 18:56:13 GMT
+server: uvicorn
+content-length: 15
+content-type: application/json
+
+{"status":"ok"}
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS

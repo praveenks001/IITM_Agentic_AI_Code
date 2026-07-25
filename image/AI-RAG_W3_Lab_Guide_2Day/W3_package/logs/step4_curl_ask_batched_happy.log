@@ -1,0 +1,25 @@
+STEP:        step4_curl_ask_batched_happy
+DESCRIPTION: curl POST /ask_batched (happy path) → 200 + W3 contract
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:56:13+00:00
+COMMAND:
+    out=$(curl -s -i -X POST http://localhost:8000/ask_batched \
+                       -H 'Content-Type: application/json' \
+                       -d '{"question": "What is RAG?"}')
+        echo "$out"
+        echo "$out" | head -1 | grep -q '200' || { echo 'EXPECTED 200'; exit 1; }
+        body=$(echo "$out" | tail -1)
+        for field in content cost_usd retries; do
+            echo "$body" | grep -q "\"$field\"" || { echo "MISSING FIELD: $field"; exit 1; }
+        done
+--- OUTPUT ---
+HTTP/1.1 200 OK
+date: Sat, 20 Jun 2026 18:56:13 GMT
+server: uvicorn
+content-length: 187
+content-type: application/json
+
+{"content":"RAG combines retrieval over a document corpus with an LLM, so answers are grounded in real sources rather than the model's training data alone.","cost_usd":0.0001,"retries":0}
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS

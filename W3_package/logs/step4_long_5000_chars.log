@@ -1,0 +1,24 @@
+STEP:        step4_long_5000_chars
+DESCRIPTION: Lab §3b: 5000-char question → 200
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:56:15+00:00
+COMMAND:
+    python -c "
+    import httpx, sys
+    q = 'Please summarize the company policy on remote work. ' * 100
+    print(f'question length: {len(q)} chars')
+    r = httpx.post('http://localhost:8000/ask_batched', json={'question': q}, timeout=60.0)
+    print('status:', r.status_code)
+    if r.status_code == 200:
+        print('content head:', r.json().get('content', '')[:120])
+    else:
+        print('body:', r.text[:300])
+    sys.exit(0 if r.status_code == 200 else 1)
+    "
+--- OUTPUT ---
+question length: 5200 chars
+status: 200
+content head: (simulated answer for: Please summarize the company policy on remote work. Please s...)
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS

@@ -1,0 +1,12 @@
+STEP:        step0_pip_install_w3
+DESCRIPTION: pip install -r requirements.txt
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:55:24+00:00
+COMMAND:
+    pip install --break-system-packages -q -r requirements.txt
+--- OUTPUT ---
+  WARNING: The script watchfiles is installed in '/voc/work/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS

@@ -1,0 +1,22 @@
+STEP:        step3_pytest
+DESCRIPTION: pytest tests/ -q
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:55:49+00:00
+COMMAND:
+    python -m pytest tests/ -q --tb=short
+--- OUTPUT ---
+============================= test session starts ==============================
+platform linux -- Python 3.10.14, pytest-9.0.3, pluggy-1.6.0
+rootdir: /voc/work/W3_package
+configfile: pytest.ini
+plugins: asyncio-1.4.0, anyio-4.10.0, langsmith-0.4.27, Faker-25.2.0, typeguard-4.3.0
+asyncio: mode=auto, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 4 items
+
+tests/test_api.py ..                                                     [ 50%]
+tests/test_pipeline.py ..                                                [100%]
+
+============================== 4 passed in 1.52s ===============================
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS

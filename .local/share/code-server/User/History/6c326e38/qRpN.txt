@@ -1,0 +1,9 @@
+Agentic AI refers to artificial intelligence systems that can autonomously make decisions and take actions in specific contexts, often simulating human-like reasoning and problem-solving abilities. In trading, Agentic AI can help by:
+
+1. **Data Analysis**: It processes vast amounts of market data quickly to identify patterns and trends.
+2. **Decision-Making**: It generates trading strategies based on predictive models and real-time analysis.
+3. **Risk Management**: It assesses risks and adjusts trading strategies accordingly to optimize returns.
+4. **Automation**: It executes trades automatically, reducing the need for human intervention and emotional biases.
+5. **Adaptability**: It can adapt to changing market conditions in real-time, allowing for more effective trading responses.
+
+Overall, Agentic AI enhances efficiency and potentially increases profitability in trading activities.

@@ -1,0 +1,26 @@
+STEP:        step4_uvicorn_stop
+DESCRIPTION: Stop uvicorn cleanly
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:56:23+00:00
+COMMAND:
+    if [ -f '/voc/work/W3_package/logs/_uvicorn.pid' ]; then
+            pid=$(cat '/voc/work/W3_package/logs/_uvicorn.pid')
+            echo "stopping uvicorn, pid=$pid"
+            kill $pid 2>/dev/null
+            sleep 1
+            if kill -0 $pid 2>/dev/null; then
+                echo 'force kill'
+                kill -9 $pid 2>/dev/null
+            fi
+            rm -f '/voc/work/W3_package/logs/_uvicorn.pid'
+            echo 'uvicorn stopped'
+        else
+            echo 'no pid file — uvicorn was not running'
+            exit 1
+        fi
+--- OUTPUT ---
+stopping uvicorn, pid=1059
+uvicorn stopped
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS

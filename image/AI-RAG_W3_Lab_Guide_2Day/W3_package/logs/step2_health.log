@@ -1,0 +1,22 @@
+STEP:        step2_health
+DESCRIPTION: GET /health returns 200
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:55:42+00:00
+COMMAND:
+    python -c "
+    import sys; sys.path.insert(0, '.')
+    from fastapi.testclient import TestClient
+    from api.main import app
+    client = TestClient(app)
+    r = client.get('/health')
+    print('status:', r.status_code)
+    print('body:', r.json())
+    assert r.status_code == 200
+    "
+--- OUTPUT ---
+2026-06-20 18:55:43,691  INFO  HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+status: 200
+body: {'status': 'ok'}
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS

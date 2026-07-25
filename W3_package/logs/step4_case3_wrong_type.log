@@ -1,0 +1,21 @@
+STEP:        step4_case3_wrong_type
+DESCRIPTION: Lab §3a Case 3: wrong type (int) → 422
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:56:15+00:00
+COMMAND:
+    out=$(curl -s -i -X POST http://localhost:8000/ask \
+                       -H 'Content-Type: application/json' \
+                       -d '{"question": 42}')
+        echo "$out"
+        echo "$out" | head -1 | grep -q '422' || { echo 'EXPECTED 422'; exit 1; }
+--- OUTPUT ---
+HTTP/1.1 422 Unprocessable Entity
+date: Sat, 20 Jun 2026 18:56:14 GMT
+server: uvicorn
+content-length: 111
+content-type: application/json
+
+{"detail":[{"type":"string_type","loc":["body","question"],"msg":"Input should be a valid string","input":42}]}
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS

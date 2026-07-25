@@ -1,0 +1,17 @@
+STEP:        step2_app_imports
+DESCRIPTION: from api.main import app — imports cleanly
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:55:42+00:00
+COMMAND:
+    python -c "
+    import sys; sys.path.insert(0, '.')
+    from api.main import app
+    print('app type:', type(app).__name__)
+    print('routes:', sorted([r.path for r in app.routes if hasattr(r, 'path')]))
+    "
+--- OUTPUT ---
+app type: FastAPI
+routes: ['/ask', '/ask_batched', '/docs', '/docs/oauth2-redirect', '/health', '/openapi.json', '/redoc']
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS

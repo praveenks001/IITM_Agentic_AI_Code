@@ -1,0 +1,21 @@
+STEP:        step4_stress_test_50
+DESCRIPTION: Lab §3d: scripts/stress_test.py --requests 50 --concurrent 10
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:56:15+00:00
+COMMAND:
+    python scripts/stress_test.py --requests 50 --concurrent 10
+--- OUTPUT ---
+Stress test: 50 requests, up to 10 concurrent
+────────────────────────────────────────────────────────────
+Total wall time:   7.60s
+Successes:         50 / 50
+Effective req/s:   6.58
+
+Latency (successful requests):
+  min:   0.75s
+  p50:   1.31s
+  p95:   1.89s
+  max:   2.00s
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS

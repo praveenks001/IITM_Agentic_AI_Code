@@ -1,0 +1,10 @@
+STEP:        step0_pip_install_w2
+DESCRIPTION: pip install -r requirements_w2.txt
+EXPECTED RC: 0
+TIMESTAMP:   2026-06-20T18:54:56+00:00
+COMMAND:
+    pip install --break-system-packages -q -r requirements_w2.txt
+--- OUTPUT ---
+--- END ---
+EXIT_CODE: 0
+VERDICT:   PASS
