@@ -1,0 +1,21 @@
+2026-07-25 17:34:25.975 [info] Telemetry level is off
+2026-07-25 17:34:25.975 [info] Experiments are disabled, only manually opted experiments are active.
+2026-07-25 17:34:25.975 [warning] Dir "/voc/work/.pixi/envs" is not watchable (directory does not exist)
+2026-07-25 17:34:25.975 [info] Skipping ActivatedEnv Detection:  process.env.VSCODE_CLI !== '1'
+2026-07-25 17:34:25.975 [info] Python interpreter path: /bin/python
+2026-07-25 17:34:26.256 [info] > pyenv which python
+2026-07-25 17:34:26.256 [info] cwd: .
+2026-07-25 17:34:26.987 [info] Starting Jedi language server for work.
+2026-07-25 17:34:57.684 [info] > conda info --json
+2026-07-25 17:54:05.119 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/practice_examples/week02/booking.py
+2026-07-25 17:54:07.942 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/practice_examples/week02/booking.py
+2026-07-25 17:54:12.338 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/practice_examples/week02/booking.py
+2026-07-25 17:54:14.051 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/practice_examples/week02/booking.py
+2026-07-25 17:54:16.448 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/practice_examples/week02/booking.py
+2026-07-25 17:54:18.254 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/practice_examples/week02/booking.py
+2026-07-25 17:54:21.358 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/practice_examples/week02/booking.py
+2026-07-25 17:54:22.655 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/practice_examples/week02/booking.py
+2026-07-25 17:54:27.906 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/practice_examples/week02/booking.py
+2026-07-25 17:54:34.928 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/practice_examples/week02/booking.py
+2026-07-25 17:54:38.494 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/practice_examples/week02/booking.py
+2026-07-25 17:54:42.707 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/practice_examples/week02/booking.py

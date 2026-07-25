@@ -254,3 +254,50 @@
 	at ChildProcess.<anonymous> (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/git/dist/main.js:2:559986)
 	at ChildProcess.emit (node:events:530:35)
 	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2026-07-25 17:33:07.849 [info] Extension host terminating: received terminate message from renderer
+2026-07-25 17:33:07.849 [info] Lock '/voc/work/.local/share/code-server/User/workspaceStorage/552febde/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2026-07-25 17:33:07.900 [error] Error: Channel has been closed
+	at n (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:119:2816)
+	at Object.info (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:119:3161)
+	at T.info (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/json-language-features/client/dist/node/jsonClientMain.js:2:45257)
+	at ChildProcess.<anonymous> (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/json-language-features/client/dist/node/jsonClientMain.js:2:599801)
+	at ChildProcess.emit (node:events:518:28)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2026-07-25 17:33:08.885 [error] Error: Channel has been closed
+	at n (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:119:2816)
+	at Object.info (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:119:3161)
+	at dispose (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/Anthropic.claude-code-1.0.108/extension.js:19:1898)
+	at Object.dispose (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/Anthropic.claude-code-1.0.108/extension.js:19:13351)
+	at Hi (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:25:746)
+	at file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:116:15158
+	at file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:25:1056
+	at Object.dispose (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+	at RZ.eb (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:116:12031)
+	at file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:116:9986
+	at Array.map (<anonymous>)
+	at RZ.$ (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:116:9974)
+	at RZ.terminate (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:116:10217)
+	at E3.terminate (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:118:914)
+	at bs (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:388:10155)
+	at Yh.value (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:388:8306)
+	at $.C (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at $.fire (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at fo.fire (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:29:9458)
+	at V1.A (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:29:12574)
+	at Yh.value (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:29:10994)
+	at $.C (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at $.fire (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at cS.acceptChunk (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:29:7941)
+	at Yh.value (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:29:7227)
+	at $.C (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at $.fire (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at XL.z (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:29:21724)
+2026-07-25 17:33:09.800 [error] Error: Channel has been closed
+	at n (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:119:2816)
+	at Object.trace (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:119:3070)
+	at t.OperationManager.start (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/git/dist/main.js:2:728242)
+	at O.run (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/git/dist/main.js:2:560713)
+	at O.status (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/git/dist/main.js:2:540579)
+	at O.o (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/git/dist/main.js:2:227401)
+	at O.updateWhenIdleAndWait (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/git/dist/main.js:2:568778)
+2026-07-25 17:33:09.873 [info] Extension host with pid 39947 exiting with code 0

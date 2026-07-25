@@ -1,0 +1,67 @@
+
+======================================================================
+  Demo 1 — A basic Pydantic model
+======================================================================
+
+Construct from kwargs:
+  u            = name='Asha' age=29 email=None
+  u.model_dump() -> {'name': 'Asha', 'age': 29, 'email': None}
+
+Pydantic coerces compatible types — strict on invalid, lenient on coercible:
+  User(name='Bo', age='30')   ->  name='Bo' age=30 email=None
+  type(u2.age).__name__       ->  'int'
+
+Optional fields with defaults just work:
+  u3.model_dump() -> {'name': 'Cai', 'age': 42, 'email': None}
+
+
+======================================================================
+  Demo 2 — When bad data goes in
+======================================================================
+
+Try to construct User with age='not a number':
+
+1 validation error for User
+age
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='not a number', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/int_parsing
+
+What the error tells you, in three lines:
+  - WHICH field broke   ->  age
+  - WHY it broke        ->  int_parsing failed
+  - WHAT you sent       ->  'not a number'
+
+No silent corruption. No untyped dict drifting through the system.
+
+
+======================================================================
+  Demo 3 — Parse an LLM JSON response
+======================================================================
+
+Case A — well-formed JSON from the model:
+  raw    = {"summary": "RAG combines retrieval over a corpus with an LLM generator.", "confidence": 0.9, "sources": ["doc1", "doc2"]}
+  parsed = summary='RAG combines retrieval over a corpus with an LLM generator.' confidence=0.9 sources=['doc1', 'doc2']
+
+  parsed.summary    -> RAG combines retrieval over a corpus with an LLM generator.
+  parsed.confidence -> 0.9
+  parsed.sources    -> ['doc1', 'doc2']
+
+Case B — wrong type for `confidence` ('high' instead of a float):
+
+1 validation error for ExpectedAnswer
+confidence
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='high', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/float_parsing
+
+Case C — `sources` field missing entirely:
+
+1 validation error for ExpectedAnswer
+sources
+  Field required [type=missing, input_value={'summary': 'RAG combines...or.', 'confidence': 0.9}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+
+Takeaway:
+  Every LLM response that should be structured passes through a model like this.
+  When the model returns something off-shape, you find out at the door — not
+  three function calls later when something else explodes.
+

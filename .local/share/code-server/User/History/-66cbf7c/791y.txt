@@ -1,0 +1,12 @@
+guest='Sam' nights=3 email=None
+
+
+Traceback (most recent call last):
+  File "/voc/work/Knowledge_Hands_on/practice_examples/week02/booking.py", line 15, in <module>
+    print(Booking(guest="Sam", nights="three"))    # raises ValidationError
+  File "/usr/local/lib/python3.10/dist-packages/pydantic/main.py", line 193, in __init__
+    self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for Booking
+nights
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='three', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/int_parsing

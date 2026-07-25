@@ -15,3 +15,8 @@
 2026-07-25 17:01:10.215 [info] [172.16.6.193][dc982866][ExtensionHostConnection] New connection established.
 2026-07-25 17:01:10.220 [info] [172.16.6.193][dc982866][ExtensionHostConnection] <39947> Launched Extension Host Process.
 2026-07-25 17:08:57.228 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2026-07-25 17:33:07.600 [info] [172.16.6.193][b4d3b603][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2026-07-25 17:33:09.901 [info] [172.16.6.193][dc982866][ExtensionHostConnection] <39947> Extension Host Process exited with code: 0, signal: null.
+2026-07-25 17:33:55.483 [info] [172.16.6.193][b4de58cd][ManagementConnection] New connection established.
+2026-07-25 17:33:58.747 [info] [172.16.6.193][011811ba][ExtensionHostConnection] New connection established.
+2026-07-25 17:33:58.752 [info] [172.16.6.193][011811ba][ExtensionHostConnection] <49530> Launched Extension Host Process.

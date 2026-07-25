@@ -21,3 +21,24 @@
 [17:01:06] [172.16.6.193][b4d3b603][ManagementConnection] New connection established.
 [17:01:10] [172.16.6.193][dc982866][ExtensionHostConnection] New connection established.
 [17:01:10] [172.16.6.193][dc982866][ExtensionHostConnection] <39947> Launched Extension Host Process.
+[17:33:07] [172.16.6.193][b4d3b603][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[17:33:09] [172.16.6.193][dc982866][ExtensionHostConnection] <39947> Extension Host Process exited with code: 0, signal: null.
+[17:33:55] [172.16.6.193][b4de58cd][ManagementConnection] New connection established.
+[17:33:58] [172.16.6.193][011811ba][ExtensionHostConnection] New connection established.
+[17:33:58] [172.16.6.193][011811ba][ExtensionHostConnection] <49530> Launched Extension Host Process.
+[2026-07-25T18:23:38.161Z] info  code-server 4.103.2 54b33a75e0b4593b77f9a217323c4b27a42f4073
+[2026-07-25T18:23:38.162Z] info  Using user-data-dir /voc/work/.local/share/code-server
+[2026-07-25T18:23:38.179Z] info  Using config file /voc/work/.config/code-server/config.yaml
+[2026-07-25T18:23:38.180Z] info  HTTP server listening on http://0.0.0.0:8081/
+[2026-07-25T18:23:38.180Z] info    - Authentication is disabled
+[2026-07-25T18:23:38.180Z] info    - Not serving HTTPS
+[2026-07-25T18:23:38.180Z] info  Session server listening on /voc/work/.local/share/code-server/code-server-ipc.sock
+[18:23:39] 
+
+
+
+
+[18:23:39] Extension host agent started.
+[18:23:49] [172.16.1.1][7a7caedb][ManagementConnection] New connection established.
+[18:23:52] [172.16.1.1][d4ee9024][ExtensionHostConnection] New connection established.
+[18:23:52] [172.16.1.1][d4ee9024][ExtensionHostConnection] <91> Launched Extension Host Process.

@@ -1,0 +1,4 @@
+batch 1: 5 items
+batch 2: 5 items
+batch 3: 2 items
+done in 1.8s
