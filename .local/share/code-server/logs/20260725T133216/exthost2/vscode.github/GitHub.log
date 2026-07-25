@@ -1,0 +1,3 @@
+2026-07-25 17:01:13.782 [info] Log level: Info
+2026-07-25 17:01:16.161 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: Request failed due to following response errors:
+ - Could not resolve to a Repository with the name 'praveenks001/IITM_Agentic_Ai'.

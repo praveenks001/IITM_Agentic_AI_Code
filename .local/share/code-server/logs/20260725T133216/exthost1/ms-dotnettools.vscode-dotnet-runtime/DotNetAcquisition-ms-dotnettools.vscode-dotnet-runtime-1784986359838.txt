@@ -1,0 +1,67 @@
+7/25/2026, 1:32:39 PM 852 DotnetVSCodeExtensionFound
+true
+Checking extension Anthropic.claude-code for .NET installation requests
+
+7/25/2026, 1:32:39 PM 852 DotnetVSCodeExtensionFound
+true
+Checking extension PKief.material-icon-theme for .NET installation requests
+
+7/25/2026, 1:32:39 PM 852 DotnetVSCodeExtensionFound
+true
+Checking extension vscode.csharp for .NET installation requests
+
+7/25/2026, 1:32:39 PM 852 DotnetVSCodeExtensionFound
+true
+Checking extension cweijan.vscode-database-client2 for .NET installation requests
+
+7/25/2026, 1:32:39 PM 852 DotnetVSCodeExtensionFound
+true
+Checking extension dbaeumer.vscode-eslint for .NET installation requests
+
+7/25/2026, 1:32:39 PM 852 DotnetVSCodeExtensionFound
+true
+Checking extension ecmel.vscode-html-css for .NET installation requests
+
+7/25/2026, 1:32:39 PM 852 DotnetVSCodeExtensionFound
+true
+Checking extension formulahendry.auto-close-tag for .NET installation requests
+
+7/25/2026, 1:32:39 PM 852 DotnetVSCodeExtensionFound
+true
+Checking extension franneck94.c-cpp-runner for .NET installation requests
+
+7/25/2026, 1:32:39 PM 852 DotnetVSCodeExtensionFound
+true
+Checking extension llvm-vs-code-extensions.vscode-clangd for .NET installation requests
+
+7/25/2026, 1:32:39 PM 853 DotnetVSCodeExtensionFound
+true
+Checking extension ms-dotnettools.vscode-dotnet-runtime for .NET installation requests
+
+7/25/2026, 1:32:39 PM 853 DotnetVSCodeExtensionFound
+true
+Checking extension ms-toolsai.tensorboard for .NET installation requests
+
+7/25/2026, 1:32:39 PM 853 DotnetVSCodeExtensionFound
+true
+Checking extension ms-toolsai.vscode-jupyter-cell-tags for .NET installation requests
+
+7/25/2026, 1:32:39 PM 853 DotnetVSCodeExtensionFound
+true
+Checking extension ms-toolsai.vscode-jupyter-slideshow for .NET installation requests
+
+7/25/2026, 1:32:39 PM 853 DotnetVSCodeExtensionFound
+true
+Checking extension muhammad-sammy.csharp for .NET installation requests
+
+7/25/2026, 1:32:39 PM 853 DotnetVSCodeExtensionFound
+true
+Checking extension vscode.prompt for .NET installation requests
+
+7/25/2026, 1:32:39 PM 853 DotnetVSCodeExtensionFound
+true
+Checking extension synedra.auto-run-command for .NET installation requests
+
+7/25/2026, 1:32:39 PM 853 DotnetVSCodeExtensionFound
+true
+Checking extension vscjava.vscode-java-debug for .NET installation requests

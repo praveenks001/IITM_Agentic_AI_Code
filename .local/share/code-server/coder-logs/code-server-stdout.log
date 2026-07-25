@@ -16,3 +16,8 @@
 [13:32:31] [172.16.6.193][a6958e72][ManagementConnection] New connection established.
 [13:32:36] [172.16.6.193][c6197e52][ExtensionHostConnection] New connection established.
 [13:32:36] [172.16.6.193][c6197e52][ExtensionHostConnection] <94> Launched Extension Host Process.
+[16:56:24] [172.16.6.193][a6958e72][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[16:56:24] [172.16.6.193][c6197e52][ExtensionHostConnection] <94> Extension Host Process exited with code: 0, signal: null.
+[17:01:06] [172.16.6.193][b4d3b603][ManagementConnection] New connection established.
+[17:01:10] [172.16.6.193][dc982866][ExtensionHostConnection] New connection established.
+[17:01:10] [172.16.6.193][dc982866][ExtensionHostConnection] <39947> Launched Extension Host Process.

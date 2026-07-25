@@ -1,0 +1,9 @@
+2026-07-25 17:01:15.221 [info] semantic_tokens_full file:///voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/practice_examples/week01/hello_llm.py 
+2026-07-25 17:01:15.248 [info] semantic_tokens_range file:///voc/work/knowledgeBase_HandsOn/IITM_Agentic_Ai/practice_examples/week01/hello_llm.py 0:0-39:0
+2026-07-25 17:01:15.356 [info] ERROR:pygls.protocol.json_rpc:Exception occurred for message "6": _pickle.UnpicklingError: invalid load key, '"'.
+NoneType: None
+
+2026-07-25 17:01:15.358 [info] [Error - 5:01:15 PM] Request textDocument/semanticTokens/range failed.
+2026-07-25 17:01:15.360 [info]   Message: _pickle.UnpicklingError: invalid load key, '"'.
+  Code: -32603 
+[object Object]
