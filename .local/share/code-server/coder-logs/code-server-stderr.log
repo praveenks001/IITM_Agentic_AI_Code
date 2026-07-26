@@ -6,3 +6,9 @@ File not found: /usr/local/lib/code-server-4.103.2/lib/vscode/node_modules/vsda/
 File not found: /usr/local/lib/code-server-4.103.2/lib/vscode/node_modules/vsda/rust/web/vsda.js
 File not found: /usr/local/lib/code-server-4.103.2/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
 File not found: /usr/local/lib/code-server-4.103.2/lib/vscode/node_modules/vsda/rust/web/vsda.js
+File not found: /usr/local/lib/code-server-4.103.2/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
+File not found: /usr/local/lib/code-server-4.103.2/lib/vscode/node_modules/vsda/rust/web/vsda.js
+(node:57) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+File not found: /usr/local/lib/code-server-4.103.2/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
+File not found: /usr/local/lib/code-server-4.103.2/lib/vscode/node_modules/vsda/rust/web/vsda.js

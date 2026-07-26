@@ -41,3 +41,5 @@
 2026-07-25 18:30:14.166 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/src/pipeline/settings.py
 2026-07-25 18:44:29.782 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/src/pipeline/pipeline.py
 2026-07-25 18:44:31.658 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/src/pipeline/pipeline.py
+2026-07-25 18:52:34.944 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/src/pipeline/settings.py
+2026-07-25 19:00:59.978 [info] Discover tests for workspace name: work - uri: /voc/work/Knowledge_Hands_on/practice_examples/week03/streaming_demo.py

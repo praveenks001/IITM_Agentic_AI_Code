@@ -1,0 +1,5 @@
+2026-07-26 05:57:43.313 [info] Extension host with pid 91 started
+2026-07-26 05:57:43.314 [info] Lock '/voc/work/.local/share/code-server/User/workspaceStorage/-3d8223de/vscode.lock': Lock acquired.
+2026-07-26 06:33:19.995 [info] Extension host terminating: received terminate message from renderer
+2026-07-26 06:33:19.997 [info] Lock '/voc/work/.local/share/code-server/User/workspaceStorage/-3d8223de/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2026-07-26 06:33:20.005 [info] Extension host with pid 91 exiting with code 0
