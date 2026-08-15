@@ -17,9 +17,15 @@ class Question(BaseModel):          # ref lines 36-38
 app = FastAPI(title="Minimal API (practice)")   # ref lines 48-52 (simplified)
 
 
+"""curl -s -X POST localhost:8001/echo -H 'Content-Type: application/json' -d '{"question":"Hi,What is trading in simp
+le words?"}' > IITM_Agentic_AI_Code/Knowledge_Hands_on/practice_examples/week03/runs_output/02_echo_check.txt"""
+
 @app.post("/echo")                  # shape of @app.post from ref line 58, no pipeline
 async def echo(q: Question):
     return {"you_asked": q.question}
+
+
+"""curl -s localhost:8001/echo > IITM_Agentic_AI_Code/Knowledge_Hands_on/practice_examples/week03/docs/runs_output/01_health_check.txt"""
 
 
 @app.get("/health")                 # ref lines 74-76 (verbatim)
