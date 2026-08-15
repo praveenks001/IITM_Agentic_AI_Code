@@ -8,9 +8,8 @@ Run with:
     uvicorn api.main:app --reload --port 8000
 
 Hit with curl:
-    curl -X POST http://localhost:8000/ask_batched \
-         -H "Content-Type: application/json" \
-         -d '{"question": "What is RAG?"}'
+    curl -X POST http://localhost:8000/ask_batched -H "Content-Type: application/json" \
+-d '{"question": "What is RAG?"}'
 """
 import asyncio
 import logging
@@ -71,6 +70,8 @@ async def ask_batched(q: Question) -> Answer:
 # ─────────────────────────────────────────────────────────────────────────────
 # /health — liveness probe
 # ─────────────────────────────────────────────────────────────────────────────
+"""curl -s localhost:8000/health > IITM_Agentic_AI_Code/Knowledge_Hands_on/practice_examples/week03/docs/runs_output/04_main_py_health_check.txt"""
+
 @app.get("/health")
 async def health():
     return {"status": "ok"}
