@@ -1,0 +1,397 @@
+                                        HF MARKETS (SV) LTD
+
+                                   ORDER EXECUTION POLICY
+
+
+
+
+___                                                    ___                             ___
+
+Suite 305, Griffith Corporate Centre, P.O. Box 1510,   T. +44-2030978571   support@hfm.com
+Beachmont, Kingstown, St. Vincent and the Grenadines   F. +44-2030978570      www.hfm.com
+                                                                                                                HF Markets (SV) Ltd
+                                                                                                              Order Execution Policy
+
+
+
+                                                     Table of Contents
+
+1.   Introduction................................................................................................................... 3
+
+2.   Scope and Services ......................................................................................................... 3
+
+3.   Execution Venue ............................................................................................................. 4
+
+4.   Best Execution Factors .................................................................................................... 4
+
+5.   Best Execution Criteria .................................................................................................... 9
+
+6.   Client’s Specific Instruction ........................................................................................... 10
+
+7.   Review and Monitoring ................................................................................................ 10
+
+8.   Client Consent .............................................................................................................. 10
+
+
+
+
+                                                                 2
+                          Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                              Registration number 22747 IBC 2015
+                                                                                                      HF Markets (SV) Ltd
+                                                                                                    Order Execution Policy
+
+
+1.    Introduction
+
+1.1   HF Markets (SV) Ltd (hereinafter referred to as the “Company”), is incorporated under the
+      laws of Saint Vincent and the Grenadines with Registration 22747 IBC 2015 having its
+      registered office at Suite 305, Griffith Corporate Centre, P.O. Box 1510, Beachmont,
+      Kingstown, Saint Vincent and the Grenadines. The Company is authorised as an
+      International Business Company under the International Business Companies (Amendment
+      and Consolidation) Act, Chapter 149 of the Revised Laws of Saint Vincent and Grenadines,
+      2009 (herein the “Law”).
+
+1.2   The objects of the Company are all subject matters not forbidden by International Business
+      Companies (Amendment and Consolidation) Act, Chapter 149 of the Revised Laws of Saint
+      Vincent and the Grenadines, 2009, in particular but not exclusively all commercial, financial,
+      lending, borrowing, trading, service activities and the participation in other enterprises as
+      well as to provide brokerage, training and managed account services in currencies,
+      commodities, indexes, CFDs and leveraged financial instruments.
+
+1.3   Under the above legislation, the Company is required to take all reasonable steps to obtain
+      the best possible result (or “best execution”) on behalf of its clients either when executing
+      client orders or receiving and transmitting orders for execution. These rules require the
+      Company to put in place an execution policy which sets out how it will obtain best execution
+      for its clients and to provide appropriate information to its Clients on its order execution
+      policy.
+
+
+2.    Scope and Services
+
+2.1   This Policy applies when the Company provides the investment services of reception and
+      transmission of orders in relation to one or more financial instruments and/or execution of
+      orders on behalf of clients. The Financial Instruments provided by the Company are
+      Contracts for Difference (CFDs) of an underlying asset and it is up to the Company’s
+      discretion to decide which types of CFDs to make available from time to time and to publish
+      the prices at which these can be traded in line with the prices offered by its Liquidity
+      Provider.
+
+
+                                                          3
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                                   Order Execution Policy
+
+
+3.    Execution Venue
+
+3.1   The Company is the Execution Venue for the execution of Clients’ Orders in CFDs. So, in
+      relation to Client CFD transactions, the Company executes the Client Orders.
+
+3.2   It is the Company’s policy to maintain such internal procedures and principles in order to
+      act for the best interest of its Clients and provide them the best possible result (or “best
+      execution”) when transmitting their Orders for execution.
+
+3.3   The Company’s operations times are: round – the – clock from 00.00.51 A.M. (GMT +2)
+      Monday through 00.00.00 P.M. (GMT +2) Friday. Non-working periods: from 00.00.01 A.M.
+      (GMT +2) Saturday through 00.00.51 P.M. (GMT +2) Monday. Any changes in the
+      Company’s operations times as well as holidays and trading times for specific Financial
+      Instruments are shown on the Company’s website.
+
+3.4   The Client acknowledges and consents that the transactions entered in Financial
+      Instruments with the Company are not undertaken on a recognized exchange or a
+      multilateral trading facility (MTF), rather they are undertaken through the Company’s
+      Trading Platform (i.e. Over-The-Counter) and, accordingly, they may expose the Client to
+      greater risks than regulated exchange transactions. The terms and conditions and trading
+      rules are established solely by the Company. The Client can only close an open position of
+      any given Financial Instruments during the opening hours of the Company’s Trading
+      Platform. The Client also has to close any open position with the Company.
+
+
+4.    Best Execution Factors
+
+4.1   The Company shall take all reasonable steps to obtain the best possible result for its clients
+      taking into account the following factors when executing Clients’ orders against the
+      Company’s quoted prices, as provided by its Liquidity Provider:
+
+      (a) Price:
+
+      •   BID/ASK Spread: For any given Financial Instrument the Company will quote two prices,
+          as offered by the Liquidity Provider: the higher price (ASK) at which the client can buy
+          (go long) that Financial Instrument, and the lower price (BID) at which the client can
+
+
+                                                         4
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                              HF Markets (SV) Ltd
+                                                                                            Order Execution Policy
+
+
+    sell (go short) that Financial Instrument; collectively they are referred to as the
+    Company’s price. The difference between the lower and the higher price of a given
+    Financial Instrument is the spread.
+
+•   Pending Orders: Such orders as “Buy Limit”, “Buy Stop” and “Stop Loss” / “Take Profit”
+    for opened short position are executed at ASK price. Such orders as “Sell Limit”, “Sell
+    Stop” and “Stop Loss” / “Take Profit” for opened long position are executed at BID price.
+
+•   Company’s price: The Company’s price for a given Financial Instrument is provided
+    from the Company. The Company updates its prices as frequently as the limitations of
+    technology and communications links allow. The Company will not quote any price
+    outside Company’s operations times (see section 3 below) or outside specific CFDs
+    trading times as published on the Company’s website, therefore no orders can be
+    placed by the Client during that time. The Company does not guarantee that when
+    transmitting a Client Order for execution to the Company, the Company’s price will be
+    the most favourable for the Client than one which might be available elsewhere. The
+    main way in which the Company ensures that the Client receives the best execution
+    price is to ensure that the calculation of the BID/ASK spread is made by the Liquidity
+    Provider with reference to a range of external data sources and independent price
+    providers.
+
+(b) Costs:
+
+•   For opening a position in some types of Financial Instruments the Client may be
+    required to pay commission or financing fees, if applicable, the amount of which is
+    disclosed in the Contracts Specifications on the Company’s website.
+
+•   Commissions: Commissions may be charged either in the form of a percentage of the
+    overall value of the trade or as fixed amount.
+•   Financing Fee: In the case of financing fees, the value of opened positions in some
+    types of Financial Instruments is increased or reduced by a daily financing fee, “swap”,
+    throughout the life of the contract. Financing fees are based on prevailing market
+    interest rates, which may vary over time. Details of daily financing fees applied are
+
+
+
+                                                  5
+             Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                 Registration number 22747 IBC 2015
+                                                                                                 HF Markets (SV) Ltd
+                                                                                               Order Execution Policy
+
+
+      available under Contracts Specifications section on the Company’s website.
+
+•     For all types of Financial Instruments that the Company offers, the commission and
+      financing fees are not incorporated into the Company’s quoted price and are instead
+      charged explicitly to the Client trading account.
+
+(c)    Speed of Execution:
+
+•     The Company places a significant importance on Client’s Orders being transacted
+      efficiently and strives to offer high speed of execution within the limitations of
+      technology and communications links.
+
+•     The use of wireless connection or dial-up connection or any other form of unstable
+      connection at the Client’s end, may result in poor or interrupted connectivity or lack of
+      signal strength causing delays in the transmission of data between the Client and the
+      Company when using the Company’s Electronic Trading Platform. This delay may result
+      in sending to the Company out of date “market orders” which might be declined by the
+      Company.
+
+(d) Nature of Orders:
+
+•     The particular nature of an order can affect the execution of the Client’s Order. The
+      Client is given the option to place with the Company the following Orders for execution
+      in the following ways:
+
+      o The Client places a “Market Order” which is an order instantly executed against a
+         price that the Company has provided from the Liquidity Provider. Occasionally, if
+         the market has moved while the Client is placing the Market Order, the Order might
+         be executed at the first available price or it may not be executed at all. The Client
+         may modify a Market Order so as to attach a “Stop Loss” and/or “Take Profit”. “Stop
+         Loss” is an order to limit Client’s loss, whereas “Take Profit” is an order to limit
+         Client’s profit.
+
+      o The Client places a “Pending Order”, which is an order to be executed at a later time
+         at the price that the Client specifies. The Company will monitor the Pending Order
+
+
+
+                                                     6
+                Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                    Registration number 22747 IBC 2015
+                                                                                               HF Markets (SV) Ltd
+                                                                                             Order Execution Policy
+
+
+       and when the price provided by the Liquidity Provider reaches the price specified
+       by the Client, the Pending Order will automatically become a Market Order. The
+       following types of Pending Orders are available: “Buy Limit”, “Buy Stop”, “Sell Limit”
+       and “Sell Stop”. The Client may attach to any pending order a “Stop Loss” and/or
+       “Take Profit”. The Client may modify an order before it is executed. The minimum
+       level for placing “Stop Loss”, “Take Profit”, “Buy Limit”, “Buy Stop”, “Sell Limit” and
+       “Sell Stop” orders is between 1 to 5 times the spread for a given Financial
+       Instrument, in accordance with the Contracts Specifications available on the
+       Company’s website. The Client has no right to change or remove “Stop Loss”, “Take
+       Profit” and “Pending Orders” if the price has reached the level of the order
+       execution.
+
+(e) Likelihood of Execution:
+
+•   The execution of the Client Orders will depend on the pricing and available liquidity of
+    the said providers. Although the Company accepts and executes all Orders placed by
+    the Clients, it reserves the right to decline an order of any type.
+
+•   The Company strives to provide the best possible price to its Clients, and makes every
+    effort and necessary arrangements to do so; however, it may be impossible to
+    guarantee the execution of any or all of the pending orders at the declared price. Stop
+    Loss, Take Profit, Buy Limit, Buy Stop, Sell Limit, Sell Stop Orders on Financial
+    Instruments offered by the Company are executed at the declared by the Client price
+    on the first current price touch. But under certain trading conditions it may be
+    impossible to execute orders (Stop Loss, Take Profit, Buy Limit, Buy Stop, Sell Limit, Sell
+    Stop) on any Financial Instrument at the declared price. In this case the Company has
+    the right to execute the Client Order at the first available price. This may occur, for
+    example, at the following cases:
+
+    o Trading Session start moments / opening gaps,
+
+    o During news times,
+
+    o During volatile markets where prices may move significantly up or down and away
+
+
+                                                   7
+              Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                  Registration number 22747 IBC 2015
+                                                                                                 HF Markets (SV) Ltd
+                                                                                               Order Execution Policy
+
+
+         from declared price,
+
+      o Where there is rapid price movement, if the price rises or falls in one trading session
+         to such an extent that under the rules of the relevant exchange, trading is
+         suspended or restricted,
+
+      o If there is insufficient liquidity for the execution of the specific volume at the
+         declared price.
+
+      For the avoidance of any doubt, the take profit of any pending order will be
+      automatically removed in the case the pending order is executed at a price beyond the
+      pending order’s take profit level due to any of the above-mentioned cases.
+
+•     If the Client undertakes transactions on an electronic system, the Client will be exposed
+      to risks associated with the system including the failure of hardware and software
+      (Internet / Servers). The result of any system failure may result to Client order is either
+      not executed according to Client instructions or it is not executed at all. The Company
+      does not accept any liability in the case of such a failure.
+
+(f)   Likelihood of settlement:
+
+•     The Company shall proceed to a settlement of all transactions upon execution of such
+      transactions.
+
+(g) Size of order:
+
+•     All Client Orders are placed in lot sizes. The minimum available tradable size is 0.01 or
+      as stated in the Contracts Specifications on the Company’s website. A lot is a unit
+      measuring the transaction amount and it is different for each type of Financial
+      Instrument. Please refer to the Contacts Specifications in the Company’s website for
+      the value of each lot for a given Financial Instrument type. Although in some cases
+      there is no maximum size of an order which the Client can place with the Company,
+      the Company reserves the right to decline an order, in case the size of the order is large
+      and cannot be filled.
+
+•     The Company makes every effort to fill the order of the Client irrespective of the
+
+
+
+                                                     8
+                Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                    Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                                   Order Execution Policy
+
+
+          volume. However, if this is achieved, it may be at the first available price, different from
+          the Client declared price, as the market liquidity may allow at the time of execution
+          (See section (e) for Likelihood of Execution).
+
+      (h) Market Impact:
+
+      •   Some factors, such as unusual market conditions, may affect rapidly the price of the
+          financial instruments offered by the Company. These factors may influence some of
+          the factors listed above. The Company will take all reasonable steps to obtain the best
+          possible result for its Clients.
+
+3.5   The Company does not consider the above list of execution factors exhaustive and the
+      order in which the above factors are presented shall not be considered as made based on
+      the priority of each factor. Nevertheless, whenever there is a specific instruction from the
+      client the Company shall make sure that the Client’s order shall be executed following the
+      specific instruction from the Client (See section 6 for Client’s Specific Instruction).
+
+
+5.    Best Execution Criteria
+
+5.1   The Company will determine the relative importance of the above factors by using its
+      commercial judgment and experience in the light of the information available on the
+      market and taking into account the criteria described below:
+
+      (a) the characteristics of the client
+
+      (b) the characteristics of the client order
+
+      (c) the characteristics of financial instruments that are the subject of that order
+
+      (d) the characteristics of the execution venues to which that order can be directed
+
+5.2   For retail clients, the best possible result shall be determined in terms of the total
+      consideration, representing the price of the financial instrument and the costs related to
+      execution, which shall include all expenses incurred by the client which are directly related
+      to the execution of the order, clearing and settlement fees and any other fees paid to third
+      parties involved in the execution of the order.
+
+
+
+                                                         9
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                                   Order Execution Policy
+
+
+6.    Client’s Specific Instruction
+6.1   Any specific instructions from a Client may prevent the Company from taking the steps that
+      it has designed and implemented in this Policy to obtain the best possible result for the
+      execution of those orders in respect of the elements covered by those instructions, as the
+      Company will execute the Order in accordance with Client specific instructions. By
+      executing Client order based on the specific instructions provided by the Client, the
+      Company shall satisfy its obligation to provide the Client with best execution.
+
+
+7.    Review and Monitoring
+7.1   The Company shall review annually the execution policy established, as well as any relevant
+      order execution arrangements. Such a review shall also be carried out whenever a material
+      change occurs that affects the ability of the Company to continue to obtain the best
+      possible result for the execution of its Client orders on a consistent basis. In addition, the
+      Company will monitor the effectiveness of the Policy and relevant order execution
+      arrangements on an on-going basis in order to identify and implement any appropriate
+      improvements. It shall be noted that the Company will not notify clients separately of
+      changes made to this Policy, other than substantial material changes, and Clients should
+      therefore refer from time to time to the website of the Company for the most up to date
+      version of the Policy.
+
+
+8.    Client Consent
+8.1   This Policy forms part of the Account Opening Agreement between the Company and the
+      Client. Therefore, by entering into an agreement with the Company, the Client also agrees
+      to the terms of this Order Execution Policy, as presented in this document.
+
+8.2   The Client further consents to the Company to receive and transmit his Orders for
+      execution outside a regulated market or an MTF.
+
+
+
+Version: 2026/01
+
+
+
+
+                                                        10
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+

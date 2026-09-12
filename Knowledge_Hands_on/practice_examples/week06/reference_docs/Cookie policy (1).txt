@@ -1,0 +1,574 @@
+                                          HF Markets (SV) Ltd
+
+                                               COOKIE POLICY
+
+
+
+
+___                                                    ___                             ___
+
+Suite 305, Griffith Corporate Centre, P.O. Box 1510,   T.+44-2030978571    support@hfm.com
+Beachmont, Kingstown, St. Vincent and the Grenadines   F. +44-2030978570       www.hfm.com
+                                                                                                            HF Markets (SV) Ltd
+                                                                                                                 Cookie Policy
+
+
+
+
+                                                Table of Contents
+
+Introduction................................................................................................................... 3
+
+What are cookies ........................................................................................................... 3
+
+Cookies Analysis ............................................................................................................ 4
+
+Third-Party Cookies ...................................................................................................... 12
+
+How you can manage cookies ...................................................................................... 13
+
+
+
+
+                                                            2
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                               HF Markets (SV) Ltd
+                                                                                                    Cookie Policy
+
+
+ Introduction
+
+ HF Markets (SV) Ltd (hereinafter the “Company” or “we”) which is a member of the HF
+ Markets Group, is incorporated under the laws of Saint Vincent and the Grenadines with
+ Registration 22747 IBC 2015 having its registered office at Suite 305, Griffith Corporate
+ Centre, P.O. Box 1510, Beachmont, Kingstown, Saint Vincent and the Grenadines. The
+ Company is authorised as an International Business Company under the International
+ Business Companies (Amendment and Consolidation) Act, Chapter 149 of the Revised Laws
+ of Saint Vincent and Grenadines, 2009 (herein the “Law”).
+ This cookie policy covers the website www.hfm.com/sv and all its related sub-domains and
+ mobile applications that are registered and operated by HF Markets (SV) Ltd.
+ The Company outlines in this Cookie Policy (herein the “Policy”) how the Company uses
+ cookies to provide you with a more relevant and effective experience when you browse
+ our Website and also allows us to improve our site
+ We respect your privacy and are committed to providing you with the information and tools
+ you need to manage your cookies.
+
+
+What are cookies
+
+Cookies are small text files that a website stores on your computer or mobile device when
+you visit the site. They are widely used in order to make websites work, or work more
+efficiently, as well as to provide information to the owners of the site.
+
+First party cookies are cookies set by the website you are visiting. Only that website can read
+them. In addition, a website might potentially use external services, which also set their own
+cookies, known as third-party cookies.
+
+Persistent cookies are cookies saved on your computer and that are not deleted
+automatically when you quit your browser, unlike a session cookie, which is deleted when
+you quit your browser.
+
+Cookies can also be used to establish anonymised statistics about users browsing experience.
+
+
+
+                                                     3
+                Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                    Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                                          Cookie Policy
+
+
+   Cookies Analysis
+
+   The Website uses four types of cookies, they are only used for the purpose described below
+   and apply once a user provides their consent to the relevant purpose.
+
+   Necessary: These cookies are necessary for the website to become functional, allowing core
+   functionalities such as navigating the website and accessing secure fields of the website. For
+   this reason, they do not require your consent. You may disable these by changing your
+   browser settings, but this may affect how the website functions.
+
+   Analytical: To measure and improve site performance via anonymous reporting of how users
+   interact with website content.
+
+   Marketing: To provide a more personalized user experience and more relevant ads via
+   analysis of user activity that allows us to effectively target our marketing activities.
+
+   Targeting: To track your browsing habits in order to deliver personalised advertisements on
+   other sites. Once enabled, these cookies can be disabled through your browser settings.
+
+
+    Name                               Purpose                               Expiry          Type        Category
+<wallet>_is_wiz     Identifies if wizard flow has been fully                10 Days           1st        Necessary
+ard_completed            completed for current user.                                         Party
+     acid             Stores the Affiliate's Campaign ID.                   Session           1st        Necessary
+                                                                                             Party
+ cc_cookie_acce        Stores the acceptance of cookies.                    Session           1st        Necessary
+       pt                                                                                    Party
+cc_cookie_decli        Stores the decline of cookie bar.                    Session           1st        Necessary
+       ne                                                                                    Party
+completing_part     Completed parts for Wizard in profile                   10 Days           1st        Necessary
+                                completion form.                                             Party
+   csrftoken           A CSRF token is a unique, secret,                     1 year           1st        Necessary
+                    unpredictable value that is generated                                    Party
+                      by the server-side application and
+                    transmitted to the user in such a way
+                   that it is included in a subsequent HTTP
+                   request made by the user. It is used for
+                    security purposes in order to prevent
+                           abuse of form submission.
+
+                                                        4
+                   Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                       Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                                         Cookie Policy
+
+
+  dark_mode       Used by myHF on redirections to myHF                     Session           1st        Necessary
+                      area to switch to dark mode.                                          Party
+ Exit-popup-      Determines if the exit popup should be                   10 days           1st        Necessary
+                                displayed.                                                  Party
+ forget_pass        Random number to ensure captcha                        30 Days           1st        Necessary
+                            answer is correct.                                              Party
+forget_pass_x_           Stores captcha answer.                            30 Days           1st        Necessary
+                                                                                            Party
+   investor         PAMM Investor Account of current                       Session           1st        Necessary
+                                   user.                                                    Party
+ investorHash        Encrypted value PAMM Investor                         Session           1st        Necessary
+                         Account of current user.                                           Party
+     lang            Stores user's selected language.                      1 month           1st        Necessary
+                                                                                            Party
+ltRefreshedBala   Last refreshed balance. If last refreshed                Session           1st        Necessary
+      nce          balance is less than 15 Minutes it will                                  Party
+                     retrieve the info from ltResponse.
+  ltResponse                 Balance of wallet.                            Session           1st        Necessary
+                                                                                            Party
+master_account               Wallet of current user.                       Session           1st        Necessary
+                                                                                            Party
+   mc_data         Internal tracking cookie that stores the                1 month           1st        Necessary
+                    campaign ID of the first landing page                                   Party
+                   the user visited and identifies the user
+                  in the future if they register an account.
+     mcid            Stores campaign ID of landing page                    Session           1st        Necessary
+                                    visited.                                                Party
+ mobile_app          Used by HF App on redirections to                     Session           1st        Necessary
+                     myHF area to switch to dark mode.                                      Party
+   mylogin        Wallet of current user. Cookie is shared                 Session           1st        Necessary
+                    among all subdomains. Used in main                                      Party
+                  website to identify if current browser is
+                           logged in to client area.
+     Path                    Current path tracker.                         current           1st        Necessary
+                                                                           session          Party
+ redesign_flag    Identifies if myHF area is on redesign or                10 Days           1st        Necessary
+                                     not.                                                   Party
+     refid           Affiliate ID used to register clients                 Session           1st        Necessary
+                           under specific Affiliates.                                       Party
+   regulator               Stores user's regulation.                       Session           1st        Necessary
+                                                                                            Party
+
+
+                                                       5
+                  Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                      Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                                          Cookie Policy
+
+
+show_phone_ve         Identifies whether to show phone                      Session           1st        Necessary
+   rification                 verification popup.                                            Party
+show_phone_ve        Identifies whether to show phone                         1 Day           1st        Necessary
+ rification_delay verification popup after first occurrence                                  Party
+     _<wallet>           of phone verification popup.
+
+show_profile_u    Identifies whether to show force profile                  Session           1st        Necessary
+    pdate                         popup.                                                     Party
+      user           Random User ID that identifies the                     1 month           1st        Necessary
+                                   user.                                                     Party
+  walletHash         Encrypted value of master_account                      Session           1st        Necessary
+                                                                                             Party
+  Xrsc11_000                     Balance of wallet.                         Session           1st        Necessary
+                                                                                             Party
+    webinar          Tracks if the visitor is coming from a                 Session           1st        Marketing
+                             webinar registration.                                           Party
+ X-Access-Key          Keeps the website session alive.                     Session           1st        Analytical
+                                                                                             Party
+   __Secure-       Cookie required to use website options                    1 year           3rd        Necessary
+    1PSIDCC                     and services.                                                Party
+   __Secure-       Cookie required to use website options                    1 year           3rd        Necessary
+    3PSIDCC                     and services.                                                Party
+    AKA_A2          Used by CDN Akamai for the Akamai                       Session           3rd        Necessary
+                   cache function, used by the website to                                    Party
+                    optimize the response time between
+                        the visitor and the website.
+  captcha_x_        SPAM protection service provided by                     Session           3rd        Necessary
+                     Google that helps protect websites                                      Party
+                           from spam and abuse.
+com.hotforex.w       Used for the mobile app banner in                      Session           3rd        Necessary
+ ww.hotforex-      order to hide the banner if users don’t                                   Party
+ smartbanner-               want to download it.
+    closed
+
+com.hotforex.w       Used for the mobile app banner in                      Session           3rd        Necessary
+ ww.hotforex-       order to determine whether it should                                     Party
+ smartbanner-                be displayed or not.
+   installed
+
+    Consent             Google cookie consent tracker.                      17 years          3rd        Necessary
+                                                                                             Party
+
+
+                                                        6
+                   Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                       Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                                         Cookie Policy
+
+
+ LOGIN_INFO             Used to play YouTube videos                           6              3rd        Necessary
+                         embedded on the website.                          months           Party
+  LPSessionID     Cookie for chat history, stored until the                Session           3rd        Necessary
+                               browser is closed.                                           Party
+ LPSID-Site ID            Visitor ID as identified in                      Session           3rd        Necessary
+                      Conversational Cloud. Identifies a                                    Party
+                     browser as long as the cookie is not
+                                    deleted.
+    LPVID          Provides technical support to the chat                   1 year           3rd        Necessary
+                  function to make sure that the chat on                                    Party
+                  the website works as intended, e.g. by
+                   identifying the browser which enables
+                  us to remember ongoing and previous
+                    chats as well as know where a user is
+                          visiting the website from.
+    orejime            Store the user's consent about                       1 year           3rd        Necessary
+                         accepting/rejecting cookies                                        Party
+  SAME_SITE       Prevents the browser from sending this                   Session           3rd        Necessary
+                    cookie along with cross-site requests.                                  Party
+VISITIR_INFO1_L          Used to play YouTube videos                         6               3rd        Necessary
+       IVE                embedded on the website.                         months           Party
+wordpress_test    WordPress sets a test cookie for every                   current           3rd        Necessary
+   _cookie        visitor to check if the browser accepts                  session          Party
+                                  cookies.
+     xsrf         Used for security purposes in order to                   Session           3rd        Necessary
+                    prevent abuse of form submission.                                       Party
+    __ar_v4        Owned by Doubleclick (Google). Uses                      1 year           3rd        Marketing
+                      Doubleclick to manage real-time                                       Party
+                        bidding advertising exchange.
+ __adroll_fpc      Used to collect and use personalised                     1 year           3rd        Marketing
+                   data in order to deliver targeted and                                    Party
+                          personalised advertising.
+     _fbp          Used by Facebook to store and track                       3               3rd        Marketing
+                  visits across websites. The expiration is                months           Party
+                    controlled by settings in the plugin.
+     anid            Used to show Google ads on non-                        13               3rd        Marketing
+                                Google sites.                              months           Party
+
+
+
+
+                                                       7
+                  Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                      Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                                        Cookie Policy
+
+
+   Hm_lpvt         Used by Baidu Analytics to limit the                   Session           3rd        Marketing
+                 frequency of requests. Baidu Analytics                                    Party
+                  collects information in an anonymous
+                  form, including the number of visitors
+                 to the website and blog, where visitors
+                 have come to the website from and the
+                             pages they visited.
+     _clck       Microsoft clarity is using this cookie to                 1 year           3rd        Analytical
+                           store a unique user ID                                          Party
+
+
+
+
+     _clsk        Microsoft clarity is using this cookie to                 1 day           3rd        Analytical
+                 store and combine page views by a user                                    Party
+                          into a single session.
+
+
+    _uetsid       Microsoft Bing Ads is using this cookie                   1 day           3rd        Analytical
+                 to store and track visits across websites                                 Party
+
+
+
+
+    _uetvid       Microsoft Bing Ads is using this cookie                 16 days           3rd        Analytical
+                 to store and track visits across websites                                 Party
+
+
+
+
+    __utmc          Stores time of visit on the website.                    30              3rd        Analytical
+                                                                          minutes          Party
+    __utmz         Stores used keyword and search                            6              3rd        Analytical
+                                engine.                                   months           Party
+      _ga      Google Analytics uses the _ga and _gid                     2 years           3rd        Analytical
+               cookies to distinguish unique users and                                     Party
+                pages that users have seen. The _ga
+               cookie counts the number of visits to a
+                            page or post.
+_gac_gb_<conta Contains campaign related information.                       3               3rd       Analytical/
+    iner-id>     If Google Analytics and Google Ads                       months           Party      Marketing/
+                   accounts are linked, Google Ads                                                    Targeting
+                website conversion tags will read this
+                   cookie unless the user opts out.
+
+
+
+                                                      8
+                 Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                     Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                                         Cookie Policy
+
+
+_gat_gtag_<trac      Used by Google Analytics to track                       1 min           3rd        Analytical
+    king id>      conversions. Reads and filters requests                                   Party
+                    from bots and then identifies users
+                         across browsing sessions.
+    _gcl_au          Takes information in ad clicks and                    Session           3rd       Analytical/
+                   stores it in a first-party cookie so that                                Party      Marketing/
+                   conversions can be attributed outside                                               Targeting
+                               the landing page.
+     _gid         Google Analytics uses the _ga and _gid                     1 day           3rd        Analytical
+                  cookies to distinguish unique users and                                   Party
+                   pages that users have seen. The _gid
+                     cookie prevents repeats views of a
+                          page or post by a visitor.
+_hjAbsoluteSess   Detects the first pageview session of a                    30              3rd        Analytical
+ ionInProgress         user and sets a True/False flag.                    Minutes          Party
+_hjCachedUserA      Stores User Attributes which are sent                  Session           3rd        Analytical
+    ttributes           through the Hotjar Identify API,                                    Party
+                  whenever the user is not in the sample.
+                   Collected attributes will only be saved
+                    to Hotjar servers if the user interacts
+                     with a Hotjar Feedback tool, but the
+                       cookie will be used regardless of
+                     whether a Feedback tool is present.
+_hjClosedSurvey      Hotjar cookie that is set once a user                  1 year           3rd        Analytical
+     Invites       interacts with an External Link Survey                                   Party
+                    invitation modal, used to ensure that
+                   the same invite does not reappear if it
+                           has already been shown.
+ _hjDonePolls        Hotjar cookie that is set once a user                  1 year           3rd        Analytical
+                    completes a survey using the On-site                                    Party
+                  Survey widget, used to ensure that the
+                  same survey does not reappear if it has
+                             already been filled in.
+ _hjFirstSeen           Set to identify a new user’s first                 Session           3rd        Analytical
+                      session. It stores a true/false value,                                Party
+                     indicating whether this was the first
+                   time Hotjar saw this user. It is used by
+                    Recording filters to identify new user
+                                     sessions.
+
+
+
+
+                                                       9
+                  Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                      Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                                         Cookie Policy
+
+
+     _hjid             Hotjar cookie that is set when the                 365 days           3rd        Analytical
+                   customer first lands on a page with the                                  Party
+                     Hotjar script. It is used to persist the
+                     Hotjar User ID unique to that site on
+                    the browser and ensure that behavior
+                     in subsequent visits to the same site
+                    will be attributed to the same user ID.
+_hjIncludedInPa     Set to let Hotjar know whether user is                   30              3rd        Analytical
+ geviewSample       included in the data sampling defined                  minutes          Party
+                          by the site's pageview limit.
+_hjIncludedInSe     Set to let Hotjar know whether user is                   30              3rd        Analytical
+ ssionSample        included in the data sampling defined                  minutes          Party
+                        by the site's daily session limit.
+_hjLocalStorage    Checks if the Hotjar Tracking Script can                 Under            3rd        Analytical
+     Test           use local storage. If it can, a value of 1              100ms           Party
+                     is set in this cookie. The data stored
+                  in_hjLocalStorageTest has no expiration
+                         time, but it is deleted almost
+                        immediately after it is created.
+_hjMinimizedPo       Hotjar cookie that is set once a user                  1 year           3rd        Analytical
+      lls            minimizes an On-site Survey widget,                                    Party
+                     used to ensure that the widget stays
+                      minimized when the user navigates
+                                 through the site.
+  _hjOptOut        This cookie is used to find whether the                   4               3rd        Analytical
+                      hotjar cookie is opted out of or not.                months           Party
+_hjRecordingEn       Added when a Recording starts and                     Session           3rd        Analytical
+    abled            read when the recording module is                                      Party
+                  initialized to see if the user is already in
+                      a recording in a particular session.
+_hjRecordingLas    Updated when a user recording starts                    Session           3rd        Analytical
+    tActivity           and when data is sent through                                       Party
+                      WebSocket (the user performs an
+                          action that Hotjar records).
+_hjSessionRejec    If present, this cookie will be set to '1'              Session           3rd        Analytical
+      ted           for the duration of a user's session, if                                Party
+                       Hotjar rejected the session from
+                    connecting to our WebSocket due to
+                     server overload. This cookie is only
+                   applied in extremely rare situations to
+                     prevent severe performance issues.
+
+
+
+                                                      10
+                  Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                      Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                                          Cookie Policy
+
+
+_hjSessionResu        Set when a session/recording is                       Session           3rd        Analytical
+     med        reconnected to the Hotjar servers after                                      Party
+                           a break in connection.
+_hjSessionTooLa Causes Hotjar to stop collecting data if                    Session           3rd        Analytical
+      rge           a session becomes too large. This is                                     Party
+                   determined automatically by a signal
+                     from the WebSocket server if the
+                       session size exceeds the limit.
+_hjShownFeedb      Hotjar cookie that is set when a user                   365 days           3rd        Analytical
+  ackMessage         minimizes or completes Incoming                                         Party
+                       Feedback so that the Incoming
+                      Feedback will load as minimized
+                    immediately if the user navigates to
+                   another page where it is set to show.
+  _hjTLDTest    When the Hotjar script executes we try                      Session           3rd        Analytical
+                  to determine the most generic cookie                                       Party
+                path we should use, instead of the page
+                 hostname. This is done so that cookies
+                     can be shared across subdomains
+                  (where applicable). To determine this,
+                  we try to store the _hjTLDTest cookie
+                 for different URL substring alternatives
+                until it fails. After this check, the cookie
+                                 is removed.
+_hjUserAttribut User Attributes sent through the Hotjar                     Session           3rd        Analytical
+    esHash      Identify API are cached for the duration                                     Party
+                   of the session in order to know when
+                 an attribute has changed and needs to
+                                 be updated.
+ _hjViewportId       Stores information about the user                      Session           3rd        Analytical
+                  viewport such as size and dimensions.                                      Party
+    1P_JAR            Used by Google to collect website                     1 month           3rd        Analytical
+                     statistics and track conversion rates.                                  Party
+     APISID        HSID, SSID, APISID and SAPISID cookies                    2 years          3rd        Analytical
+                        enable Google to collect user                                        Party
+                      information for videos hosted by
+                                  YouTube.
+   hjSiteLang      Set when a page that supports multiple                  365 days           3rd        Analytical
+                    languages on hotjar.com is visited so                                    Party
+                       content is always loaded in the
+                     preferred language when available.
+
+
+                                                       11
+                   Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                       Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                                        Cookie Policy
+
+
+  Hm_lvt_           Baidu Analytics Tongji. Records a                      1 year           3rd        Analytical
+                  unique ID used to generate statistical                                   Party
+                 data on how a visitor uses the website.
+   OGPC            Enables the functionality of Google                    Session           3rd        Analytical
+                                 Maps.                                                     Party
+    OTZ          Used by Google Analytics to provide an                    1 year           3rd        Analytical
+                 aggregate analysis of Website visitors.                                   Party
+pvc_visits[0]    Cookie created by post-views-counter                     Session           3rd        Analytical
+                third party which counts the number of                                     Party
+                 visits to a post, and is used to prevent
+                 repeat views of a post by a visitor. The
+                  expiration is controlled by settings in
+                                 the plugin.
+    RUL              Used by Google DoubleClick to                         1 year           3rd        Analytical
+                     determine whether the website                                         Party
+                    advertisement has been properly
+                  displayed and collect data in order to
+                show relevant advertising to the visitor
+                               across the web.
+  SAPISID       HSID, SSID, APISID and SAPISID cookies                     2 years          3rd        Analytical
+                      enable Google to collect user                                        Party
+                    information for videos hosted by
+                                  YouTube.
+   utma         The number of visits, including the time                   2 years          3rd        Analytical
+                 of the first visit, the previous visit, and                               Party
+                              the current visit.
+Fastapi-csrf-    Used for security purposes in order to                   Session           3rd        Necessary
+   token           prevent abuse of form submission.                                       Party
+referer_url     Used to identify the referring url for the                Session           1st        Necessary
+                           current request.                                                Party
+
+
+ Third-Party Cookies
+
+ Some of our pages display content from external providers, e.g. YouTube, Meta (previously
+ Facebook) and X (previously Twitter).
+
+ To view this third-party content, you first have to accept their specific terms and conditions.
+ This includes their cookie policies, which we do not control.
+
+ Third-party providers on our websites:
+
+                                                     12
+                 Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                     Registration number 22747 IBC 2015
+                                                                                                  HF Markets (SV) Ltd
+                                                                                                       Cookie Policy
+
+
+   •   You Tube
+   •   X (previously Twitter)Meta (previously Facebook)
+   •   Google
+   •   FxStreet
+   •   TikTok
+
+    These third-party services are outside of the control of the Company. Providers may, at any
+    time, change their terms of service, purpose and use of cookies, etc.
+
+
+    How you can manage cookies
+
+    Removing cookies from your device
+
+    You can delete all cookies that are already on your device by clearing the browsing history
+    of your browser. This will remove all cookies from all websites you have visited.
+
+    Be aware though that you may also lose some saved information (e.g., saved login details,
+    site preferences).
+
+    Managing site-specific cookies
+
+    For more detailed control over site-specific cookies, check the privacy and cookie settings in
+    your preferred browser.
+
+    Blocking cookies
+
+    You can set most modern browsers to prevent any cookies being placed on your device, but
+    you may then have to manually adjust some preferences every time you visit a site/page.
+    Additionally, some services and functionalities may not work properly at all (e.g., profile
+    logging-in).
+
+
+
+Version: 2024/02
+
+
+
+
+                                                       13
+                   Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                       Registration number 22747 IBC 2015
+

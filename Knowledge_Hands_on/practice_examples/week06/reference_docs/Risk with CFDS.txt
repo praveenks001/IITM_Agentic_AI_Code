@@ -1,0 +1,519 @@
+                                          HF Markets (SV) Ltd
+
+                 RISKS ASSOCIATED WITH TRANSACTIONS IN
+               DERIVATIVE FINANCIAL INSTRUMENTS (CFDS)
+
+
+
+
+___                                                    ___                             ___
+
+
+Suite 305, Griffith Corporate Centre, P.O. Box 1510,   T. +44-2030978571   support@hfm.com
+Beachmont, Kingstown, St. Vincent and the Grenadines   F. +44-2030978570      www.hfm.com
+                                                                                                                         HF Markets (SV) Ltd
+                                                               Risks associated with transactions in Derivative Financial Instruments (CFDs)
+
+
+                                                               Table of Contents
+
+1.   Introduction .......................................................................................................................................... 3
+
+2.   Definition .............................................................................................................................................. 4
+
+3.   Leverage ................................................................................................................................................ 4
+
+4.   Margin requirements ............................................................................................................................ 4
+
+5.   Volatility of price and limitation on the available market .................................................................. 10
+
+6.   Total Loss might exceed the Initial Amount ....................................................................................... 11
+
+7.   Additional obligations ......................................................................................................................... 11
+
+8.   Review ................................................................................................................................................. 12
+
+9.   Client Declaration................................................................................................................................ 12
+
+
+
+
+                                                                             2
+                              Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                                  Registration number 22747 IBC 2015
+                                                                                                        HF Markets (SV) Ltd
+                                              Risks associated with transactions in Derivative Financial Instruments (CFDs)
+
+
+1.   Introduction
+
+1.1. HF Markets (SV) Ltd (hereinafter referred to as the “Company”), is incorporated under the
+     laws of Saint Vincent and the Grenadines with Registration 22747 IBC 2015 having its
+     registered office at Suite 305, Griffith Corporate Centre, P.O. Box 1510, Beachmont,
+     Kingstown, Saint Vincent and the Grenadines. The Company is authorised as an
+     International Business Company under the International Business Companies (Amendment
+     and Consolidation) Act, Chapter 149 of the Revised Laws of Saint Vincent and Grenadines,
+     2009 (herein the “Law”).
+
+1.2. The objects of the Company are all subject matters not forbidden by International Business
+     Companies (Amendment and Consolidation) Act, Chapter 149 of the Revised Laws of Saint
+     Vincent and the Grenadines, 2009, in particular but not exclusively all commercial, financial,
+     lending, borrowing, trading, service activities and the participation in other enterprises as
+     well as to provide brokerage, training and managed account services in currencies,
+     commodities, indexes, CFDs and leveraged financial instruments.
+
+1.3. This risk warning notice (herein the “Notice”) is provided to the Company’s Clients and any
+     Prospective Client who is willing to enter into an agreement with the Company for opening
+     a trading account with the Company, under the provisions of the Law as amended from
+     time to time.
+
+1.4. The Clients and any Prospective Clients must read carefully this notice which is easily
+     accessible on the Company’s website before deciding to open a trading account with the
+     Company and before commencing any trading activity with the Company.
+
+1.5. It is noted that this Notice and the General Risk Disclosure document cannot and do not
+     disclose or explain all of the risks and other significant aspects involved in dealing in
+     Derivative Financial Instruments offered by the Company for (such as CFDs). The notice was
+     designed to explain in general terms the nature of the risks involved when dealing in
+     Financial Instruments on a fair and non-misleading basis, according to the Law. The Client
+     should be aware of all the risks associated with trading in CFDs and seek advice and
+     consultation from an independent financial advisor if he has any doubts. The Company does
+
+                                                          3
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                      HF Markets (SV) Ltd
+                                            Risks associated with transactions in Derivative Financial Instruments (CFDs)
+
+
+     not provide such advice. If the Client does not understand the risks involved in trading in
+     CFDs, he should not trade at all.
+
+
+2.   Definition
+
+2.1. “CFDs” or “Contract for Differences” is an agreement between two parties to exchange the
+     difference between the opening price and closing price of a contract including but not
+     limited to shares, currencies, commodities and index. CFDs provide Investors with all the
+     benefits and risks of owing a security without actually owing it.
+
+
+3.   Leverage
+
+3.1. The Client and/or any Prospective Client thereof fully acknowledge and accept that,
+     regardless of any information which may be offered by the Company, the value of the CFDs
+     provided by the Company may fluctuate downwards or upwards and it is not unlikely that
+     the investment may become of no value. This is due to the high degree of “gearing” or
+     “leverage” feature of CFDs. This stems from the margining system applicable to such trades,
+     which generally involves a comparatively modest deposit or margin in terms of the overall
+     contract value, so that a relatively small movement in the underlying market can have a
+     disproportionately dramatic effect on your trades.
+
+
+4.   Margin requirements
+
+4.1. The Client should be aware of the implications of CFD Transactions and in particular the
+     specific margin requirements which are applied thereto. The Client is required to deposit
+     funds in his trading account in order to open a position and the funds should reflect the
+     specific margin required. The Client shall be informed of the specific Margin requirement
+     for each individual account before he begins trading; such information is available to the
+     Client upon completion of the necessary information required by the Company to approve
+     him as a Client of the Company.
+
+4.2. Under normal trading conditions, the Company offers leverage as set out in the table
+     below, with maximum limits varying by instrument.
+
+                                                        4
+                   Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                       Registration number 22747 IBC 2015
+                                                                                                 HF Markets (SV) Ltd
+                                       Risks associated with transactions in Derivative Financial Instruments (CFDs)
+
+
+
+
+                       Instrument                                      Maximum Leverage *
+
+      Forex                                                                      1:2000
+
+      Gold (XAU)                                                                 1:2000
+
+      US Indices Spot and Futures (except                                        1:1000
+      USD Index)
+      GER40 (Spot and Futures)                                                   1:1000
+
+      JP225.F (Futures) and all other Spot                                        1:500
+      Indices
+      UKOIL.S and USOIL.S (Spot)                                                  1:500
+
+      UKOIL and USOIL (Futures)                                                   1:200
+
+       *Please refer to the website for the complete list of instrument-specific applicable
+        leverage
+
+The Client acknowledges that the Company reserves the right, at its sole discretion, to
+reduce the above leverage limits under any non-exhaustive circumstances listed below.
+
+(a) News and Session Events
+
+The Leverage limits in the below table shall apply during major news releases and trading
+sessions events:
+
+     1. News releases - within 15 minutes before, and 5 minutes after, the release of
+         significant news affecting the relevant trading instrument.
+     2. Session open and close - within 1 hour before or after the daily rollover period
+         for Forex, or within 1 hour before or after any market open or close for Gold and
+         Indices.
+
+           Normal Maximum Leverage                                 Applicable Reduced Leverage
+
+                         1:2000                                                    1:500
+
+
+
+                                                   5
+              Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                  Registration number 22747 IBC 2015
+                                                                                                 HF Markets (SV) Ltd
+                                       Risks associated with transactions in Derivative Financial Instruments (CFDs)
+
+
+                         1:1000                                                    1:500
+
+                          1:500                                                    1:200
+
+                          1:200                                                    1:200
+
+
+
+
+(b) Weekend Session Open and Close
+
+
+In addition to the conditions set out in Clause 4.2(a), specific leverage limits apply to all
+instruments around the weekly session open and close. For each instrument, the applicable
+windows are defined relative to that instrument's own session open and close times, as
+published on the Company's website.
+
+Where a position is opened within the windows set out below, the following leverage limits
+shall apply. Each session open and close is divided into two phases, with progressively
+tighter leverage limits applied as the market approaches its open or close:
+
+
+Window                                       Period Relative to Instrument                       Maximum
+                                             Session Open/Close                                  Leverage
+Monday (Session Open) — Phase 1              From session open until 10 minutes                         1:100
+                                             after session open.
+Monday (Session Open) — Phase 2              From 10 minutes after session open                         1:500
+                                             until 1 hour after session open.
+Friday (Session Close) — Phase 1             From 1 hour before session close                           1:200
+                                             until 30 minutes before session
+                                             close.
+Friday (Session Close) — Phase 2             From 30 minutes before session                             1:100
+                                             close until session close.
+
+The leverage limits set out in Clause 4.2 (b) represent the maximum leverage applicable at
+any given time for the relevant instrument and window. Where a Client's account leverage
+setting is lower than the limit applicable to a specific instrument or window, the lower of
+the two shall apply.
+
+
+                                                   6
+              Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                  Registration number 22747 IBC 2015
+                                                                                                        HF Markets (SV) Ltd
+                                              Risks associated with transactions in Derivative Financial Instruments (CFDs)
+
+
+     The specific session open and close times for each instrument, and the corresponding
+     absolute Server Time windows derived from this clause, shall be published on the
+     Company's website and updated as necessary. In the event of any conflict between this
+     clause and the published times, the published times shall prevail.
+
+
+     (c) Bank/Public Holiday Leverage Conditions
+
+
+     Where a Bank or Public Holiday falls on a weekday, the leverage limits set out in Clause
+     4.2(b) shall apply on a modified basis as follows:
+
+
+         •   The trading day immediately preceding the holiday shall be treated as equivalent to
+             a Friday market close, and the leverage windows applicable to Friday under Clause
+             4.2(b) shall apply accordingly.
+         •   The trading day immediately following the holiday shall be treated as equivalent to
+             a Monday market open, and the leverage windows applicable to Monday under
+             Clause 4.2(b) shall apply accordingly.
+
+
+     The Company reserves the right to determine, based on the economic relevance of the
+     holiday to the instruments and asset classes concerned, which instruments are subject to
+     these adjustments. Where practicable, the Company shall notify Clients of any such
+     adjustments via the Company's website or trading platform in advance of the relevant
+     holiday.
+
+
+4.3. Additionally, the Client acknowledges, agrees and understands that the maximum leverage
+     for a trading account shall be automatically adjusted without any prior notice to the Client
+     by taking into consideration the trading account’s equity (i.e. Balance + Floating Profit &
+     Loss + Swap + Commission) as follows:
+
+        A. All Trading Accounts apart from Cent, Copy and PAMM Accounts
+
+                Trading Account’s Equity                                  Maximum Leverage
+                         (USD)
+
+
+                                                          7
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                              HF Markets (SV) Ltd
+                                    Risks associated with transactions in Derivative Financial Instruments (CFDs)
+
+
+  0.00 – 4,999.99                                                        1:2000
+
+  5,000.00 – 39,999.99                                                   1:1000
+
+  40,000.00 – 99,999.99                                                   1:500
+
+  100,000.00 or more*                                                     1:200
+
+ *In the case that the client account equity is equal or exceeds 300.000 USD (or currency
+  equivalent) please also see Clause 6.8. of the Company’s Terms of Business
+
+B. Cent Accounts (excluding Copy Cent)
+
+     Trading Account’s Equity                                   Maximum Leverage
+              (USD)
+
+  0.00 – 499.99                                                          1:2000
+
+  500.00 – 999.99                                                        1:1000
+
+  1000 – 1499.99                                                          1:500
+
+  1,500.00 or more                                                        1:200
+
+
+
+C. Copy Trading Accounts*
+
+  Copy Trading Account’s Equity                                     Maximum Leverage
+  (excluding Copy Cent Accounts)
+  (USD) **
+  0 – 299, 999.99                                                             1:1000
+
+  300, 000.00 – 499, 999.99                                                    1:500
+
+  500, 000.00 – 999, 999.99                                                    1:200
+
+  1,000,000 USD or more                                                        1:100
+
+   Copy Cent Trading Account’s Equity                                Maximum Leverage
+                (USD) **
+  0 - 49,999.99                                                               1:1000
+
+  50,000.00 or more                                                            1:500
+
+
+
+                                                8
+           Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                               Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                             Risks associated with transactions in Derivative Financial Instruments (CFDs)
+
+          *Leverage adjustments do not apply to Follower Trading Accounts that copy any Strategy
+           Provider of the Kenyan entity of HFM Group.
+          **Combined with total equity of the Strategy Provider and all of his Followers.
+
+
+
+4.4. The Client acknowledges, agrees and understands that the leverage for each position
+     opened on the Premium and/or Pro and/or Zero and/or ProPlus and/or Top-Up accounts
+     shall be determined based on the crypto symbol to be traded (e.g. BTCUSD, ETHUSD etc.)
+     and on the total volume (i.e. lots) traded by the Client for each crypto symbol. More
+     information regarding the leverage of each crypto symbol as per above, can be found in
+     each crypto symbol’s trading details in the Company’s website. The Client further
+     acknowledges, agrees and understands that he/she shall be responsible for checking the
+     aforementioned trading details of each crypto symbol prior to and whilst trading on a
+     Premium and/or Pro and/or Zero and/or ProPlus and/or Top-Up accounts.
+
+4.5. The Company reserves the right at its sole and absolute discretion to reduce the leverage
+     prior to and/or during and/or after earnings announcements and news announcements for
+     CFDs on Shares and CFDs on Indices respectively.
+
+4.6. Margin requirements will depend on the underlying asset of the CFD, level of leverage
+     chosen and the value of position to be established.
+
+4.7. The Company will not notify you of any ‘Margin Call’ to sustain a loss-making position.
+
+4.8. Where a Client maintains fully hedged positions, defined as equal buy and sell volumes in
+     the same financial instrument, no margin requirement shall apply to the hedged portion of
+     such positions. Margin shall be required solely in respect of any net (uncovered) position
+     where applicable. This provision shall apply to all tradeable financial instruments.
+
+4.9. The Company has the discretionary right (a) to start closing positions when ‘Equity’
+     decreases to about 50% of the used ‘Margin’ for any particular Financial Instrument, and
+     (b) to close automatically all positions at market prices, when ‘Equity’ level decreases to
+     below 20% of the used ‘Margin’ level for all accounts.
+
+
+
+
+                                                         9
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                        HF Markets (SV) Ltd
+                                              Risks associated with transactions in Derivative Financial Instruments (CFDs)
+
+
+5.     Volatility of price and limitation on the available market
+
+5.1.   CFDs provided by the Company are derivative financial instruments, where their price is
+       derived from the price of the Underlying asset, which the CFD refers to. Derivative Financial
+       instruments and the relevant markets can be highly volatile. The prices of CFDs and the
+       Underlying assets may be volatile and unpredictable and may fluctuate rapidly and over
+       wide ranges and may reflect unforeseeable events or changes in conditions, none of which
+       can be controlled by you or by the Company. Those movements will affect the Company’s
+       prices, whether or not you can open or close a position and the price at which you can do
+       so. So, under certain market conditions, it may be impossible to execute any type of order
+       at the declared price. Therefore, even ‘stop-loss orders’, whereby your trade will be
+       executed only when the CFD you want to buy or sell reaches a particular price (the stop
+       price), cannot guarantee the limit of loss. ‘Stop-loss orders’ are not guaranteed to be filled
+       at the price you state. Once the ‘stop-loss orders’ has been triggered, it turns into a market
+       order, which is filled at the best possible price. This price may be lower than the price
+       specified by the ‘stop-loss orders’. The prices of CFDs will be influenced by, amongst other
+       things, changing supply and demand relationships, governmental, agricultural, commercial
+       and trade programs and policies, national and international political and economic events
+       and the prevailing psychological characteristics of the relevant market place.
+
+5.2.   Some of the CFDs underlying assets may not become immediately liquid as a result of
+       reduced demand for the underlying instrument and Client may not be able to obtain the
+       information on the value of these or the extent of the associated risks.
+
+5.3.   Trading in CFDs is speculative and involves a high degree of risk. In particular, because it
+       will be conducted using a margin (which covers only a small percentage of the value of the
+       underlying asset being traded), as such, even small price changes in the underlying assets
+       of CFDs can result in significant losses. You should be aware that by trading with CFDs you
+       may lose the margin held at the Company that serves for the purposes of collateral for
+       opening and maintaining your trading positions.
+
+
+
+
+                                                         10
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                        HF Markets (SV) Ltd
+                                              Risks associated with transactions in Derivative Financial Instruments (CFDs)
+
+
+5.4.   Transactions in the derivative Financial Instruments provided by the Company are not
+       undertaken on a recognized exchange, rather they are undertaken through the Company’s
+       Electronic Trading Platform and, accordingly, they may expose you to greater risks than
+       regulated exchange transactions. The terms and conditions and trading rules are
+       established solely by the counterparty, which in this case is the Company. You may be
+       obliged to close an open position of any given Financial Instrument during the opening
+       hours of the Company’s Electronic Trading Platform.
+
+
+
+
+6.     Total Loss might exceed the Initial Amount
+
+6.1. The Client acknowledges and understands that risk of loss arising from trading in CFDs can
+       be substantial and the Client might lose more than the Initial Amount and any additional
+       amounts, including the Margin Requirement as explained in paragraph 4. While CFD trading
+       typically only requires depositing a small percentage of the total trade volume (the margin
+       requirement), profits and losses can quickly exceed the Margin Requirement, requiring the
+       margin requirement to be adjusted at the initial amount.
+
+
+7.     Additional obligations
+
+7.1. The Client and/or Prospective Client shall be obliged to obtain details of all commissions
+       and other charges for which he will be liable, before he begins trading with the Company.
+       Such information can be found on the Company’s Website(s) and/or to the uploaded legal
+       documentation on the Company’s website(s). If any charges are not expressed in money
+       terms (but, for instance, as a dealing spread, the Client and/or Prospective Client should
+       obtain a clear written explanation, including appropriate examples, to establish what such
+       charges are likely to mean in specific money terms.
+
+7.2. When the Client engages in CFD trading, the Client is placing a trade in relation to
+       movements of prices set by the Company. Prices quoted to the Client by the Company will
+       include a spread, mark-up, or mark-down when compared to prices that the Company may
+       receive or expect to receive if it were to cover transactions with the Client by a trade in the
+
+                                                         11
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                      HF Markets (SV) Ltd
+                                            Risks associated with transactions in Derivative Financial Instruments (CFDs)
+
+
+     interbank market or with another counterparty. The Client is advised by the Company that
+     the total impact of spreads may be significant in relation to the size of the margin the Client
+     deposits and may make it more difficult for the Client to realise a profit from the Client’s
+     trading. The Client should carefully consider the effect of spreads, mark-ups, or mark-
+     downs on the Client’s ability to profit from trading.
+
+7.3. The value of open positions in the CFDs provided by the Company is subject to financing
+     fees. The price of long positions in Financial Instruments is reduced by a daily financing fee
+     throughout the life of the CFD. Conversely, the price of short positions in CFDs is increased
+     by a daily financing fee throughout its life. Financing fees are based on prevailing market
+     interest rates, which may vary over time. Details of daily financing fees applied are available
+     on the Company’s Website(s).
+
+7.4. The Client should take reasonable care to maintain sufficient available funds to avoid
+     negative account equity due to position size and overnight financing fees, especially when
+     trading CFDs on cash indices and CFDs on shares where financing fees are being applied to
+     reflect corporate actions.
+
+7.5. The Client should be aware that his trades in CFDs may be or become subject to tax and/or
+     any other duty for example because of changes in legislation or the Client’s personal
+     circumstances. The Company does not warrant that no tax and/or any other stamp duty
+     will be payable. The Client will be responsible for any taxes and/or any other duties which
+     may accrue in respect of his trades.
+
+
+8.   Review
+
+8.1. The Company reserves the right to review and/or amend its Risk Disclosure statements, at
+     its sole discretion, whenever it deems necessary, without prior notice to the Client.
+
+
+9.   Client Declaration
+
+9.1. The Client hereby acknowledges, confirms and accept that by entering into an Agreement
+     with the Company and every time he decides to place an Order in a CFD, that he runs a high
+
+
+                                                       12
+                   Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                       Registration number 22747 IBC 2015
+                                                                                                      HF Markets (SV) Ltd
+                                            Risks associated with transactions in Derivative Financial Instruments (CFDs)
+
+
+     risk of incurring losses and damages as a result and declares that he is willing to proceed
+     with this kind of trading and undertakes such risks.
+
+     WARNING: It is emphasized that for many members of the public, dealings in Contracts
+     for Differences (CFDs) will not be appropriate. The Client should not engage in any
+     dealings directly or indirectly in CFDs unless he knows and understands the features risks
+     involved in them and that he may lose entirely all of his money and also be imposed extra
+     charges.
+
+
+
+Version: 2026/05
+
+
+
+
+                                                       13
+                   Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                       Registration number 22747 IBC 2015
+
