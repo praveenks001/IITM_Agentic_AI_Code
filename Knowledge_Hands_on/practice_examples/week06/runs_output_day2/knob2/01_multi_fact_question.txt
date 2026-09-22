@@ -1,0 +1,47 @@
+TOP-K MULTI-FACT QUESTION EXPERIMENT
+========================================================================================================================
+
+Question: Compare new strategy and my follower account.
+Index: index_200
+========================================================================================================================
+
+------------------------------------------------------------------------------------------------------------------------
+K=1
+------------------------------------------------------------------------------------------------------------------------
+Sources: ['Copy trading TC(1).txt#258']
+Cost: $0.000027
+Tokens: in=116 out=16
+
+Answer:
+The context does not provide information about comparing a new strategy with your follower account.
+
+------------------------------------------------------------------------------------------------------------------------
+K=3
+------------------------------------------------------------------------------------------------------------------------
+Sources: ['Copy trading TC(1).txt#258', 'Copy trading TC(1).txt#297', 'Copy trading TC(1).txt#383']
+Cost: $0.000044
+Tokens: in=223 out=17
+
+Answer:
+The provided context does not contain information about comparing a new strategy with your follower account.
+
+------------------------------------------------------------------------------------------------------------------------
+K=5
+------------------------------------------------------------------------------------------------------------------------
+Sources: ['Copy trading TC(1).txt#258', 'Copy trading TC(1).txt#297', 'Copy trading TC(1).txt#383', 'Copy trading TC(1).txt#245', 'Copy trading TC(1).txt#298']
+Cost: $0.000061
+Tokens: in=338 out=17
+
+Answer:
+The provided context does not contain information about comparing a new strategy and a follower account.
+
+------------------------------------------------------------------------------------------------------------------------
+K=7
+------------------------------------------------------------------------------------------------------------------------
+Sources: ['Copy trading TC(1).txt#258', 'Copy trading TC(1).txt#297', 'Copy trading TC(1).txt#383', 'Copy trading TC(1).txt#245', 'Copy trading TC(1).txt#298', 'Copy trading TC(1).txt#294', 'Copy trading TC(1).txt#162']
+Cost: $0.000077
+Tokens: in=447 out=17
+
+Answer:
+The provided context does not contain information about comparing a new strategy with a follower account.
+

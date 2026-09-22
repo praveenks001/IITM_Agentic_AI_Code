@@ -1,0 +1,26 @@
+Embedding 1-1 of 1
+── default  ──
+   The company is located in Beachmont, Kingstown, St. Vincent and the Grenadines [Client agreement(1).txt#880].
+   sources: ['Account opening agreement 2(1).txt#78', 'Client agreement(1).txt#880', 'Trading and Execution .txt#22']  cost: $0.000054  tokens_out: 29
+
+Embedding 1-1 of 1
+── strict   ──
+   The company is located in Beachmont, Kingstown, St. Vincent and the Grenadines [Client agreement(1).txt#880].
+   sources: ['Account opening agreement 2(1).txt#78', 'Client agreement(1).txt#880', 'Trading and Execution .txt#22']  cost: $0.000052  tokens_out: 29
+
+Embedding 1-1 of 1
+── concise  ──
+   The company is located in Beachmont, Kingstown, St. Vincent and the Grenadines.
+   sources: ['Account opening agreement 2(1).txt#78', 'Client agreement(1).txt#880', 'Trading and Execution .txt#22']  cost: $0.000045  tokens_out: 20
+
+Embedding 1-1 of 1
+── verbose  ──
+   The company, HF Markets (SV) Ltd, is located in St. Vincent and the Grenadines. Specifically, its registered address is at Griffith Corporate Centre, P.O. Box 1510, Beachmont, Kingstown, St. Vincent and the Grenadines. This information is consistent across the provided documents, which confirm the company's incorporation as an International Broker Company in this location [Account opening agreement 2(1).txt#78][Client agreement(1).txt#880][Trading and Execution .txt#22]. 
+
+St. Vincent and the Grenadines is known for its favorable regulatory environment for international business companies, which is why many financial services firms choose to incorporate there.
+   sources: ['Account opening agreement 2(1).txt#78', 'Client agreement(1).txt#880', 'Trading and Execution .txt#22']  cost: $0.000119  tokens_out: 141
+
+Embedding 1-1 of 1
+── no_cite  ──
+   The company, HF Markets (SV) Ltd, is located at Griffith Corporate Centre, P.O. Box 1510, Beachmont, Kingstown, St. Vincent and the Grenadines.
+   sources: ['Account opening agreement 2(1).txt#78', 'Client agreement(1).txt#880', 'Trading and Execution .txt#22']  cost: $0.000056  tokens_out: 40

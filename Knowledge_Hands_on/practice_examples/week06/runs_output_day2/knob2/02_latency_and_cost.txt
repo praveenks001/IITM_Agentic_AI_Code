@@ -1,0 +1,8 @@
+Query: 'Compare new strategy and my follower account.'
+
+   K  latency (s)   tokens_in   tokens_out   cost (USD)
+   -  -----------   ---------   ----------   ----------
+   1         1.78         116           16     0.000027
+   3         1.89         223           17     0.000044
+   5         1.70         338           17     0.000061
+   7         1.69         447           17     0.000077

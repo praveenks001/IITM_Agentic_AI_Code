@@ -1,0 +1,11 @@
+Corpus stats:
+  5250 chunks
+  1048924 total characters
+  ~262231 estimated tokens (rough)
+
+  Embedding this corpus with text-embedding-3-small:  $0.005245
+  Embedding this corpus with text-embedding-3-large:  $0.034090
+  Difference (per full re-embed):                     $0.028845
+
+On a corpus this small it's negligible. But at 10K documents this
+scales linearly. Always know your ballpark cost.
