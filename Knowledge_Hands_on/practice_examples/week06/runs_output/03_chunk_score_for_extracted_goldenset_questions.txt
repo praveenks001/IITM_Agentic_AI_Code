@@ -59,7 +59,7 @@ or settlement of a Contract any exercise by an
 
  “Open Positions” means any position/ transaction that has not been closed. For example,
  an open long position not covered by the opposite short position and
-[4] Cosine: 0.538 | Chunk ID: Client agreement(1).txt#46 | Text: uch as an open long
+[4] Cosine: 0.539 | Chunk ID: Client agreement(1).txt#46 | Text: uch as an open long
                 position not covered by the opposite short position and vice versa.
                 “Order” refers to a trading transaction executed on the Trading Platform by the 
 [5] Cosine: 0.537 | Chunk ID: Terms of Business Glossary.txt#28 | Text: f the Customer's Open Position(s) without the prior notice in a case of
@@ -150,7 +150,7 @@ Query: Is my telephone call recorded?
 
  10.1. The content of any telephone call (‘The telephone record’) between the Client and the
        company may be recorded and saves as a magnetic or electronic recor
-[2] Cosine: 0.510 | Chunk ID: Account opening agreement 2(1).txt#102 | Text: asis and thereby consequently all incur a cost for such roll-over.
+[2] Cosine: 0.511 | Chunk ID: Account opening agreement 2(1).txt#102 | Text: asis and thereby consequently all incur a cost for such roll-over.
 
 
  10.   Recording of Telephone Calls
@@ -241,45 +241,45 @@ Query: What is a leverage and how can i change it?
 
       (a) If margin is zero;
       (b) If margin is more than zero and the margin level is more
-[2] Cosine: 0.596 | Chunk ID: Account opening agreement(1).txt#131 | Text: rough their at Client Area.
+[2] Cosine: 0.598 | Chunk ID: Account opening agreement(1).txt#131 | Text: rough their at Client Area.
 
 
 13.   Leverage
 
 13.1. A Client can change the leverage within his Client Area of each trading account up to five (5)
       times. For changing more than five (5) times th
-[3] Cosine: 0.579 | Chunk ID: Account opening agreement 2(1).txt#129 | Text: verage
+[3] Cosine: 0.580 | Chunk ID: Account opening agreement 2(1).txt#129 | Text: verage
 
 13.1. A Client can change the leverage within his Client Area of each trading account up to five (5)
       times. For changing more than five (5) times the Client needs to send a request at
   
-[4] Cosine: 0.566 | Chunk ID: Risk with CFDS 2.txt#2 | Text: ...................................................... 3
-
-2.   Definition ..............................................................................................................................
-[5] Cosine: 0.566 | Chunk ID: Risk with CFDS.txt#2 | Text: ...................................................... 3
-
-2.   Definition ..............................................................................................................................
-[6] Cosine: 0.566 | Chunk ID: Client agreement(1).txt#159 | Text: ight, at its discretion, to disable this option.
+[4] Cosine: 0.567 | Chunk ID: Client agreement(1).txt#159 | Text: ight, at its discretion, to disable this option.
         18.2    A Client may change the leverage on demo accounts as many times as desired.
         18.3    A Client is not subject to any restrictions
-[7] Cosine: 0.538 | Chunk ID: Risk with CFDS.txt#19 | Text:                                   1:200
+[5] Cosine: 0.567 | Chunk ID: Risk with CFDS 2.txt#2 | Text: ...................................................... 3
+
+2.   Definition ..............................................................................................................................
+[6] Cosine: 0.567 | Chunk ID: Risk with CFDS.txt#2 | Text: ...................................................... 3
+
+2.   Definition ..............................................................................................................................
+[7] Cosine: 0.539 | Chunk ID: Risk with CFDS 2.txt#36 | Text:              Maximum Leverage
+                (USD) **
+  0 - 49,999.99                                                               1:1000
+
+  50,000.00 or more                                        
+[8] Cosine: 0.538 | Chunk ID: Risk with CFDS.txt#19 | Text:                                   1:200
 
        *Please refer to the website for the complete list of instrument-specific applicable
         leverage
 
 The Client acknowledges that the Company reserves
-[8] Cosine: 0.538 | Chunk ID: Risk with CFDS 2.txt#36 | Text:              Maximum Leverage
-                (USD) **
-  0 - 49,999.99                                                               1:1000
-
-  50,000.00 or more                                        
-[9] Cosine: 0.536 | Chunk ID: Risk with CFDS 2.txt#19 | Text:                                    1:200
+[9] Cosine: 0.535 | Chunk ID: Risk with CFDS 2.txt#19 | Text:                                    1:200
 
        *Please refer to the website for the complete list of instrument-specific applicable
         leverage
 
 The Client acknowledges that the Company reserve
-[10] Cosine: 0.521 | Chunk ID: Risk with CFDS.txt#26 | Text:                            1:100
+[10] Cosine: 0.522 | Chunk ID: Risk with CFDS.txt#26 | Text:                            1:100
                                              close until session close.
 
 The leverage limits set out in Clause 4.2 (b) represent the maximum leverage applicable at
@@ -332,37 +332,37 @@ Query: Will my account be archived any time?
 ID: 8
 Query: What is the contact support details?
 ====================================================================================================
-[1] Cosine: 0.386 | Chunk ID: Account opening agreement(1).txt#255 | Text: maintenance,
+[1] Cosine: 0.389 | Chunk ID: Account opening agreement(1).txt#255 | Text: maintenance,
      repairs, upgrades or any development related issues. We shall use reasonable endeavours to
      give you notice of this and to provide alternative ways for you to deal or obtain info
-[2] Cosine: 0.376 | Chunk ID: Account opening agreement 2(1).txt#161 | Text: nted representative by telephone, facsimile or email.
+[2] Cosine: 0.379 | Chunk ID: Account opening agreement 2(1).txt#161 | Text: nted representative by telephone, facsimile or email.
 
 18.6. Communications may be made to the Company at the address and telephone number
       notified to the Client for this purpose and shall be co
-[3] Cosine: 0.376 | Chunk ID: Account opening agreement(1).txt#162 | Text: mpany will be able to communicate with the
+[3] Cosine: 0.378 | Chunk ID: Account opening agreement(1).txt#162 | Text: mpany will be able to communicate with the
       Client or his appointed representative by telephone, facsimile or email.
 
 18.6. Communications may be made to the Company at the address and telephone 
-[4] Cosine: 0.368 | Chunk ID: Client agreement(1).txt#325 | Text: times the Company will be able to communicate with the
+[4] Cosine: 0.371 | Chunk ID: Client agreement(1).txt#325 | Text: times the Company will be able to communicate with the
                 Client or his appointed representative by telephone, facsimile or email.
         35.5    Communications may be made to the Compan
-[5] Cosine: 0.354 | Chunk ID: Account opening agreement 2(1).txt#155 | Text: osting on the Client’s Account, but the Client has not received
-      such confirmation, the Client must inform the Company immediately when the Client ought
-      to have received such confirmation. 
-[6] Cosine: 0.354 | Chunk ID: Client agreement(1).txt#326 | Text: ion details by written notice to the Company.
-        35.7    The Company may from time to time communicate with the Client by any of the means of
-                communication mentioned in Clause 35 
-[7] Cosine: 0.349 | Chunk ID: Shield 500.txt#19 | Text:    the Company via email at support@hfm.com . More details on the procedure which must
+[5] Cosine: 0.354 | Chunk ID: Shield 500.txt#19 | Text:    the Company via email at support@hfm.com . More details on the procedure which must
          be followed, the deadlines for receiving a response from the Company as well as contact
          details
-[8] Cosine: 0.343 | Chunk ID: Complaint handling(1).txt#12 | Text: se and a detailed description of the alleged
+[6] Cosine: 0.354 | Chunk ID: Account opening agreement 2(1).txt#155 | Text: osting on the Client’s Account, but the Client has not received
+      such confirmation, the Client must inform the Company immediately when the Client ought
+      to have received such confirmation. 
+[7] Cosine: 0.353 | Chunk ID: Client agreement(1).txt#326 | Text: ion details by written notice to the Company.
+        35.7    The Company may from time to time communicate with the Client by any of the means of
+                communication mentioned in Clause 35 
+[8] Cosine: 0.345 | Chunk ID: Complaint handling(1).txt#12 | Text: se and a detailed description of the alleged
            issue;
      (e)   any tangible evidence: emails, documents and/or relevant material.
 4.3. A complaint must not include offensive language direct
-[9] Cosine: 0.339 | Chunk ID: Client agreement(1).txt#87 | Text: T. +44-2030978571                    support@hfm.com
+[9] Cosine: 0.342 | Chunk ID: Client agreement(1).txt#87 | Text: T. +44-2030978571                    support@hfm.com
 Beachmont, Kingstown, St. Vincent and the Grenadines     F. +44-2030978570                         www.hfm.com
                                    
-[10] Cosine: 0.338 | Chunk ID: Client agreement(1).txt#283 | Text:                 support@hfm.com
+[10] Cosine: 0.340 | Chunk ID: Client agreement(1).txt#283 | Text:                 support@hfm.com
 Beachmont, Kingstown, St. Vincent and the Grenadines     F. +44-2030978570                         www.hfm.com
                                                         
 
@@ -474,10 +474,10 @@ Query: I am following a strategy account now, am i eligible to cancel the terms 
 [1] Cosine: 0.562 | Chunk ID: Copy trading TC(1).txt#85 | Text: reement may apply to the
       Company to become a Follower of a Strategy Provider. A Client may become a Follower of
       a Strategy Provider by registering for a Follower Account and the following 
-[2] Cosine: 0.557 | Chunk ID: Client agreement(1).txt#61 | Text:  necessary procedures.
+[2] Cosine: 0.556 | Chunk ID: Client agreement(1).txt#61 | Text:  necessary procedures.
         3.3     The Client has the right to cancel the Terms by providing the Company with written notice
                 within [14] days of the Trading Account ID activation. 
-[3] Cosine: 0.533 | Chunk ID: Copy trading TC(1).txt#12 | Text: trategy Provider Account or a Follower Account
+[3] Cosine: 0.535 | Chunk ID: Copy trading TC(1).txt#12 | Text: trategy Provider Account or a Follower Account
 which had no financial or trading activity for a set period of 60 (sixty) days as per the Account
 Opening Agreement of the Company;
 
@@ -565,7 +565,7 @@ ___                                                    ___
 
 Suite 305, Griffith Corporate Centre, P.O. Box 1510,     T. +44-2030978571                      support@hfm.com
 Beachmont, Kingstown, St. Vincent and the Grenadines     F
-[10] Cosine: 0.537 | Chunk ID: Client agreement(1).txt#103 | Text:                                              ___
+[10] Cosine: 0.536 | Chunk ID: Client agreement(1).txt#103 | Text:                                              ___
 
 
 Suite 305, Griffith Corporate Centre, P.O. Box 1510,     T. +44-2030978571                    support@hfm.com
@@ -609,11 +609,11 @@ Query: Can i view the trades taken in any account in MT5 account
                                  
 [7] Cosine: 0.441 | Chunk ID: Copy trading TC(1).txt#111 | Text:                                                                                HF Markets (SV) Ltd
                                                                                                    Co
-[8] Cosine: 0.440 | Chunk ID: Copy trading TC(1).txt#50 | Text:  the public Strategy Provider Accounts on the designated page.
+[8] Cosine: 0.439 | Chunk ID: Copy trading TC(1).txt#50 | Text:  the public Strategy Provider Accounts on the designated page.
 
 6.6   A Client who has successfully applied to become a Strategy Provider as per the provisions
       of this Agreement from the 26th of
-[9] Cosine: 0.439 | Chunk ID: Client agreement(1).txt#182 | Text:  could lead
+[9] Cosine: 0.438 | Chunk ID: Client agreement(1).txt#182 | Text:  could lead
                 to the positions being stopped out. The Company will not be held liable for any resulting losses,
                 direct or indirect, to the Client.
 
@@ -683,7 +683,7 @@ Query: What level of AI tools i can use in HFM? Give me a valid use case.
   5,000.00 – 39,999.99                                                   1:1000
 
   4
-[3] Cosine: 0.359 | Chunk ID: Client agreement(1).txt#230 | Text: ing but not limited to structuring trades, position durations, or
+[3] Cosine: 0.358 | Chunk ID: Client agreement(1).txt#230 | Text: ing but not limited to structuring trades, position durations, or
 
 
                                                        Page 31 of 65
@@ -703,7 +703,7 @@ Query: What level of AI tools i can use in HFM? Give me a valid use case.
 institutions to report on the foreign assets held by their U.S. account holders.
 
 “Floating Profit/ Loss” shall 
-[7] Cosine: 0.346 | Chunk ID: Client agreement(1).txt#117 | Text: Trading Platform Access and Installation
+[7] Cosine: 0.345 | Chunk ID: Client agreement(1).txt#117 | Text: Trading Platform Access and Installation
         12.1.1 The Client may download and install (where applicable) the Trading Platform software or use
                 a web-based version of the Trading P
 [8] Cosine: 0.345 | Chunk ID: Client agreement(1).txt#80 | Text:   F. +44-2030978570                         www.hfm.com
@@ -717,7 +717,7 @@ institutions to report on the foreign assets held by their U.S. account holders.
   5,000.00 – 39,999.99                                                   1:1000
 
   
-[10] Cosine: 0.341 | Chunk ID: Risk with CFDS.txt#17 | Text:                                                                              HF Markets (SV) Ltd
+[10] Cosine: 0.340 | Chunk ID: Risk with CFDS.txt#17 | Text:                                                                              HF Markets (SV) Ltd
                                        Risks associated with transactions in Derivative Financial Instr
 
 ====================================================================================================
@@ -752,7 +752,7 @@ Query: What does Hyperactive trading means and as a trader how do i use it?
 [8] Cosine: 0.472 | Chunk ID: Client agreement(1).txt#206 | Text: b) Engaging in “all-in” or highly concentrated trading strategies involving a substantial
                       portion of available equity or margin;
                   c) Maintaining margin levels de
-[9] Cosine: 0.470 | Chunk ID: Client agreement(1).txt#209 | Text:             b) Trading during periods of illiquidity, absence of pricing, or delayed data feeds to obtain
+[9] Cosine: 0.469 | Chunk ID: Client agreement(1).txt#209 | Text:             b) Trading during periods of illiquidity, absence of pricing, or delayed data feeds to obtain
                        execution at prices that do not reflect prevailing market conditions;
  
 [10] Cosine: 0.467 | Chunk ID: Client agreement(1).txt#212 | Text: ’s own trading activity.
@@ -839,12 +839,12 @@ Query: What is the legal name of the company referred to in these policies?
 
 
      (m) The Company or the Client is requested to close out a Contract (
-[7] Cosine: 0.449 | Chunk ID: Copy trading TC(1).txt#18 | Text:  include but are not limited
-to the Account Opening Agreement, the Terms of Business, the Order Execution Policy and any
-other agreement and/or policy which is available to the Client via the Company’
-[8] Cosine: 0.449 | Chunk ID: Account opening agreement(1).txt#180 | Text: cution
+[7] Cosine: 0.449 | Chunk ID: Account opening agreement(1).txt#180 | Text: cution
       Policy, the Risk Disclosures for Financial Instruments and the Summary of Conflicts of Interest
       Policy as amended from time to time). The Company shall notify the Client of any chan
+[8] Cosine: 0.449 | Chunk ID: Copy trading TC(1).txt#18 | Text:  include but are not limited
+to the Account Opening Agreement, the Terms of Business, the Order Execution Policy and any
+other agreement and/or policy which is available to the Client via the Company’
 [9] Cosine: 0.442 | Chunk ID: Complaint handling(1).txt#9 | Text: all
      include the feminine and vice versa.
 
@@ -852,7 +852,7 @@ other agreement and/or policy which is available to the Client via the Company�
 3.   Scope of the Policy
 3.1. The purpose of the Policy is to set out the internal complaint resolution system and
      procedures which the Company has
-[10] Cosine: 0.439 | Chunk ID: Account opening agreement(1).txt#187 | Text:  type
+[10] Cosine: 0.440 | Chunk ID: Account opening agreement(1).txt#187 | Text:  type
     of business with any natural or legal entity claiming to act on the Company’s behalf in
     respect of the Services offered by the Company (i.e. imposters, fraudsters etc.).
 
@@ -875,7 +875,7 @@ Query: In which jurisdiction is HF Markets (SV) Ltd incorporated?
 
 
 ___                                                    ___              
-[3] Cosine: 0.703 | Chunk ID: Terms of Business .txt#6 | Text:                                           Registration number 22747 IBC 2015
+[3] Cosine: 0.704 | Chunk ID: Terms of Business .txt#6 | Text:                                           Registration number 22747 IBC 2015
                                                                                                    HF Markets (SV) Ltd
    
 [4] Cosine: 0.701 | Chunk ID: General risk disclosure(1).txt#0 | Text:                                           HF Markets (SV) Ltd
@@ -922,7 +922,7 @@ ___                                                    ___
 ID: 20
 Query: What is the registration number of HF Markets (SV) Ltd?
 ====================================================================================================
-[1] Cosine: 0.765 | Chunk ID: Terms of Business .txt#6 | Text:                                           Registration number 22747 IBC 2015
+[1] Cosine: 0.767 | Chunk ID: Terms of Business .txt#6 | Text:                                           Registration number 22747 IBC 2015
                                                                                                    HF Markets (SV) Ltd
    
 [2] Cosine: 0.715 | Chunk ID: Cookie policy (1).txt#3 | Text:                                              2
@@ -934,17 +934,17 @@ Query: What is the registration number of HF Markets (SV) Ltd?
 [4] Cosine: 0.684 | Chunk ID: General risk disclosure(1).txt#4 | Text: al Services Authority St. Vincent & the Grenadines.
                                                 Registration number 22747 IBC 2015
                                                                 
-[5] Cosine: 0.678 | Chunk ID: Cookie policy (1).txt#4 | Text: uction
+[5] Cosine: 0.679 | Chunk ID: Cookie policy (1).txt#4 | Text: uction
 
  HF Markets (SV) Ltd (hereinafter the “Company” or “we”) which is a member of the HF
  Markets Group, is incorporated under the laws of Saint Vincent and the Grenadines with
  Registration 22747
-[6] Cosine: 0.677 | Chunk ID: Account opening agreement(1).txt#135 | Text: egistered in the Financial Services Authority St. Vincent & the Grenadines.
-                                             Registration number 22747 IBC 2015
-                                           
-[7] Cosine: 0.677 | Chunk ID: Conflicts of interest policy (1).txt#6 | Text:                      2
+[6] Cosine: 0.677 | Chunk ID: Conflicts of interest policy (1).txt#6 | Text:                      2
                             Registered in the Financial Services Authority St. Vincent & the Grenadines.
                                                 Registration number 2274
+[7] Cosine: 0.677 | Chunk ID: Account opening agreement(1).txt#135 | Text: egistered in the Financial Services Authority St. Vincent & the Grenadines.
+                                             Registration number 22747 IBC 2015
+                                           
 [8] Cosine: 0.676 | Chunk ID: Account opening agreement 2(1).txt#53 | Text:                                     Registration number 22747 IBC 2015
                                                                                                    HF Markets (SV) Ltd
          
@@ -1207,12 +1207,12 @@ ___                                                    ___
 [8] Cosine: 0.452 | Chunk ID: Client agreement(1).txt#321 | Text:                      www.hfm.com
                                                                                              HF Markets (SV) Ltd
                                                      
-[9] Cosine: 0.440 | Chunk ID: Cookie policy (1).txt#7 | Text:  party cookies are cookies set by the website you are visiting. Only that website can read
-them. In addition, a website might potentially use external services, which also set their own
-cookies, known
-[10] Cosine: 0.440 | Chunk ID: Client agreement(1).txt#119 | Text:             www.hfm.com
+[9] Cosine: 0.442 | Chunk ID: Client agreement(1).txt#119 | Text:             www.hfm.com
                                                                                                 HF Markets (SV) Ltd
                                                            
+[10] Cosine: 0.440 | Chunk ID: Cookie policy (1).txt#7 | Text:  party cookies are cookies set by the website you are visiting. Only that website can read
+them. In addition, a website might potentially use external services, which also set their own
+cookies, known
 
 ====================================================================================================
 ID: 26
@@ -1250,7 +1250,7 @@ Beachmont, Kingstown, St. Vincent and the Grenadines     F. +44-2030978570      
 
 
 ___                                                    ___                    
-[8] Cosine: 0.519 | Chunk ID: Client agreement(1).txt#321 | Text:                      www.hfm.com
+[8] Cosine: 0.520 | Chunk ID: Client agreement(1).txt#321 | Text:                      www.hfm.com
                                                                                              HF Markets (SV) Ltd
                                                      
 [9] Cosine: 0.515 | Chunk ID: Client agreement(1).txt#231 | Text:  www.hfm.com
@@ -1270,7 +1270,7 @@ Query: What should I do if I do not understand the risks involved in trading a f
 [2] Cosine: 0.567 | Chunk ID: General risk disclosure(1).txt#51 | Text: ed the underlying instrument. The
      Client must not purchase derivative Financial Instrument unless he is willing to undertake
      the risks of losing entirely all the money which he has invested 
-[3] Cosine: 0.516 | Chunk ID: Risk with CFDS.txt#50 | Text: HF Markets (SV) Ltd
+[3] Cosine: 0.515 | Chunk ID: Risk with CFDS.txt#50 | Text: HF Markets (SV) Ltd
                                               Risks associated with transactions in Derivative Financial Instruments (CFDs)
 
 
@@ -1308,11 +1308,11 @@ Query: What should I do if I do not understand the risks involved in trading a f
      a Multilateral Trading Facility.
 
 7.3. This notice cannot and does not disclose or explain a
-[9] Cosine: 0.507 | Chunk ID: General risk disclosure(1).txt#50 | Text:                                                                                     General Risk Disclosure
+[9] Cosine: 0.505 | Chunk ID: General risk disclosure(1).txt#50 | Text:                                                                                     General Risk Disclosure
 
 
      deposit, but may also expose the Client to a large additional loss. In regard to tran
-[10] Cosine: 0.504 | Chunk ID: General risk disclosure(1).txt#11 | Text: robable that the investment may
+[10] Cosine: 0.505 | Chunk ID: General risk disclosure(1).txt#11 | Text: robable that the investment may
     become of no value.
 
 (c) The Client should acknowledge that he runs a great risk of incurring losses and
@@ -1377,7 +1377,7 @@ Query: Who acts as the execution venue for HFM client CFD orders?
 [2] Cosine: 0.621 | Chunk ID: Client agreement(1).txt#399 | Text:   T. +44-2030978571                     support@hfm.com
 Beachmont, Kingstown, St. Vincent and the Grenadines          F. +44-2030978570                          www.hfm.com
                           
-[3] Cosine: 0.620 | Chunk ID: Order exection policy(1).txt#11 | Text: n Venue
+[3] Cosine: 0.619 | Chunk ID: Order exection policy(1).txt#11 | Text: n Venue
 
 3.1   The Company is the Execution Venue for the execution of Clients’ Orders in CFDs. So, in
       relation to Client CFD transactions, the Company executes the Client Orders.
@@ -1423,7 +1423,7 @@ Query: Are CFD transactions with HFM executed on a recognised exchange?
 
 
 ___                    
-[2] Cosine: 0.576 | Chunk ID: Risk with CFDS.txt#0 | Text:                                           HF Markets (SV) Ltd
+[2] Cosine: 0.575 | Chunk ID: Risk with CFDS.txt#0 | Text:                                           HF Markets (SV) Ltd
 
                  RISKS ASSOCIATED WITH TRANSACTIONS IN
                DERIVATIVE FINANCIAL INSTRUMENTS (CFDS)
@@ -1480,7 +1480,7 @@ Query: What is the difference between the BID and ASK price called?
 
 •   Pending Orders: Such orders as “Buy Limit”, “Buy Stop” and “Stop Loss” / “Take Profit”
     f
-[2] Cosine: 0.481 | Chunk ID: Order exection policy(1).txt#15 | Text: vided by its Liquidity Provider:
+[2] Cosine: 0.480 | Chunk ID: Order exection policy(1).txt#15 | Text: vided by its Liquidity Provider:
 
       (a) Price:
 
@@ -1490,7 +1490,7 @@ Query: What is the difference between the BID and ASK price called?
 
 Point - the smallest price change. Since most major currency pairs are priced to fifth decimal
 places, the smallest change is that of the last decimal point - for most pairs this is the eq
-[4] Cosine: 0.429 | Chunk ID: Order exection policy(1).txt#19 | Text:  Order for execution to the Company, the Company’s price will be
+[4] Cosine: 0.430 | Chunk ID: Order exection policy(1).txt#19 | Text:  Order for execution to the Company, the Company’s price will be
     the most favourable for the Client than one which might be available elsewhere. The
     main way in which the Company ensures that 
 [5] Cosine: 0.427 | Chunk ID: Trading and Execution .txt#14 | Text: ed, the bid/ask price at which a counterparty is willing to take a position may be
@@ -1533,16 +1533,16 @@ high, low and closing prices for a set period of time (for exampl
 ID: 32
 Query: At which price are Buy Limit and Buy Stop orders executed?
 ====================================================================================================
-[1] Cosine: 0.613 | Chunk ID: Account opening agreement(1).txt#84 | Text: for buy
+[1] Cosine: 0.612 | Chunk ID: Account opening agreement(1).txt#84 | Text: for buy
      Orders is reached, the Order will be filled as soon as possible at the price obtainable in the
      market. Limit and stop Orders are executed consistent with the Company’s Best Execution
 [2] Cosine: 0.576 | Chunk ID: Order exection policy(1).txt#31 | Text: f any or all of the pending orders at the declared price. Stop
     Loss, Take Profit, Buy Limit, Buy Stop, Sell Limit, Sell Stop Orders on Financial
     Instruments offered by the Company are executed
-[3] Cosine: 0.576 | Chunk ID: Account opening agreement 2(1).txt#83 | Text: ce. If the bid price for sell Orders or ask price for buy
+[3] Cosine: 0.574 | Chunk ID: Account opening agreement 2(1).txt#83 | Text: ce. If the bid price for sell Orders or ask price for buy
      Orders is reached, the Order will be filled as soon as possible at the price obtainable in the
      market. Limit and stop Orders are exe
-[4] Cosine: 0.575 | Chunk ID: Account opening agreement(1).txt#83 | Text: s may be placed as market Orders to buy or sell as soon as possible at the price
+[4] Cosine: 0.574 | Chunk ID: Account opening agreement(1).txt#83 | Text: s may be placed as market Orders to buy or sell as soon as possible at the price
      obtainable in the market, or on selected products as limit and stop Orders to trade when
      the price reaches a 
 [5] Cosine: 0.568 | Chunk ID: Risk with CFDS 2.txt#42 | Text: en ‘stop-loss orders’, whereby your trade will be
@@ -1560,7 +1560,7 @@ Query: At which price are Buy Limit and Buy Stop orders executed?
 [9] Cosine: 0.551 | Chunk ID: Risk with CFDS.txt#46 | Text: e stop
        price), cannot guarantee the limit of loss. ‘Stop-loss orders’ are not guaranteed to be filled
        at the price you state. Once the ‘stop-loss orders’ has been triggered, it turns int
-[10] Cosine: 0.548 | Chunk ID: Order exection policy(1).txt#34 | Text: on
+[10] Cosine: 0.547 | Chunk ID: Order exection policy(1).txt#34 | Text: on
          to such an extent that under the rules of the relevant exchange, trading is
          suspended or restricted,
 
@@ -1576,7 +1576,7 @@ Query: At which price are Sell Limit and Sell Stop orders executed?
 [2] Cosine: 0.564 | Chunk ID: Order exection policy(1).txt#31 | Text: f any or all of the pending orders at the declared price. Stop
     Loss, Take Profit, Buy Limit, Buy Stop, Sell Limit, Sell Stop Orders on Financial
     Instruments offered by the Company are executed
-[3] Cosine: 0.563 | Chunk ID: Account opening agreement 2(1).txt#83 | Text: ce. If the bid price for sell Orders or ask price for buy
+[3] Cosine: 0.562 | Chunk ID: Account opening agreement 2(1).txt#83 | Text: ce. If the bid price for sell Orders or ask price for buy
      Orders is reached, the Order will be filled as soon as possible at the price obtainable in the
      market. Limit and stop Orders are exe
 [4] Cosine: 0.560 | Chunk ID: General risk disclosure(1).txt#17 | Text: y all the money which he has invested and also any
@@ -1704,7 +1704,7 @@ Query: Does placing a Stop Loss always guarantee that my loss will be limited to
 
       the minimum Margin requirement is not maintained. To avoid a Margin Call it is highly
       recommended to maintain a Ma
-[9] Cosine: 0.518 | Chunk ID: Risk with CFDS 2.txt#41 | Text: d may fluctuate rapidly and over
+[9] Cosine: 0.519 | Chunk ID: Risk with CFDS 2.txt#41 | Text: d may fluctuate rapidly and over
        wide ranges and may reflect unforeseeable events or changes in conditions, none of which
        can be controlled by you or by the Company. Those movements will
 [10] Cosine: 0.507 | Chunk ID: Order exection policy(1).txt#29 | Text: lacing “Stop Loss”, “Take Profit”, “Buy Limit”, “Buy Stop”, “Sell Limit” and
@@ -1727,7 +1727,7 @@ Query: Does HFM allow trading using Expert Advisors?
 
 
 ___                                                    ___                    
-[4] Cosine: 0.527 | Chunk ID: Copy trading TC(1).txt#77 | Text:                                        HF Markets (SV) Ltd
+[4] Cosine: 0.528 | Chunk ID: Copy trading TC(1).txt#77 | Text:                                        HF Markets (SV) Ltd
                                                                                                   Copy Trading Agreement
 
 
@@ -1752,7 +1752,7 @@ Beachmont, Kingstown, St. Vincent and the Grenadines     F. +44-2030978570      
                                                                               
 [9] Cosine: 0.502 | Chunk ID: Copy trading TC(1).txt#60 | Text:                                                                                               HF Markets (SV) Ltd
                                                                                       
-[10] Cosine: 0.499 | Chunk ID: Client agreement(1).txt#119 | Text:             www.hfm.com
+[10] Cosine: 0.502 | Chunk ID: Client agreement(1).txt#119 | Text:             www.hfm.com
                                                                                                 HF Markets (SV) Ltd
                                                            
 
@@ -1846,9 +1846,9 @@ Beachmont, Kingstown, St. Vincent and the Grenadines      F. +44-2030978570     
 
 
 ___                                                    ___                 
-[10] Cosine: 0.536 | Chunk ID: Complaint handling(1).txt#21 | Text:             License number 22747 IBC 2015
-                                                                                                       HF Markets (SV) Ltd
-                                  
+[10] Cosine: 0.536 | Chunk ID: Client agreement(1).txt#291 | Text:  T. +44-2030978571                    support@hfm.com
+Beachmont, Kingstown, St. Vincent and the Grenadines       F. +44-2030978570                         www.hfm.com
+                                
 
 ====================================================================================================
 ID: 39
@@ -1873,7 +1873,7 @@ Query: Within how many working days should HFM provide a unique complaint refere
 [5] Cosine: 0.493 | Chunk ID: Complaint handling(1).txt#21 | Text:             License number 22747 IBC 2015
                                                                                                        HF Markets (SV) Ltd
                                   
-[6] Cosine: 0.485 | Chunk ID: Complaint handling(1).txt#0 | Text:                                          HF Markets (SV) Ltd
+[6] Cosine: 0.486 | Chunk ID: Complaint handling(1).txt#0 | Text:                                          HF Markets (SV) Ltd
 
                             COMPLAINTS HANDLING POLICY
 
@@ -1923,7 +1923,7 @@ Query: Within how many business days should HFM normally provide its initial res
 
 
 ___                                                    ___                     
-[7] Cosine: 0.525 | Chunk ID: Complaint handling(1).txt#21 | Text:             License number 22747 IBC 2015
+[7] Cosine: 0.524 | Chunk ID: Complaint handling(1).txt#21 | Text:             License number 22747 IBC 2015
                                                                                                        HF Markets (SV) Ltd
                                   
 [8] Cosine: 0.523 | Chunk ID: Complaint handling(1).txt#14 | Text: t is being examined and inform the Client that an official response will be
@@ -2068,7 +2068,7 @@ Query: How often is the Conflicts of Interest Policy reviewed?
                         •    Conflicts of Interest Policy
              45.1.2 The Client further acknowledges that it is their sole responsibility to remain up to date with
                   
-[10] Cosine: 0.537 | Chunk ID: Conflicts of interest policy (1).txt#24 | Text: hich constitute or give rise to a conflict of interest entailing a material
+[10] Cosine: 0.536 | Chunk ID: Conflicts of interest policy (1).txt#24 | Text: hich constitute or give rise to a conflict of interest entailing a material
      risk of damaging the interests of one or more Clients.
 
 6.3. The Company has adopted procedures and measures set out in
@@ -2077,12 +2077,12 @@ Query: How often is the Conflicts of Interest Policy reviewed?
 ID: 44
 Query: Who makes the final decision when HFM's internal conflict-of-interest procedures are not sufficient?
 ====================================================================================================
-[1] Cosine: 0.571 | Chunk ID: Conflicts of interest policy (1).txt#45 | Text:                                HF Markets (SV) Ltd
+[1] Cosine: 0.570 | Chunk ID: Conflicts of interest policy (1).txt#45 | Text:                                HF Markets (SV) Ltd
                                                                                                     Conflicts of Interest Policy
 
 
           Related 
-[2] Cosine: 0.567 | Chunk ID: Conflicts of interest policy (1).txt#0 | Text:                                           HF Markets (SV) Ltd
+[2] Cosine: 0.566 | Chunk ID: Conflicts of interest policy (1).txt#0 | Text:                                           HF Markets (SV) Ltd
 
                              CONFLICTS OF INTEREST POLICY
 
@@ -2090,14 +2090,14 @@ Query: Who makes the final decision when HFM's internal conflict-of-interest pro
 
 
 ___                                                    ___                 
-[3] Cosine: 0.533 | Chunk ID: Conflicts of interest policy (1).txt#56 | Text:                       HF Markets (SV) Ltd
+[3] Cosine: 0.532 | Chunk ID: Conflicts of interest policy (1).txt#56 | Text:                       HF Markets (SV) Ltd
                                                                                                    Conflicts of Interest Policy
 
 
       the most appropriate a
-[4] Cosine: 0.503 | Chunk ID: Conflicts of interest policy (1).txt#1 | Text:                                                         HF Markets (SV) Ltd
+[4] Cosine: 0.502 | Chunk ID: Conflicts of interest policy (1).txt#1 | Text:                                                         HF Markets (SV) Ltd
                                                                                                               Conflicts of I
-[5] Cosine: 0.498 | Chunk ID: Conflicts of interest policy (1).txt#49 | Text: Head of the Compliance Department will take the final decision
+[5] Cosine: 0.497 | Chunk ID: Conflicts of interest policy (1).txt#49 | Text: Head of the Compliance Department will take the final decision
       for its resolution.
 
 
@@ -2105,12 +2105,12 @@ ___                                                    ___
 
 11.1. The Company may pay and/or receive fees and/or commissions and/or any non-monetary
  
-[6] Cosine: 0.497 | Chunk ID: Conflicts of interest policy (1).txt#57 | Text: / Review
+[6] Cosine: 0.496 | Chunk ID: Conflicts of interest policy (1).txt#57 | Text: / Review
 
 14.1. The Company has the right to amend the current Policy at its discretion at any time it
       considers is suitable and appropriate. The Company shall review and amend the current
      
-[7] Cosine: 0.497 | Chunk ID: Complaint handling(1).txt#0 | Text:                                          HF Markets (SV) Ltd
+[7] Cosine: 0.495 | Chunk ID: Complaint handling(1).txt#0 | Text:                                          HF Markets (SV) Ltd
 
                             COMPLAINTS HANDLING POLICY
 
@@ -2118,17 +2118,17 @@ ___                                                    ___
 
 
 ___                                                    ___                     
-[8] Cosine: 0.485 | Chunk ID: Client agreement(1).txt#80 | Text:   F. +44-2030978570                         www.hfm.com
-                                                                                               HF Markets (SV) Ltd
-                            
-[9] Cosine: 0.483 | Chunk ID: Conflicts of interest policy (1).txt#40 | Text: nflicts of Interest Policy
+[8] Cosine: 0.483 | Chunk ID: Conflicts of interest policy (1).txt#40 | Text: nflicts of Interest Policy
 
 
     maintained and report to the Company’s Board of Directors.
 
 (c) effective procedures to prevent or control the exchange of information between
     Relevant Persons eng
-[10] Cosine: 0.479 | Chunk ID: Conflicts of interest policy (1).txt#18 | Text:                                         Conflicts of Interest Policy
+[9] Cosine: 0.482 | Chunk ID: Client agreement(1).txt#80 | Text:   F. +44-2030978570                         www.hfm.com
+                                                                                               HF Markets (SV) Ltd
+                            
+[10] Cosine: 0.480 | Chunk ID: Conflicts of interest policy (1).txt#18 | Text:                                         Conflicts of Interest Policy
 
 
      (c) A member’s duty to abstain from voting on any other matter where the member may
@@ -2425,7 +2425,7 @@ Query: What is the maximum Rescue Level a Copy Trading follower can set?
 [4] Cosine: 0.629 | Chunk ID: Copy trading TC(1).txt#65 | Text: nt & the Grenadines.
                                         Registration number 22747 IBC 2015
                                                                                                        
-[5] Cosine: 0.624 | Chunk ID: Copy trading TC(1).txt#110 | Text: equity that a Follower can keep secured in case of loss on
+[5] Cosine: 0.625 | Chunk ID: Copy trading TC(1).txt#110 | Text: equity that a Follower can keep secured in case of loss on
       the copied trades in the Follower Account.
 
 13.2. Rescue Level can be adjusted during each deposit or withdrawal to/from the Follower
@@ -2740,7 +2740,7 @@ ___                                                    ___
 [6] Cosine: 0.511 | Chunk ID: Complaint handling(1).txt#5 | Text: 22747 IBC 2015
                                                                                                          HF Markets (SV) Ltd
                                                            
-[7] Cosine: 0.503 | Chunk ID: Client agreement(1).txt#291 | Text:  T. +44-2030978571                    support@hfm.com
+[7] Cosine: 0.504 | Chunk ID: Client agreement(1).txt#291 | Text:  T. +44-2030978571                    support@hfm.com
 Beachmont, Kingstown, St. Vincent and the Grenadines       F. +44-2030978570                         www.hfm.com
                                 
 [8] Cosine: 0.500 | Chunk ID: Client agreement(1).txt#147 | Text: Box 1510,       T. +44-2030978571                     support@hfm.com
@@ -3198,7 +3198,7 @@ Query: Can one Copy Trading Follower Account follow two Strategy Providers at th
 [2] Cosine: 0.750 | Chunk ID: Copy trading TC(1).txt#30 | Text:  Follower has the opportunity to follow a Strategy Provider of the Company or a Strategy
        Provider of other entities of HF Markets Group. On the same note, a Strategy Provider can
        have Fo
-[3] Cosine: 0.708 | Chunk ID: Copy trading TC(1).txt#56 | Text: opy Premium Strategy
+[3] Cosine: 0.707 | Chunk ID: Copy trading TC(1).txt#56 | Text: opy Premium Strategy
       Provider Accounts can be followed by Copy Premium Follower Accounts, Copy Cent
       Strategy Provider Accounts can be followed by Copy Cent Follower Accounts, and Copy Pro
 
@@ -3402,7 +3402,7 @@ Query: A Copy Trading follower has 1000 USD in profits and 500 USD in losses. Th
 ====================================================================================================
 [1] Cosine: 0.754 | Chunk ID: Copy trading TC(1).txt#127 | Text:                                                             HF Markets (SV) Ltd
                                                                                                   Copy Trading Agreement
-[2] Cosine: 0.680 | Chunk ID: Copy trading TC(1).txt#128 | Text: o the Strategy Provider
+[2] Cosine: 0.681 | Chunk ID: Copy trading TC(1).txt#128 | Text: o the Strategy Provider
 
 Example B:
 
@@ -3505,16 +3505,16 @@ Example B:
 the Company as per the provisions of this Agreement;
 
 “Performance Fee” is the fee payable by the
-[8] Cosine: 0.621 | Chunk ID: Copy trading TC(1).txt#67 | Text: r the Follower that is payable to the Strategy Provider
+[8] Cosine: 0.621 | Chunk ID: Copy trading TC(1).txt#53 | Text:     displayed in the Past Performance List as per clauses 6.6, 6.7 and 6.8. above:
+
+      (a)   Growth % ((Total Deposits + Open Trades + Closed Trades) / Total Deposits) x 100%;
+      (b)   Average P
+[9] Cosine: 0.621 | Chunk ID: Copy trading TC(1).txt#67 | Text: r the Follower that is payable to the Strategy Provider
           as his Performance Fee;
 
      (f) Withdraw funds from his Strategy Provider Account at any given time;
 
      (g) Set the Followers’ mi
-[9] Cosine: 0.621 | Chunk ID: Copy trading TC(1).txt#53 | Text:     displayed in the Past Performance List as per clauses 6.6, 6.7 and 6.8. above:
-
-      (a)   Growth % ((Total Deposits + Open Trades + Closed Trades) / Total Deposits) x 100%;
-      (b)   Average P
 [10] Cosine: 0.621 | Chunk ID: Copy trading TC(1).txt#72 | Text: pened prior to
      the Follower choosing to follow a Strategy Provider, those trades will not be opened on the
      Follower Account. The Follower shall be able to copy any subsequent trades opened b
@@ -3549,7 +3549,7 @@ Query: A Strategy Provider already has three open trades when I start following 
           his copied strategy.
 
 10.13. In case
-[7] Cosine: 0.599 | Chunk ID: Copy trading TC(1).txt#102 | Text:   Following and Unfollowing
+[7] Cosine: 0.598 | Chunk ID: Copy trading TC(1).txt#102 | Text:   Following and Unfollowing
 
 11.1. Upon selecting to follow a Strategy Provider, the Follower will choose the Rescue Level and
       the Volume Allocation Percentage for the Follower Account.
@@ -3641,7 +3641,7 @@ Query: A Strategy Provider opened a trade during a server maintenance interrupti
 
           kind or nature is suffered or incurred as a result of the Company’s gross negligence
           and/or fraud on behalf of the Company and/or the intended failur
-[5] Cosine: 0.591 | Chunk ID: Copy trading TC(1).txt#78 | Text: or
+[5] Cosine: 0.590 | Chunk ID: Copy trading TC(1).txt#78 | Text: or
      close orders for a limited period of time.
 
 8.12. The Client further acknowledges and accepts that, during the periods referred to in clause
@@ -3695,7 +3695,7 @@ C. Copy Trading Accounts*
 [5] Cosine: 0.613 | Chunk ID: Copy trading TC(1).txt#113 | Text: in case of loss, subject to Clause 13.4. Follower makes profit of 250 USD and decides to
       withdraw 500 USD. Upon withdrawal, the Follower is requested to set new Rescue Level
       which will be 
-[6] Cosine: 0.609 | Chunk ID: Risk with CFDS 2.txt#35 | Text: .00 or more                                                        1:200
+[6] Cosine: 0.610 | Chunk ID: Risk with CFDS 2.txt#35 | Text: .00 or more                                                        1:200
 
 
 
@@ -3703,7 +3703,7 @@ C. Copy Trading Accounts*
 
   Copy Trading Account’s Equity                                     Maximum Leverage
   (excluding
-[7] Cosine: 0.592 | Chunk ID: Copy trading TC(1).txt#110 | Text: equity that a Follower can keep secured in case of loss on
+[7] Cosine: 0.593 | Chunk ID: Copy trading TC(1).txt#110 | Text: equity that a Follower can keep secured in case of loss on
       the copied trades in the Follower Account.
 
 13.2. Rescue Level can be adjusted during each deposit or withdrawal to/from the Follower
@@ -3758,7 +3758,7 @@ Query: I use an Expert Advisor during a major news event. My EA sends an order a
 
 
 ___                                                    ___                   
-[7] Cosine: 0.488 | Chunk ID: Copy trading TC(1).txt#95 | Text:  (b) An order placed by the Strategy Provider will normally be executed at the same time
+[7] Cosine: 0.489 | Chunk ID: Copy trading TC(1).txt#95 | Text:  (b) An order placed by the Strategy Provider will normally be executed at the same time
          on the Follower’s Account. Nevertheless, it is understood that if, by the time the order
          is e
 [8] Cosine: 0.483 | Chunk ID: Order exection policy(1).txt#19 | Text:  Order for execution to the Company, the Company’s price will be
@@ -3817,7 +3817,7 @@ ___                                                    ___
 [8] Cosine: 0.505 | Chunk ID: Complaint handling(1).txt#10 | Text:                     License number 22747 IBC 2015
                                                                                                        HF Markets (SV) Ltd
                           
-[9] Cosine: 0.503 | Chunk ID: Client agreement(1).txt#80 | Text:   F. +44-2030978570                         www.hfm.com
+[9] Cosine: 0.504 | Chunk ID: Client agreement(1).txt#80 | Text:   F. +44-2030978570                         www.hfm.com
                                                                                                HF Markets (SV) Ltd
                             
 [10] Cosine: 0.496 | Chunk ID: Client agreement(1).txt#455 | Text: www.hfm.com

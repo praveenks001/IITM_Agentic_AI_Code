@@ -32,7 +32,7 @@ Completion tokens: 29
 Question 3/77
 Q: On what basis the clients are categorized as Partially Approved?
 
-A: Clients are categorized as Partially Approved based on their failure to provide the required KYC (Know Your Customer) documents. They are not entitled to withdraw any amount until these documents are provided and their account is approved by the Company [Account opening agreement 2(1).txt#66].
+A: Clients are categorized as Partially Approved based on their failure to provide the required KYC (Know Your Customer) documents. They can deposit and trade before providing these documents, but they are not entitled to withdraw any amount until their account is approved by the Company after submitting the necessary KYC documentation [66].
 
 Sources retrieved:
   - Account opening agreement 2(1).txt#66
@@ -40,14 +40,14 @@ Sources retrieved:
   - Account opening agreement(1).txt#65
 
 Prompt tokens: 389
-Completion tokens: 58
+Completion tokens: 61
 ========================================================================================================================
 
 ========================================================================================================================
 Question 4/77
 Q: Is my telephone call recorded?
 
-A: Yes, your telephone call may be recorded. The company has the right to record calls and use the recordings as necessary, including in the event of a dispute [Account opening agreement(1).txt#103].
+A: Yes, your telephone call may be recorded. The company has the right to record calls between the Client and the company and use those records as necessary, including in the event of a dispute [Account opening agreement(1).txt#103].
 
 Sources retrieved:
   - Account opening agreement(1).txt#103
@@ -55,7 +55,7 @@ Sources retrieved:
   - Client agreement(1).txt#333
 
 Prompt tokens: 393
-Completion tokens: 42
+Completion tokens: 48
 ========================================================================================================================
 
 ========================================================================================================================
@@ -64,10 +64,10 @@ Q: What are the limitations on withdrawals?
 
 A: The limitations on withdrawals include:
 
-1. The withdrawal request must not reduce the Margin Level below 150% on weekdays and below 300% on weekends or during periods of market volatility [Client agreement(1).txt#284].
-2. The Company reserves the right to reject a withdrawal request if it does not comply with specific clauses or if it is submitted with incomplete or unsatisfactory documentation [Client agreement(1).txt#284].
-3. Withdrawals must be made using the same method that was used to fund the Trading Account and to the same remitter [Client agreement(1).txt#288].
-4. The Company can decline a withdrawal request made via a particular payment method, request additional documentation, or require the Client to resubmit the withdrawal request using an alternative method [Client agreement(1).txt#288].
+1. A withdrawal request must not reduce the Margin Level below 150% on weekdays.
+2. A withdrawal request must not reduce the Margin Level below 300% on weekends or during periods of market volatility.
+3. The Company reserves the right to reject a withdrawal request if it does not comply with specific clauses or if it is submitted with incomplete or unsatisfactory documentation.
+4. Withdrawals must be made using the same method used to fund the Trading Account and to the same remitter. The Company can decline a withdrawal request made via a particular payment method, request additional documentation, or require the Client to resubmit the withdrawal request using an alternative method [Account opening agreement(1).txt#110][Client agreement(1).txt#284][Client agreement(1).txt#288].
 
 Sources retrieved:
   - Account opening agreement(1).txt#110
@@ -75,7 +75,7 @@ Sources retrieved:
   - Client agreement(1).txt#288
 
 Prompt tokens: 368
-Completion tokens: 166
+Completion tokens: 165
 ========================================================================================================================
 
 ========================================================================================================================
@@ -97,7 +97,7 @@ Completion tokens: 126
 Question 7/77
 Q: Will my account be archived any time?
 
-A: Yes, your account may be archived if it meets certain criteria. For a non-cent trading account, it will be archived if there is no financial and/or trading activity and no pending orders for 60 calendar days. For a cent trading account, it will be archived if there is no financial and/or trading activity for 15 calendar days with a remaining balance of less than 100 US cents, or if there is no activity for 30 days, at which point any pending orders will be deleted. [Account opening agreement(1).txt#133], [Client agreement(1).txt#236]
+A: Yes, your account may be archived if it meets certain criteria. For a non-cent trading account, it will be archived if there is no financial and/or trading activity and no pending orders for 60 calendar days. For a cent trading account, it will be archived if there is no financial and/or trading activity for 15 calendar days and the remaining balance is less than 100 US cents, or if there is no activity for 30 days. [Account opening agreement(1).txt#133][Client agreement(1).txt#236]
 
 Sources retrieved:
   - Account opening agreement(1).txt#133
@@ -105,7 +105,7 @@ Sources retrieved:
   - Client agreement(1).txt#239
 
 Prompt tokens: 391
-Completion tokens: 121
+Completion tokens: 110
 ========================================================================================================================
 
 ========================================================================================================================
@@ -157,7 +157,7 @@ Completion tokens: 16
 Question 11/77
 Q: I am following a strategy account now, am i eligible to cancel the terms & conditions given by the company?
 
-A: You can cancel the Terms by providing the Company with written notice within 14 days of the Trading Account ID activation, but this right is only available if you have not engaged in any trading activity. Since you are currently following a strategy account, it is likely that you have engaged in trading activity, which would make you ineligible to cancel the terms. [Client agreement(1).txt#61]
+A: You can cancel the terms and conditions provided by the company within 14 days of the Trading Account ID activation, but only if you have not engaged in any trading activity. Since you are currently following a strategy account, it is likely that you have engaged in trading activity, which would make you ineligible to cancel the terms. [Client agreement(1).txt#61]
 
 Sources retrieved:
   - Copy trading TC(1).txt#85
@@ -165,7 +165,7 @@ Sources retrieved:
   - Copy trading TC(1).txt#12
 
 Prompt tokens: 427
-Completion tokens: 80
+Completion tokens: 75
 ========================================================================================================================
 
 ========================================================================================================================
@@ -202,7 +202,7 @@ Completion tokens: 24
 Question 14/77
 Q: What are the advantage points for a trader to escape from any sort of penalty?
 
-A: The provided context does not contain any information about advantage points for a trader to escape from penalties.
+A: The provided context does not contain any information about advantage points for a trader to escape from any sort of penalty.
 
 Sources retrieved:
   - Client agreement(1).txt#202
@@ -210,7 +210,7 @@ Sources retrieved:
   - Trading and Execution .txt#15
 
 Prompt tokens: 397
-Completion tokens: 19
+Completion tokens: 22
 ========================================================================================================================
 
 ========================================================================================================================
@@ -247,7 +247,7 @@ Completion tokens: 49
 Question 17/77
 Q: If my withdrawal is not received , what should i do?
 
-A: If your withdrawal is not received, you should check if the withdrawal request meets the requirements outlined in the agreement. If the documentation provided is unsatisfactory, the Company may reverse the withdrawal and return the funds to your Trading Account. You may need to proceed with a new withdrawal request or provide further documentation as requested by the Company [Account opening agreement(1).txt#116].
+A: If your withdrawal is not received, you should check if the withdrawal request meets the requirements outlined in the agreement. If the documentation provided is unsatisfactory, the Company may reverse the withdrawal and return the funds to your Trading Account. You may need to suggest another payment method or provide further documentation. For more details, you should refer to the "Withdrawal Conditions" section. [Account opening agreement(1).txt#116]
 
 Sources retrieved:
   - Account opening agreement(1).txt#110
@@ -255,7 +255,7 @@ Sources retrieved:
   - Account opening agreement(1).txt#116
 
 Prompt tokens: 357
-Completion tokens: 75
+Completion tokens: 84
 ========================================================================================================================
 
 ========================================================================================================================
@@ -277,7 +277,7 @@ Completion tokens: 18
 Question 19/77
 Q: In which jurisdiction is HF Markets (SV) Ltd incorporated?
 
-A: HF Markets (SV) Ltd is incorporated under the laws of Saint Vincent and the Grenadines [Cookie policy (1).txt#4].
+A: HF Markets (SV) Ltd is incorporated under the laws of Saint Vincent and the Grenadines [1].
 
 Sources retrieved:
   - Cookie policy (1).txt#4
@@ -285,7 +285,7 @@ Sources retrieved:
   - Terms of Business .txt#6
 
 Prompt tokens: 386
-Completion tokens: 29
+Completion tokens: 22
 ========================================================================================================================
 
 ========================================================================================================================
@@ -337,7 +337,7 @@ Completion tokens: 17
 Question 23/77
 Q: Do Necessary cookies require user consent?
 
-A: No, Necessary cookies do not require user consent. They are essential for the website to function properly. [Cookie policy (1).txt#9]
+A: No, Necessary cookies do not require user consent as they are essential for the website to function properly [Cookie policy (1).txt#9].
 
 Sources retrieved:
   - Cookie policy (1).txt#9
@@ -345,7 +345,7 @@ Sources retrieved:
   - Cookie policy (1).txt#10
 
 Prompt tokens: 343
-Completion tokens: 30
+Completion tokens: 29
 ========================================================================================================================
 
 ========================================================================================================================
@@ -472,22 +472,22 @@ Completion tokens: 24
 Question 32/77
 Q: At which price are Buy Limit and Buy Stop orders executed?
 
-A: Buy Limit and Buy Stop orders are executed at the declared price on the first current price touch. However, under certain trading conditions, it may be impossible to execute these orders at the declared price [Order execution policy(1).txt#31].
+A: Buy Limit and Buy Stop orders are executed at the declared price on the first current price touch, but it may be impossible to execute them at the declared price under certain trading conditions [Order execution policy(1).txt#31].
 
 Sources retrieved:
   - Account opening agreement(1).txt#84
   - Order exection policy(1).txt#31
-  - Account opening agreement 2(1).txt#83
+  - Account opening agreement(1).txt#83
 
-Prompt tokens: 415
-Completion tokens: 49
+Prompt tokens: 421
+Completion tokens: 46
 ========================================================================================================================
 
 ========================================================================================================================
 Question 33/77
 Q: At which price are Sell Limit and Sell Stop orders executed?
 
-A: Sell Limit and Sell Stop orders are executed at the declared price on the first current price touch. However, under certain trading conditions, it may be impossible to execute these orders at the declared price [Order exection policy(1).txt#31].
+A: Sell Limit and Sell Stop orders are executed at the declared price on the first current price touch. However, under certain trading conditions, it may be impossible to execute these orders at the declared price [Order execution policy(1).txt#31].
 
 Sources retrieved:
   - Risk with CFDS 2.txt#42
@@ -495,14 +495,14 @@ Sources retrieved:
   - Account opening agreement 2(1).txt#83
 
 Prompt tokens: 418
-Completion tokens: 50
+Completion tokens: 49
 ========================================================================================================================
 
 ========================================================================================================================
 Question 34/77
 Q: What is the minimum available tradable lot size unless otherwise stated in the contract specifications?
 
-A: The minimum available tradable lot size is 0.01, unless otherwise stated in the Contract Specifications on the Company’s website [Order exection policy(1).txt#36].
+A: The minimum available tradable lot size is 0.01, unless otherwise stated in the Contracts Specifications on the Company’s website [Order exection policy(1).txt#36].
 
 Sources retrieved:
   - Order exection policy(1).txt#36
@@ -517,7 +517,7 @@ Completion tokens: 37
 Question 35/77
 Q: Does placing a Stop Loss always guarantee that my loss will be limited to the price I selected?
 
-A: No, placing a Stop Loss does not guarantee that your loss will be limited to the price you selected. Once the Stop Loss order is triggered, it turns into a market order, which may be filled at a price that is lower than the specified stop price. This means that the actual execution price can be worse than the price you set for the Stop Loss, especially under certain market conditions [Risk with CFDS 2.txt#42][General risk disclosure(1).txt#17].
+A: No, placing a Stop Loss does not guarantee that your loss will be limited to the price you selected. Once the Stop Loss order is triggered, it turns into a market order and may be filled at a price that is lower than the specified stop price, especially under certain market conditions [Risk with CFDS 2.txt#42][General risk disclosure(1).txt#17].
 
 Sources retrieved:
   - Risk with CFDS 2.txt#42
@@ -525,7 +525,7 @@ Sources retrieved:
   - General risk disclosure(1).txt#17
 
 Prompt tokens: 412
-Completion tokens: 98
+Completion tokens: 77
 ========================================================================================================================
 
 ========================================================================================================================
@@ -562,7 +562,7 @@ Completion tokens: 57
 Question 38/77
 Q: Where should I send a formal complaint to HFM?
 
-A: You should send a formal complaint to complaints@hfm.com [Complaint handling(1).txt#13].
+A: You should send a formal complaint to complaints@hfm.com [source id: 13].
 
 Sources retrieved:
   - Complaint handling(1).txt#0
@@ -570,7 +570,7 @@ Sources retrieved:
   - Complaint handling(1).txt#5
 
 Prompt tokens: 379
-Completion tokens: 22
+Completion tokens: 19
 ========================================================================================================================
 
 ========================================================================================================================
@@ -712,7 +712,7 @@ Completion tokens: 25
 Question 48/77
 Q: What happens to Shield 500 leverage during news events?
 
-A: During news events, the leverage for the Shield 500 program is decreased to 500 [Shield 500.txt#11].
+A: During news events, the leverage for the Shield 500 program is decreased to 500. [Shield 500.txt#11]
 
 Sources retrieved:
   - Shield 500.txt#7
@@ -720,7 +720,7 @@ Sources retrieved:
   - Risk with CFDS 2.txt#19
 
 Prompt tokens: 407
-Completion tokens: 25
+Completion tokens: 26
 ========================================================================================================================
 
 ========================================================================================================================
@@ -802,7 +802,7 @@ Completion tokens: 19
 Question 54/77
 Q: I submitted a complaint with my name, account ID and description of the issue, but I did not provide the relevant supporting evidence. Can HFM ask me for additional information before investigating?
 
-A: Yes, HFM can ask you for additional information before investigating your complaint if the requirements are not fulfilled. They may revert back to you and request any additional information needed to handle the complaint [Complaint handling(1).txt#16].
+A: Yes, HFM can ask you for additional information before investigating your complaint if the requirements are not fulfilled. They will revert back to you and request any additional information needed to handle the complaint [Complaint handling(1).txt#16].
 
 Sources retrieved:
   - Complaint handling(1).txt#13
@@ -817,7 +817,7 @@ Completion tokens: 47
 Question 55/77
 Q: I filed a complaint but did not respond to any requests from the investigating officer for four weeks. What may happen to my complaint?
 
-A: Your complaint may be considered closed if four (4) weeks have passed since its submission and you have not responded to the Company’s investigating officer’s requests, preventing further investigation [Complaint handling(1).txt#22].
+A: Your complaint may be considered closed if four weeks have passed since its submission and you have not responded to the Company’s investigating officer’s requests, which prevents further investigation [Complaint handling(1).txt#22].
 
 Sources retrieved:
   - Complaint handling(1).txt#22
@@ -825,7 +825,7 @@ Sources retrieved:
   - Complaint handling(1).txt#18
 
 Prompt tokens: 412
-Completion tokens: 44
+Completion tokens: 42
 ========================================================================================================================
 
 ========================================================================================================================
@@ -847,7 +847,7 @@ Completion tokens: 22
 Question 57/77
 Q: My Stop Loss was set at a specific price, but major news caused the market to gap through that level. Does HFM have to execute my Stop Loss exactly at the requested price?
 
-A: No, HFM does not have to execute your Stop Loss exactly at the requested price. Once the Stop Loss order is triggered, it turns into a market order, which is filled at the best possible price. This price may be lower than the price specified by the Stop Loss order, especially in situations like major news causing the market to gap. [Risk with CFDS 2.txt#42]
+A: No, HFM does not have to execute your Stop Loss exactly at the requested price. Once the Stop Loss order is triggered, it turns into a market order, which is filled at the best possible price, which may be lower than the price specified by the Stop Loss order. This means that in situations like a market gap due to major news, the execution may not occur at the exact requested price [Risk with CFDS 2.txt#42].
 
 Sources retrieved:
   - General risk disclosure(1).txt#17
@@ -855,7 +855,7 @@ Sources retrieved:
   - Risk with CFDS.txt#46
 
 Prompt tokens: 430
-Completion tokens: 80
+Completion tokens: 91
 ========================================================================================================================
 
 ========================================================================================================================
@@ -877,7 +877,7 @@ Completion tokens: 63
 Question 59/77
 Q: During an economic news release, the spread suddenly became much wider. Does this alone prove that HFM manipulated the price?
 
-A: The provided context does not contain information that confirms or denies whether HFM manipulated the price during an economic news release. It only states that spreads may widen during such events due to market volatility and other factors. Therefore, the answer is no, this alone does not prove manipulation.
+A: The provided context does not contain information that confirms or denies whether HFM manipulated the price during an economic news release. It only discusses that spreads may widen during such events due to market volatility and other factors. Therefore, it cannot be concluded that the widening of the spread alone proves manipulation.
 
 Sources retrieved:
   - Trading and Execution .txt#19
@@ -885,7 +885,7 @@ Sources retrieved:
   - Trading and Execution .txt#20
 
 Prompt tokens: 418
-Completion tokens: 55
+Completion tokens: 57
 ========================================================================================================================
 
 ========================================================================================================================
@@ -907,7 +907,7 @@ Completion tokens: 59
 Question 61/77
 Q: After the 25th day of Shield 500, I withdraw 40 percent of my available withdrawable funds. What percentage of my applicable Shield bonus may be removed?
 
-A: After the 25th day of Shield 500, if you withdraw 40 percent of your available withdrawable funds, 50 percent of the bonus shall also be removed. Therefore, the percentage of your applicable Shield bonus that may be removed is 50 percent. [Shield 500.txt#10]
+A: The context states that if you withdraw 50% of your available withdrawable funds, 50% of the bonus shall also be removed. However, it does not provide information on what percentage of the bonus may be removed if you withdraw 40% of your available withdrawable funds. Therefore, I cannot determine the percentage of the applicable Shield bonus that may be removed based on the provided context.
 
 Sources retrieved:
   - Shield 500.txt#10
@@ -915,14 +915,14 @@ Sources retrieved:
   - Shield 500.txt#7
 
 Prompt tokens: 433
-Completion tokens: 61
+Completion tokens: 79
 ========================================================================================================================
 
 ========================================================================================================================
 Question 62/77
 Q: Can I withdraw the Shield 500 bonus itself as cash?
 
-A: No, the Shield 500 bonus cannot be withdrawn as cash. It is for trading purposes only and cannot be withdrawn. [Shield 500.txt#7]
+A: No, the bonuses of the Shield 500 Bonus Program are for trading purposes only and cannot be withdrawn as cash [Shield 500.txt#7].
 
 Sources retrieved:
   - Shield 500.txt#10
@@ -930,7 +930,7 @@ Sources retrieved:
   - Shield 500.txt#7
 
 Prompt tokens: 411
-Completion tokens: 32
+Completion tokens: 30
 ========================================================================================================================
 
 ========================================================================================================================
@@ -1065,7 +1065,7 @@ A: The theoretical follower position size can be calculated as follows:
 
 Therefore, the theoretical follower position size is 0.004 lot. 
 
-What actually happens is that the follower's trade will open with this calculated position size of 0.004 lot, which is the minimum trade size based on the calculations provided. [Copy trading TC(1).txt#123]
+What actually happens is that the follower will open a position of 0.004 lot based on the calculations above, which is the minimum trade size for this scenario. [Copy trading TC(1).txt#123]
 
 Sources retrieved:
   - Copy trading TC(1).txt#123
@@ -1073,7 +1073,7 @@ Sources retrieved:
   - Copy trading TC(1).txt#24
 
 Prompt tokens: 491
-Completion tokens: 224
+Completion tokens: 222
 ========================================================================================================================
 
 ========================================================================================================================
@@ -1125,7 +1125,7 @@ Completion tokens: 69
 Question 73/77
 Q: The Strategy Provider eventually closed a trade in profit, but my Follower Account was stopped out earlier because I did not have enough margin. Can I claim that the copy service failed simply because the Strategy Provider made a profit?
 
-A: No, you cannot claim that the copy service failed simply because the Strategy Provider made a profit. The Follower acknowledges that the profit or loss experienced will not be the same as that of the Strategy Provider, and being stopped out due to failure to maintain the margin requirement is a risk that the Follower assumes [Copy trading TC(1).txt#74].
+A: No, you cannot claim that the copy service failed simply because the Strategy Provider made a profit. The Follower acknowledges that the profit or loss experienced will not be the same as that of the Strategy Provider, especially if the Follower was stopped out due to failure to maintain the margin requirement [Copy trading TC(1).txt#74].
 
 Sources retrieved:
   - Copy trading TC(1).txt#72
@@ -1133,7 +1133,7 @@ Sources retrieved:
   - Copy trading TC(1).txt#74
 
 Prompt tokens: 443
-Completion tokens: 72
+Completion tokens: 68
 ========================================================================================================================
 
 ========================================================================================================================

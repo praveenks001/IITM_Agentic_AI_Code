@@ -1,0 +1,207 @@
+                                          HF Markets (SV) Ltd
+
+                                             RISK DISCLAIMER
+
+
+
+
+___                                                    ___                             ___
+
+Suite 305, Griffith Corporate Centre, P.O. Box 1510,   T. +44-2030978571   support@hfm.com
+Beachmont, Kingstown, St. Vincent and the Grenadines   F. +44-2030978570      www.hfm.com
+                                                                                                                  HF Markets (SV) Ltd
+                                                                                                                      Risk Disclaimer
+
+
+                                                     Table of Contents
+
+
+
+1.    Leverage ....................................................................................................................... 3
+
+2.    Quotes and Margin ....................................................................................................... 3
+
+3.    Risk Reduction .............................................................................................................. 4
+
+4.    Product Risks ................................................................................................................ 4
+
+5.    Technical ...................................................................................................................... 4
+
+6.    Transmission ................................................................................................................ 4
+
+7.    Trading Agents ............................................................................................................. 5
+
+8.    Phone Communication.................................................................................................. 5
+
+9.    Human Errors ............................................................................................................... 5
+
+10.   Bankruptcy ................................................................................................................... 5
+
+11.   Force Majeure .............................................................................................................. 6
+
+
+
+
+                                                                 2
+                          Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                              Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                                       Risk Disclaimer
+
+
+1.    Leverage
+
+1.1   High Leverage and low Margin can result in significant losses due to small price fluctuations
+      in the traded products. High Leverage allows the Customer to assume more risk, magnifying
+      both losses and profits; which can result in loss up to and in excess of Deposits and Margin.
+      The Customer must consider that if the trend on the market is against him/her the
+      Customer may sustain a total loss of the initial margin funds and any additional funds
+      deposited to maintain open positions. The Customer is responsible for all his/her risks,
+      financial resources he/she uses and for the chosen trading strategy.
+1.2   Foreign Exchange and any other Over-the-Counter (“OTC”) derivative product (Traded
+      Contracts) trading is highly speculative and is only suitable for Customers who understand
+      and are willing to assume the economic, legal and other risks involved, and are financially
+      able to assume losses up to or in excess of Margin or Deposits. The customer hereby
+      certifies that the Customer understands these risks and that the Customer is willing and
+      able financially and otherwise to assume the risks of Traded Contracts Trading and that loss
+      of the Customer’s entire Trading Account Balance will not result in a negative change to the
+      Customer’s life-style. Opening an Trading Account in order to speculate or assume risk of
+      any sort on Traded Contracts and other products through the Over-the-Counter (“OTC”)
+      market provided by "HF Markets Ltd" on a ”Spot” basis means assumptions of the following
+      risks:
+
+
+2.    Quotes and Margin
+
+2.1   Quotes and Margins are set by HF Markets (SV) Ltd and may differ from other firms. HF
+      Markets (SV) Ltd will exercise discretion in setting and collecting Margin. HF Markets (SV)
+      Ltd is authorized to convert funds in the Customer’s Trading Account for Margin into and
+      from such foreign currency at a rate of exchange determined by HF Markets (SV) Ltd in its
+      sole discretion on the basis of then-prevailing money market rates. The Customer must
+      maintain the minimum Margin Level requirement on Customer’s Open Positions at all
+      times. The Customer assumes the responsibility to monitor the Customer’s Required
+      Margin. HF Markets (SV) Ltd has the right to liquidate any or all Open Positions whenever
+
+
+                                                         3
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                                         Risk Disclaimer
+
+
+      the minimum Margin requirement is not maintained. To avoid a Margin Call it is highly
+      recommended to maintain a Margin Level of 1000% or greater.
+
+
+3.    Risk Reduction
+
+3.1   Stop Loss Orders or Stop Limit Orders, which are intended to limit losses may reduce the
+      losses incurred by price fluctuations, however such orders may not be able to execute
+      under certain abnormal market conditions.
+
+
+4.    Product Risks
+
+4.1   The profit and loss in any given Transaction may be affected by a currency rate that is used
+      to convert to the Accounts base currency. Accounts shall be opened in the following
+      currencies: USD/EUR as stated by the Customer and accepted by HF Markets (SV) Ltd.
+
+
+5.    Technical
+
+5.1   The Customer is responsible for any technical issues sustained on the Customer’s side.
+      These issues include but are not limited to:
+      (a) Failure of Customer’s hardware, software or internet connection;
+      (b) Improper operation of Customer equipment
+      (c) Improper settings on the Customer’s Terminal
+      (d) Delay of Customer Terminal updates
+      (e) MetaTrader Failure on Customer’s Computer
+5.2   The Customer acknowledged that at the moment of peak load there may be some
+      difficulties in getting telephone communication with the duty operator, especially on the
+      fast market (for example, when key economic indicators are released).
+
+
+6.    Transmission
+
+6.1   The Customer acknowledged that once a Transmission is made from the Client Terminal
+      and enters the execution queue and begins being processed it cannot be cancelled. Any
+      other instruction pertaining to the Transmission will be ignored until the Transmission is
+
+
+
+                                                           4
+                      Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                          Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                                        Risk Disclaimer
+
+
+      completed. The customer should always verify thoroughly that the details of Volume,
+      Product and Price Level prior to submitting any Transaction. All Transactions are performed
+      on a First-In-First-Out basis.
+
+
+7.    Trading Agents
+
+7.1   In the event that the Customer grants trading authority to a third party, the “Trading
+      Agent”, whether on a discretionary or non-discretionary basis, HF Markets (SV) Ltd shall in
+      no way be responsible for reviewing the Customer’s choice of such Trading Agent. HF
+      Markets (SV) Ltd is in no way liable for any losses incurred by such a party and any disputes
+      that may arise will be resolved between Customer and Trading Agent. In case of an
+      unnamed Trading Agent on the Customer’s Account, HF Markets (SV) Ltd is not liable for
+      rejecting any instruction from a non-authorized party on the Customer’s Trading Account.
+
+
+8.    Phone Communication
+
+8.1   The Customer understands that during peak trading hours that the Customer may
+      experience some difficulties in contacting HF Markets (SV) Ltd due to high volume. HF
+      Markets (SV) Ltd cannot be held liable for any disruptions in service due to any Force
+      majeure.
+
+
+9.    Human Errors
+
+9.1   The Customer understands that any error that is made by an HF Markets (SV) Ltd employee
+      that results in any position opened at an “untraded” price cannot be honored and will
+      subsequently be deleted.
+
+
+10.   Bankruptcy
+
+10.1 In case of Bankruptcy creditors retain priority. All transactions entered into with HF Markets
+      (SV) Ltd by the Customer are not traded on an exchange. Therefore under the regulating
+      code of law, the Customer’s funds may not receive the same protections as funds used to
+      guarantee exchange-traded futures or options contracts. If the company becomes
+
+
+
+                                                          5
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                                       Risk Disclaimer
+
+
+      insolvent, the Customer’s claim for deposits and profits may not receive priority. The
+      customer is a general creditor and will be paid as such from any monies still available after
+      priority claims are paid.
+
+
+11.   Force Majeure
+
+11.1 In case of Force Majeure the Customer shall accept the risk of financial losses.
+
+
+
+
+Version: 2024/01
+
+
+
+
+                                                         6
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+

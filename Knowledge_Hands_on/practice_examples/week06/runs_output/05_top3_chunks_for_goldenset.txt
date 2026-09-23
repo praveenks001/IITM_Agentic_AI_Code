@@ -175,7 +175,7 @@ Chunk Text:
 ------------------------------------------------------------------------------------------------------------------------
 
 TOP 2
-Cosine Score: 0.510
+Cosine Score: 0.511
 Chunk ID: Account opening agreement 2(1).txt#102
 Source ID: Account opening agreement 2(1).txt
 Chunk Text:
@@ -564,7 +564,7 @@ reement may apply to the
 ------------------------------------------------------------------------------------------------------------------------
 
 TOP 2
-Cosine Score: 0.557
+Cosine Score: 0.556
 Chunk ID: Client agreement(1).txt#61
 Source ID: Client agreement(1).txt
 Chunk Text:
@@ -577,7 +577,7 @@ Chunk Text:
 ------------------------------------------------------------------------------------------------------------------------
 
 TOP 3
-Cosine Score: 0.533
+Cosine Score: 0.535
 Chunk ID: Copy trading TC(1).txt#12
 Source ID: Copy trading TC(1).txt
 Chunk Text:
@@ -793,7 +793,7 @@ ive Financial Instruments (CFDs)
 ------------------------------------------------------------------------------------------------------------------------
 
 TOP 3
-Cosine Score: 0.359
+Cosine Score: 0.358
 Chunk ID: Client agreement(1).txt#230
 Source ID: Client agreement(1).txt
 Chunk Text:
@@ -1623,7 +1623,7 @@ Beachmont, Kingstown, St. Vincent and the Grenadines   F. +44-2030978570      ww
 ------------------------------------------------------------------------------------------------------------------------
 
 TOP 2
-Cosine Score: 0.576
+Cosine Score: 0.575
 Chunk ID: Risk with CFDS.txt#0
 Source ID: Risk with CFDS.txt
 Chunk Text:
@@ -1681,7 +1681,7 @@ e difference between the lower and the higher price of a given
 ------------------------------------------------------------------------------------------------------------------------
 
 TOP 2
-Cosine Score: 0.481
+Cosine Score: 0.480
 Chunk ID: Order exection policy(1).txt#15
 Source ID: Order exection policy(1).txt
 Chunk Text:
@@ -1723,7 +1723,7 @@ Query: At which price are Buy Limit and Buy Stop orders executed?
 ========================================================================================================================
 
 TOP 1
-Cosine Score: 0.612
+Cosine Score: 0.613
 Chunk ID: Account opening agreement(1).txt#84
 Source ID: Account opening agreement(1).txt
 Chunk Text:
@@ -1752,17 +1752,15 @@ f any or all of the pending orders at the declared price. Stop
 
 TOP 3
 Cosine Score: 0.575
-Chunk ID: Account opening agreement 2(1).txt#83
-Source ID: Account opening agreement 2(1).txt
+Chunk ID: Account opening agreement(1).txt#83
+Source ID: Account opening agreement(1).txt
 Chunk Text:
-ce. If the bid price for sell Orders or ask price for buy
-     Orders is reached, the Order will be filled as soon as possible at the price obtainable in the
-     market. Limit and stop Orders are executed consistent with the Company’s Best Execution
-     Policy and are not guaranteed executable at the specified price or amount, unless explicitly
-     stated by the Company for the specific Order.
-
-8.3. The Client will, unless otherwise agreed in writing, understands and acknowledges that the
-   
+s may be placed as market Orders to buy or sell as soon as possible at the price
+     obtainable in the market, or on selected products as limit and stop Orders to trade when
+     the price reaches a predefined level. Limit Orders to buy and stop orders to sell must be
+     placed below the current market price, and limit Orders to sell and stop Orders to buy must
+     be placed above the current market price. If the bid price for sell Orders or ask price for buy
+     Orders is reached, the Orde
 ------------------------------------------------------------------------------------------------------------------------
 
 
@@ -1799,7 +1797,7 @@ f any or all of the pending orders at the declared price. Stop
 ------------------------------------------------------------------------------------------------------------------------
 
 TOP 3
-Cosine Score: 0.563
+Cosine Score: 0.562
 Chunk ID: Account opening agreement 2(1).txt#83
 Source ID: Account opening agreement 2(1).txt
 Chunk Text:
@@ -2804,7 +2802,7 @@ Chunk Text:
 ------------------------------------------------------------------------------------------------------------------------
 
 TOP 3
-Cosine Score: 0.655
+Cosine Score: 0.654
 Chunk ID: Copy trading TC(1).txt#114
 Source ID: Copy trading TC(1).txt
 Chunk Text:
@@ -3549,7 +3547,7 @@ Query: If the Copy Ratio is 0.08 and the Strategy Provider opens a 0.50 lot trad
 ========================================================================================================================
 
 TOP 1
-Cosine Score: 0.811
+Cosine Score: 0.810
 Chunk ID: Copy trading TC(1).txt#124
 Source ID: Copy trading TC(1).txt
 Chunk Text:
@@ -3574,7 +3572,7 @@ Copy Ratio Example C:
 ------------------------------------------------------------------------------------------------------------------------
 
 TOP 2
-Cosine Score: 0.771
+Cosine Score: 0.772
 Chunk ID: Copy trading TC(1).txt#123
 Source ID: Copy trading TC(1).txt
 Chunk Text:
