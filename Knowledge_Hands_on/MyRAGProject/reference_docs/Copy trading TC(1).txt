@@ -1,0 +1,1259 @@
+                                        HF MARKETS (SV) LTD
+
+                                 COPY TRADING AGREEMENT
+
+
+
+
+___                                                    ___                             ___
+
+Suite 305, Griffith Corporate Centre, P.O. Box 1510,   T. +44-2030978571   support@hfm.com
+Beachmont, Kingstown, St. Vincent and the Grenadines   F. +44-2030978570      www.hfm.com
+                                                                                                                           HF Markets (SV) Ltd
+                                                                                                                       Copy Trading Agreement
+
+
+                                                         TABLE OF CONTENTS
+
+1.    Introduction ...............................................................................................................................3
+2.    Definitions..................................................................................................................................3
+3.    General Terms and Conditions ....................................................................................................6
+4.    Client Acceptance Criteria ...........................................................................................................7
+5.    Acknowledgements ....................................................................................................................7
+6.    Strategy Provider Account Registration .......................................................................................8
+7.    Strategy Provider’s Proposal ..................................................................................................... 12
+8.    Terms and Conditions ............................................................................................................... 12
+9.    Code of Conduct ....................................................................................................................... 15
+10. Follower Account Registration .................................................................................................. 16
+11. Following and Unfollowing ....................................................................................................... 19
+12. Deposits and Withdrawals ........................................................................................................ 20
+13. Rescue Level ............................................................................................................................. 20
+14. Copy Ratio ................................................................................................................................ 21
+15. Performance Fee ...................................................................................................................... 23
+16. Archived accounts .................................................................................................................... 25
+17. Exclusion of Liability ................................................................................................................. 25
+18. Confidentiality .......................................................................................................................... 26
+19. Prohibited Trading .................................................................................................................... 26
+20. Term ........................................................................................................................................ 27
+21. Amendment and Termination ................................................................................................... 27
+22. Governing Language ................................................................................................................. 28
+
+
+
+
+                                                                         2
+                              Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                                  Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                                   Copy Trading Agreement
+
+
+1.   Introduction
+
+1.1. The Copy Trading Agreement (herein the “Agreement”) sets out the terms and conditions
+     for the provision of the service of Copy Trading (herein the “Service”) by HF Markets (SV)
+     Ltd (herein the “Company”) to its Clients, under the provisions of the International Business
+     Companies (Amendment and Consolidation) Act, Chapter 149 of the Revised Laws of Saint
+     Vincent and Grenadines, 2009 (herein the “Law”).
+
+1.2. This Agreement shall be complementary with all other Operative Agreements between the
+     Company and the Client and together shall include all the terms and conditions by which
+     the business relationship of the Client and the Company will be governed with respect to
+     the provision of the Service i.e. termination of any of the Operative Agreements between
+     the Company and the Client shall constitute an immediate termination of this Agreement.
+
+
+2.   Definitions
+
+2.1. The following terms shall have the following meanings herein:
+
+“Agreement” means this agreement and any appendices to the agreement hereof;
+
+“Archived Copy Trading Account” means a Strategy Provider Account or a Follower Account
+which had no financial or trading activity for a set period of 60 (sixty) days as per the Account
+Opening Agreement of the Company;
+
+“Client” is a natural or legal person who has been accepted by the Company as its Client and to
+whom the Company shall provide the Primary Services as per the terms and conditions of the
+Account Opening Agreement. A Client can be either a prospective Strategy Provider or a
+prospective Follower.
+
+“Company” means HF Markets (SV) Ltd a private limited company incorporated under the laws
+of Saint Vincent and the Grenadines with Registration 22747 IBC 2015 having its registered office
+at Suite 305, Griffith Corporate Centre, P.O. Box 1510, Beachmont, Kingstown, Saint Vincent and
+the Grenadines;
+
+“Copy Ratio” is the ratio determining the size of the Followers’ position copied in relation to the
+Strategy Provider trade. It is calculated as Equity Ratio between the Follower and the Strategy
+
+
+                                                         3
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                        HF Markets (SV) Ltd
+                                                                                                    Copy Trading Agreement
+
+
+Provider multiplied by the chosen Follower Volume Allocation;
+
+“Effective Date” shall mean the date that the prospective Strategy Provider or the prospective
+Follower have been approved by the Company;
+
+“Equity” equals to Balance + Floating Profit & Loss + Swap;
+
+“Follower” is a Client who has registered for a Follower Account via the Company’s website and
+has been assessed and approved as a Follower by the Company under the terms and conditions
+of this Agreement;
+
+“FSC” means Financial Services Commission;
+
+“Copy Trading Accounts” means either the Strategy Provider Account or the Follower Account;
+
+“Investment Advice” means the provision of personal recommendation to a client, either after
+his request, or on the initiative of the IF, in relation to one or more transactions related to
+financial instruments, as per the provisions of the Law;
+
+“Losses” include both losses from open and closed trades;
+
+“OTP” shall mean the one-time unique password which can be only provided by a Private Strategy
+Provider to a Follower who wishes to follow the Private Strategy Provider’s account, and which
+expires once used by the Follower;
+
+“Operative Agreements” shall mean the agreements entered into by the Client and the Company
+that govern all the trading activity of the Client. Operative Agreements include but are not limited
+to the Account Opening Agreement, the Terms of Business, the Order Execution Policy and any
+other agreement and/or policy which is available to the Client via the Company’s website and
+any appendices and/or addendums thereof, as amended from time to time, as well as any other
+agreement and/or policy which the Company may be required by the Law and/or any other
+legislative requirement, to make available to its Clients from time to time;
+
+“Parties” shall mean both the Strategy Provider and the Follower which have been approved by
+the Company as per the provisions of this Agreement;
+
+“Performance Fee” is the fee payable by the Follower to the Strategy Provider in the case where
+the trading strategy followed has provided positive results for the Follower;
+
+
+                                                          4
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                                   Copy Trading Agreement
+
+
+“Portfolio Management” means managing portfolios in accordance with mandates given by
+clients on a discretionary client-by-client basis where such portfolios include one or more
+financial instruments, as per the provisions of the Law;
+
+“Primary Services” means the investment services which the Company is authorized to provide
+from time to time, under its articles of association;
+
+“Private Strategy Provider” shall mean a Client who has selected to open a Private Strategy
+Provider Account with the Company, and whose performance is only visible to Followers who
+obtain a private access password from the Private Strategy Provider. Only Followers who have
+the private access password can join a Private Strategy Provider;
+
+“Profits” include profits from open and closed trades;
+
+“Proposal” shall have the meaning set out in Clause 7 of this Agreement;
+
+“Public Strategy Provider” shall mean a Client who has selected to open a Public Strategy
+Provider Account with the Company and whose performance is publicly visible to all the
+Followers. Followers can join a Public Strategy Provider without the need to obtain the Public
+Strategy Provider’s prior approval;
+
+“Rescue Level” shall have the meaning set out in Clause 13 of this Agreement;
+
+“Service” means the Copy Trading service which is offered by the Company on a complimentary
+basis to the Primary Services offered by the Company under its licence;
+
+“Strategy Provider” is a Client who has registered for a Strategy Provider Account via the
+designated page on the Company’s website and has been assessed and approved as a Strategy
+Provider by the Company as per the terms and conditions of this Agreement. A Client can select
+to open either a Public or a Private Strategy Provider account;
+
+“Volume Allocation Percentage” is the percentage selected by the Follower which, alongside his
+equity ratio between the Follower and the Strategy Provider, is used to determine the volume of
+the trades to be copied.
+
+2.2. All references to a statutory provision include references to:
+
+   (a) any statutory modification, consolidation or re-enactment of it, whether before or after
+       the Effective Date of this Agreement, for the time being in force;
+
+                                                         5
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                        HF Markets (SV) Ltd
+                                                                                                    Copy Trading Agreement
+
+
+     (b) all statutory instruments or orders made pursuant to it; and
+
+     (c) any statutory provision of which that statutory provision is a re-enactment or
+        modification.
+
+2.3. Words denoting the singular include the plural and vice versa; words denoting any gender
+       include all genders; and words denoting persons include corporations, partnerships, other
+       unincorporated bodies and all other legal entities and vice versa.
+
+2.4. Unless otherwise stated, reference to a clause, party, appendix or a schedule shall mean a
+       clause or a party, appendix or schedule of this Agreement.
+
+2.5. The clause headings are inserted for ease of reference only and do not affect the
+       construction of this Agreement.
+
+
+3.     General Terms and Conditions
+
+3.1. The Service is only available to Clients of the Company who have fulfilled the criteria
+       outlined in Clause 4.1 of this Agreement. The Service provides the opportunity to its Clients
+       to follow the trading strategy of a Strategy Provider, under the terms and conditions set
+       out herein. It is noted that the Service does not constitute an asset management tool and
+       under no circumstances shall it be considered as Investment Advice or Portfolio
+       Management.
+
+3.2. A Client may register with the Company to become a Strategy Provider and choose to
+       publish his trading strategy through the designated page on the Company’s website to any
+       Client who wishes to become his Follower, under the terms and conditions set out herein.
+
+3.3. A Follower has the opportunity to follow a Strategy Provider of the Company or a Strategy
+       Provider of other entities of HF Markets Group. On the same note, a Strategy Provider can
+       have Followers of both the Company and Followers of other entities of HF Markets Group.
+
+3.4. . A Follower is strictly prohibited from replicating, mirroring, or otherwise duplicating the
+       trades from their copy trading account linked to a Strategy Provider.
+
+
+
+
+                                                          6
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                        HF Markets (SV) Ltd
+                                                                                                    Copy Trading Agreement
+
+
+3.5. Any attempt by a Follower to circumvent the agreed-upon performance fees or other
+       remuneration payable to the Strategy Provider by replicating their trades on a separate
+       account will be considered a material breach of these Terms and Conditions.
+3.6. In the event of a breach of this clause, the Company reserves the right, at its sole discretion,
+       to take any or all of the following actions without prior notice to the Follower:
+       (d) Immediately terminate the Follower’s copy trading service and close their account.
+
+       (e) Immediately cease any and all trade copying activities for the Follower's account.
+
+       (f) Pursue legal action to recover any lost fees, damages, or other financial losses incurred
+           by the Company or the Strategy Provider as a result of the breach.
+
+       (g) Freeze or deduct funds from the Follower's account to cover any amounts owed to the
+           Strategy Provider.
+
+
+4.     Client Acceptance Criteria
+
+4.1. The Company shall offer the Service only to eligible clients who satisfy the following criteria:
+
+       (a) have entered into an agreement for the provision of the Primary Services and who
+           have been accepted by the Company as its Clients; and
+
+     (b) have applied for the Service through the applicable link on the Company’s website and/or
+        Client’s Area.
+
+4.2. The Client acknowledges and confirms that the Company has the right to decline and/or
+       refuse to offer the Service to a specific Client if he does not fulfil the criteria set out in
+       Clause 4.1 of this Agreement.
+
+4.3. It is understood that the Company has the right to request any additional information
+       and/or documentation from the Client at any time throughout the term of this Agreement
+       and/or the business relationship with the Client.
+
+4.4. The Copy Pro account type (for both Strategy Providers and Followers) is unavailable to
+       Clients who are residents or citizens of Vietnam.
+
+
+5.     Acknowledgements
+
+
+                                                          7
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                      HF Markets (SV) Ltd
+                                                                                                  Copy Trading Agreement
+
+
+5.1. The Parties acknowledge that they have read, understood and accepted the present
+     Agreement, and all Operative Agreements available on the Company’s website.
+
+5.2. The Parties further acknowledge and understand that:
+
+     (a) The Company’s relationship with them will be governed by the terms and conditions
+          of this Agreement and all other Operative Agreements available at the Company’s
+          website, as amended from time to time;
+
+   (b) The Service is not an asset management tool and under no circumstances, it shall be
+       constituted as Investment Advice or a Portfolio Management service;
+
+   (c) They understand and accept the nature of inherent risks on CFDs trading as specified in
+       the Risk Disclosure document available at the Company’s website;
+
+   (d) The Company does not guarantee the recurrence of rates of return that have been made
+       by a Strategy Provider in the past;
+
+   (e) Any information in relation to the Service which is known to the Strategy Provider or the
+       Follower by using this Service shall be used solely for his own account;
+
+   (f) That the ratio between profits and losses of a Strategy Provider shall not always be the
+       same as the ratio between profits and losses of his Followers;
+
+   (g) The Company shall follow the principles set out in its Order Execution Policy with respect
+       to the execution of orders, which is available to all Clients via the Company’s website. The
+       Parties are required to ensure that they understand the principles laid down in the Order
+       Execution Policy of the Company prior to entering into a business relationship with the
+       Company.
+
+5.3. A follower is strictly prohibited from replicating, mirroring, or otherwise duplicating the
+     trades through their copy trading account linked to a Strategy Provider.
+
+5.4. Any attempt by a Follower to circumvent the agreed-upon performance fees or other
+     remuneration payable to the Strategy Provider by replicating their trades on a separate
+     account will be considered a material breach of these Terms and Conditions.
+
+5.5. In the event of a breach of the above clause, the Company reserves the right, at its sole
+     discretion, to take any or all of the following actions without prior notice to the Follower:
+
+                                                        8
+                   Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                       Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                                   Copy Trading Agreement
+
+
+     (a) Immediately terminate the Follower’s copy trading service and close their account.
+     (b) Immediately cease any and all trade copying activities for the Follower's account.
+     (c) Pursue legal action to recover any lost fees, damages, or other financial losses incurred
+          by the Company or the Strategy Provider as a result of the breach.
+     (d) Freeze or deduct funds from the Follower's account to cover any amounts owed to the
+          Strategy Provider.
+
+
+6.   Strategy Provider Account Registration
+
+6.1. A Client who wishes to register as a Strategy Provider is required to complete a Strategy
+     Provider Account Opening Form. It is understood that a Client who does not fulfill the
+     criteria set out in Clause 4.1 of this Agreement shall not be able to proceed with registering
+     as a Strategy Provider.
+
+6.2. The Strategy Provider shall open a Strategy Provider Account which shall be either a Copy
+     Premium, a Copy Cent or a Copy Pro account via his Client Area and the following conditions
+     must be fulfilled:
+
+     (a) Specification of a Strategy Name;
+     (b) Avatar Upload (optional);
+     (c) Trading Strategy Description;
+     (d) Account Settings – Private or Public;
+     (e) Specification of Performance Fee;
+     (f) The maximum leverage available for this account is set at 1:1000. While the client may
+         select a leverage ratio of either 1:500 or 1:1000, the Company reserves the right to
+         reduce the leverage at its sole discretion. For further details, please refer to the [Risks
+         Associated with transactions in Derivative Financial Instruments(CFDS).
+     (g) In case the Strategy Provider does not provide the information mentioned in the above
+         section 6.1 within twenty (20) calendar days, the Company reserves the right to decline
+         the Strategy Provider Account.
+6.3. It is further noted that failure to satisfy one or more of the above requirements (with the
+     exception of Avatar upload) the Company shall not proceed with accepting him as a
+     Strategy Provider for the purposes of this Agreement.
+
+                                                         9
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                        HF Markets (SV) Ltd
+                                                                                                    Copy Trading Agreement
+
+
+6.4. If the Client fulfills the requirements set out in Clause 6.2 of this Agreement, he will receive
+      a confirmation email informing him that he has been accepted by the Company as a
+      Strategy Provider which will include his login details.
+
+6.5. Unless otherwise specified by the Strategy Provider, his Strategy Provider Account will be
+      added to the public Strategy Provider Accounts on the designated page.
+
+6.6   A Client who has successfully applied to become a Strategy Provider as per the provisions
+      of this Agreement from the 26th of March 2025 onwards only, has the opportunity to submit
+      his/her historical trading data from either (i) his/her HFM Trading Account or (ii)
+      MetaTrader (MT4/MT5) account statements from other brokers, provided that such
+      trading history satisfies the Company's eligibility criteria.
+6.7   Where the submitted trading history is accepted by the Company, a summary of the Client's
+      past trading performance may be displayed for a period of thirty (30) days from the date
+      such history is approved and published by the Company.
+6.8   The Company shall have the sole and absolute discretion to determine whether a Strategy
+      Provider's submitted trading history satisfies the applicable eligibility criteria for display.
+      The Company reserves the right, at any time and without providing any reason, to reject,
+      suspend, remove, or discontinue the display of any past trading history or related
+      performance information from the Company's platforms, website, or any other interface,
+      notwithstanding any previous approval or publication.
+
+6.9   The Client acknowledges, agrees and understands that the following information will be
+      displayed in the Past Performance List as per clauses 6.6, 6.7 and 6.8. above:
+
+      (a)   Growth % ((Total Deposits + Open Trades + Closed Trades) / Total Deposits) x 100%;
+      (b)   Average Profit;
+      (c)   Average Loss;
+      (d)   Count of Profitable Trades;
+      (e)   Total Deposits;
+      (f)   Total Withdrawals.
+6.6. The Company allows the Strategy Provider to use the Service without publishing his
+      Strategy Provider Account in the designated page on the Company’s website.
+
+
+                                                         10
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                                   Copy Trading Agreement
+
+
+6.7. A Strategy Provider can open up to 5 (five) Copy Premium, 3 (three) Copy Cent and 2 (two)
+      Copy Pro Strategy Provider Accounts. It is noted that the Company may limit the number
+      of Strategy Provider Accounts that a Strategy Provider can have at any time and with prior
+      notification to the Strategy Provider.
+
+6.8. Strategy Providers acknowledge, agree and understand that Copy Premium Strategy
+      Provider Accounts can be followed by Copy Premium Follower Accounts, Copy Cent
+      Strategy Provider Accounts can be followed by Copy Cent Follower Accounts, and Copy Pro
+      Strategy Provider Accounts can be followed by Copy Pro Follower Accounts only.
+
+6.9. The maximum number of Followers that can join a Strategy Provider Account is limited to
+      200 (Two Hundred) unless otherwise agreed between the Company and the Strategy
+      Provider. In the event that this limit is reached, the option to accept new Followers will be
+      disabled.
+
+6.10. A Strategy Provider Account which has been inactive i.e. with no financial or trading activity
+      for a period of 60 (sixty) days, will be automatically Archived as per the provisions of Clause
+      16 of this Agreement.
+
+6.11. The minimum opening deposit amount for a Copy Premium and Copy Pro Strategy Provider
+      Account is 100 USD and the minimum redeposit amount is 50 USD. The minimum opening
+      deposit amount for a Copy Cent Strategy Provider Account is 2500 USc and the minimum
+      redeposit amount is 500 USc. It is understood that the Strategy Provider is required to fund
+      his Strategy Provider Account prior to being able to be followed by a Follower.
+
+6.12. The Strategy Provider shall have free access to the Advanced Insights, Premium Trader and
+      Autochartist Tools only.
+
+6.13. The Strategy Provider can open only the following positions on his Strategy Provider
+      Account:
+
+      (a) Buy;
+
+      (b) Sell;
+
+      (c) Buy and Sell Limit;
+
+      (d) Buy and Sell Stop;
+
+                                                        11
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                                   Copy Trading Agreement
+
+
+     (e) Take Profit;
+
+     (f) Stop Loss.
+
+6.14. The option “Close by” shall not be available for use by the Strategy Provider.
+
+
+7.   Strategy Provider’s Proposal
+
+7.1. A Strategy Provider Proposal is a consent for Followers to follow his trading strategies. Each
+     Proposal consists of a set of parameters which are selected by the Strategy Provider himself
+     and the Company shall use this information for the calculation of the remuneration of the
+     Strategy Provider, as well as set the conditions for the formation and operation of the
+     Strategy Provider Accounts.
+
+7.2. The Follower acknowledges, understands and confirms that acceptance or rejection of any
+     Strategy Provider Proposal is an entirely voluntary decision of the Follower and does not
+     entail the conclusion of any contract, material reciprocal relationship or any other
+     commitment binding the Company, Strategy Providers and Followers.
+
+7.3. The Follower represents and warrants that the decision to accept or reject a Proposal from
+     a Strategy Provider is based on his own discretion and assessment of the Proposal.
+
+7.4. The Strategy Provider Proposal parameters are the following:
+
+     (a) Strategy Name – Strategy Provider must agree to and abide by the Copy Trading Code
+          of Conduct;
+
+     (b) Public or Private Strategy Provider Account Profile;
+
+     (c) Copy Premium, Copy Cent or Copy Pro Strategy Provider Account;
+
+     (d) Performance Fee – Percentage of profits payable to the Strategy Provider.
+
+
+8.   Terms and Conditions
+
+8.1. The Strategy Provider can make a Proposal to Followers to follow his own trading strategies,
+     by setting the Proposal parameters as per Clause 7 of this Agreement, and the Follower
+     may accept this Proposal on his own discretion and assessment. The Follower has the
+     opportunity to follow the trading strategy as proposed by the Strategy Provider by setting
+
+                                                        12
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                                   Copy Trading Agreement
+
+
+     the Rescue Level and Copy Ratio he wishes for his Follower Account.
+
+8.2. The Strategy Provider has the ability to:
+
+     (a) Carry out trading transactions on Strategy Provider accounts on the instruments
+          offered by the Company under the Service;
+
+     (b) Use EAs to carry out trading transactions;
+
+     (c) Establish the Strategy Provider Proposal;
+
+     (d) Determine the Strategy Type of the Strategy Provider Account;
+
+     (e) Determine the Performance Fee – this is the fee charged to Follower(s) based on the
+          percentage of any profit made for the Follower that is payable to the Strategy Provider
+          as his Performance Fee;
+
+     (f) Withdraw funds from his Strategy Provider Account at any given time;
+
+     (g) Set the Followers’ minimum opening deposit amount for his Strategy Provider Account.
+          A Strategy Provider can change the Followers’ minimum opening deposit for his
+          Strategy Provider Account up to 3 (three) times.
+
+8.3. The Strategy Provider is not allowed to request the deposit or withdrawal of funds to or
+     from the Follower Accounts.
+
+8.4. All Copy Trading account calculations, deposit and withdrawal of funds, crediting and
+     debiting of Performance fees are performed by the Company.
+
+8.5. The Follower has the ability to:
+
+     (a) Select a Rescue Level percentage;
+
+     (b) Select a Volume Allocation Percentage;
+
+     (c) Close copied trades in the Follower Account. No other trade modifications are
+          permitted including but not limited to opening trades on their Follower Account;
+
+     (d) Withdraw funds from his Follower Account at any given time.
+
+8.6. The Service is not available to Joint Accounts Holders.
+
+8.7. The Strategy Provider is not allowed to have any direct contact with a Follower i.e. through
+
+
+                                                        13
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                                   Copy Trading Agreement
+
+
+     telecommunications and/or any form of electronic communication other than the one
+     specified under the terms and conditions of this Agreement. The Strategy Provider
+     relationship with the Follower shall be limited to making available his Strategy Provider
+     Proposal to prospective Followers.
+
+8.8. The Follower has the option to follow a Strategy Provider during the trading activity of the
+     Strategy Provider i.e. the Strategy Provider might have open trades prior to the Follower
+     choosing to follow him. It is understood that any open trades which were opened prior to
+     the Follower choosing to follow a Strategy Provider, those trades will not be opened on the
+     Follower Account. The Follower shall be able to copy any subsequent trades opened by the
+     Strategy Provider. It is further understood that the ratio between profits and losses of the
+     Strategy Provider shall not be the same as the ratio between profits and losses of the
+     Follower.
+
+8.9. The Follower will receive a Margin Call in case the minimum margin requirement to cover
+     any open-copied trades is insufficient. The Follower shall be responsible for monitoring his
+     Follower Account and ensure that the minimum margin requirement is met. It is noted that
+     in case of insufficient margin in the Follower Account, the Follower will be stopped out. The
+     Follower acknowledges and understands that he shall have no right to claim for any losses
+     arising out of his failure to maintain the margin requirement i.e. the Follower being stopped
+     out due to failure to maintain the margin requirement whereas the Strategy Provider was
+     at a profitable position at the time of closing his positions.
+
+8.10. The Follower acknowledges, agrees, and understands that if they are located in, or are a
+     resident or citizen of, a jurisdiction where the Company prohibits or restricts the offering
+     of certain financial instruments (including, but not limited to, Cryptocurrencies), the system
+     will automatically disable the copying of those instruments. Accordingly, the Company
+     reserves the right to reject any related orders, and any trades opened by the Strategy
+     Provider involving such restricted instruments will not be copied or executed on the
+     Follower's Account. The Follower acknowledges and accepts that this may result in material
+     differences in trading performance, profits, and losses compared to the Strategy Provider.
+
+8.11. The Client acknowledges and accepts that certain financial instruments made available
+
+
+                                                        14
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                      HF Markets (SV) Ltd
+                                                                                                  Copy Trading Agreement
+
+
+     through the Service may be traded on a continuous basis, subject to periodic maintenance
+     windows, server restarts, technical interruptions and/or temporary system unavailability.
+     During such periods, the Company may be unable to accept, execute, copy, modify and/or
+     close orders for a limited period of time.
+
+8.12. The Client further acknowledges and accepts that, during the periods referred to in clause
+     8.11 above, trades opened by a Strategy Provider may not be copied to the relevant
+     Follower Account, and copied trades may be executed, modified and/or closed later than
+     the corresponding trades on the Strategy Provider Account, which may result in differences
+     in execution time, price, profit and/or loss.
+
+
+9.   Code of Conduct
+
+9.1. The Strategy Provider acknowledges, confirms and understands that by using this Service
+     he must follow the following principles of the Company’s Code of Conduct:
+
+     (a) He shall not promote any unsolicited and/or unauthorized commercial advertising,
+          promotional materials or other form of solicitation;
+
+     (b) He shall not refer to any other Strategy Provider Accounts and/or internet sources;
+
+     (c) He shall not reveal any Follower’s identity through email addresses, URL addresses,
+          private messaging software/application IDs, telephone number, personal account
+          details and any other form of identification of a Follower to any third party;
+
+     (d) He shall not attempt to impersonate or falsely state or otherwise misrepresent another
+          user, person or entity;
+
+     (e) He shall not represent himself as a representative and/or affiliate and/or connected
+          person with the Company in any contracts and/or agreements either verbally and/or
+          in writing other than within the context of this Agreement;
+
+     (f) He shall not violate the existing copyrights, patents, trademarks or other proprietary
+          rights of the Company which might come to his possession during the course of this
+          Agreement;
+
+     (g) He shall not promise and/or guarantee to any Follower and/or a prospective Follower
+
+
+                                                       15
+                   Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                       Registration number 22747 IBC 2015
+                                                                                                        HF Markets (SV) Ltd
+                                                                                                    Copy Trading Agreement
+
+
+          any sort of definite returns of investment i.e. any form of projected gains, expected
+          returns, guarantees of profits, and/or risk level, drawdown and/or unrealistic/false
+          guarantee;
+
+      (h) He shall not make any statements and/or calculations and/or obligations on behalf of
+          the Company on any means of public communications i.e. forums, journal articles,
+          books presentations;
+
+      (i) He shall not use any threatening and/or abusive and/or harassing and/or defamatory
+          and/or vulgar and/or obscene and/or hateful or otherwise objectionable content
+          including but not limited to racial and/or nationalistic and/or ethnic slurs on his
+          Strategy Provider Account.
+
+
+10.   Follower Account Registration
+
+10.1. A Client who fulfils the criteria set out in Clause 4.1 of this Agreement may apply to the
+      Company to become a Follower of a Strategy Provider. A Client may become a Follower of
+      a Strategy Provider by registering for a Follower Account and the following conditions must
+      be met:
+
+      (a) Select Follower Account Type – Copy Premium, Copy Cent or Copy Pro;
+
+      (b) Select a Strategy Provider to follow;
+
+      (c) Select the Rescue Level;
+
+      (d) Select the Volume Allocation Percentage.
+
+10.2. It is further noted that failure to satisfy one or more of the above requirements, the
+      Company shall not proceed with accepting him as a Follower for the purposes of this
+      Agreement.
+
+10.3. If the Client fulfils the requirements set out in Clause 10.1 of this Agreement, he will receive
+      a confirmation email informing him that he has been accepted by the Company as a
+      Follower and which will include his MT4 and MT5 login details.
+
+10.4. A Follower can open up to 10 (ten) Copy Premium, 5 (five) Copy Cent and 10 (ten) Copy Pro
+      Follower Accounts. It is noted that the Company may limit the number of Follower Accounts
+
+                                                         16
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                        HF Markets (SV) Ltd
+                                                                                                    Copy Trading Agreement
+
+
+     that a Follower can have at any time with prior notification to the Follower.
+
+10.5. Followers acknowledge, agree and understand that:
+
+     (i) Copy Premium Follower Accounts can follow Copy Premium Strategy Provider
+         Accounts,
+
+     (ii) Copy Cent Follower Accounts can follow Copy Cent Strategy Provider Accounts and;
+
+     (iii) Copy Pro Follower Accounts can follow Copy Pro Strategy Provider Accounts only.
+
+10.6. The Follower is permitted to follow only 1 (one) Strategy Provider per Follower Account at
+     any given time.
+
+10.7. The Follower is permitted to follow the same Strategy Provider from different Follower
+     Accounts.
+
+10.8. The Follower Account is specifically designed to facilitate the copying of trading
+     transactions made by the Strategy Provider i.e. no additional trading transaction can be
+     performed by the Follower on the Follower Account. The only modification option available
+     to the Follower is to close the copied trades in his Follower Account. The Follower
+     acknowledges and understands that by closing copied trades in his Follower Account on his
+     own discretion, the profit or loss that he will experience will not be the same as that of his
+     followed Strategy Provider.
+
+10.9. In the event that there are insufficient funds in the Follower Account to support the copying
+     of a Strategy Provider trade, then the specific position will not be opened.
+
+10.10. Pending Orders, Take Profit or Stop Loss set by the Strategy Provider are not visible to the
+     Followers Accounts.
+
+10.11. The minimum opening deposit amount for a Copy Premium Follower Account is 25 USD,
+     and minimum redeposit amount is 10 USD. The minimum opening deposit for a Copy Cent
+     Follower Account is 1000 USc and the minimum redeposit amount is 500 USc. The minimum
+     opening deposits amount for a Copy Pro Follower Account is 100 USD and minimum
+     redeposit amount is 50 USD. The above-mentioned minimum opening deposit amounts
+     could vary at the discretion of the Strategy Provider (see Clause 8.2 (g) above). The
+     minimum opening deposit amount shall be disclosed on the performance page of the
+
+                                                         17
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                                   Copy Trading Agreement
+
+
+     specific Strategy.
+
+10.12. The Follower acknowledges, understands and confirms the following risks associated with
+     the execution of orders on his Follower Account:
+
+     (a) The Company cannot guarantee that an order opened on the Follower’s Account will
+         be executed at the same price as an order on the Strategy Provider’s Account;
+
+     (b) An order placed by the Strategy Provider will normally be executed at the same time
+         on the Follower’s Account. Nevertheless, it is understood that if, by the time the order
+         is executed on the Follower’s Account, the price of an order has moved considerably
+         far from the price in which the Strategy Provider has opened the order due to high
+         volatility in the market, the Company reserves the right to not open the relevant order
+         on the Follower’s Account;
+
+     (c) An order placed by the Strategy Provider will normally be executed at the same time
+         on the Follower’s Account. Nevertheless, it is understood that if, by the time the order
+         is about to be executed on the Follower’s Account the order has been already closed
+         by the Strategy Provider then the order will not be executed on the Follower’s Account;
+
+     (d) If the price of an order has moved considerably far from the price in which the Strategy
+         Provider has chosen to close the trade, the Company reserves the right to close the
+         trade on the available market price at the time of closure;
+
+     (e) The Company reserves the right to reject an order to be opened on the Follower’s
+         Account if the volume restriction on a given financial instrument is not met. The
+         volume restrictions of each financial instruments are available through the Company’s
+         website;
+
+     (f) The costs associated with the financial instruments offered by the Company which are
+         faced by the Follower might differ from the costs faced by the Strategy Provider,
+         depending on the type of the trading account that each one has opened i.e. when the
+         Strategy Provider has opened a trading account associated with lower costs compared
+         to the trading account opened by the Follower, due to the type of the trading account
+         opened by each one of them, this might have a different outcome on a particular trade
+
+
+                                                        18
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                                   Copy Trading Agreement
+
+
+          or the overall strategy of each one;
+
+      (g) Taking into consideration the risks associated with the execution of orders, the
+          Follower shall be responsible for assessing the strategy of the Strategy Provider and
+          take the necessary actions for his copied trades. The Company shall not be liable for
+          any losses resulting from the execution of orders and the Follower’s failure to assess
+          his copied strategy.
+
+10.13. In case a Client's Follower Account Equity drops below 5 USD and there are no open
+      positions, this Follower Account will be unfollowed from the respective Strategy Provider's
+      Account and the outstanding equity will be moved to the Client's Account.
+
+
+11.   Following and Unfollowing
+
+11.1. Upon selecting to follow a Strategy Provider, the Follower will choose the Rescue Level and
+      the Volume Allocation Percentage for the Follower Account.
+
+11.2. A Follower has the option to unfollow a Strategy Provider. This is possible only when there
+      are no open positions on the Follower Account. In case the Follower selects the option to
+      unfollow a Strategy Provider, the Follower will be given the option to automatically close
+      all open positions, provided that the markets are open.
+
+11.3. In order for a Follower to follow a different Strategy Provider, he must first select to
+      unfollow the current Strategy Provider as per Clause 11.2 of this Agreement or open a new
+      Follower Account, in case the limit of the number of Follower Accounts per Follower has
+      not been reached.
+
+11.4. Upon unfollowing a Strategy Provider:
+
+      (a) The Follower’s funds will be moved automatically to the Follower’s Account;
+
+      (b) Performance fees, if applicable, are removed from the Follower’s Account and paid to
+          the Strategy Provider’s Account automatically;
+
+      (c) The Rescue Level and the Volume Allocation Percentage reset to zero.
+
+11.5. In the case where a Follower selects the option to unfollow a Strategy Provider or a Rescue
+      Level is reached, but the process cannot be completed due to, but not limited, market close
+
+                                                        19
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                        HF Markets (SV) Ltd
+                                                                                                    Copy Trading Agreement
+
+
+      hours, financial symbol trading break, system errors, the Follower account is moved to
+      'Pending Unfollow' status until the process is completed. No trading and/or balance
+      operations are allowed when a Follower account is in 'Pending Unfollow' status.
+
+11.6. Private Strategy Providers have the option to choose which Followers will follow their
+      accounts by generating and distributing OTPs.
+
+11.7. Private Strategy Providers have the option to remove any of their Followers. This is possible
+      only when there are no open positions on the Followers’ accounts. Followers are notified
+      when Strategy Providers have this option on the Follow page of the Company’s website.
+
+11.8. The options mentioned in clauses 11.6 and 11.7 above, can be only provided to Private
+      Strategy Providers once the Company’s approval is obtained by submitting a written
+      request to copytrading@hfm.com . These options can be revoked at any time by the
+      Company at its sole discretion.
+
+
+12.   Deposits and Withdrawals
+
+12.1. The Parties can complete deposits via their Client Area.
+
+12.2. The value of the deposited funds cannot be less than the minimum deposit requirements
+      of each Copy Trading account.
+
+12.3. The Parties can withdraw their available funds at any given time via their Client Area.
+      Withdrawal requests shall be processed as per the Withdrawal Conditions of the Company
+      which are available through the Company’s website.
+
+12.4. The minimum standard withdrawal amount will be ten (10) USD. In case client's balance is
+      less than ten (10) USD, the client can select to "Unfollow" the Strategy and the entire
+      balance can be withdrawn to the Account.
+
+
+13.   Rescue Level
+
+13.1. Rescue Level is the percentage of equity that a Follower can keep secured in case of loss on
+      the copied trades in the Follower Account.
+
+13.2. Rescue Level can be adjusted during each deposit or withdrawal to/from the Follower
+
+
+                                                         20
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                                   Copy Trading Agreement
+
+
+      Account and can be set to a maximum of 50% of the equity at the time of each deposit or
+      withdrawal.
+
+13.3. Once the Rescue Level is reached, all open trades on the Follower Account are closed and
+      the remaining funds are no longer available to be placed on trades.
+
+Example A:
+
+      Follower deposits 1,000 USD and selects Rescue Level of 20%, therefore 200 USD is secured
+      in case of loss, subject to Clause 13.4. When Follower’s equity reaches 200 USD all open
+      trades are closed and the remaining funds are no longer available to be placed on trades.
+
+Example B:
+
+      Follower deposits 1,000 USD and selects Rescue Lever of 25%, therefore 250 USD is secured
+      in case of loss, subject to Clause 13.4. Follower makes profit of 250 USD and decides to
+      withdraw 500 USD. Upon withdrawal, the Follower is requested to set new Rescue Level
+      which will be calculated for the remaining funds of 750 USD.
+
+Example C:
+
+      Follower deposits 1,000 USD and selects Rescue Level of 30%, therefore 300 USD is secured
+      in case of loss, subject to Clause 13.4. Follower decides to make an additional deposit of
+      100 USD. Upon deposit, the Follower is requested to set new Rescue Level, which will be
+      calculated for funds of 1,100 USD.
+
+13.4. The Follower hereby acknowledges and understands that due to high volatility, Rescue
+      Level can be triggered below or above the expected amount. It is understood that the
+      Company shall not be held liable for the difference between the expected rescue amount
+      and the actual rescued amount in case of volatile market conditions.
+
+13.5. Followers can only readjust the Rescue Level during redeposits or withdrawals.
+
+
+14.   Copy Ratio
+
+14.1. Copy Ratio is the ratio determining the size of the Followers position copied in relation to
+      the Strategy Provider trade. It is calculated as Equity Ratio between Follower and Strategy
+      Provider and the chosen Follower Volume Allocation.
+
+                                                        21
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                                   Copy Trading Agreement
+
+
+14.2. The Copy Ratio changes dynamically as the equity on the Follower Account and Strategy
+     Provider Account changes, meaning it is recalculated on each trade as the equity ratio is
+     different on each trade even if the Volume Allocation has not changed.
+
+14.3. Follower Volume Allocation is the Percentage selected by the Follower which, alongside his
+     equity, is used to determine the volume of trades to be copied.
+
+14.4. Volume Allocation can be adjusted during each deposit to the Follower Account meaning
+     the Copy Ratio is reset each time funds are added to the Follower Account.
+
+14.5. In the event that the position size to be opened - based on the Copy Ratio - is less than the
+     minimum tradeable volume offered by the Company, then the trade will open with a
+     minimum contract size. This is subject to your approval and confirmation otherwise the
+     trade will not be copied.
+
+14.6. In the event that the position size to be opened – based on the Copy Ratio – is more than
+     the maximum tradeable volume offered by the Company, then the trade will open with the
+     maximum trade size of the account type. This is subject to your approval and confirmation
+     otherwise the trade will not be copied.
+
+14.7. The corresponding position size of the copied trade to be opened in the Follower Account
+     after the calculation of the Copy Ratio will be rounded up or down, to the nearest
+     hundredth. For example, if the copied trade to be opened based on the volume allocation
+     is 0.124, the position will be rounded down to 0.12 and if the copied trade to be opened
+     based on the volume allocation is 0.127, the position will be rounded up to 0.13.
+
+14.8. In the event of a partial closure of a position by the Strategy Provider the corresponding
+     partial closure position size to be closed in the Follower Account after calculation of the
+     Copy Ratio will be rounded up i.e. if the partial closure of the copied trade based on the
+     Volume Allocation is 0.005 the partial closure position size will be rounded up to the
+     minimum volume size.
+
+Copy Ratio Example A:
+
+     Follower A deposits 400 USD and selects Volume Allocation of 100%
+
+     Strategy Provider A deposits 5,000 USD
+
+                                                        22
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                                   Copy Trading Agreement
+
+
+      The Follower’s trade copy ratio will be 400/5,000 x 100/100 = 0.08
+
+      Strategy Provider A opens position size of 0.50 lot
+
+      Follower A position size will be 0.50 x 0.08 = 0.04 lot
+
+Copy Ratio Example B:
+
+      Follower B deposits 400 USD and selects Volume Allocation of 50%
+
+      Strategy Provider B deposits 5,000 USD
+
+      The Follower’s trade copy ratio will be 400/5,000 x 50/100 = 0.04
+
+      Strategy Provider B opens position size of 0.10 lot
+
+      Follower B position size will be 0.10 x 0.04 = 0.004 lot, therefore the trade will open with
+      minimum trade size of 0.01 lot subject to the Followers approval and confirmation,
+      otherwise the trade will not be copied.
+
+Copy Ratio Example C:
+
+      Follower C deposits 10,000 USD and selects Volume Allocation of 100%
+
+      Strategy Provider C deposits 5,000 USD
+
+      The Follower’s trade copy ratio will be 10,000/5,000 x 100/100 = 2
+
+      Strategy Provider C opens position size of 1.00 lot
+
+      Follower C position size will be 1.00 x 2 = 2.00 lots
+
+
+15.   Performance Fee
+
+15.1. Strategy Providers will select at the time of opening their Strategy Provider Account a
+      Performance Fee percentage up to a maximum of 50% (Fifty percent).
+
+15.2. Followers are obligated to pay the Performance Fee to the Strategy Provider they choose
+      to follow based on their positive performance i.e. the Strategy Provider shall not receive
+      the Performance Fee in case of a negative performance.
+
+15.3. The Performance Fee is calculated according to the below formula:
+
+      (Follower’s Profits – Follower’s Losses) * Strategy Provider chosen Performance Fee % =
+
+
+                                                        23
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                      HF Markets (SV) Ltd
+                                                                                                  Copy Trading Agreement
+
+
+     Performance fee payable by Follower to the Strategy Provider
+
+Example A:
+
+     Strategy Provider A chosen Performance Fee is 20%
+
+     Follower A profit = 1,000 USD
+
+     Follower A loss = 0 USD
+
+     (1,000 – 0)*20% = 200 USD payable by the Follower to the Strategy Provider
+
+Example B:
+
+     Strategy Provider B chosen Performance Fee is 25%
+
+     Follower B profit = 1,000 USD
+
+     Follower B loss = 500 USD
+
+     (1,000 – 500) * 25% = 125 USD payable by the Follower to the Strategy Provider
+
+Example C:
+
+     Strategy Provider C chosen Performance Fee is 30%
+
+     Follower C profit = 1,000 USD
+
+     Follower C loss = 1,200 USD
+
+     (1,000 – 1,200) * 30% = -60 USD, therefore No fee payable by the Follower to the Strategy
+     Provider for negative performance
+
+15.4. The Strategy Provider acknowledges, understands and confirms that the formula is based
+     on the investment duration and therefore covers the period starting from the last
+     Performance Fee pay-out to the current date. The Performance Fee is not guaranteed as
+     the value of open positions rise or fall.
+
+15.5. The Strategy Provider shall have the option to choose whether to receive the Performance
+     fee daily, every Saturday or upon withdrawal or unfollowing. However, the Strategy
+     Provider to be eligible to receive the performance fee daily, there is a minimum amount (5
+     USD or currency equivalent) that must be generated per follower to be paid.
+
+15.6. Performance Fee calculation, deposit and withdrawal of funds, crediting and debiting of
+
+                                                       24
+                   Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                       Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                                   Copy Trading Agreement
+
+
+      Performance Fees are performed automatically by the Company and will be shown on Copy
+      Trading statements accordingly.
+
+15.7. Strategy Providers acknowledge, agree and understand that the Company, without prior
+      notice to the Strategy Provider, reserves the right at its sole and absolute discretion, to void
+      and/or forfeit any performance fees which have been paid and/or are due to be paid to the
+      Strategy Provider’s Account, in the case the Strategy Provider has not logged into his
+      Account for a period of twenty-four (24) months.
+
+
+16.   Archived accounts
+
+16.1. The Company has the right to archive any account either a Strategy Provider or a Follower
+      Account as per the terms of the Account Opening Agreement which the Strategy Provider
+      and the Follower have accepted prior to entering into a business relationship with the
+      Company.
+
+16.2. In the case of a Strategy Provider Account being archived:
+
+      (a) The Strategy Provider will be removed from the Strategy Provider Accounts list on the
+          designated page on the Company’s website; and
+
+      (b) All Follower Accounts of the Strategy Provider will be disconnected.
+
+16.3. In the case of a Follower Account being archived, it will be disconnected from the Strategy
+      Provider.
+
+16.4. It is noted that an archived account is not considered as a terminated account. A Strategy
+      Provider or a Follower who wishes to restore his archived account can request to restore
+      his archived account by sending an email to copytrading@hfm.com . An archived account
+      may only be restored at the Company’s discretion.
+
+
+17.   Exclusion of Liability
+
+17.1. The Company shall not be liable for:
+
+      (a) any loss, expense, cost or liability of any kind or nature suffered or incurred by the
+          Strategy Provider and/or the Follower unless such loss, expense, cost or liability of any
+
+
+                                                        25
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                                   Copy Trading Agreement
+
+
+          kind or nature is suffered or incurred as a result of the Company’s gross negligence
+          and/or fraud on behalf of the Company and/or the intended failure of the Company’s
+          obligations under this Agreement; and/or
+
+      (b) any conflict and/or dispute arising between a Strategy Provider and a Follower which
+          has resulted by their participation in the Program as offered by the Company;
+
+      (c) for any obligation of the Company arising under any term, express or implied, under
+          statute or common law.
+
+
+18.   Confidentiality
+
+18.1. The Company shall maintain all information received by the Parties confidential. It is
+      understood that the Company shall not disclose any personal information about either of
+      the Parties, other than the information displayed on the designated page of the Service on
+      the Company’s website.
+
+18.2. The Parties acknowledge, confirm and understand that such information will be disclosed
+      to the Company’s employees and/or other related persons who are required to know such
+      information for the purposes of this Agreement. It is noted that the Company may disclose
+      such information as may be required by any law, rule or regulatory authority without prior
+      notice to the Parties.
+
+
+19.   Prohibited Trading
+
+19.1. If the Company suspects or has reasons to believe that any of the Parties are involved in
+      any form of prohibited trading i.e. certain trading techniques commonly known as
+      "arbitrage trading", "picking/ sniping" and/or follow an abusive trading strategy i.e. any
+      trading activity which is aiming towards potential riskless profit by opening opposite orders,
+      during periods of volatile market conditions, during news announcements, on opening gaps
+      (trading sessions starts), or on possible gaps where the underlying instrument has been
+      suspended or restricted on a particular market, between same or different trading
+      accounts, the Company reserves the right to:
+
+      (a) terminate this Service with immediate notice to the Parties and/or the business
+
+
+                                                        26
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                                   Copy Trading Agreement
+
+
+          relationship established between the Company and any of the Parties;
+
+      (b) close any of the Parties’ accounts with the Company and/or suspend his account for
+          an indefinite period of time;
+
+      (c) charge a penalty fee to any of the Parties as the Company deems fit and proportionate;
+
+      (d) close the account, confiscate any profits that arose from prohibited trading techniques
+          and return the original deposit(s) to the Parties. If profits arising out of Prohibited
+          Trading were already withdrawn, profits can be confiscated from the Parties related
+          accounts in order to make up for the difference.
+
+
+20.   Term
+
+20.1. This Agreement shall come into force on the Effective Date and shall remain into force until
+      terminated by virtue of Clause 21.
+
+
+21.   Amendment and Termination
+
+21.1. The Company has the right to unilaterally amend the Terms and Conditions of this Program
+      from time to time, without any of the Parties’ consent.
+
+21.2. The Service is available to the Parties at the Company’s discretion. The Company has the
+      right to terminate and/or remove this Service by giving written notice to the Parties.
+
+21.2. This Agreement may be terminated in any of the following cases:
+
+      (a) Any of the Parties communicated to the Company his desire to stop receiving the
+          Service either by utilizing the unfollow option or by contacting the responsible
+          Department of the Company for the Copy Trading Accounts;
+
+      (b) Any of the Parties no longer meet the criteria to receive the Service. The Company shall
+          not notify the affected Party in advance;
+
+      (c) In the event that any prohibited trading activities are undertaken by any of the Parties
+          within any of their trading accounts or/and any other account related to it;
+
+      (d) If the Company suspects or has reason to believe that the Parties have submitted
+          fraudulent details and/or false identification information during registration for the
+
+                                                        27
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                         HF Markets (SV) Ltd
+                                                                                                     Copy Trading Agreement
+
+
+            Service and/or during the Account Opening Process for opening a Live Account with
+            the Company;
+
+       (e) If the Company suspects or has reason to believe that the Parties have abused and/or
+            manipulated in any way any of the Terms and Conditions of this Service and/or any
+            other Operative Agreement of the Company and/or have not acted in good faith;
+
+       (f) If the Company suspects or has reason to believe that the Parties have abused and/or
+            manipulated any of the Terms and Conditions of this Service by hedging his positions
+            internally (using other trading accounts held with Company) or externally (using other
+            trading accounts held with other brokers) and/or has not acted in good faith;
+
+       (g) If it is not feasible to comply with the terms of this Agreement due to rules and
+            regulations enacted by the regulatory authority having jurisdiction over the Company
+            and/or any other legislative requirement having jurisdiction over the business being
+            conducted by this Agreement.
+
+
+22.    Governing Language
+
+22.1     The Terms and Conditions of this Agreement and any other Operative Agreement of the
+      Company are made in the English language. Any other language translation is provided as a
+      convenience only. In the case of any inconsistency or discrepancy between original English
+      texts and their translation into any other language, as the case may be, original versions of
+      English shall prevail.
+
+Version: 2026_05
+
+
+
+
+                                                          28
+                      Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                          Registration number 22747 IBC 2015
+

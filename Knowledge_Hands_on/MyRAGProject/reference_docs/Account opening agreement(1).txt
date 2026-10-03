@@ -1,0 +1,2200 @@
+                                          HF Markets (SV) Ltd
+
+                                 Account Opening Agreement
+
+
+
+
+___                                                    ___                             ___
+
+Suite 305, Griffith Corporate Centre, P.O. Box 1510,   T. +44-2030978571   support@hfm.com
+Beachmont, Kingstown, St. Vincent and the Grenadines   F. +44-2030978570      www.hfm.com
+                                                                                                                 HF Markets (SV) Ltd
+                                                                                                         Account Opening Agreement
+
+
+                                                       Table of Contents
+
+1.    Introduction................................................................................................................... 4
+
+2.    Definitions and Interpretations ...................................................................................... 5
+
+3.    Scope of the Account Opening Agreement ................................................................... 11
+
+4.    Client Acceptance Policy .............................................................................................. 12
+
+5.    Commencement of the Account Opening Agreement ................................................... 13
+
+7.    Capacity ....................................................................................................................... 13
+
+8.    Assurances and Guarantees ......................................................................................... 14
+
+9.    Services ....................................................................................................................... 15
+
+10. Instructions .................................................................................................................. 16
+
+11. Recording of Telephone Calls ....................................................................................... 19
+
+12. Client Funds ................................................................................................................. 19
+
+13. Company’s Spreads and Conditions .............................................................................. 22
+
+14. Leverage ...................................................................................................................... 24
+
+15. Archived account ......................................................................................................... 24
+
+16. Dormant Account ......................................................................................................... 25
+
+17. Margin Deposits, Collateral and Payment ..................................................................... 26
+
+18. Account Reporting and Trade Confirmation .................................................................. 27
+
+19. Communication............................................................................................................ 28
+
+20. Conflicts of Interest ...................................................................................................... 30
+
+21. Inducements ................................................................................................................ 30
+
+22. Business Introducer...................................................................................................... 30
+
+23. Acknowledgements...................................................................................................... 32
+
+                                                                        2
+                                Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                                    Registration number 22747 IBC 2015
+                                                                                                                  HF Markets (SV) Ltd
+                                                                                                          Account Opening Agreement
+
+
+24. Risks ............................................................................................................................ 34
+
+25. Representations and Warranties .................................................................................. 36
+
+26. Indemnity and Limit of Liability .................................................................................... 38
+
+27. Prohibited Trading ....................................................................................................... 39
+
+28. Event of Default ........................................................................................................... 40
+
+29. Amendments ............................................................................................................... 41
+
+30. Information Disclosure ................................................................................................. 41
+
+31. Advice and Provision of Information ............................................................................ 42
+
+32. Chargeback Policy ........................................................................................................ 43
+
+33. Company Website and System ..................................................................................... 45
+
+34. Force Majeure Event .................................................................................................... 46
+
+35. Demo Accounts ............................................................................................................ 47
+
+36. Term ............................................................................................................................ 48
+
+37. Termination ................................................................................................................. 48
+
+38. Miscellaneous Provisions ............................................................................................. 50
+
+39. Tax Information ........................................................................................................... 51
+
+40. Governing Language..................................................................................................... 51
+
+41. Governing Law and Jurisdiction .................................................................................... 51
+
+
+
+
+                                                                        3
+                                 Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                                     Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                           Account Opening Agreement
+
+
+1.   Introduction
+
+1.1. HF Markets (SV) Ltd (hereinafter referred to as the ‘Company’), is incorporated under the
+     laws of Saint Vincent and the Grenadines with Registration 22747 IBC 2015 having its
+     registered office at Suite 305, Griffith Corporate Centre, P.O. Box 1510, Beachmont,
+     Kingstown, Saint Vincent and the Grenadines. The Company is authorised as an International
+     Business Company under the International Business Companies (Amendment and
+     Consolidation) Act, Chapter 149 of the Revised Laws of Saint Vincent and Grenadines, 2009
+     (herein the “Law”).
+
+1.2. The Company is part of the HF Markets Group which consists of:
+
+     (a) HF Markets (SV) Ltd with registered address Suite 305, Griffith Corporate Centre, P.O.
+         Box 1510, Beachmont Kingstown, St. Vincent and the Grenadines.
+     (b) HF Markets (Europe) Ltd with registered address Spyrou Kyprianou 50, Irida 3 Tower
+         10th Floor, Larnaca 6057, Cyprus.
+     (c) HF Markets SA (PTY) Ltd with registered address Katherine & West Suite 18 Second floor
+         114 West Street Sandton, Johannesburg 2031.
+     (d) HF Markets (Seychelles) Ltd with registered address Room 107, Orion Complex. PO Box
+         1228, Victoria Mahe, Republic of Seychelles.
+     (e) HF Markets Fintech Services Ltd with registered address Spyrou Kyprianou 50, Irida 3
+         Tower 10th Floor, Larnaca 6057, Cyprus.
+     (f) HF Markets Ltd regulated by the Financial Services Commission (FSC) of the Republic of
+         Mauritius, category 1 Global Business No. C110008214 License | Company Reg. No.
+         094286/GBL.
+     (g) HF Markets (UK) Ltd authorised and regulated by the Financial Conduct Authority (FCA)
+         under firm reference number 801701.
+1.3. As part of this Agreement, Billmont Limited, a company located at 22/F, 3 Lockhart Road,
+     Wanchai, Hong Kong with contact email support@billmont.com , provides the card and
+     payment processing services.
+
+1.4. The Account Opening Agreement (herein the “Agreement”) sets out the terms and
+
+                                                            4
+                       Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                           Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                           Account Opening Agreement
+
+
+     conditions for the provision of investment services under the International Business
+     Companies (Amendment and Consolidation) Act, Chapter 149 of the Revised Laws of Saint
+     Vincent and Grenadines, 2009, by HF Markets (SV) Ltd (herein the “Company”) to the Clients.
+
+1.5. The objects of the Company are all subject matters not forbidden by International Business
+     Companies (Amendment and Consolidation) Act, Chapter 149 of the Revised Laws of Saint
+     Vincent and the Grenadines, 2009, in particular but not exclusively all commercial, financial,
+     lending, borrowing, trading, service activities and the participation in other enterprises as
+     well as to provide brokerage, training and managed account services in currencies,
+     commodities, indexes, CFDs and leveraged financial instruments.
+
+
+2.   Definitions and Interpretations
+
+2.1. Terms stated below shall have the following meanings and may be used in the singular or
+     plural as appropriate.
+
+     “Account” means a personalised account of the Client with the Company. The Client is
+     allowed to have only 1 (one) account with the Company;
+
+     “Account Detailed Report” shall mean a statement of the Clients securities portfolio, open
+     positions, margin requirements, cash deposit etc. at a specific point in time;
+
+     “Ask Price” means the price at which the Company is willing to sell a CFD.
+
+     “Archived” means a trading account with no financial or trading activity and no pending
+     orders for a set period of 60 (sixty) days as per Archived Account of the Agreement.
+
+     “Authorised Person” means a person authorised by the Client under a power of attorney
+     to give instructions to the Company in relation to the Account;
+
+     “Balance” means the sum of the Client Account after the last completed order and
+     deposit/withdrawal operation made within any period of time.
+
+     “Best Execution Policy” means the Company’s prevailing policy available at the Company’s
+     website regarding best execution when executing Client orders;
+
+     “Bid Price” means the price at which the Company is willing to buy a CFD;
+
+                                                            5
+                       Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                           Registration number 22747 IBC 2015
+                                                                                              HF Markets (SV) Ltd
+                                                                                      Account Opening Agreement
+
+
+“Business Day” means any day on which banks are open for business in the Saint Vincent
+and the Grenadines;
+
+“Business Introducer” means a person with whom the Company has entered into a
+contract with for introducing Clients to the Company.
+
+“CFD Contract or CFD” means a contract which is a contact of difference by reference to
+fluctuations in the price of the relevant Underlying Asset;
+
+“Client” means a natural or legal person, accepted by the Company as its Client to whom
+services will be provided by the Company under the Terms;
+
+“Collateral” means any securities or other assets deposited with the Company;
+
+“Company” means HF Markets (SV) Ltd is incorporated in St. Vincent & the Grenadine as an
+International Broker Company with the registration number 22747 IBC 2015.
+
+“Company’s Website” means www.hfm.com or any other website that may be the
+Company’s website from time to time.
+
+“Contract” means any contract, whether oral or written, for the purchase or sale of any
+commodity, security, currency or other financial instruments or property, including any
+derivative contracts such as options, futures, CFDs or other transactions related thereto,
+entered into by the Company and the Client;
+
+“Counterparties” shall mean banks and/ or brokers through whom the Company may cover
+its transactions with Clients;
+
+“CRS” means the Common Reporting Standard.
+
+“Dormant” means an Account which has been dormant i.e. no financial or trading activity
+within a set period of 6 (six) months as per Dormant account of the Agreement.
+
+“Dorman Fee” means the fee that will be charged by the Company to an Account which
+falls under the meaning of a Dormant Account as per Clause 16 of the Agreement.
+
+“Durable Medium” means any instrument which enables the Client to store information in
+a way accessible for future reference for a period of time adequate for purposes of the
+information and which allows the unchanged reproduction of the information stored;
+                                          6
+                  Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                      Registration number 22747 IBC 2015
+                                                                                              HF Markets (SV) Ltd
+                                                                                      Account Opening Agreement
+
+
+“Electronic Verification” means client verification process for a prospective client to be
+approved, through the use of publicly available data as well as private databases to quickly
+verify the identity of an individual
+
+“Equity” equals (Balance + Floating Profit & Loss + Swap).
+
+“Event of Default” shall have the meaning given to this term in Clause 27;
+
+“Executable Prices” mean account type-specific BID and ASK quotes which are only
+displayed on the Market Watch. When Clients place an order to buy or sell a CFD, they can
+only place a buy or sell order through the available Executable Prices. The executable
+Market Watch prices may differ from the Indicative chart Prices of the same instrument.
+
+“FATCA” is the Foreign Account Tax Compliance Act which requires for foreign financial
+institutions to report on the foreign assets held by their U.S. account holders.
+
+“Floating Profit/ Loss” shall mean the unrealised profit (loss) of open positions at current
+prices of the Underlying Assets,
+
+“Free Margin” means the funds not used as guarantee to open positions, calculated as:
+Free Margin=Equity-Margin.
+
+“Indicative Prices” mean prices that are displayed in the Client Terminal Chart. Indicative
+chart Prices are not Executable Prices but only serve as an approximation to the direction
+of the market. Due to factors such as Spread and other market conditions, Indicatives Prices
+can vary from their corresponding Executable Prices.
+
+“Margin” means the necessary guarantee funds to open positions and maintain Open
+Positions, as determined in the Spreads and Conditions Schedule;
+
+“Margin Call” when the Margin posted in the margin account is below the minimum margin
+requirement, the Company issues a Margin Call and in this case the Client will have to either
+increase the Margin that he/ she has deposited, or to close out his/ her position(s). If the
+Client does not do any of the aforementioned, the Company shall have the right to close
+the positions of the Client.
+
+                                                       7
+                  Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                      Registration number 22747 IBC 2015
+                                                                                                HF Markets (SV) Ltd
+                                                                                        Account Opening Agreement
+
+
+ “Margin Level” means the percentage of Equity to Margin ratio. It is calculated as: Margin
+ Level = (Equity/Necessary Margin) x 100
+
+ “Market Maker” means a dealer in securities or other assets who undertakes to buy or sell
+ at specified prices at all time
+
+ “Market Rules” means the rules, regulations, customs and practices from time to time of
+ any exchange, clearing house or other organisation or market involved in the conclusion,
+ execution or settlement of a Contract any exercise by any such exchange, clearing house or
+ other organisation or market of any power or authority conferred on it;
+
+ “Open Positions” means any position/ transaction that has not been closed. For example,
+ an open long position not covered by the opposite short position and vice versa.
+
+ “Orders” means any trading transactions executed on the Company’s trading platforms by
+ the Client.
+
+ “OTC” shall mean any Contract concerning a commodity, security, currency or other
+ financial instrument or property, including any option, future, or CFD which is not traded
+ on a regulated stock or commodity exchange but “over the counter”;
+
+ “Partial Approval” means the status of a Client who is allowed to deposit and trade before
+ provides the required KYC documentation to the Company for his/her account to be
+ Approved;
+
+ “Politically Exposed Persons (PEPs)” means an individual who is or has been entrusted with
+ a prominent public function and includes Domestic PEPs, Foreign PEPs and International
+ Organisation PEPs and their family members and close associates. For the purposes of this
+ definition:
+
+(a) Domestic PEPs are individuals who are or have been entrusted domestically with
+   prominent public functions, including Heads of State or of government, senior politicians,
+   senior government, judicial or military officials, senior executives of state owned
+   corporations, important political party officials.
+
+(b) Foreign PEPs are individuals who are or have been entrusted with prominent public
+
+                                                         8
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                 HF Markets (SV) Ltd
+                                                                                         Account Opening Agreement
+
+
+   functions by a foreign country, including Heads of State or of government, senior
+   politicians, senior government, judicial or military officials, senior executives of state-
+   owned corporations, important political party officials.
+
+(c) International Organisation PEPs are individuals who are or have been entrusted with a
+   prominent function by an international organisation, refers to members of senior
+   management or individuals who have been entrusted with equivalent functions, including
+   directors, deputy directors and members of the board or equivalent functions.
+
+(d) Family members are individuals who are related to a PEP either directly (consanguinity)
+   or through marriage or similar (civil) forms of partnership.
+
+(e) Close associates are individuals who are closely connected to a PEP, either socially or
+   professionally.
+
+  “Principal” means the individual person or the legal entity which is a party to a transaction;
+
+  “Rebates” refers to the percentage of the actual spread or commission charged to the
+  account, depending on the account type and/or if assigned under an Affiliate;
+
+  “Security” means any securities or other assets deposited with the Company;
+
+  “Services” means the services to be provided by the Company to the Client construed by
+  these Terms. Services is inclusive of any dealing, order routing, advisory or other services
+  which the Company provides from time to time to the Client by remote access via the
+  Internet and which are subject to these Terms;
+
+  “Spread” means the difference between the Ask Price and the Bid Price
+
+  “Spreads and Conditions Schedule” means the schedule of spreads, charges, margin,
+  interest and other rates which at any time may be applicable to the Services as determined
+  by the Company on a current basis. The Spreads and Conditions Schedule is available on
+  the Company’s Website and may be supplied to the Client on demand.
+
+  “Swap” shall mean the funds withdrawn or added to the Client’s Account from rolling over
+  (transfer) of an open position to the next day.
+
+  “Terms” mean these Terms of business governing all the actions that relate to the
+                                                          9
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                           Account Opening Agreement
+
+
+     execution of your trades.
+
+     “Trade Confirmation” means a notification from the Company’s trading platform to the
+     Client confirming the Client’s entry into a Contract;
+
+     “Trading Account” is an account opened by the Client under the Company for the sole
+     purpose of trading. The Client can open up to 5 (five) trading accounts under the Company.
+     The Trading Account is distinct from the Account of the Client held with the Company.
+
+     “Trading Platform” means any online trading platform made available to the Client by the
+     Company for placing orders, requesting quotes for trades, receiving price information and
+     market related news as well as having a real-time revaluation of the open positions,
+     through the Internet;
+
+     “Underlying Asset” means underlying asset is the financial instrument (e.g. stock, futures,
+     commodity, currency, index) on which a derivative's price is based.
+
+     “In writing or written” means inclusive of electronic form.
+
+     “MT Server time” means the MT Server time is the time zone utilized by the MetaTrader
+     platform. This is typically set to GMT+2 (Standard Time) during the winter period and
+     GMT+3 (Daylight Saving Time, DST) during the summer period. DST commences on the last
+     Sunday of March and concludes on the last Sunday of October.
+
+2.2. If there is any conflict between this Agreement and relevant Market Rules, the Market Rules
+     shall prevail.
+
+2.3. Any reference in these Terms to a person shall include bodies’ corporate, unincorporated
+     associations, partnerships and individuals.
+
+2.4. Any reference in these Terms to any enactment shall include references to any statutory
+     modification or re-enactment thereof or to any regulation or order made under such
+     enactment (or under such a modification or re-enactment).
+
+2.5. Any headings and notes used in these Terms are intended exclusively for convenience and
+     shall not affect the content and interpretation of these Terms.
+
+
+
+                                                           10
+                       Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                           Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                           Account Opening Agreement
+
+
+3.   Scope of the Account Opening Agreement
+
+3.1. The objects of the Company are all subject matters not forbidden by International Business
+     Companies (Amendment and Consolidation) Act, Chapter 149 of the Revised Laws of Saint
+     Vincent and Grenadines, 2009, in particular but not exclusively all commercial, financial,
+     lending, borrowing, trading, service activities and the participation in other enterprises as
+     well as to provide brokerage, training and managed account services in currencies,
+     commodities, indexes, CFDs and leveraged financial instruments.
+
+3.2. The Company reserves the right, at its discretion, at any time to withdraw the whole or any
+     part of the Services on a temporary or permanent basis and the Client agrees that the
+     Company will have no obligation to inform the Client of the reason.
+
+3.3. The Agreement is non-negotiable and overrides any other agreements, arrangements,
+     express or implied statements made by HF Markets unless the Company, in its sole discretion,
+     determines that the context requires otherwise.
+
+3.4. Under the provisions of the International Business Companies (Amendment and
+     Consolidation) Act of 2007, the Electronic Evidence Act of 2004 and the Electronic
+     Transactions Act of 2007, a distance contract is legally binding upon the contractors without
+     the requirement of a signature. The Client hereby acknowledges that this Agreement and all
+     of the terms and conditions thereof are legally binding upon him and breach of any of the
+     terms and conditions of this Agreement shall give rise to possible legal actions, should out-
+     of-court settlement does not prove of a sufficient settlement method of any matter arising
+     out of or in connection with any term or condition of this Agreement.
+
+3.5. The Client hereby acknowledges and agrees that:
+
+     (a) By completing and submitting the online Account Opening Agreement and clicking on
+          the “I Accept” button or similar buttons or links as may be designated by the Company
+          on the Company’s Main Website(s) shows his approval of this Agreement;
+
+     (b) By continuing to access or use the Company’s Main Website(s).
+
+
+
+
+                                                           11
+                       Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                           Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                           Account Opening Agreement
+
+
+4.   Client Acceptance Policy
+
+4.1. The Prospective Client acknowledges and understands that the Company is not obliged
+     and/or required under any applicable laws or regulations to accept any Prospective Client as
+     its Client. The Company has the right to decline and/or refuse to accept a Prospective Client
+     as its Client, if it reasonably believes that the Prospective Client might pose a risk to the
+     Company and/or if accepting such a Prospective Client shall be against the Company’s Client
+     Acceptance Policy. It should be noted that the Company is under no obligation to provide any
+     reason for not accepting a Prospective Client as its Client.
+
+4.2. The Prospective Client must fill in and submit the online Account Opening Application Form
+     found on the Company’s website and provide to the Company all the required identification
+     documentation. The Company shall then send a notice of acceptance to the Prospective
+     Client confirming that he has been successfully accepted as a Client of the Company.
+
+4.3. The Client acknowledges and understands that the Company has the right to refuse to
+     activate an account and/or shall not accept any money from any Prospective Client until all
+     documentation requested has been provided to the Company, which has been properly and
+     fully completed by the Prospective Client. The Prospective Client shall not yet be considered
+     as a Client of the Company if all internal Company checks, including without limitation to anti-
+     money laundering checks and the appropriateness tests have not been duly satisfied. The
+     Client acknowledges and understands that the Company may request additional due
+     diligence documents for further clarification.
+
+4.4. The Company has the right to request for additional documentation and/or information from
+     the Client at any time throughout the term of this Agreement and/or the business
+     relationship with the Client. Should the Client not provide such additional documentation
+     and/or information the Company may at its own discretion terminate its business
+     relationship with the Client in accordance with Clause 36 of the Agreement.
+
+4.5. The Company has the right to close any Account opened by a Prospective Client which has
+     not been approved by the Company and which has been pending for approval for a set period
+     of 3 (three) months.
+
+                                                           12
+                       Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                           Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                            Account Opening Agreement
+
+
+4.6. Clients that are categorised as Partially Approved can deposit and trade before they provide
+      the required KYC documentation to the Company for their account to be Approved.
+4.7. Limits for Partially Approved Clients will be in place and showed in Client Area in regard to:
+      (a) maximum deposit amount;
+      (b) specific payment methods for deposit;
+      (c) number of trading accounts;
+      (d) promotions;
+      (e) tools;
+      (f) other features offered by the Company.
+      (g) And specific time frame
+4.8. Partially Approved Clients, are not entitled to withdraw any amount until they provide their
+      KYC documents and their account to be Approved by the Company.
+4.9. Only Individual and Joint Accounts are eligible to be Partially Approved. PAMM Accounts,
+      Copy Trading Strategy Providers and Partners are not allowed to be categorised as Partially
+      Approved.
+
+4.10. The Prospective Client will be able to use the Electronic Verification for his account to be
+      Approved.
+
+4.11. Only Clients providing the required information of their ID Documents are eligible to use the
+      Electronic Verification. The required information of ID Documents will be specified to the
+      Client during the Electronic Verification process.
+
+4.12. Only Individual Accounts are eligible to use the Electronic Verification.
+
+
+5.    Commencement of the Account Opening Agreement
+
+5.1. The Commencement Date of the Agreement shall be the date the Prospective Client receives
+      the notice that he has been accepted as a Client of the Company and which contains the
+      trading account number and login details.
+
+
+6.    Capacity
+
+6.1. The Parties are entering into this Agreement as principal to principal. For the avoidance of
+                                                 13
+                        Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                            Registration number 22747 IBC 2015
+                                                                                                         HF Markets (SV) Ltd
+                                                                                                 Account Opening Agreement
+
+
+      any doubt, in relation to individual Orders for CFD transactions the Company shall execute
+      such Orders against its Client as a principal to principal.
+
+6.2. The Client is acting as a principal and not as agent or representative or trustee or custodian
+      on behalf of someone else. The Client may act on behalf of someone else only if the Company
+      specifically consents to this in writing and provided all the documents required by the
+      Company for this purpose are received.
+
+6.3. Even if the Client identifies a legal or natural person (‘The third party’) who is responsible for
+      acting on the Client’s behalf, through a power of attorney, the Company is not accepting the
+      third party as a Client, unless specifically agreed otherwise. As a result no information shall
+      be disclosed to the third party in relation to the Client and/ or the Clients trading activity.
+      However the third party can give instructions to the company on the Client’s behalf.
+
+
+6.4. If the Client is introduced to the Company by a third party that the Company allowed to
+      introduce potential clients, the Client acknowledges and agrees that:
+
+       a) The third party has the authority to introduce the Client to the Company.
+       b) The third party has the authority to act on the Client’s behalf, through an agreement,
+           during the account opening process.
+       c) The Client has the liability to provide correct information to the third party and ensure
+           that the information in the client area is correct once the account is opened.
+
+
+7.    Assurances and Guarantees
+
+The Client assures and guarantees that:
+
+7.1. The funds deposited with the Company, belong to the Client and are free of any lien, charge,
+      pledge or other impediment
+
+7.2. The funds are not direct or indirect proceeds of any illegal act or omission or product of any
+      illegal activity and
+
+7.3. Acts for himself/ herself and is not a representative or trustee of a third person, unless he/
+      she produces to the satisfaction of the Company document(s) to the contrary.
+
+                                                                 14
+                             Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                                 Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                             Account Opening Agreement
+
+
+7.4. The Client guarantees the authenticity and validity of any document sent to the Company
+      during the account opening process and the life of the account.
+
+
+8.    Services
+
+8.1. The Company offers to its Clients the financial services as Principal in relation to the following
+      financial instruments:
+
+      (a) CFD on currencies, equities, precious metals, financial indices, future contracts and any
+          other trading tools.
+
+      (b) Options, futures, swaps, forward rate agreements and any other derivative contracts
+          relating to securities, currencies, interest rates or yields, or other derivative
+          instruments, financial indices or financial measures which may be settled physically or
+          in cash.
+
+      (c) Options, futures, swaps, forward rate agreements and any other derivative contracts
+          relating to commodities that must be settled in cash or may be settled in cash at the
+          option of one of the parties (otherwise than by reason of a default or other termination
+          event)
+
+      (d) Options, futures, swaps, and other derivative contract relating to commodities that
+          can be physically settled provided that they are traded on a regulated market and/ or
+          an MTF.
+
+      (e) Options, futures, swaps, forwards and any other derivative contracts relating to
+          commodities that can be physically settled not otherwise mentioned in point (d) above
+          and not being for commercial purposes, which have the characteristics of other
+          derivative financial instruments, having regard to whether, inter alia, they are cleared
+          and settled through recognised clearing houses or are subject to regular margin calls.
+
+      (f) Options, futures, swaps, forward rate agreements and any other derivative contracts
+          relating to climatic variables, freight rates, emission allowances or inflation rates or
+          other official economic statistics that must be settled in cash or may be settled in cash
+          at the option of one of the parties (otherwise that by reason of a default or other
+                                                             15
+                         Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                             Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                            Account Opening Agreement
+
+
+          termination event), as well as any other derivative contracts relating to assess, rights,
+          obligations, indices and measures not otherwise mentioned in this Section, which have
+          the characteristics of other derivative financial instruments, having regard to whether,
+          inter alia, they are cleared and settled through recognised clearing houses or are
+          subject to regular margin calls.
+
+     (g) Such other investments instruments agreed upon with the Company and allowed
+          under the Company’s Saint Vincent and the Grenadines Investment Firm License.
+
+8.2. Orders may be placed as market Orders to buy or sell as soon as possible at the price
+     obtainable in the market, or on selected products as limit and stop Orders to trade when
+     the price reaches a predefined level. Limit Orders to buy and stop orders to sell must be
+     placed below the current market price, and limit Orders to sell and stop Orders to buy must
+     be placed above the current market price. If the bid price for sell Orders or ask price for buy
+     Orders is reached, the Order will be filled as soon as possible at the price obtainable in the
+     market. Limit and stop Orders are executed consistent with the Company’s Best Execution
+     Policy and are not guaranteed executable at the specified price or amount, unless explicitly
+     stated by the Company for the specific Order.
+
+8.3. The Client will, unless otherwise agreed in writing, understands and acknowledges that the
+     Company will enter into transactions with the client as Principal (counterparty) and not as an
+     agent. The Company will be the contractual counterparty to the Client.
+
+8.4. The Prospective Client hereby acknowledges and agrees that any of the following actions
+     show his approval of the Agreement:
+
+     (a) Completing and submitting the online Account Opening Agreement and clicking on the
+          “I Accept” button or similar buttons or links as may be designated by the Company on
+          the Company’s Main Website(s); and/or
+
+     (b) Continuing to access or use the Company’s Main Website(s).
+
+
+9.   Instructions
+
+9.1. The Client may give the Company oral or written instructions (which shall include instructions
+                                                            16
+                        Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                            Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                            Account Opening Agreement
+
+
+     provided via the internet or by email as described below). The Company shall acknowledge
+     the reception of the instructions orally or in writing, as appropriate.
+
+9.2. The Client shall notify the Company of the identity of any persons authorised to give
+     instructions to the Company on behalf of the Client. Any such notice shall be in writing and
+     shall set out the names and specimen signatures of the person or persons to be authorised.
+     Any such authority may be revoked by notice in writing by the Client but shall only be
+     effective upon written confirmation by the Company of the Company’s receipt of notice of
+     revocation. The Company shall not be liable for any loss, direct or indirect, resulting from
+     the Client’s failure to notify it of such revocation.
+
+9.3. The Company shall be entitled to act upon the oral or written instructions to any person so
+     authorised or any person who appears to the Company to be an Authorised Person,
+     notwithstanding that the person is not, in fact, so authorised.
+
+9.4. Once an instruction has been given by or on behalf of the Client, it cannot be rescinded,
+     withdrawn or amended without the Company’s express consent. The Company may at its
+     absolute discretion refuse any dealing instruction given by or on behalf of the Client without
+     giving any reason or being liable for any loss occasioned thereby.
+
+9.5. The Client shall promptly give any instructions to the Company, which the Company may
+     require of the Client. If the Client does not provide such instructions promptly, the Company
+     may, in its absolute discretion, take such steps at the Client’s cost, as the Company considers
+     appropriate for its own protection or for protection of the Client. This provision is similarly
+     applicable in situations when the Company is unable to obtain contact of with the Client.
+
+9.6. The Company shall not be liable for any loss, expense, cost or liability suffered or incurred
+     by the Client as a result of instructions being given, or any other communications being
+     made, via the Internet. The Client will be solely responsible for all orders, and for the
+     accuracy of all information, sent via the Internet using the Client’s name or personal
+     identification number. The Company will not proceed with the transmission and execution
+     of an order until it has confirmed the order with the Client.
+
+9.7. If the Company does not receive instructions from the Client to settle any open Contracts by
+
+                                                            17
+                        Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                            Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                            Account Opening Agreement
+
+
+      the close of the Business Day, the Company is hereby authorised (but not obliged) to transfer
+      all said Contracts to the next business date traded (Rollover).
+
+ 9.8. The Company may (but shall not in any circumstances be obliged) require confirmation in
+      such form as the Company may reasonably request if an instruction appears to the Company
+      that such confirmation is necessary or desirable; or such instruction is to close an Account
+      or remit money due to the Client.
+
+ 9.9. In general, the Company shall act according to instructions as soon as practically possible
+      and shall, as far as trading instructions are concerned, act in accordance with the Company’s
+      Best Execution Policy. If, after instructions are received, the Company believes that it is not
+      reasonably practicable to act upon such instructions within a reasonable time, the Company
+      may defer acting upon those instructions until it is, in the Company’s reasonable opinion,
+      practicable to do so or notify the Client that the Company is refusing to act upon such
+      instructions. The Company shall not be liable for any losses resulting from such deferral or
+      refusal.
+
+9.10. The Company is, in accordance with its Best Execution Policy, entitled to aggregate the
+      Client’s orders with the bank’s own orders, orders of any of the Company’s associates and/
+      or persons connected with the Company including employees and other Clients.
+      Furthermore, the Company may split the Client’s orders when executing these. The orders
+      will only be aggregated or split if the Company reasonably believes it to be in the best
+      interest of the Client. On some occasions, aggregation and split of the Client’s order may
+      result in the Client obtaining a less favourable price than if the Client’s orders had been
+      executed respectively separately or mutually.
+
+9.11. The Client agrees that the Company may record all telephone conversations, internet
+      conversations (chat), and meetings between the Client and the Company and use such
+      recordings, or transcripts from such recordings, as evidence in any dispute or anticipated
+      dispute between the parties. However, technical reasons may prevent the Company from
+      recording a conversation, and recordings or transcripts made by the Company will be
+      destroyed in accordance with the Company’s normal practice. Consequently, the Client
+
+                                                            18
+                        Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                            Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                             Account Opening Agreement
+
+
+       should not rely on such recordings to be available.
+
+9.12. If the Client is more than one person (for example, joint account holders)
+
+       (a) the liabilities of each such person shall be joint and several;
+
+       (b) the Company may act upon instructions received from any one person who is, or
+           appears to the Company to be, such a person, and
+
+       (c) any notice and other message presented by the Company to one if such persons is
+           deemed to be presented to all said persons.
+
+       (d) the rights of the Company in case an Event of Default occurs shall apply if an Event of
+           Default shall be deemed to have occurred in respect of any such persons.
+
+9.13. If the Client operates several Accounts (or sub-accounts) and opposite positions are opened
+       on different Accounts (or sub-accounts), the Company shall not close out such positions.
+       The Client is specifically made aware that unless closed manually, all such positions may be
+       rolled over on a continuous basis and thereby consequently all incur a cost for such roll-over.
+
+
+ 10.   Recording of Telephone Calls
+
+ 10.1. The content of any telephone call (‘The telephone record’) between the Client and the
+       company may be recorded and saves as a magnetic or electronic record. The Client agrees
+       that the company has the right to use the telephone records as it deems necessary, including
+       but not limited to instances when a dispute arises between the Client and the company.
+
+ 10.2. All instructions received from the Client during a telephone call, in relation to trading
+       financial instruments shall be conclusive and binding.
+
+ 10.3. The company may provide copies of such recordings of telephone calls to a regulatory
+       authority of a competent authority without informing the Client.
+
+
+ 11.   Client Funds
+
+11.1. The Company holds an omnibus account which is named as Client Account where all Clients
+       funds are held. The Company holds a different account for its own money separated from
+
+                                                             19
+                         Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                             Registration number 22747 IBC 2015
+                                                                                                      HF Markets (SV) Ltd
+                                                                                              Account Opening Agreement
+
+
+     the Clients funds.
+11.2. Unless the Client notifies the Company in writing or otherwise, the Company may allow a
+     third party, such as an exchange, a clearing house or an intermediate broker to hold all
+     control Client Funds where the Company transfers the Client Funds (a) for the purposes of a
+     transaction for the Client through or with that person; or (b) to meet Clients obligations to
+     provide collateral for a transaction (e.g. an initial margin requirement for a derivative
+     transaction).
+
+11.3. The Client authorises the Company to make any deposits and withdrawals from the Client’s
+     Account on his/ her behalf including, without prejudice to the generality of the above,
+     withdrawals for the settlement of all transactions undertaken under the Terms and all
+     amounts which are payable by or on behalf of the Client to the Company or any other person.
+
+11.4. Unless the Parties otherwise agree, in writing, any amount payable by the Company to the
+     Client, shall be paid directly to the Client’s account held with the Company.
+
+11.5. Funds Withdrawal
+
+       11.5.1. The Client has the right to withdraw the funds from Top-Up, Copy Trading and
+       PAMM Accounts, which are not used for margin covering, free from any obligations (Free
+       Margin) from his/ her Account without closing the said Account.
+
+
+       11.5.2. The Client has the right to withdraw the funds from Cent, Premium, Zero, Pro and
+       Pro Plus Accounts, when the below requirements are met:
+
+
+           (a) Such withdrawal requests will not cause the margin level of a Trading Account to
+           fall below 150% during weekdays.
+           (b) Such withdrawal requests will not cause the margin level of a Trading Account to
+           fall below 300% during weekends and volatile times.
+           (c) In case a withdrawal request does not meet the requirements of clause 12.5.
+           then that request will not be accepted.
+
+11.6. Money transfer request (withdrawal from Trading Account) is processed within the time
+     frame indicated on the Company’s website, under deposit and withdrawal section, after
+                                                              20
+                          Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                              Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                            Account Opening Agreement
+
+
+      receiving from the Client transfer request instructions. When the transfer request process is
+      concluded the transferring amount is reduced from the balance of the Client's Trading
+      Account. The Client can then request for a withdrawal from his Account. The Company
+      reserves the right to decline a withdrawal request if the request is not in accordance with
+      Clause 11.9 below, or delay the processing of the request if not satisfied on full
+      documentation of the Client.
+
+ 11.7. The Client agrees to pay any bank transfer fees which might occur when withdrawing funds
+      from the Client’s Account and depositing them to his designated bank account. The Client
+      must provide to the Company the payments details. The Client shall be held fully liable for
+      his own funds, if he has provided the Company with wrong and/or misleading details. The
+      Company bears no responsibility for any funds not deposited directly into the Company’s
+      bank accounts.
+
+ 11.8. The Client agrees that any amounts sent by the Client or on the Client’s behalf in the bank
+      account of the Company will be deposited to the Client’s Account at the value date of the
+      payment received and net of any charges/ fees charged by the bank account providers or
+      any other intermediary involved in such transaction process. The Company must be satisfied
+      that the sender is the Client or an authorised representative of the Client before making any
+      amount available to the Client’s Account, otherwise the Company reserves the right to
+      refund/ send back the net amount received to the remitter by the same method as received.
+
+11.9. Withdrawals should be made using the same method used by the Client to fund his/ her
+      Account and to the same remitter. The Company reserves the right to decline a withdrawal
+      with specific payment method and suggest another payment method where the Client
+      needs to proceed with a new withdrawal request, or request further documentation while
+      processing the withdrawal request. If the Company is not satisfied with any documentation
+      provided by the Client will reverse the withdrawal transaction and deposit the amount back
+      to the Client’s Account. More details on the circumstances which the Company might cancel
+      a withdrawal request can be found on “Withdrawal Conditions” which is accessible via the
+      Company’s website.
+
+
+                                                            21
+                        Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                            Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                               Account Opening Agreement
+
+
+11.10. The Client agrees to waive any of his rights to receive any interest earned in the money held
+         in the Bank Accounts and consents that the Company will benefit for such an interest earned
+         to cover registration/ general expenses/ charges/ fees and interest related to the
+         administration and maintenance of the bank accounts. Such expenses will not be passed
+         over to the Clients what so ever. However, the Company may at its discretion pay interest at
+         a rate and basis of calculation as it determines.
+
+ 11.1.    The client acknowledges that card and payment processing will be processed by HF Markets
+       Fintech Services Ltd and or HF Markets (UK) Ltd, which are both wholly owned by HF Markets
+       Holdings Ltd (the holdings Company of the HF Markets Group).The client further acknowledges
+       that HF Markets Fintech Services Ltd and HF Markets (UK) Ltd have no legal and regulatory
+       responsibility regarding the client account.
+
+11.2. Where the Client’s Account is classified as Closed/Terminated with a positive balance (i.e.
+         there are funds available on Client’s Account), the Company will have the right to cease
+         treating those funds as Client Money and make a deduction of the Account balance from
+         Company's Client Account to Company's Own account. If the Client later make a valid claim
+         to the Company, the Company may pay the Client any amount owed to the Client by the
+         Company.
+
+
+ 12.     Company’s Spreads and Conditions
+
+ 12.1. By accepting the Terms, the Client has read, understood and accepted the information under
+         the Spreads and Conditions Schedule available on the Company’s Website, in which all
+         related spreads, charges, margin, interest and other rates are explained. The Company
+         reserves the right to amend at discretion all such spreads, charges, margin, swaps and other
+         rates and proper information on such amendments will be available on the Company’s
+         Website which the Client must review during the period the Client is dealing with the
+         Company and especially before and after placing any orders to the Company.
+
+ 12.2. The Company is entitled, but shall not in any circumstances be obliged, to convert:
+
+         (a) any realised gains, losses, option premiums, commissions, interest charges and
+
+                                                               22
+                           Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                               Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                            Account Opening Agreement
+
+
+          brokerage fees which arise in a currency other than the Client’s base currency (i.e. the
+          currency in which the Client’s Account is denominated) to the Client’s base currency;
+
+      (b) any cash currency deposit to another cash currency deposit for the purpose of
+          purchasing an asset de–nominated in a currency other than the Client’s base currency;
+
+12.3. Whenever the Company conducts currency conversions, the Company will do so at such
+      reasonable rate of exchange as the Company selects. The Company shall be entitled to add
+      a mark–up to the exchange rates. The prevailing mark–up is defined in the Spreads and
+      Conditions Schedule.
+
+12.4. In addition the Client shall be obliged to pay all applicable VAT and other taxes and all other
+      fees incurred by the Company in connection with any Contract and/ or in connection with
+      maintaining the Client relationship.
+
+12.5. The Company may share commissions and charges with its associates, Business Introducers
+      or other third parties or receive remuneration from them in respect of Contracts entered
+      into by the Company. Details of any such remuneration or sharing arrangement will not be
+      set out on the relevant Trade Confirmations. The Company (or any associate) may benefit
+      from commission, mark–up, mark–down or any other remuneration where it acts for the
+      Counterparty to a Contract.
+
+12.6. The Company will upon reasonable request and to the extent possible disclose to the Client
+      the amount of commission, mark–up, mark–down or any other remuneration paid by the
+      Company to any Business Introducer or other third party.
+
+12.7. In respect of any transactions to be effected OTC, the Company shall be entitled to quote
+      prices at which the Company is prepared to trade with the Client. Save where the Company
+      exercises any rights it may have under the Terms to close a Contract, it is the Client’s
+      responsibility to decide whether or not it wishes to enter into a Contract at such prices.
+
+12.8. The Company may share Trading Rebate with its Clients, at its sole discretion and upon
+      request of the Client. Trading Rebate is the percentage of the spread which is calculated
+      based on the volume of trading transactions performed by the Clients and are applied to the
+      Client’s trading account(s). The Clients can be informed on which of their trading accounts
+                                                            23
+                        Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                            Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                             Account Opening Agreement
+
+
+      are subject to Trading Rebates through their at Client Area.
+
+
+13.   Leverage
+
+13.1. A Client can change the leverage within his Client Area of each trading account up to five (5)
+      times. For changing more than five (5) times the Client needs to send a request at
+      tradingdesk@hfm.com. The Company has the option at its own discretion to disable this
+      option.
+
+13.2. A Client can change the leverage on demo accounts as many times as he wants.
+
+13.3. A Client has no restrictions to increase the leverage.
+
+13.4. A Client is allowed to decrease the leverage in the following cases:
+
+      (a) If margin is zero;
+      (b) If margin is more than zero and the margin level is more than 100%.
+13.5. Crypto products are excluded from clauses 14.1. , 14.2. , 14.3. and 14.4 and Client cannot
+      change leverage either increase or decrease in any circumstance. However, the Company
+      reserves the right to impose restrictions at its sole discretion.
+
+
+14.   Archived account
+
+14.1. A trading Account, that is not a cent trading account, shall be archived if the following occurs:
+       (a) No financial and/or trading activity and no pending orders for a set period of 60 (sixty)
+            calendar days.
+       (b) A Trading Account with no financial and/or trading activity for 60 (sixty) days shall be
+            archived and any pending order older than 90 (ninety) days shall be deleted.
+       (c) A Trading Account with no financial and/or trading activity for 60 (sixty) days and
+            pending orders less than 90 (ninety) days, shall be archived when the said pending
+            orders reach 90 (ninety) days and shall be deleted.
+14.2. A Cent Trading Account shall be archived upon the occurrence of any of the following
+      circumstances:
+
+
+
+
+                                                             24
+                         Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                             Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                             Account Opening Agreement
+
+
+      (a) No financial and/or trading activity (excluding pending orders) has been conducted on
+         the Cent Trading Account for a continuous period of fifteen (15) calendar days and the
+         Account Balance is less than 100 USc.
+
+      (b) No financial and/or trading activity (excluding pending orders) has been conducted on
+         the Cent Trading Account for a continuous period of thirty (30) calendar days, and the
+         Account Balance is equal to or greater than 100 USc.
+
+      (c) Upon the occurrence of either of the above, the Cent Trading Account shall be archived,
+         and any pending orders shall be automatically deleted.
+14.3. Remaining balance in the Trading Account which will be Archived, shall be transferred to the
+      wallet balance before the Trading Account is archived.
+14.4. Any Trading Account can be classified by the Company as an Archived, regardless of the
+      remaining balance of the Trading Account.
+14.5. A Client can request to restore an Archived Account by sending an email at
+        support@hfm.com . An Archived Account is not considered as a terminated trading account,
+        however, any trading account may only be restored at the Company’s discretion.
+
+
+15.   Dormant Account
+
+15.1. An Account will be considered as a Dormant Account, if there is no financial
+      (deposit/withdrawal) or trading activity (opening /closing orders) in the Account for a set
+      period of 6 (six) months. Pending orders that have been cancelled as per section Error!
+      Reference source not found. and Error! Reference source not found. shall not considered as
+      orders for the determination of the trading activity.
+
+15.2. Dormant Accounts will be charged as follows:
+      (a) 6 months - 1 year: a monthly Dormant Fee of 5 USD (Five US Dollars) (or the equivalent
+           amount of the base currency of the Account at the date of the charge) on the remaining
+           balance of the Account until the balance is 0 (zero).
+      (b) 1 year – 2 year: a monthly Dormant Fee of 10 USD (Ten US Dollars) (or the equivalent
+           amount of the base currency of the Account at the date of the charge) on the remaining
+           balance of the Account until the balance is 0 (zero).
+                                                             25
+                         Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                             Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                            Account Opening Agreement
+
+
+      (c) 2 years – 3 years: a monthly Dormant Fee of 20 USD (Twenty US Dollars) (or the
+          equivalent amount of the base currency of the Account at the date of the charge) on the
+          remaining balance of the Account until the balance is 0 (zero).
+      (d) More than 3 years: a monthly Dormant Fee equivalent to previous year monthly
+          Dormant Fee plus 10 USD (Ten USD Dollars) (or the equivalent amount of the base
+          currency of the Account at the date of the charge) will be added for every additional
+          year to, on the remaining balance of the Account until the balance is 0 (zero).
+15.3. If the balance of the Account is less than the prescribed charges, the full remaining amount
+      will be charged and the Company has the right to terminate the Account, upon a notice of
+      termination to the Client.
+15.4. There will be no charge if the balance in the Account is 0 (zero). The Company shall proceed
+      with notifying the Client that his Account will be terminated with immediate effect. The
+      Company undertakes to make good any valid claim against the released balances.
+
+15.5. The Company reserve the right to charge the Dormant fee retroactively for any month in
+      which the Company had the right to charge it but for technical reasons did not.
+
+15.6. The Dormant Fee is charged for the maintenance, administration and compliance
+      management of such Dormant Accounts.
+
+15.7. For any information regarding the closure of accounts, please contact the Company at
+      support@hfm.com .
+
+
+16.   Margin Deposits, Collateral and Payment
+
+16.1. The Client shall pay to the Company on demand:
+
+      (a) Such sums of money by way of deposits or as initial or variation Margin as the
+          Company may from time to time require;
+
+      (b) Such sums of money as may from time to time be due to the Company under                                    a
+          Contract and such sums as may be required in or towards clearance of any debit
+          balance on any Account;
+
+      (c) Any amount necessary for maintaining a positive balance in any and all Accounts.
+                                                            26
+                        Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                            Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                             Account Opening Agreement
+
+
+16.2. The Client shall promptly deliver any money or property deliverable by it under a Contract
+      in accordance with the Terms of that Contract and with any instructions given by the
+      Company for the purpose of enabling the Company to perform its obligations under any
+      corresponding Contract entered into between the Company and a third party.
+
+16.3. If the Client fails to provide any Margin, deposit or other payable amount in accordance with
+      the Terms in respect of any transaction, the Company may close out any open Contract
+      without prior notice to the Client and apply any proceeds thereof to payment of any
+      amounts due to the Company.
+
+16.4. In the event that a negative balance occurs in the Client’s Trading Account due to Stop Out,
+      the Company will make a relevant adjustment of the full negative amount so as to the Client
+      not to suffer the loss.
+
+16.5. The Company reserves the right to return the funds deposited by the Client at any time with
+      or without reasons.
+
+16.6. In the event funds are incorrectly placed into your account and/ or withdrawn by you, the
+      Company reserves the right to retrieve these funds either directly from the account in
+      question or via any other accounts held by the account holder with the Company. In the
+      event that there are open trades within the account the Company will contact the Client via
+      email and inform the Client of the actions to remedy the situation and that any trades must
+      be closed. Failure of the Client to comply could result in insufficient funds in the account to
+      hold the positions that are open and could ultimately lead to the stopping out of the open
+      positions. The Company will not be held liable for such events resulting in any loss direct or
+      indirect to the Client.
+
+
+17.   Account Reporting and Trade Confirmation
+
+17.1. The Company will make available to the Client a Trade Confirmation in respect of any
+      transaction or Contract entered into by the Company with or for the Client and in respect of
+      any open position closed by the Company for the Client. Trade Confirmations will normally
+      be available instantly following the execution of the transaction through the Trading
+
+                                                             27
+                         Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                             Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                            Account Opening Agreement
+
+
+      Platform.
+
+17.2. An Account Detailed Report is available to the Client through the Trading Platform. The
+      Account Detailed Report will normally be updated periodically during the Company’s
+      opening hours. By accepting the Terms the Client agrees not to receive any Trade
+      Confirmations or Account Detailed Reports in printed form from the Company other than
+      upon specific request.
+
+17.3. The Client must verify the contents of each document received from the Company. Such
+      documents shall, in absence of manifest error, be conclusive unless the Client notifies the
+      Company in writing to the contrary within three (3) Business Days of receiving such
+      document.
+
+17.4. The Client is obliged to verify the contents of each document, including documents sent in
+      electronic form from the Company. Such documents shall, in the absence of manifest error,
+      be deemed conclusive unless the Client notifies the Company in writing to the contrary
+      within (3) Business Days after having received such document. In the event that the Client
+      believes to have entered into a transaction or Contract, which should have produced a Trade
+      Confirmation or otherwise a posting on the Client’s Account, but the Client has not received
+      such confirmation, the Client must inform the Company immediately when the Client ought
+      to have received such confirmation. In the absence of such information the transaction or
+      Contract may at the Company’s reasonable discretion be deemed non–existent.
+
+
+18.   Communication
+
+18.1. Communications may be made to the Client at such address, telephone, facsimile or email
+      address notified from time to time to the Company for this purpose.
+
+18.2. Unless otherwise agreed in writing, all communications shall be made in the English
+      language and shall be served by sending them by prepaid first class post, email or facsimile
+      transmission or by delivering it by hand to the address for the time being of the addressee.
+      Translation or information provided in languages other than English is for informational
+      purposes only and do not bind the Company or have any legal effect whatsoever, the
+
+                                                            28
+                        Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                            Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                             Account Opening Agreement
+
+
+      Company having no responsibility or liability regarding the correctness of the information
+      therein.
+
+18.3. Any notice/ communication sent to the Client by:
+
+      (a) post shall be deemed to have been served, in the case of service in Saint Vincent and
+           the Grenadines 48 hours after dispatch and, in the case of service outside Saint Vincent
+           and the Grenadines, seven (7) days after dispatch.
+
+      (b) facsimile shall be deemed to have been served at the time of receipt of a positive
+           transmission notice by the sender.
+
+      (c) email shall be deemed to have been served when received at the destination site or
+           the address advised by recipient to the sender to be its email address.
+
+18.4. In proving service, it will be sufficient to prove,
+
+      (a) in the case or a letter, that it was properly stamped, addressed and placed in the post,
+
+      (b) in the case of a facsimile transmission, that it was fully dispatched to a current or
+           facsimile number of the addressee and,
+
+      (c) in the case of email, that the sender has received a valid message confirmation delivery.
+
+18.5. The Client shall ensure that at all times the Company will be able to communicate with the
+      Client or his appointed representative by telephone, facsimile or email.
+
+18.6. Communications may be made to the Company at the address and telephone number
+      notified to the Client for this purpose and shall be considered to have been duly made only
+      upon their actual receipt by the Company.
+
+18.7. The Client may alter his/ her communication details by written notice to the Company.
+
+18.8. The Company may from time to time communicate with the Client by any of the means of
+      communication mentioned in Clause 18.1 for providing any kind of information including but
+      not limited to information on any new feature on its platform, for any updates on the
+      Company’s website, for the provision of information on new products and/or new
+      promotions and bonuses schemes and/or anything that in the Company’s opinion might be
+      of interest and assistance to its Clients. The Client consents and agrees to receive any of the
+                                                       29
+                         Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                             Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                             Account Opening Agreement
+
+
+      information which the Company wishes to make available to the Client.
+
+
+19.   Conflicts of Interest
+
+19.1. The Company, its associates or other persons or companies connected with the Company
+      may have an interest, relationship or arrangement that is material in relation to any
+      transaction or Contract affected or advice provided by the Company, under the Terms. By
+      accepting these Terms and the Company’s Conflict of Interest Policy (which distinctly
+      describes the general character and/ or background of any conflict of interest) the Client
+      agrees that the Company may transact such business without prior reference to any
+      potential specific conflict of interest.
+
+
+20.   Inducements
+
+20.1. The Company may pay and/or receive fees/commission to/from third-parties, provided that
+      these benefits are designed to enhance the quality of the offers services to the Client and
+      they not impair compliance with the Company’s duty to act in the best interests of the Client.
+
+
+21.   Business Introducer
+
+21.1. The Client may have been recommended by a Business Introducer. Based on a written
+      agreement with the Company, the Business Introducer will be paid with a fee / commission.
+
+21.2. The Business Introducer or other third parties will be paid with a fee/commission based on a
+      written agreement with the Company. This fee/commission is related to the volume of
+      trading transactions performed by and the number of referred Clients to the Company. The
+      Company has the obligation and undertakes to disclose to the Client, upon his request,
+      further details regarding the amount of fees/commissions or any other remuneration paid to
+      the Business Introducer, or other third parties.
+
+21.3. The Client acknowledges and understands that in circumstances of a Client being introduced
+      to the Company through an Introducer higher spreads may be applied as mark-up, as
+      indicated in Company’s website. Note that fees/commissions to the Introducers may be paid
+      by the Company even if mark ups are not existent. If the Client does not consent to this, the
+                                                             30
+                         Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                             Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                            Account Opening Agreement
+
+
+     Company shall not apply the mark-up or mark-down to any of the applicable accounts and
+     the Introducer will be remunerated based on the terms of the standard Introducer’s
+     Agreement offered by the Company.
+
+21.4. By accepting this Agreement, the Client confirms that he/ she is also aware that commissions
+     based on the Client’s traded volume may be paid to the Business Introducer.
+
+21.5. The Introducer has the option to share a percentage of the remuneration he receives from
+     the Company, based on the Introducer and/or Complementary Agreement he has in place
+     with the Company, with any Client he has referred to the Company, through the Company’s
+     Rebate system. The Introducer has the option to change the percentage of Introducer Rebate
+     he is willing to share with a Client at any given time, without his prior consent. It is understood
+     that the Introducer and the Client do not maintain any form of relationship, when the
+     referred Client has already concluded an agreement with the Company.
+
+21.6. Introducer Rebates apply only to Clients of the Company who have been introduced to the
+     Company by Affiliates and can be applied to any trading account that the referred Client has
+     opened with the Company.
+
+21.7. Introducer Rebates is the percentage of the Introducer commission which is calculated based
+     on the volume of trading transactions performed by the referred Clients and are applied to
+     the Client’s trading account(s). The Clients can be informed on which of their trading accounts
+     are subject to Introducer Rebates through their Client Area.
+
+21.8. The Introducer has the option to fund the trading account of the referred Client either
+     automatically or manually. The Client’s account can be credited with the Introducer Rebate
+     amount every day at midnight server time, given that the Rebate generated amount has
+     exceeded 5USD.
+
+21.9. If the Client and/or the Introducer wishes to receive a detailed statement of the amount of
+     rebates received upon the closure of a trade, he must send an email to the Company at
+     support@hfm.com .
+
+21.10. The Client acknowledges that Introducer Rebates are discretionary and the Company
+     reserves the right to terminate this offer at any time.
+                                                            31
+                        Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                            Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                            Account Opening Agreement
+
+
+21.11. The Client acknowledges and confirms that:
+
+      (a) the Company does not bear responsibility for whatever agreements are reached
+          between the Client and the Business Introducer.
+
+      (b) his/ her agreement with the Business Introducer may result in additional costs, since
+          the Company may be obliged to pay commission fees or charges to the Business
+          Introducer.
+
+      (c) the Business Introducer is authorised to have ''View Only'' access to one or more
+          terminals, including terminal access through internet browser, to electronically
+          monitor the activities of Clients' Accounts introduced by the Business Introducer to the
+          Company.
+
+21.12. The Client acknowledges that the Business Introducer is not a representative of the
+      Company nor is he authorised to provide any guarantees or any promises with respect to the
+      Company or its services.
+
+21.13. The Client acknowledges and understands that the Business Introducer is not allowed to
+      offer the service of Investment Advice.
+
+
+22.   Acknowledgements
+
+22.1. The Client acknowledges that he has read, understood and accepted the present Agreement,
+      and all other legal documentation available on the Company’s website (the Terms of Business,
+      the Privacy Policy, the General Risk Disclosure, , the Complaint Handling, the Order Execution
+      Policy, the Risk Disclosures for Financial Instruments and the Summary of Conflicts of Interest
+      Policy as amended from time to time). The Company shall notify the Client of any changes in
+      the legal documentation of the Company and the Client shall be solely responsible for making
+      himself familiarised with such changes.
+
+22.2. The Client further acknowledges and understands that:
+
+      (a) the Company’s relationship with him will be governed by the Terms and conditions of
+          this Agreement and the Terms of Business available at the Company’s website as
+          amended from time to time;
+                                                            32
+                        Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                            Registration number 22747 IBC 2015
+                                                                                                 HF Markets (SV) Ltd
+                                                                                         Account Opening Agreement
+
+
+(b) the Company has the right to archive any trading account if the Client does not perform
+    any trading or financial transaction for a period of 60 (sixty) calendar days, regardless
+    of the balance amount. If there is insufficient balance to support pending orders at the
+    time of archiving, the pending orders will be deleted. The said archived trading account
+    can be reinstated with the same conditions upon request to support@hfm.com . An
+    archived account is not considered as a terminated account; however, any trading
+    account may only be restored at the Company’s discretion;
+
+(c) that any market recommendation and any information communicated by the Company
+    does not constitute an offer to buy or sell or the solicitation of an offer to buy or sell a
+    Contract and that such recommendation and information, although based upon
+    information from sources believed by the Company to be reliable, may be based solely
+    on a vendor’s opinion (such as a third-party market analysis provider) and that such
+    information may be incomplete and may be unverified and unverifiable. The Company
+    makes no representation, warranty or guarantee as to, and shall not be responsible for,
+    the accuracy or completeness of any information or trading recommendation furnished
+    to the Client;
+
+(d) the Company reserves the right to change the specification of a Trading Account and
+    publish any changes made to a specific trading account type on the relevant page of
+    its Website;
+
+(e) that the Company’s official language is the English Language.
+
+(f) The Services and/or any marketing communication as regards the same are only
+    provided via the Company’s website and/or Trading Platform(s) and/or official social
+    networking channels as per the provisions of the Agreement, thus, only these methods
+    shall be used for communicating and receiving the Services offered by the Company.
+    The Company shall not be liable for any loss, expense, cost or liability of any kind of
+    nature incurred by the Client in case he has communicated and/or conducted any type
+    of business with any natural or legal entity claiming to act on the Company’s behalf in
+    respect of the Services offered by the Company (i.e. imposters, fraudsters etc.).
+
+                                                         33
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                               Account Opening Agreement
+
+
+        (g) The Company reserves the right to aggregate previous closed transactions. This
+            process involves consolidating all closed trades from a given month into a single
+            Balance Operation. All trades that were opened and closed during the prior months
+            will be aggregated.
+
+22.3. The Client acknowledges, agrees, and understands that the Company, without prior notice
+        to the Client, reserves the right at its sole and absolute discretion, to void and/or forfeit any
+        type of affiliate commissions, rebates, bonuses, success and performance fees, prizes or
+        credits which have been paid and/or are due to be paid to the Client’s Account and/or Trading
+        Account, and which emanate from the Client’s participation in any of the Company’s products
+        and/or promotions, in the case the Client has not logged into his Account for a period of
+        twenty-four (24) months.
+
+22.4.    The Client further acknowledges that where the Company has any indication or suspicion
+      of any form of arbitrage, abuse, fraud, manipulation, cash-back arbitrage connected to a
+      Trading Account or any other forms of deceitful or fraudulent activity, then the Company
+      reserves the right at its sole discretion to:
+          a) Close/ suspend all Trading Accounts the Client has with the Company either
+                temporarily or permanently,
+          b) Void all previously credited trading bonuses from the Client’s Trading Accounts with
+                the Company
+          c) Void all transactions carried out, including any pending orders and/ or any profits or
+                losses earned.
+22.5.    The Client further acknowledges and understands that the company reserves the right to
+      terminate the account in cases of abusive, offensive, or otherwise inappropriate language or
+      conduct.
+
+
+23.     Risks
+
+23.1. The Client acknowledges, recognises and understands that trading and investments in
+        leveraged as well as non–leveraged Contracts is:
+
+        (a) highly speculative;
+                                                               34
+                           Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                               Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                           Account Opening Agreement
+
+
+     (b) may involve an extreme degree of risk; and
+
+     (c) is appropriate only for persons who, if they trade on margin, can assume risk of loss in
+         excess of their margin deposit.
+
+     An example of a leveraged product is a CFD on Forex with a leverage of higher than 1:1.
+     Clients may choose a leverage of 1:1 which makes the Contract non-leveraged.
+
+23.2. The Client acknowledges, recognises and understands that:
+
+     (a) because of the low margin normally required in margined transactions, price changes
+         in the underlying asset may result in significant losses, which losses may substantially
+         exceed the Client’s investment and margin deposit;
+
+     (b) certain market conditions may make it difficult or impossible to execute orders at a
+         stipulated price;
+
+     (c) when the Client directs the Company to enter into any transaction, any profit or loss
+         arising as a result of a fluctuation in the value of the asset or the underlying asset will
+         be entirely for the Client’s account and risk;
+
+     (d) the Company will never provide any trading advice to the Client. Therefore, the Client
+         agrees not to hold the Company responsible for losses incurred as a consequence of
+         following the Company’s recommendations or suggestions or those of its employees,
+         associates or representatives, unless the Company has exercised gross negligence in
+         connection herewith;
+
+     (e) the Company shall not conduct any continuous monitoring of the transactions already
+         entered into by the Client. Thus, the Company cannot be held responsible for the
+         transactions developing differently from what the Client might have presupposed and/
+         or to the disadvantage of the Client;
+
+     (f) guarantees of profit or freedom from loss are impossible in investment trading;
+
+     (g) he/ she has received no such guarantees or similar representations from the Company,
+         from a Business Introducer, or representatives hereof or any other entity with whom
+         the Client is conducting a Company account.
+
+                                                           35
+                       Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                           Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                           Account Opening Agreement
+
+
+      (h) the Company shall not provide any advice to the Client on any tax issues related to any
+          Services. The Client is advised to obtain individual independent counsel from its
+          financial advisor, auditor or legal counsel with respect to tax implications of the
+          respective Services.
+
+      (i) The Client further acknowledges, recognises and understands that many Contracts will
+          be effected subject and in accordance with Market Rules. In particular, the Client
+          acknowledges that Market Rules usually contain far-reaching powers in an emergency
+          or otherwise undesirable situation and agrees that if any exchange or clearing house
+          takes any action which affects a contract then the Company may take any action which
+          it, in its discretion, considers desirable in the interests of the customer and/ or the
+          Company. The Company shall not be liable for any loss suffered by the Client as a result
+          of the acts or omissions of any exchange or clearing house or any action reasonably
+          taken by the Company as a result of such acts or omission unless the Company has
+          exercised gross negligence in connection hereby.
+
+      (j) The Company offers various trading account types, the specifications of which are
+          available on the Company’s website. The Company reserves the right to change the
+          specification of the Trading Account and publish any changes made to a specific trading
+          account type on the relevant page of its.
+
+
+24.   Representations and Warranties
+
+24.1. The Client represents and warrants that:
+
+      (a) He does not have any legal disability with respect to, and is not subject to any law or
+          regulation which prevents its performance of the Terms or any transaction
+          contemplated by the Terms;
+
+      (b) He has obtained all necessary consents and has the authority to operate to according
+          the Agreement (and if the Client is a company, it is properly empowered and has
+          obtained necessary corporate or other authority pursuant to its constitutional and
+          organisational documents);
+
+                                                           36
+                       Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                           Registration number 22747 IBC 2015
+                                                                                              HF Markets (SV) Ltd
+                                                                                      Account Opening Agreement
+
+
+(c) sums, investments or other assets supplied by the Client for any purpose, subject to
+    the Agreement, at all times be free from any charge, lien, pledge or encumbrance and
+    shall be beneficially owned by the Client;
+
+(d) He is in compliance with all laws to which it is subject including, without limitation, all
+    tax laws and regulations, exchange control requirements and registration
+    requirements; and
+
+(e) the information provided by the Client to the Company is complete, accurate and
+    under no circumstances is misleading and the documents handed over by the Client
+    are valid and authentic;
+
+(f) the Client has read and fully understood the terms of the Agreement;
+
+(g) the Client is acting as a principal and not as agent or representative or trustee or
+    custodian on behalf of someone else. The Client may act on behalf of someone else
+    only if the Company specifically consents to this in writing and provided all the
+    documents required by the Company for this purpose are received;
+
+(h) the Client is the individual who has completed the Account Opening Application Form
+    or, if the Client is a company, the person who has completed Account Opening
+    Application Form on the Client’s behalf is duly authorised to do so;
+
+(i) all actions performed under the Agreement will not violate any law or rule applicable
+    to the Client or to the jurisdiction in which the Client is resident, or any agreement by
+    which the Client is bound or by which any of the Client’s assets or funds are affected;
+
+(j) the Client funds are not in any direct or indirect way the proceeds of any illegal activity
+    or used or intended to be used for terrorist financing;
+
+(k) the Client has chosen the particular type of service and financial instrument, taking his
+    total financial circumstances into consideration which he considers reasonable under
+    such circumstances;
+
+(l) the Client has declared in the Account Opening Application Form if he is a Politically
+    Exposed Person and will notify the Company if at any stage during the course of this
+
+                                                      37
+                  Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                      Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                             Account Opening Agreement
+
+
+          Agreement he becomes a Politically Exposed Person;
+
+      (m) there are no restrictions on the markets or financial instruments in which any
+          Transactions will be sent for execution, depending on the Client’s nationality or religion.
+
+      (n) The Client should inform the Company prior opening an account and throughout the
+          business relationship if he has been convicted of a crime or have any outstanding
+          criminal charges pending against him;
+
+
+
+24.2. The Client represents and warrants that the above representations and warranties shall be
+      applied for any future instructions and/or transactions provided by the Client for the duration
+      of his business relationship with the Company.
+
+
+25.   Indemnity and Limit of Liability
+
+25.1. The Client shall indemnify the Company and keep the Company indemnified at all times
+      against all losses, expenses, costs and liabilities of any kind or nature which may be suffered
+      or incurred by the Company:
+
+      (a) As a direct or indirect result of any failure of the Client to perform any of his obligations
+          under this Agreement; and/or
+
+      (b) In relation to any instruction given to the Company by an authorised representative of
+          the Client; and/or
+
+      (c) In relation to any instruction, which appears to the Company to be given by an
+          authorised representative of the Client; and/or
+
+      (d) Where the Client and/or the authorised representative of the Client and/or any person
+          which appears to the Company to be an authorised representative of the Company,
+          has provided false and/or misleading information for any transaction.
+
+25.2. This Indemnity shall survive the termination of this Agreement.
+
+25.3. The Company shall not be liable for:
+
+      (a) any loss, expense, cost or liability of any kind or nature suffered or incurred by the
+                                                             38
+                         Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                             Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                             Account Opening Agreement
+
+
+            Client unless such loss, expense, cost or liability of any kind or nature is suffered or
+            incurred as a result of the Company’s gross negligence and/or fraud on behalf of the
+            Company and/or the intended failure of the Company’s obligations under this
+            Agreement; and/or
+
+      (b) any acts or omissions of an authorised representative or a person which appears to the
+            Company to be an authorised representative of the Client which provides the Company
+            with false and/or misleading information of the Client’s instructions unless such acts
+            or omissions were the result of the Company’s gross negligence and/or fraud on behalf
+            of the Company; and/or
+
+      (c) any loss of opportunity that results in reduction in the values of the Client’s
+            transactions, regardless of the cause of such reduction, except to the extent that the
+            reduction occurred as a direct consequence of the Company’s deliberate actions or
+            omissions.
+
+      (d) any loss caused by actions of the Company, within the limits of realisation of its rights,
+            stipulated in these Terms;
+
+      (e) any loss or expense incurred by the Client in connection with any error and/or failure
+            and/or delay in the operation of the Trading Platform.
+
+      (f)   any failure of communication (for any reason) and/or any claim loss, expense, cost or
+            liability suffered or incurred by you within the acts provided in clause 33 including
+            (without limitation) the unavailability of our Website (including the Trading Platform)
+            or our telephone systems provided always we act within the terms of clause 33.
+
+
+26.   Prohibited Trading
+
+26.1. The Client is not allowed to enter into any form of prohibited trading i.e. certain trading
+      techniques commonly known as "arbitrage trading", "picking/ sniping" or the use of certain
+      automated trading systems or “Expert Advisors”; and/or follow an abusive trading strategy
+      i.e. any trading activity which is aiming towards potential riskless profit by opening opposite
+      orders, during periods of volatile market conditions, during news announcements, on
+
+                                                             39
+                         Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                             Registration number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                               Account Opening Agreement
+
+
+      opening gaps (trading sessions starts), or on possible gaps where the underlying instrument
+      has been suspended or restricted on a particular market, between same or different trading
+      accounts. The Client agrees and acknowledges that if the Company considers that the Client
+      has been acting in any of the manners described above; the Company may at its sole
+      discretion and without prior notice to the Client, take one or more, or any portion of, the
+      following actions:
+
+      (a) close the Client's account;
+
+      (b) suspend the Client's account for an indefinite period of time;
+
+      (c) carry out an investigation on the Client's account for an indefinite period of time;
+
+      (d) charge a penalty fee to the Client in the same or greater amount of money that resulted
+          from the Client using such techniques; or
+
+      (e) close the account, confiscate any profits that arose from prohibited trading techniques
+          and return the original deposit(s) to the account holder. If profits arising out of
+          Prohibited Trading were already withdrawn, profits can be confiscated from the
+          Client’s related accounts in order to make up for the difference.
+
+
+27.   Event of Default
+
+27.1. Each of the following constitutes an ‘Event of Default’:
+
+      (a) The Client has failed to make any payment to the Company in accordance with the terms
+          and conditions under the Agreement;
+
+      (b) The Client has failed to perform any of his obligations to the Company under the
+          Agreement;
+
+      (c) If the Client is a natural person, his death or incapacity;
+
+      (d) The initiation of proceedings for bankruptcy (in case of a natural person) or the winding
+          up (in case of a legal entity) by a third party or the appointment of an administrator or
+          receiver in respect of the Clients’ assets (either a natural or legal person);
+
+      (e) Where the Client has entered into any arrangements and/or compositions with his
+
+                                                               40
+                           Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                               Registration number 22747 IBC 2015
+                                                                                                      HF Markets (SV) Ltd
+                                                                                              Account Opening Agreement
+
+
+          Creditors;
+
+      (f) If the Clients becomes unable to pay any of his debts due and payable to the Company;
+
+      (g) Where any representation and/or warranty made by the Client to the Company under
+          this Agreement becomes untrue;
+
+27.2. In an Event of Default the Company has the right to either:
+
+      (a) Immediately demand any amount due and terminate the Agreement without prior
+          notice to the Client; and/or
+
+      (b) Close or partly close all or any of your open trades at a closing level based on the market
+          price at the time of closure; and/or
+
+      (c) Close all or any of the Accounts of the Client held with the Company of whatever nature
+          and refuse to enter into further dealings with the Client; and/or
+
+      (d) Cancel any of its obligations to continue providing any of its Services to the Client without
+          prior notice.
+
+
+28.   Amendments
+
+28.1. The Company reserves the right to amend these Terms at any time by written notice to the
+      Client. Such changes will become effective on the date specified in the notice, which will be
+      at least one week after the Client is notified by a message posted on the ‘Company News’
+      section within www.hfm.com , by email or any other appropriate means, unless any relevant
+      law, regulation, rule or action of any applicable government or regulator requires otherwise.
+
+
+29.   Information Disclosure
+
+29.1. The Company shall maintain all information received by the Client confidential. The Client
+      acknowledges that such information shall be disclosed to the Company’s employees,
+      affiliates, consultants and advisors who are required to know such information for the
+      purpose of this Agreement and/or to any parties either in the Republic of Saint Vincent and
+      the Grenadines or outside of it to facilitate the transfer of funds from the Client’s credit card
+      and who shall maintain that the confidentiality of such information. The Client acknowledges
+                                                    41
+                          Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                              Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                            Account Opening Agreement
+
+
+      and agrees that the Company may disclose such information relating to the Client as may be
+      required by any law, rule or regulatory authority, including any applicable Market Rules,
+      without prior notice to the Client.
+
+
+30.   Advice and Provision of Information
+
+30.1. The Company will not advise the Client about the merits of a particular Transaction or give
+      him any form of investment advice and the Client acknowledges that the Services do not
+      include the provision of investment advice in CFDs or the Underlying Markets. The Client
+      alone will enter into Transactions and take relevant decisions based on his own judgment.
+      In asking the Company to enter into any Transaction, the Client represents that he has been
+      solely responsible for making his own independent appraisal and investigation into the risks
+      of the Transaction. He represents that he has sufficient knowledge, market sophistication,
+      professional advice and experience to make his own evaluation of the merits and risks of
+      any Transaction. The Company gives no warranty as to the suitability of the products traded
+      under this Agreement and assumes no fiduciary duty in its relations with the Client.
+
+30.2. The Company will not be under any duty to provide the Client with any legal, tax or other
+      advice relating to any Transaction. The Client should seek independent expert advice if he is
+      in any doubt as to whether he may incur any tax liabilities. Tax laws are subject to change
+      from time to time.
+
+30.3. The Company may, from time to time and at its discretion, provide the Client (or in
+      newsletters which it may post on its Website or provide to subscribers via its Website or the
+      Platform or otherwise) with information, recommendations, news, market commentary or
+      other information but not as a service. Where it does so:
+
+      (a) the Company will not be responsible for such information;
+
+      (b) the Company gives no representation, warranty or guarantee as to the accuracy,
+          correctness or completeness of such information or as to the tax or legal consequences
+          of any related Transaction;
+
+      (c) this information is provided solely to enable the Client to make his own investment
+
+                                                            42
+                        Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                            Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                             Account Opening Agreement
+
+
+           decisions and does not amount to investment advice or unsolicited financial
+           promotions to the Client;
+
+      (d) if the document contains a restriction on the person or category of persons for whom
+           that document is intended or to whom it is distributed, the Client agrees that he will
+           not pass it on to any such person or category of persons.
+
+      (e) the Client accepts that prior to dispatch, the Company may have acted upon it itself to
+           make use of the information on which it is based. The Company does not make
+           representations as to the time of receipt by the Client and cannot guarantee that he
+           will receive such information at the same time as other Clients.
+
+30.4. It is understood that market commentary, news, or other information provided or made
+      available by the Company are subject to change and may be withdrawn at any time without
+      notice.
+
+
+31.   Chargeback Policy
+
+31.1. The Client shall have the right to file a complaint for a belief that a fraudulent transaction was
+      committed. The Company shall then conduct an investigation to determine whether the
+      alleged transaction was fraudulent. The Client acknowledges that the Company reserves the
+      right to charge the Client a “150 USD research fee” in order to conclude the investigation.
+
+31.2. The Company will not accept any form of fraud including but not limited to credit card fraud.
+      The Company shall conduct full investigations and pursue all the losses it might incur under
+      the law. The Company will conduct court proceedings and will claim any losses incurred
+      covering all business, legal fees, research costs, human resource and loss of income.
+
+31.3. The Company maintains systems which monitor fraudulent activities. Any transactions
+      detected are immediately cancelled along with any orders associated with the transaction.
+      The Company maintains a database of black listed users which are banned from trading.
+
+31.4. The Company shall regard any chargeback as fraudulent if the Client fails and/or neglects to
+      assist the Company in resolving any issues associated with a specific deposit. All unnecessary
+      chargebacks produce unnecessary costs for the Company and therefore the Company shall
+                                                             43
+                         Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                             Registration number 22747 IBC 2015
+                                                                                               HF Markets (SV) Ltd
+                                                                                       Account Opening Agreement
+
+
+ take the following measures:
+
+(a)   When the Company detects suspicious activity regarding a deposit the respective
+      deposit will be placed as ‘Pending’ and fraud detection checks will be performed during
+      this time. Access to the Client’s account will be temporarily prohibited in order to
+      reduce the Client’s exposure to risk.
+
+(b)   All reviews are generally completed within four (4) to six (6) hours; however, deposits
+      posing a potentially higher risk of fraud might require more time as more extensive
+      fraud detection checks will be performed by the Compliance Department of the
+      Company. As a back-up precaution, the Company may also make direct contact with
+      the Client. The deposit will be immediately cancelled and the funds will be refunded to
+      the credit card in the case that the deposit is determined to be high-risk or does not
+      comply with our Fraud and Security policies. The Company reserves the right to close
+      any and/or all Client accounts with the Company. Any active orders will be cancelled
+      immediately if associated with the same fraudulent credit card and/ or account.
+
+(c)   Unsuccessful chargebacks shall receive a total fee of 300 USD i.e. the 150 USD research
+      fee and an additional 150 USD administrative processing fee’ which must be
+      reimbursed to the Company. Under the terms and conditions of this Agreement, the
+      Client hereby agrees and gives permission to the Company to proceed with any charges
+      on the Client’s credit card; if these charges are in anyway disputed, the Company
+      reserves the right to take any legal action necessary in order to recover any losses
+      associated with these claims.
+
+(d)   Inconclusive chargebacks made against the Company will be passed to a third-party
+      agency for collection and the appropriate credit bureaus will be informed of the actions
+      of the Client. The Client faces a risk of his credit rating being affected for a minimum
+      period of 7 (seven) years. In these circumstances the Company shall not negotiate a
+      settlement of the debt and shall request a full payment. The Company will inform the
+      local Police Department where the Client is resident and shall request all necessary
+      actions to be taken under the applicable law of the country of residence of the Client.
+
+                                                       44
+                   Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                       Registration number 22747 IBC 2015
+                                                                                                      HF Markets (SV) Ltd
+                                                                                              Account Opening Agreement
+
+
+          The Company reserves the right to block online trading facility of the Client and
+          terminate hisaccount without prior notice. The Client acknowledges that in such
+          circumstances any profits or revenues may be seized and the Company reserves the
+          right to inform any third party. The Company is continuously developing tools to
+          monitor any fraudulent activity. The Company shall deal with cases of fraudulent
+          activity as it thinks fit and the decisions taken shall be final, non-negotiable and
+          irreversible.
+
+    (e)   The Company reserves the right to deduct the disputed amount until any form of
+          investigation conducted by the Company is completed.
+
+31.5. Due to the high risks entailed with the crime of fraud the Company considers that more
+     serious measures shall be taken. All IP addresses are closely monitored by the Company and
+     any fraudulent chargebacks will be fully investigated and appropriate measures shall be
+     taken.
+
+
+
+
+32. Company Website and System
+
+32.1. Crypto trading services are available twenty-four (24) hours a day, seven (7) days a week
+     (24/7). However, to ensure optimal server performance and continuous service
+     enhancement, regular system optimization and server maintenance are conducted every
+     Sunday between 09:00 and 13:00 MT Server Time. Clients acknowledge that minor service
+     interruptions may occur during this scheduled maintenance period. All time references
+     within these terms and conditions are based on MT Server Time.
+32.2. Additionally, we may suspend use of Company’s Website to carry out further maintenance,
+     repairs, upgrades or any development related issues. We shall use reasonable endeavours to
+     give you notice of this and to provide alternative ways for you to deal or obtain information
+     as to your Account, but this may not be possible in an emergency.
+
+
+                                                              45
+                          Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                              Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                            Account Opening Agreement
+
+
+33.   Force Majeure Event
+
+33.1. The Company shall not be liable to the Client for any failure, hindrance or delay in
+      performing its obligations under these Terms where such failure, hindrance or delay arises
+      directly or indirectly from circumstances beyond its reasonable control. Such force majeure
+      events shall include without limitation any technical difficulties such as telecommunications
+      failures or disruptions, non–availability of the Company’s Website e.g. due to maintenance
+      downtime, declared or imminent war, revolt, civil unrest, catastrophes of nature, statutory
+      provisions, measures taken by authorities, strikes, lock–outs, boycotts, or blockades,
+      notwithstanding that the Company is a party to the conflict and including cases where only
+      part of the Company’s functions are affected by such events.
+
+33.2. The Company, in its reasonable opinion, determines that a force majeure even occurred;
+      under such circumstances the Company shall take all reasonable steps in order to inform
+      the Client.
+
+33.3. A force majeure even is an event or circumstance, including but not limited to any natural,
+      technological, political, governmental, social, economic or similar event or circumstance that
+      occurred after a transaction in a financial instrument occurred and such event or
+      circumstance has not been anticipated at the date of entering into the transaction. In
+      addition to the above, a force majeure event may include instances of illegitimate actions
+      against the Company’s servers that maybe outside the control of with the Client or the
+      Company.
+
+33.4. If the Company determines that a force majeure event occurred, without prejudice to any
+      other rights of the Client under the account opening agreement, the company may:
+
+      (a) Increase margin requirements and/ or
+
+      (b) increase spreads and/ or
+
+      (c) decrease leverage and/ or (Leverage is a ratio of amount used in a transaction to the
+          required deposit)
+
+      (d) close out, in good faith, any open positions at a price that the Company considers
+
+
+                                                            46
+                        Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                            Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                            Account Opening Agreement
+
+
+          reasonable and/ or
+
+      (e) request amendments to any closed positions and/ or
+
+      (f) suspend the provision of the Services to the Client and/ or
+
+      (g) amend any of the content of the Agreement on the basis that it is impossible for the
+          company to comply with it.
+
+      (h) suspend or modify the application of any or all terms of the Agreement to the extent
+          that the Force Majeure Event makes it impossible or impractical for the Company to
+          comply with them and /or
+
+      (i) take or omit to take all such other actions as the Company deems to be reasonably
+          appropriate in the circumstances with regard to the position of the Company, the
+          Client and other Clients.
+
+
+34.   Demo Accounts
+
+34.1. A Demo Account is a type of ‘virtual account’ designed to closely simulate a real trading
+      environment based on actual market conditions. This type of account is offered by the
+      Company to Clients and/or Prospective Clients, for them to test their trading skills prior to
+      opening a live trading account.
+
+34.2. A Demo Account’s Balance can be increased or decreased by Clients and/or Prospective
+      Clients subject to the restrictions mentioned in clauses 34.3 and 34.4 below.
+
+34.3. A Demo Account’s Balance can be increased up to 3 (three) times per day provided that each
+      deposit amount equals or exceeds 10 USD (ten US Dollars), or the applicable amount of the
+      Demo Account’s base currency. It shall be noted that the maximum Balance of a Demo
+      Account shall not exceed the amount of 10,000,000 USD (ten million US Dollars), or the
+      applicable amount of the Demo Account’s base currency.
+
+34.4. A Demo Account’s Balance can be decreased up to 2 (two) times per day provided that the
+      amount to be removed equals or exceeds 5 USD (five US Dollars), or the applicable amount
+      of the Demo Account’s base currency and does not exceed the Demo Account’s Free Margin.
+
+                                                            47
+                        Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                            Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                            Account Opening Agreement
+
+
+34.5. The Demo Premium HFM Account is valid for 60 (sixty) days only.
+
+34.6. It should be noted that inactive Demo Accounts are automatically deleted within 29 (twenty-
+      nine) days of inactivity without prior notice of termination to the Clients and/or Prospective
+      Clients.
+
+
+35.   Term
+
+35.1. This Agreement shall come into force on the Commencement Date of this Agreement and
+      shall remain in full force and effect until it is terminated by either Party in accordance with
+      Clause 36 of this Agreement.
+
+
+36.   Termination
+
+36.1. The Client relationship shall remain in force until terminated.
+
+36.2. Either party has the right to terminate cooperation immediately by giving written notice to
+      the other. Termination will not affect any accrued rights. The Company will provide the
+      notice to the Client either by phone or email (or both).
+
+36.3. The Company may terminate this Agreement with immediate effect without notice in an
+      event of Default of the Client.
+
+36.4. The Company reserves the right, at its sole and absolute discretion, to suspend or terminate
+      any account at any time, with or without cause, and without prior written notice to the
+      account holder. The Company shall not be liable for any losses, damages, or consequences
+      arising from such suspension or termination.
+
+36.5. In case the Client involves the Company directly or indirectly in any type of fraud, the
+      Company reserves the right to reverse all previous transactions which place the Company’s
+      interest and/ or any of its Clients interest at risk before terminating cooperation with the
+      respective Client. The Company will use its best judgment to determine the existence of
+      fraud.
+
+36.6. Termination by any Party will not affect any obligation which has already been incurred by
+      either Party in respect of any Open Position or any legal rights or obligations which may
+                                                            48
+                        Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                            Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                           Account Opening Agreement
+
+
+     already have arisen under the Agreement or any Transactions and deposit/ withdrawal
+     operations made there under.
+
+36.7. Upon termination of this Agreement, all amounts payable by the Client to the Company will
+     become immediately due and payable including (without limitation):
+
+     (a) all outstanding Costs and any other amounts payable to the Company;
+
+     (b) any dealing expenses incurred by terminating the Agreement and charges incurred
+          for transferring the Client’s investments to another investment firm;
+
+     (c) any losses and expenses realised in closing out any Transactions or settling or
+          concluding outstanding obligations incurred by the Company on the Client’s behalf;
+
+     (d) any charges and additional expenses incurred or to be incurred by the Company
+          as a result of the termination of the Agreement;
+
+     (e) any damages which arose during the arrangement or settlement of pending obligations.
+
+36.8. Once notice of termination of this Agreement is sent or upon termination (when a notice is
+     not required) the following will apply:
+
+     (a) the Client will have an obligation close all his open positions. If he fails to do so, upon
+          termination, the Company will close any open positions;
+
+     (b) the Company will be entitled to cease to grant the Client access to the Platform or may
+          limit the functionalities the Client is allowed to use on the Platform;
+
+     (c) the Company will be entitled to refuse to open new positions for the Client;
+
+     (d) the Company will be entitled to refuse to the Client to withdraw money from the Client
+          Account and the Company reserves the right to keep Client’s funds as necessary to
+          close positions which have already been opened and/ or pay any pending obligations
+          of the Client under the Agreement.
+
+36.9. Upon Termination:
+
+     (a) the Company reserves the right to combine any Client Accounts of the Client, to
+          consolidate the Balances in such Client Accounts and to set off those Balances;
+
+                                                           49
+                       Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                           Registration number 22747 IBC 2015
+                                                                                                      HF Markets (SV) Ltd
+                                                                                              Account Opening Agreement
+
+
+      (b) the Company reserves the right to close the Client Account(s);
+
+      (c) the Company reserves the right to convert any currency;
+
+      (d) the Company may close out all or any of the Client’s Open Positions at current Quotes;
+
+      (e) if there is Balance in the Client’s favour, the Company will (after withholding such
+          amounts that in the Company’s absolute discretion considers appropriate in respect of
+          future liabilities) pay such Balance to the Client as soon as reasonably practicable and
+          supply him with a statement showing how that Balance was arrived at and, where
+          appropriate, instruct any Nominee and/ or any Custodian to also pay any applicable
+          amounts. Such funds shall be delivered in accordance to the Client’s Instructions to the
+          Client.
+
+
+37.   Miscellaneous Provisions
+
+37.1. If at any time, any provision of the Terms is or becomes illegal, invalid, or unenforceable in
+      any respect under the law of any jurisdiction, neither the legality, validity or enforceability
+      of the remaining provisions of these Terms under the law of that jurisdiction nor the legality,
+      validity or enforceability of such provision under the law of any other jurisdiction shall be in
+      any way affected.
+
+37.2. No delay or omission on the part of the Company in exercising any right, power or remedy
+      provided by law or these Terms, or partial of defective exercise thereof, shall:
+
+      (a) Impair or prevent further or other exercise of such right, power or remedy; or
+
+      (b) Operate as a waiver of such right, power or remedy.
+
+37.3. No waiver of any breach of any term under these Terms shall (unless expressly agreed in
+      writing by the waiving party) be construed as a waiver of a future breach.
+
+37.4. The Client is not entitled to assign and or transfer any of its rights or delegate any of the
+      Client’s obligations under the Terms to any person, whereas the Company may assign its
+      rights or delegate its obligations to any publicly regulated financial institution.
+
+37.5. If the Company effects a transaction with or for the Client this shall not be taken to mean
+
+                                                              50
+                          Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                              Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                             Account Opening Agreement
+
+
+      that the Company recommends or concurs on the merits of the transaction or that the
+      transaction is suitable for the Client.
+
+
+38.   Tax Information
+
+38.1. The Client acknowledges that the Company shall have the right to request any information
+      and/or documentation required for the purposes of FATCA and CRS and the Client confirms
+      and agrees that he shall disclose such information to the Company immediately.
+
+38.2. By accepting these Terms and Conditions, the Client consents that the Company can provide,
+      directly or indirectly, to any relevant tax authorities or any party authorised to audit or
+      conduct a similar control of the Company for tax purposes information obtained from the
+      Client or otherwise in connection with the Agreement and the Transactions and to disclose
+      to such tax authorities any additional information that the Company may have in its
+      possession that is relevant to his Account.
+
+
+39.   Governing Language
+
+39.1. This Agreement as well as any additional agreement hereto (both present and future) are
+      made in English language. Any other language translation is provided as a convenience only.
+      In the case of any inconsistency or discrepancy between original English texts and their
+      translation into any other language, as the case may be, original versions of English shall
+      prevail.
+
+
+40.   Governing Law and Jurisdiction
+
+40.1. These Terms shall be governed by and construed in accordance with the Laws of the Saint
+      Vincent and the Grenadines.
+
+
+
+
+Version: 2026/03
+
+
+
+                                                             51
+                         Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                             Registration number 22747 IBC 2015
+

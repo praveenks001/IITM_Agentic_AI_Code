@@ -1,0 +1,862 @@
+                                          HF Markets (SV) Ltd
+
+                                       TERMS OF BUSINESS
+
+
+
+
+___                                                    ___                             ___
+
+Suite 305, Griffith Corporate Centre, P.O. Box 1510,   T. +44-2030978571   support@hfm.com
+Beachmont, Kingstown, St. Vincent and the Grenadines   F. +44-2030978570      www.hfm.com
+                                                                                                                    HF Markets (SV) Ltd
+                                                                                                                     Terms of Business
+
+
+                                                       Table of Contents
+
+1.    Introduction ................................................................................................................... 3
+2.    Acknowledgement .......................................................................................................... 3
+3.    Scope of the Terms of Business ....................................................................................... 4
+4.    Definitions and Interpretations ....................................................................................... 4
+5.    Internet and Electronic Trading ....................................................................................... 8
+6.    Market Making ............................................................................................................... 9
+7.    Arbitrage ...................................................................................................................... 12
+8.    Prohibited Trading ........................................................................................................ 12
+9.    Untrue Trades............................................................................................................... 13
+10.      Swap-Free Trading Accounts and Islamic Accounts .................................................... 14
+11.      Trading Volume Limitation ........................................................................................ 15
+12.      Default ...................................................................................................................... 15
+13.      Advertising................................................................................................................ 18
+14.      Refund and Cancellation............................................................................................ 19
+
+
+
+
+                                                                   2
+                           Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                               Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                                    Terms of Business
+
+
+1.   Introduction
+
+1.1. HF Markets (SV) Ltd (hereinafter referred to as the ‘Company’ is an investment firm that
+     operates as a global broker.
+
+1.2. HF Markets (SV) Ltd is incorporated in St. Vincent & the Grenadine as an International
+     Broker Company with the registration number 22747 IBC 2015.
+
+1.3. The objects of the Company are all subject matters not forbidden by International Business
+     Companies (Amendment and Consolidation) Act, Chapter 149 of the Revised Laws of Saint
+     Vincent and the Grenadines, 2009, in particular but not exclusively all commercial, financial,
+     lending, borrowing, trading, service activities and the participation in other enterprises as
+     well as to provide brokerage, training and managed account services in currencies,
+     commodities, indexes, CFDs and leveraged financial instruments.
+
+
+2.   Acknowledgement
+
+2.1. The client acknowledges that he/she read, understood and accepted the Terms of Business
+     as amended from time to time, in addition to any information contained within the firm’s
+     website available online at www.hfm.com .
+
+2.2. After the Client fills in and submits the Account Opening Application Form together with all
+     the required identification documentation, the Company will send him a notice informing
+     him whether he has been accepted as a customer of the Company. It is understood that
+     the Company is not to be required (and may be unable under Applicable Regulations) to
+     accept the Client as its customer, and hence open an account for him or accept any money
+     from him, until all documentation it requires has been received by the Company, properly
+     and fully completed by the Client and all internal Company checks (including without
+     limitation anti-money laundering checks and appropriateness tests) have been duly
+     satisfied. It is further understood that the Company reserves the right to impose additional
+     due diligence requirements to accept Clients residing in certain countries. The Agreement
+     will take effect and commence upon the receipt by the Client of the notice sent by the
+     Company informing the Client that he has been accepted as the Company’s Client.” you
+
+                                                         3
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                                     Terms of Business
+
+
+       may also add "by accepting this Agreement, the client is consenting that if he is accepted
+       by the Company as a Client their relationship will be governed by the terms and Conditions
+       of this Terms of Business and Account opening agreement as amended form time to time.
+
+2.3. The client acknowledges that the Firm’s official language is the English Language.
+
+
+3.     Scope of the Terms of Business
+
+3.1. The Terms of Business govern all the actions that relate to the execution of the client’s
+       orders.
+
+3.2.   The Terms of Business are non-negotiable and overrides any other agreements,
+       arrangements, express or implied statements made by HF Markets unless the company, in
+       its sole discretion, determines that the context requires otherwise.
+
+3.3. The Distance Marketing of Consumer Financial services law N.242 (I)/2004 which
+       implements EU directive 2002/65/EC, does not require the Client Agreement to be signed
+       by either the client or the company in order for both the client and the company to be
+       legally bound by it.
+
+
+4.     Definitions and Interpretations
+
+4.1. Terms stated below shall have the following meanings and may be used in the singular or
+       plural as appropriate.
+
+“Account” means a personalized Trading Account of the Client with the Company;
+
+“Account Detailed Report” shall mean a statement of the Clients securities portfolio, open
+
+positions, margin requirements, cash deposit etc. at a specific point in time;
+
+“Ask Price” means the price at which the Company is willing to sell a CFD;
+
+“Authorized Person” means a person authorized by the Client under a power of attorney to give
+
+instructions to the Company in relation to the Account;
+
+“Balance” means the sum of the Trading Account after the last completed order and
+
+deposit/withdrawal operation made within any period of time;
+                                                          4
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                                    Terms of Business
+
+
+“Best Execution Policy” means the Company’s prevailing policy available at the Company’s
+
+Website regarding best execution when executing client orders;
+
+“Bid Price” means the price at which the Company is willing to buy a CFD;
+
+“Business Day” means any day on which banks are open for business in St. Vincent & the
+
+Grenadine;
+
+“CFD Contract or CFD” means a contract which is a contact of difference by reference to
+
+fluctuations in the price of the relevant Underlying Asset;
+
+“Client” means a natural or legal person, accepted by the Company as its Client to whom services
+
+will be provided by the Company under the Terms;
+
+“Collateral” means any securities or other assets deposited with the Company’s Execution
+
+Venue;
+
+“Company” means HF Markets (SV) Ltd incorporated in St. Vincent & the Grenadine as an
+
+International Broker Company with the registration number 22747 IBC 2015;
+
+“Company’s Website” means www.hfm.com or any other website that may be the
+
+Company’s website from time to time;
+
+“Contract” means any contract, whether oral or written, for the purchase or sale of any
+
+commodity, security, currency or other financial instruments or property, including any
+
+derivative contracts such as options, futures, CFDs or other transactions related thereto, entered
+
+into by the Company and the Client;
+
+“Counterparties” shall mean banks and/or brokers through whom the Company may cover its
+
+transactions with Clients;
+
+“Durable Medium” means any instrument which enables the Client to store information in a way
+
+accessible for future reference for a period of time adequate for purposes of the information and
+
+which allows the unchanged reproduction of the information stored;
+
+                                                         5
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                                     Terms of Business
+
+
+“Equity” equals (Balance + Floating Profit & Loss + Swap)
+
+“Event of Default” shall have the meaning given to this term in Clause 14;
+
+“Floating Profit/Loss” shall mean the unrealized profit (loss) of open positions at current prices
+
+of the Underlying Assets;
+
+“Free Margin” means the funds not used as guarantee to open positions, calculated as: Free
+
+Margin=Equity-Margin;
+
+“Margin” means the necessary guarantee funds to open positions and maintain Open Positions,
+
+as determined in the Spreads and Conditions Schedule;
+
+“Margin Call” when the Margin posted in the margin Trading Account is below the minimum
+margin requirement, the Company issues a Margin Call and in this case the Client will have to
+either increase the Margin that he/she has deposited, or to close out his/her position(s). If the
+Client does not do any of the aforementioned, the Company shall have the right to close the
+positions of the Client;
+
+“Margin Level” means the percentage of Equity to Margin ratio. It is calculated as:
+
+Margin Level = (Equity/Necessary Margin) x 100;
+
+“Market Maker” means a dealer in securities or other assets who undertakes to buy or sell at
+specified prices at all time;
+
+“Market Rules” means the rules, regulations, customs and practices from time to time of any
+exchange, clearing house or other organization or market involved in the conclusion, execution
+or settlement of a Contract any exercise by any such exchange, clearing house or other
+organization or market of any power or authority conferred on it;
+
+“Open Positions” means any position/transaction that has not been closed. For example, an open
+long position not covered by the opposite short position and vice versa;
+
+“Orders” means any trading transactions executed on the Company’s trading platforms by the
+Client;
+
+
+
+                                                          6
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                                    Terms of Business
+
+
+“OTC” shall mean any Contract concerning a commodity, security, currency or other financial
+instrument or property, including any option, future, or CFD which is not traded on a regulated
+stock or commodity exchange but “over the counter”;
+
+“Principal” means the individual person or the legal entity which is a party to a transaction;
+
+“Security” means any securities or other assets deposited with the Company;
+
+“Services” means the services to be provided by the Company to the Client construed by these
+Terms. Services is inclusive of any dealing, order routing, advisory or other services which the
+Company provides from time to time to the Client by remote access via the Internet and which
+are subject to these Terms;
+
+“Spread” means the difference between the Ask Price and the Bid Price;
+
+“Spreads and Conditions Schedule” means the schedule of spreads, charges, margin, interest
+and other rates which at any time may be applicable to the Services as determined by the
+Company on a current basis. The Spreads and Conditions Schedule is available on the Company’s
+Website and may be supplied to the Client on demand;
+
+“Swap” shall mean the funds withdrawn or added to the Trading Account from rolling over
+(transfer) of an open position to the next day;
+
+“Terms” mean these Terms of business governing all the actions that relate to the execution of
+your trades;
+
+“Trade Confirmation” means a notification from the Company’s trading platform to the Client
+
+confirming the Client’s entry into a Contract;
+
+“Trading Platform” means any online trading platform made available to the Client by the
+
+Company for placing orders, requesting quotes for trades, receiving price information and market
+
+related news as well as having a real-time revaluation of the open positions, through the Internet;
+
+“Underlying Asset” means underlying asset is the financial instrument (e.g., stock, futures,
+
+commodity, currency, index) on which a derivative's price is based.
+
+
+
+                                                         7
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                                      Terms of Business
+
+
+5.     Internet and Electronic Trading
+
+5.1. The Client acknowledges the electronic nature of the Services and the inherent risk that
+       communications by electronic means may not reach their intended destination or may do
+       so much later than intended for reasons outside the Company’s control.
+
+5.2. Since the Company does not control signal power, its reception or routing via Internet or
+       any other means of electronic communication, configuration of Client’s equipment or
+       reliability of its connection, the Company shall not be liable for any claims, losses, damages,
+       costs or expenses, including attorneys’ fees, caused directly or indirectly, by any breakdown
+       or failure of any transmission or communication system or computer facility belonging to
+       the Company.
+
+5.3. The Client is obliged to keep all login information secret and ensure that third parties do
+       not obtain access to the trading facilities. The Client will be held responsible for
+       transactions executed by means of the Client’s password even if such transactions were
+       not executed by the Client.
+
+5.4. Unless otherwise indicated or agreed any prices shown on the Company’s Trading Platform
+       are indicative at the time shown based on data that is subject to constant change. The
+       execution price is that which is confirmed to the Client on the Trade Confirmation issued
+       (whether on screen or otherwise) after the Client order is executed, although this price may
+       in certain cases differ from the price appearing on the screen at the time the order was
+       placed. In the event that an erroneous price is used as the basis of any transaction the
+       Company reserves the right to amend or revoke the details of the transaction(s) in
+       question.
+
+5.5.   The limit order functionality of the Trading Platform will be subject to the Internet service
+       remaining available over the period in which the limit order is outstanding, and will be
+       subject to size limits input by the Company’s dealer(s) remaining in excess of the Clients
+       order size and such dealer’s position limits and/or any other limits determined by the
+       Company to be applicable to the Client (whether or not disclosed to the Client) still being
+       able to facilitate the order at the time the limit price is reached.
+
+                                                           8
+                      Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                          Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                                     Terms of Business
+
+
+5.6. The identification or use of any third party products, services or websites is not an
+       endorsement by the Company of such services, products of websites. The Company accepts
+       no responsibility or liability of any kind in respect of any materials on any website which is
+       not under the Company’s direct control.
+
+
+6.     Market Making
+
+6.1. The Client is specifically made aware that in certain markets, including the foreign exchange
+       markets, OTC foreign exchange options and CFD Contracts, the Company may act as a
+       Market Maker.
+
+6.2. The Company will, upon the Client’s written request, in general disclose to the Client
+       whether the Company may act as a Market Maker in certain CFD Contracts.
+
+6.3. In order for the Company to quote prices with the swiftness normally associated with
+       speculative trading, the Company may have to rely on available price or available
+       information that may later prove to be faulty due to specific market circumstances, for
+       instance, but not limited to, lack of liquidity in or suspension of an asset or errors in feeds
+       from information providers or quotes from Counterparties. If so and if the Company has
+       acted in good faith when providing the price to the Client, the Company may cancel the
+       trade with the Client but shall do so within reasonable time and shall provide the Client
+       with a full explanation for the reason for such cancellation.
+
+6.4.   Following execution of any position with a Client, the Company may at it’s reasonable
+       discretion subsequently offset each such client position with another Client position, or a
+       position with one of the Company’s Counterparties or retain a proprietary position in the
+       market with the intention to obtain trading profits from such positions. Such decisions and
+       actions may therefore result in the Company offsetting client positions at prices different –
+       sometimes significantly different – from prices quoted to Clients, resulting in trading profits
+       or losses for the Company. This in turn can raise the possibility of the Client incurring what
+       may be seen as an implied cost (i.e. the difference between the price at which the Client
+       traded with the Company and the price at which the Company subsequently traded with
+       Counterparties and/or other Clients) due to any profits realized by the Company as a result
+                                                          9
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                                     Terms of Business
+
+
+       of the Market Making function. However the Market Making function may involve
+       significant costs to the Company if the market moves against it as compared to the price at
+       which it traded with the Client.
+
+6.5. The Client accepts that the Company in CFD contracts where it acts as Market Maker may
+       hold positions that are contrary to positions of the Client, resulting in potential conflicts of
+       interest between the Company and the Client.
+
+6.6.   In markets, where the Company acts as a Market Maker, the Client accepts that the
+       Company has no obligation to quote prices to clients at all times in any given market, nor
+       to quote such prices to clients with a specific maximum spread.
+
+6.7. The Client acknowledges, recognizes and accepts that the price quoted to the Client
+       includes a spread when compared with the price to which the Company may have covered
+       or expected to be able to cover the Contract in a trade with another client or a
+       Counterparty. Furthermore, the Client acknowledges, recognizes and accepts that said
+       spread constitutes remuneration to the Company and that such spread can not necessarily
+       be calculated for all Contracts and that such spread will not be specified at the Trade
+       Confirmation or otherwise revealed to the Client.
+
+6.8. Any commission costs, interest charges, costs associated to and included in the spreads
+       quoted by the Company as a Market Maker in certain markets and other fees and charges
+       will consequently influence the Client’s trading result and will have a negative effect on the
+       Client’s trading performance compared to a situation if such commission costs, interest
+       charges, costs associated to and included in the spreads did not apply.
+
+       (a) In the case that the client account equity is equal or exceeds 300,000 USD (or currency
+           equivalent), the Company reserves the right to adjust the leverage of the underlying
+           trading account. If this is the case the Company will inform the Client by email.
+       (b) If the Client is an active trader and is undertaking numerous transactions, the total
+           impact of visible as well as not visible costs may be significant. Consequently the Client
+           may have to obtain significant profits in the markets in order to cover the costs
+           associated with trading activities with the Company. For very active Clients, such costs
+
+                                                         10
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                                      Terms of Business
+
+
+          may over time exceed the value of the margin deposited. Normally, when trading
+          margined derivatives, the lower the percentage of the applicable margin rate, the
+          higher the proportion of the costs associated with executing a transaction. Margined
+          derivatives are derivatives such as CFD’s that can be traded using a leverage of higher
+          than 1:1.
+
+6.9. The Client is specifically made aware that in the area of market making in foreign exchange,
+     OTC foreign exchange options, CFD Contracts and other OTC products, significant implied
+     costs can arise as a consequence of the profits made by the Company performing in its
+     capacity as a Market Maker.
+
+6.10. The Company’s performance as a Market Maker may negatively affect the Client’s Account
+     with the Company and the said implied costs are neither directly visible nor directly
+     quantifiable for the Client at any time.
+
+6.11. The Company is at no time obliged to disclose any details of its performance or income
+     produced as a Market Maker or otherwise related to other commissions, charges and fees.
+
+6.12. The Client is specifically made aware that CFD Contracts may be OTC products quoted by
+     the Company whilst operating as a Market Maker and not traded on a recognized stock
+     exchange. As a result, the description above of the implied, not visible costs related to the
+     Company performance as a Market Maker may also apply to any CFD Contract.
+
+6.13. Due to low liquidity and/or or high volatility and widened spreads, placing of pending
+     orders around some Economic Announcements may be restricted.
+
+6.14. The Company reserves the right, at its sole discretion, to delete any Pending Orders older
+     than three (3) months from the Clients’ trading account(s). Pending Order is a “Buy Limit”,
+     “Buy Stop”, “Sell Limit” or “Sell Stop” order, as per the Company’s Order Execution Policy.
+
+
+
+Note: All Pending Orders on Shares CFDs and Commodities CFDs will be automatically closed
+
+during market breaks. In case any orders on the aforementioned assets are left pending, they will
+
+be automatically deleted after the daily market closure time.
+
+                                                          11
+                      Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                          Registration number 22747 IBC 2015
+                                                                                                     HF Markets (SV) Ltd
+                                                                                                      Terms of Business
+
+
+7.     Arbitrage
+
+7.1. Internet, connectivity delays, and price feed errors sometimes create a situation where the
+       price displayed on the Trading Platform does not accurately reflect the market rates. The
+       concept of arbitrage and or taking advantage of these internet delays cannot exist in an
+       OTC market where the Client is buying or selling directly from the principal. The Company
+       does not permit the practice of arbitrage on the Trading Platform. Transactions that rely on
+       price latency arbitrage opportunities may be revoked, without prior notice. The Company
+       reserves the right to make the necessary corrections or adjustments on the Account
+       involved, without prior notice. Accounts that rely on arbitrage strategies may at the
+       Company’s sole discretion be subject to the Company’s intervention and the Company’s
+       approval of any Orders. Any dispute arising from such quoting or execution errors will be
+       resolved by the Company in their sole and absolute discretion.
+
+7.2.   The Company shall have no obligation to contact the Client to advise upon appropriate
+       action in light of changes in market conditions or otherwise.
+
+7.3. The Client agrees to indemnify and hold the Company, its affiliates and any of their
+       directors, officers, employees and agents harmless from and against any and all liabilities,
+       losses, damages, costs and expenses, including legal fees incurred in connection with the
+       provision of the services under these Terms provided that any such liabilities, losses,
+       damages, costs and expenses have not arisen for the Company’s gross negligence, fraud or
+       willful default.
+
+
+8.     Prohibited Trading
+
+8.1. The Customer agrees and acknowledges that the service provided by the company to the
+       Customer hereunder is not adapted for certain trading techniques commonly known as
+       "arbitrage trading", "picking/sniping" Snipping: the situation where the Client is
+       prematurely buying or selling near preset prices.
+
+8.2. In the event of the Customer employing such techniques, the Customer agrees and
+       acknowledges that the company may at HFM 's sole discretion take one or more, or any
+
+                                                          12
+                      Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                          Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                                    Terms of Business
+
+
+      portion of, the following actions: (i) close the Customer's account; (ii) suspend the
+      Customer's account for an indefinite period of time; (iii) carry out an investigation on the
+      Customer's account for an indefinite period of time; (iv) charge a penalty fee to the
+      Customer in the same or greater amount of money that resulted from the Customer using
+      such techniques.
+
+8.3. The Client shall not unlawfully access or attempt to gain access, reverse engineer or
+      otherwise circumvent any security measures that the Company has applied to the Platform.
+
+8.4. It is absolutely prohibited to take any of the following actions:
+
+      (a) use any software, which applies artificial intelligence analysis to the Company’s system
+          and Trading Platform;
+
+      (b) intercept or monitor, damage or modify any communication which is not intended for
+          him;
+
+      (c) use any type of spider, virus, worm, trojan-horse, time bomb or any other codes or
+          instructions that are designed to distort, delete, damage or disassemble the Trading
+          Platform or the communication system or any system of the Company;
+
+      (d) send any unsolicited commercial communication not permitted by Applicable Law
+
+
+9.    Untrue Trades
+
+9.1. The Company shall have the right to annul and/or reverse any trades which are deemed
+      untrue or opened at a fictitious price not existing on the market at the time of opening.
+      Such cases include but are not limited to trades based on a non-market Quotation or based
+      on latency trading (such as old prices).
+
+
+
+
+                                                        13
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                                    Terms of Business
+
+
+10.   Swap-Free Trading Accounts and Islamic Accounts
+
+10.1. The Company reserves the right to apply, without prior notice, additional commission fees
+      with respect to open positions for all instruments on any Swap-Free Trading Account and
+      Islamic account. Thereafter a Carry charge is applied on individual and particular lots, in
+      accordance with the table available on the Client’s Area, under Fees section.
+
+10.2. The Company reserves the right to apply, without prior notice, additional commission fees
+      with respect to ex-dividend payments for all Indices and Shares instruments on any Swap-
+      Free Trading Account and Islamic account for trades carried during ex-dividend dates.
+
+10.3. The Company reserves the right to apply, without prior notice, additional commission fees
+      with respect to open positions for over one month for all instruments on any Swap-Free
+      Trading Account or Islamic account.
+
+10.4. The Client with respect to Swap-Free Trading Accounts shall not hold any positions open
+      for a period deemed to be too long by the Company at its sole and absolute discretion. In
+      the case such an event is identified by the Company, the Company reserves the right to
+      apply swaps or storage fees retroactively.
+
+10.5. The Client shall be checking the Company’s website, including the Spreads and Conditions
+      Schedule and rollover policy, in order to be up to date with the swap-free specifications of
+      any trading account and trading instrument offered by the Company.
+
+10.6. The Company reserves the right to remove the swap-free status of any trading account or
+      trading instrument at any time without any prior notice to the Client at its sole and absolute
+      discretion. In addition, in the case the Company identifies or suspects any type of abusive
+      and/or fraudulent and/or manipulative and/or inappropriate activity with respect to the
+      swap-free trading offered by the Company, including, but not limited to the client holding
+      a large number of overnight positions on Swap-Free trading instruments that under other
+      circumstances would carry negative swaps, the Company reserves the right at its sole and
+      absolute discretion to proceed with immediate effect with one or more of the following
+      actions:
+
+
+                                                        14
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                                     Terms of Business
+
+
+      (a)   Remove the swap-free status of any trading instrument and/or trading account
+            opened by the client; and/or
+      (b)   Retroactively charge any swaps and any other related costs emanating from any or
+            all of the client’s previous swap-free trading activity; and/or
+      (c)   Close the client’s account, and proceed with the confiscation of any profits that arose
+            from the client’s trading activity with the Company.
+
+
+11.   Trading Volume Limitation
+
+11.1. The Company reserves the right to increase or decrease the trading volume limitation level
+      of one or more instruments at any time without giving prior notice. The volume limitation
+      is applied on a per client basis and in accordance with the table under section “My Account”
+      and “Volume Conditions” on the Client’s Area. (The volume is expressed on NET standard
+      lot, 1 = $100.000 USD)
+
+11.2. In the event that the Customer attempts to exceed the volume limit on any of the
+11.2. instruments described above the request will be automatically declined and an "Off quote"
+11.2. message will be displayed.
+
+
+12.   Default
+
+12.1. The Company reserves the right to retain, or make deductions from, any amounts which
+      the Company owes, or is holding for the Client, if any amounts are due from the Client to
+      the Company.
+
+12.2. The Client hereby authorizes the Company, at the Company’s discretion, at any time and
+      without notice or liability to the Client, to sell, apply, set-off and/or charge in any manner
+      any or all of the Client’s assets and/or the proceeds from such assets which the Company
+      has custody or control, in order to discharge all or any of the Client’s obligations to the
+      Company.
+
+12.3. Each and any of the following events shall constitute an Event of Default if:
+
+
+
+                                                         15
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                             HF Markets (SV) Ltd
+                                                                                              Terms of Business
+
+
+(a) The Client fails to make any payment or fails to do any other act or thing required by
+    these Terms;
+
+(b) The Client fails to remit funds necessary to enable the Company to take delivery under
+    any Contract on the first due date;
+
+(c) The Client fails to provide assets for delivery, or take delivery of assets, under any
+    Contract on the first due date;
+
+(d) The Client dies or becomes of unsound mind or is declared absent.
+
+(e) An application is made in respect of the Client for an interim order or if a bankruptcy
+    petition is presented in respect of the Client or, if a partnership, in respect of one or
+    more of the partners, or if a company, a receiver, trustee, administrative receiver or
+    similar officer is appointed;
+
+(f) A petition is presented for the winding-up or administration of the Client;
+
+(g) An order is made or a resolution is passed for the winding-up or administration of the
+    Client (other than for the purposes of amalgamation or reconstruction with the prior
+    written approval of the Company);
+
+(h) Any distress, execution or other process is levied against any property of the Client and
+    is not removed, discharged or paid within 7 seven days; or
+
+(i) Any security created by any mortgage or charge becomes enforceable against the
+    Client and the mortgagee or chargee takes steps to enforce the security or charge;
+
+(j) Any indebtedness of the Client or any of its subsidiaries becomes immediately due and
+    payable, or capable of being declared so due and payable, prior to its stated maturity
+    by reason of default of the Client (or any of its subsidiaries) or the Client (or any of its
+    subsidiaries) fails to discharge any indebtedness on its due date;
+
+(k) The Client fails to fully comply with any obligations within the text of these Terms or
+    any Contract including failure to meet margin requirements;
+
+(l) Any of the representations or warranties given by the Client are, or become, untrue;
+
+
+                                                  16
+              Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                  Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                                     Terms of Business
+
+
+     (m) The Company or the Client is requested to close out a Contract (or any part of a
+          Contract) by any regulatory agency or authority; or
+
+     (n) The Company is obliged to so by operation of law.
+
+     (o) The Company reasonably considers it necessary for its own protection.
+
+     (p) There is reasonable suspicion that the Client involves the Company in any type of fraud
+          or illegality.
+
+     (q) The Company suspects that the Client is engaged into money laundering activities or
+          terrorist financing or other criminal activities.
+
+12.4 Upon the existence of an Event of Default, the Company shall at its discretion be entitled
+     to take any of the following actions
+
+     (a) sell or charge in any way any or all of the Client’s Security, assets and property which
+          may from time to time be in the possession or control of the Company or call on any
+          guarantee;
+
+     (b) purchase any Security, investment or other property where this is, or is in the
+          reasonable opinion of the Company likely to be, necessary in order for the Company
+          to fulfill its obligations under any Contract; in this case the Client shall reimburse the
+          Company, the full amount of the purchase price plus any associated costs and
+          expenses;
+
+     (c) deliver any Security investment or property to any third party, or otherwise take any
+          action the Company considers being desirable in order to close out any Contract;
+
+     (d) require the Client to immediately close out and settle a Contract in such manner as the
+          Company may in its absolute discretion request;
+
+     (e) enter into any foreign exchange transaction, at such rates and times as the Company
+          may determine, in order to meet obligations incurred under a Contract; and
+
+     (f) invoice back all or part of any assets standing to the debit or credit of any Account (this
+          involves commuting Company’s or the Client’s obligation to deliver an asset into an
+
+
+                                                         17
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                    HF Markets (SV) Ltd
+                                                                                                     Terms of Business
+
+
+          obligation to pay an amount equal to the market value of the asset (determined by the
+          Company in its absolute discretion) on the date invoicing back takes place).
+
+      (g) terminate this Agreement without notice;
+
+      (h) debit the Account(s) for the amounts which are due to the Company
+
+      (i) close any or all of the Accounts held with the Company;
+
+      (j) combine Client Accounts, consolidate the Balances in such Client Accounts and to set
+          off those Balances
+
+      (k) refuse to open new Accounts for the Client
+
+12.4. The Client hereby authorizes the Company to take all or any measures described in this
+      Clause without notice to the Client and acknowledges that the Company shall not be
+      responsible for any consequences of it taking any such steps, unless the Company has
+      exercised gross negligence in connection herewith. The Client shall execute such
+      documents and take such other action as the Company may request in order to protect the
+      rights of the Company in accordance with these Terms or within the scope of any
+      agreements between the Client and the Company.
+
+12.5. If the Company exercises its rights to sell any Securities or property of the Client under this
+      Clause, it will effect such sale, without notice or liability to the Client, on behalf of the Client
+      and apply the proceeds of sale in or towards discharge of any or all of the Client’s
+      obligations to the Company.
+
+12.6. Without prejudice to the Company’s other rights, the Company may, at any time and
+      without notice, combine or consolidate all or any of the Accounts maintained by the Client
+      with the Company and off-set any amounts owed to or by the Company in such manner as
+      the Company may determine.
+
+
+13.   Advertising
+
+13.1. When the Company is using or advertising or posting on its website or platform or
+      otherwise to any third party’s services, products or websites:
+
+                                                         18
+                     Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                         Registration number 22747 IBC 2015
+                                                                                                   HF Markets (SV) Ltd
+                                                                                                    Terms of Business
+
+
+      (a) the Company will not be responsible for any such services, products or website
+          material that is not under its control;
+
+      (b) the Company gives no representation, warranty or guarantee as to the accuracy,
+          correctness or completeness of any related information or as to the tax or legal
+          consequences of any related Transaction;
+
+      (c) such is provided solely to enable the Client to make his own investment decisions and
+          does not amount to investment advice or unsolicited financial promotions to the
+          Client;
+
+      (d) if the document contains a restriction on the person or category of persons for whom
+          that document is intended or to whom it is distributed, the Client agrees that he will
+          not pass it on to any such person or category of persons;
+
+      (e) the Client accepts that prior to dispatch, the Company may have acted upon it itself to
+          make use of the information on which it is based. The Company does not make
+          representations as to the time of receipt by the Client and cannot guarantee that he
+          will receive such information at the same time as other Clients.”
+
+
+14.   Refund and Cancellation
+
+14.1. The Company reserves the right to cancel a Client’s request for withdrawal due to any of
+      the following reasons:
+
+      (a) when the Client has been asked to provide the Company with updated Banking account
+          details and/or statement within 7 (seven) days, if deemed necessary, and/or has
+          suspicious transactions in relation money laundering activities.
+
+      (b) when the Client has not provided full and/or correct withdrawal information while
+          submitting his withdrawal request, the Company shall inform the Client that the reason
+          for the cancellation is due to failure on his behalf to provide full and/or correct
+          withdrawal information to the Company. The Company will ask the Client to resubmit
+          his withdrawal request if he provides full and/or correct withdrawal information.
+
+      (c) if the Client submitted incorrect date of birth during the withdrawal request, the
+                                                        19
+                    Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                        Registration number 22747 IBC 2015
+                                                                                                  HF Markets (SV) Ltd
+                                                                                                   Terms of Business
+
+
+         Company shall inform the Client of the reason for the cancellation and request from
+         the Client to resubmit his withdrawal request.
+
+     (d) If the Client has selected incorrect withdrawal method, the Company shall inform the
+         Client that the reason for the cancellation is the selection of incorrect withdrawal
+         method. The Company will ask the Client to resubmit his withdrawal request using the
+         correct withdrawal method.
+
+     (e) Funds cannot be refunded to an expired credit/debit card.
+
+     (f) In case a card that the Client used to deposit funds with the Company is
+         cancelled/lost/stolen/ re-placed/do not support the foreign remittance refunds, the
+         Client must inform the Company prior to submitting withdrawal request and provide
+         official letter from the Client’s bank stating the same. It should be noted that all refunds
+         are final and cannot be reverted.
+
+     (g) In order for the Company to quote prices with the swiftness normally associated with
+         speculative trading, the Company may have to rely on available price or available
+         information that may later prove to be faulty due to specific market circumstances, for
+         instance, but not limited to, lack of liquidity in or suspension of an asset or errors in
+         feeds from information providers or quotes from Counterparties. If so and if the
+         Company has acted in good faith when providing the price to the Client, the Company
+         may cancel the trade with the Client but shall do so within reasonable time and shall
+         provide the Client with a full explanation for the reason for such cancellation.
+
+14.2. Cancellation of trades and/or Closure of positions: The Company might cancel the trade
+     Order in circumstances where due to lack of liquidity in or suspension of an asset or errors
+     in feeds from Price Providers or quotes from Counterparties have proved to be faulty. The
+     Company shall provide within a reasonable time a full explanation of the reason for the
+     cancellation of a trade. The Company may delete any ‘Pending Orders’ which are older than
+     3 (three) months. The Company might close, revoke, correct and/or adjust any trades in
+     circumstances where the Client is involved with arbitrage and/or prohibited trading
+     techniques. The Company might close any trades which are deemed untrue or opened at a
+
+                                                       20
+                   Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                       Registration number 22747 IBC 2015
+                                                                                                  HF Markets (SV) Ltd
+                                                                                                   Terms of Business
+
+
+     fictitious price not existing on the market at the time of opening i.e. trades opened at old
+     prices. (More details on the circumstances when the Company might cancel any trades or
+     close any positions can be found on the Company’s Terms of Business document available
+     via the Company’s website under section ‘Legal Documentation’).
+
+
+
+
+Version: 2026/01
+
+
+
+
+                                                       21
+                   Registered in the Financial Services Authority St. Vincent & the Grenadines.
+                                       Registration number 22747 IBC 2015
+

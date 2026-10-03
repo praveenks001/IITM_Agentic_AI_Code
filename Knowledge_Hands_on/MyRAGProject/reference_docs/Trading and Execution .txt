@@ -1,0 +1,262 @@
+                                          HF Markets (SV) Ltd
+                            TRADING AND EXECUTION RISKS
+
+
+
+
+___                                                    ___                             ___
+
+Suite 305, Griffith Corporate Centre, P.O. Box 1510,   T. +44-2030978571   support@hfm.com
+Beachmont, Kingstown, St. Vincent and the Grenadines   F. +44-2030978570      www.hfm.com
+                                                                                                                    HF Markets (SV) Ltd
+                                                                                                            Trading and Execution Risks
+
+
+
+
+                                                        Table of Contents
+1.    Introduction ................................................................................................................... 3
+
+2.    Slippage.......................................................................................................................... 3
+
+3.    Rejected Orders .............................................................................................................. 4
+
+4.    Offquotes ....................................................................................................................... 4
+
+5.    Trade Execution Delay .................................................................................................... 4
+
+6.    Grayed Out Pricing.......................................................................................................... 5
+
+7.    Widened Spreads............................................................................................................ 5
+
+8.    Gapping .......................................................................................................................... 5
+
+9.    Weekend Risk (Price Gap) ............................................................................................... 6
+
+10.      Liquidity ...................................................................................................................... 6
+
+11.      Margin Calls ................................................................................................................ 6
+
+12.      Chart Prices vs. Market Watch ..................................................................................... 7
+
+13.      Differences in Pricing Between Brokers ....................................................................... 7
+
+14.      Expert Advisor Trading (EA) ......................................................................................... 8
+
+15.      Bonus Offerings........................................................................................................... 8
+
+
+
+
+                                                                    2
+                            Licensed by the Financial Services Authority St. Vincent & the Grenadines.
+                                                License number 22747 IBC 2015
+                                                                                                      HF Markets (SV) Ltd
+                                                                                              Trading and Execution Risks
+
+
+
+
+1.    Introduction
+1.1   HF Markets (SV) Ltd (hereinafter referred to as the “Company”), is incorporated under the
+      laws of Saint Vincent and the Grenadines with Registration 22747 IBC 2015 having its
+      registered office at Suite 305, Griffith Corporate Centre, P.O. Box 1510, Beachmont,
+      Kingstown, Saint Vincent and the Grenadines. The Company is authorised as an
+      International Business Company under the International Business Companies (Amendment
+      and Consolidation) Act, Chapter 149 of the Revised Laws of Saint Vincent and Grenadines,
+      2009 (herein the “Law”).
+1.2   The objects of the Company are all subject matters not forbidden by International Business
+      Companies (Amendment and Consolidation) Act, Chapter 149 of the Revised Laws of Saint
+      Vincent and the Grenadines, 2009, in particular but not exclusively all commercial, financial,
+      lending, borrowing, trading, service activities and the participation in other enterprises as
+      well as to provide brokerage, training and managed account services in currencies,
+      commodities, indexes, CFDs and leveraged financial instruments.
+
+
+2.    Slippage
+2.1   The Company aims to provide its Clients with the best pricing available at any time and to
+      get all orders filled at the requested rate. However, there are times when, due to an
+      increase in volatility or volume, orders may be subject to slippage. This most commonly
+      occurs during fundamental news events and other Political or Market announcements.
+2.2   The volatility of the market can and might create trading conditions where orders are
+      difficult to execute at the requested rate, since the price might be many pips away due to
+      the extreme market movement. Even though the trader is looking to execute at a specific
+      price, the market might have moved significantly and the order would be filled at the next
+      best price or the fair market value. Similarly, increased volume may also result in slippage
+      if sufficient liquidity does not exist to execute all trades at the requested rate. In addition,
+      should be noted that coordinated trading strategies can lead to immediate liquidity
+      depletion, causing all submitted orders during a particular time frame, being of any nature
+
+                                                         3
+                     Licensed by the Financial Services Authority St. Vincent & the Grenadines.
+                                         License number 22747 IBC 2015
+      or size, to be subjected to slippage where next available price practices will prevail until
+      liquidity is replenished.
+2.3   Furthermore, once a limit or stop order is triggered, it becomes an At Best market order,
+      and there is no guarantee it will be filled at any particular given price. Therefore, limit or
+      stop orders may also experience slippage depending on the market conditions.
+
+
+3.    Rejected Orders
+3.1   Extreme Market volatility creates conditions that make it difficult to execute orders at the
+      given price due to an extremely high volume of orders. By the time orders are able to be
+      executed, the bid/ask price at which a counterparty is willing to take a position may be
+      several pips away.
+3.2   In cases where the liquidity pool is not large enough to fill a Market or Pending order, the
+      order will be rejected until the order can be filled.
+
+
+4.    Offquotes
+4.1   Offquotes may occur at times of extreme volatility and fast price movement. Offquotes
+      occur because the price the trader wants to execute a trade has moved and the system
+      cannot execute at that level. To avoid extreme cases of slippage an offquote may appear.
+      This protects the trader from excessive slippage.
+
+
+5.    Trade Execution Delay
+5.1   A delay in execution can happen for several reasons, such as technical issues with the
+      trader's internet connection to the Company’s servers, which may result in hanging orders.
+      The Trading Station on a trader's computer may not be maintaining a constant connection
+      with the Company’s servers due to a lack of signal strength from a wireless or dialup
+      connection. A disturbance in the connection path can sometimes interrupt the signal, and
+      disable the Trading Station, which can cause delays in the transmission of data between
+      the trader's Trading Station and the Company’s server.
+
+
+
+                                                       4
+                  Licensed by the Financial Services Authority St. Vincent & the Grenadines.
+                                      License number 22747 IBC 2015
+6.    Grayed Out Pricing
+6.1   The Company does not intentionally "gray out" prices; however, this is a condition that
+      occurs when liquidity decreases, and liquidity providers that provide pricing to the
+      Company are not actively making a market for particular currency pairs. At times, a severe
+      increase in the difference of the spread may occur due to a loss of connectivity with a
+      liquidity provider or due to an announcement that has a dramatic effect on the market that
+      dries out liquidity. Such graying out of prices or increased spreads may result in margin calls
+      on a trader's account.
+
+
+7.    Widened Spreads
+7.1   The Company’s aim is to provide traders with tight, competitive spreads; however, there
+      may be instances when spreads widen beyond the typical spread. During news events
+      spreads may widen substantially in order to compensate for the tremendous amount of
+      volatility in the market. The widened spreads may only last a few seconds or as long as a
+      few minutes.
+7.2   The Company strongly encourages traders to use caution when trading around news events
+      and economic announcements and always be aware of their account equity, usable margin
+      and market exposure. Widened spreads can adversely affect all positions in an account.
+
+
+8.    Gapping
+8.1   Sunday's opening prices might or might not be the same as Friday's closing prices. At times,
+      the prices on the Sunday open are near where the prices were on the Friday close. At other
+      times, there might be a significant difference between Friday's close and Sunday's open.
+      The market may gap if there is a significant news announcement or an economic event
+      changing how the market views the value of a currency. Traders holding positions or orders
+      over the weekend should be fully comfortable with the potential of the market to gap. In
+      the case of Pending orders, the limit or stop orders will be executed at the next available
+      price after the gap.
+
+
+
+                                                       5
+                  Licensed by the Financial Services Authority St. Vincent & the Grenadines.
+                                      License number 22747 IBC 2015
+9.    Weekend Risk (Price Gap)
+9.1   Traders who fear that the markets may be extremely volatile over the weekend, that
+      gapping may occur, or that the potential for weekend risk is not appropriate for their
+      trading style, may simply close out orders and positions ahead of the weekend.
+
+
+10.   Liquidity
+10.1 Please be aware that during the first few hours after the open, the market tends to be
+      thinner than usual until the Tokyo and London market sessions begin. These thinner
+      markets may result in wider spreads, as there are fewer buyers and sellers. This is largely
+      due to the fact that for the first few hours after the open, it is still the weekend in most of
+      the world.
+
+
+11.   Margin Calls
+11.1 The idea of margin trading is that your margin acts as a good faith deposit to secure the
+      larger notional value of your position. Margin trading allows traders to hold a position much
+      larger than their actual account value. The Company offers Leverage of up to 1:2000
+      depending on the account type. Obviously, trading on margin comes with risk, since high
+      leverage may work against you as much as it works for you. If account equity falls below
+      margin requirements, the Trading Station will trigger an order to close all open positions.
+      When positions have been over-leveraged or trading losses are incurred to the point that
+      insufficient equity exists to maintain current open positions, a margin call will result, and
+      open positions must be liquidated.
+11.2 Please keep in mind that when the account's useable margin reaches zero, all open
+      positions are triggered to close. The margin-call process is entirely electronic, and there is
+      no discretion on the Company’s part as to the order in which trades are closed. Such
+      discretion would require the Company to actively monitor positions and accounts.
+11.3 Although the margin call feature is designed to close positions when account equity falls
+      below the margin requirements, there may be instances when liquidity does not exist at
+      the exact margin call rate. As a result, account equity can fall below margin requirements
+
+                                                        6
+                   Licensed by the Financial Services Authority St. Vincent & the Grenadines.
+                                       License number 22747 IBC 2015
+      at the time orders are filled, even to the point where equity account becomes negative.
+      This is especially true during market gaps or volatile periods. The Company will not hold
+      traders responsible for deficit balances in this scenario, but clients should be aware that all
+      funds on deposit in an account are subject to loss. The Company also recommends that
+      traders use stop orders to limit downside risk instead of using a margin call as a final stop.
+11.4 The Company strongly recommends that traders maintain the appropriate amount of
+      margin in their accounts at all times. You may request to change your margin
+      requirement/leverage, which is subject to approval by the Company. Margin requirements
+      may be changed based on account size, simultaneous open positions, trading style, market
+      conditions, and at the discretion of the Company.
+11.5 Account equity can fall below margin requirements at the time orders are filled, even to
+      the point where equity account becomes negative. This is especially true during market
+      gaps or volatile periods. The Company will not hold traders responsible for deficit balances
+      in this or any scenario, but clients should be aware that all funds on deposit in an account
+      are subject to loss.
+
+
+12.   Chart Prices vs. Market Watch
+12.1 It is important to make a distinction between Indicative Chart Prices and Executable Market
+      Watch Prices. Indicative Prices are usually very close to Executable Prices. Indicative Prices
+      only give an indication of where the market is. Only Executable Prices can be traded.
+
+
+13.   Differences in Pricing Between Brokers
+13.1 Because the spot forex market is decentralized meaning it lacks a single central exchange
+      where all transactions are conducted, each forex broker, may quote slightly different
+      prices. The small differences in prices are also due to the different spreads and commissions
+      each broker charges.
+
+
+
+
+                                                       7
+                  Licensed by the Financial Services Authority St. Vincent & the Grenadines.
+                                      License number 22747 IBC 2015
+14.   Expert Advisor Trading (EA)
+14.1 The Company allows trading via Expert advisors but does not offer support regarding their
+      installation, implementation and proper functioning. This is due to the large number of EA’s
+      that are released which makes it impossible for the Company to support them. Therefore,
+      any responsibility for proper functioning of an EA lies with the user of the EA. The Company
+      does not accept liability for the misuse of any EA within the Company’s MT4 Client
+      Terminal. Please note that the Company follows a ‘Market Execution’ model so the user
+      needs to ensure that the EA is compatible with that model.
+
+
+15.   Bonus Offerings
+15.1 Clients should carefully read and understand the terms and conditions for every bonus
+      offering provided by the Company. The responsibility of understanding the terms and
+      conditions lies with the receiver of the bonus or bonuses.
+
+
+
+
+Version:2024/01
+
+
+
+
+                                                       8
+                  Licensed by the Financial Services Authority St. Vincent & the Grenadines.
+                                      License number 22747 IBC 2015
+

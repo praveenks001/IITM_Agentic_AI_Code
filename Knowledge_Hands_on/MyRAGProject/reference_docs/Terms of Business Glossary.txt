@@ -1,0 +1,327 @@
+                                          HF Markets (SV) Ltd
+
+                          TERMS OF BUSINESS GLOSSARY
+
+
+
+
+___                                                    ___                             ___
+
+Suite 305, Griffith Corporate Centre, P.O. Box 1510,   T. +44-2030978571   support@hfm.com
+Beachmont, Kingstown, St. Vincent and the Grenadines   F. +44-2030978570      www.hfm.com
+                                                                                                        HF Markets (SV) Ltd
+                                                                                                  Terms of Business Glossary
+
+
+Abnormal Market Conditions - a market with a low number of buyers and sellers. Since few
+transactions take place in a thin market, prices are often more volatile, and assets are less liquid.
+The low number of bids and asks will also typically result in a larger spread between the two
+quotes or a very Fast market.
+
+Advisor - a program which is used to control a Trading Account.
+
+Applicable Rate - Federal Reserve Funds rate.
+
+Application to Open an Individual/Corporate Trading Account - the form to be completed by the
+Customer and accessed through the Website.
+
+Ask - the higher price in the Quote being the price at which the Customer may buy.
+
+Balance - the total financial result of all Completed Transactions and deposit/withdrawal
+
+operations on the Trading Account.
+
+Bar/Candle - a graphical representation of a Quotes movement that usually contains the open,
+high, low and closing prices for a set period of time (for example, a minute, a day, a week).
+
+Base Currency - the first currency in the Currency Pair.
+
+Bid - the lower price in the Quote being the price at which the Customer may sell.
+
+Business Day - any day between Monday and Friday, according to server time.
+
+Chart - the graph that displays the intraday or difference period of time movements of a given
+Currency pair.
+
+Client Terminal - the HF Markets (SV) MetaTrader - 4 program (can be downloaded on the
+Website free of charge).
+
+Client Terminal Log-File - the file, which is created by the Client Terminal in order to record all the
+Customer's Requests and Instructions.
+
+Company - HF Markets (SV) Ltd, part of HF Market Group, which is licensed by the Financial
+Services Authority St. Vincent & the Grenadines with license number 22248 IBC 2014 with postal
+
+
+
+                                                         2
+                     Licensed by the Financial Services Authority St. Vincent & the Grenadines.
+                                          License number 22747 IBC 2015
+                                                                                                        HF Markets (SV) Ltd
+                                                                                                  Terms of Business Glossary
+
+
+address Suite 305, Griffith Corporate Centre, P.O. Box 1510, Beachmont, Kingstown, St. Vincent
+and the Grenadines
+
+Company News Webpage - the page of the Website where the Company news is displayed. As of
+date       of       these         Terms           the          information             is           displayed           on
+https://www.hfm.com/sv/en/about/company-news .
+
+Completed Transaction - two counter deals of the same size (opening a position and closing a
+position): buy then sell or vice versa.
+
+Contract Specifications - trading terms (Spread, Lot Size, Initial Margin etc.) for each Instrument.
+
+Currency of the Trading Account - US dollars or as specified by the Customer and agreed by HF
+Markets (SV) Ltd.
+
+Currency Pair - the quotation and pricing structure of the currencies traded in the forex market:
+the value of a currency is determined by its comparison to another currency. The first currency
+of a currency pair is called the base currency, and the second currency is called the quote
+currency. The currency pair shows how much of the quote currency is needed to purchase one
+unit of the base currency.
+
+Customer - a legal entity or an individual party to the Customer Agreements.
+
+Customer Agreement - the agreement between the Company and the Customer.
+
+Day Order - an Order which is automatically deleted at the end of the trading session.
+
+Dealer - an employee of the Company who is authorized to process the Customer's Instructions
+and Requests.
+
+Dispute - the conflict situation when the Customer reasonably believes that the Company as a
+result of any action or failure to act breaches one or more terms of the Terms of Business or the
+conflict situation when the Company reasonably believes that the Customer as a result of any
+action or failure to act breaches one or more terms of the Terms of Business.
+
+Equity - is calculated as (Balance + Floating).
+
+
+
+                                                         3
+                     Licensed by the Financial Services Authority St. Vincent & the Grenadines.
+                                          License number 22747 IBC 2015
+                                                                                                        HF Markets (SV) Ltd
+                                                                                                  Terms of Business Glossary
+
+
+Error Quote (Spike) - The comparatively large upward or downward error movement of a price or
+value level in a short period.
+
+Fast Market - Rapid movement in a market caused by strong interest by buyers and/or sellers for
+the short period of time often causing Price Gaps.
+
+Floating Profit/Loss - a current profit/loss on Open Positions calculated at the current Quotes.
+
+Force Majeure Event - greater force which essentially frees both parties from liability or
+
+obligation when an extraordinary event or circumstance beyond the control of the parties, such
+as a war, strike, crime, or an event described by the legal term act of God (e.g. flooding,
+earthquake, volcano), prevents one or both parties from fulfilling their obligations under the
+contract.
+
+Gap Level - criterion of Gap regime activation. In case price gap is equal or exceeds “gap level”,
+gap regime is activated.
+
+Free Margin - funds on the Trading Account, which may be used to open a position. It is
+
+calculated as Equity less Necessary Margin.
+
+GTC (Good Till Cancelled) - the Order which is valid until the Customer sends the Instruction to
+delete the Order.
+
+Hedge Margin - Where a client maintains fully hedged positions, defined as holding equal buy
+and sell volumes in the same financial instrument, no margin requirement shall apply. Margin
+shall only be required with respect to any uncovered or net position, where applicable.
+
+Hedged Positions - two offsetting positions at the same time so that, regardless of the outcome
+of an event, the risk bearer is left in a no win/no lose position. Long and Short Positions of the
+same Transaction Size opened on the Trading Account for the same Instrument.
+
+If-Done Order - An If Done Order is placed in conjunction with a Stop or Limit order. After the
+initial Stop or Limit order has been executed, the If-Done order becomes active.
+
+Indicative Quote - a Quote at which the Company has the right not to accept any Instructions and
+Requests or execute any Orders.
+
+                                                         4
+                     Licensed by the Financial Services Authority St. Vincent & the Grenadines.
+                                          License number 22747 IBC 2015
+                                                                                                        HF Markets (SV) Ltd
+                                                                                                  Terms of Business Glossary
+
+
+
+
+Initial Margin - the margin required by the Company to open a position. The details for each
+Instrument are in the Contract Specifications.
+
+Instant Execution - is the mode of execution that allows clients to make deals at the current
+market prices, which they see in Market Watch without prior Request.
+
+Instruction - an instruction sent from the Customer to the Company to open/close a position or
+to place/modify/delete an Order.
+
+Instrument - any Currency Pair or any other product.
+
+Leverage - ratio in respect of Transaction Size and Initial Margin. 1:200 ratio means that in order
+to open a position the Initial Margin is two hundred times less than Transaction Size.
+
+Limit Order - an order placed with a Company to buy or sell a set number of units at a specified
+price which better than current Quotes.
+
+Long Position - The buying currency, with the expectation that the asset will rise in value.
+
+Lot - a unit of Base Currency in the Trading Platform.
+
+Lot Size - the number of Base Currency in one Lot defined in the Contract Specifications. Маrgin
+Level - the percentage of Equity to Necessary Margin. This ratio is calculated as (Equity
+/Necessary Margin) * 100%.
+
+Margin Trading - trading with money borrowed from your broker or bank for that purpose when
+the Customer may make Transactions having far less funds on the Trading Account in comparison
+with the Transaction Size.
+
+Market Execution - this regime assumes that your order will be executed using not a price you
+see on a screen, but a price which exists at the market at the moment of order execution. This
+price can be either better or worse than the one you saw at the plot when pushing button “Buy”
+or “Sell”.
+
+Market Opening - the time at which the market opens after weekends, holidays etc.
+
+
+                                                         5
+                     Licensed by the Financial Services Authority St. Vincent & the Grenadines.
+                                          License number 22747 IBC 2015
+                                                                                                        HF Markets (SV) Ltd
+                                                                                                  Terms of Business Glossary
+
+
+Necessary Margin - the margin required by the Company to maintain Open Positions. The details
+for each Instrument are specified in the Contract Specifications.
+
+Normal Market Conditions - the Quotes Flow in the Trading Platform have no fast price
+
+movements and Gaps.
+
+Normal Market Size - the maximum number of lots that does not exceed the volume of Market
+Depth at the moment creation of Request.
+
+Open Position - a Long Position or a Short Position which is not closed yet.
+
+Order - an instruction from the Customer to the Company to open or close a position.
+
+Order Level - the price indicated in the Order.
+
+Payment Instructions - details for depositing funds to the Trading Account or withdrawing funds
+from the Trading Account.
+
+Pending Order - an instruction from the Customer to the Company to open a position once the
+price has reached the level of the Order.
+
+Pip - the Percentage in Point. Since most major currency pairs are priced to fifth decimal places,
+the pip is the 4th decimal point – for most pairs this is equivalent of 1/100 of one percent, or ten
+basis point (0.00010).
+
+Point - the smallest price change. Since most major currency pairs are priced to fifth decimal
+places, the smallest change is that of the last decimal point - for most pairs this is the equivalent
+of 0.1/100 of one percent, or one basis point (0.00001).
+
+Price Gap on the Market Opening - the first Ask/Bid of the current trading session is equal or
+higher/lower than the last Ask/Bid of the previous session in four spreads in particular
+Instrument.
+
+Quote - the current price Bid/Ask for a particular Instrument.
+
+Quote Currency - the second currency in the Currency Pair.
+
+Quotes Flow - the stream of Quotes in the Trading Platform for each Instrument.
+
+
+                                                         6
+                     Licensed by the Financial Services Authority St. Vincent & the Grenadines.
+                                          License number 22747 IBC 2015
+                                                                                                        HF Markets (SV) Ltd
+                                                                                                  Terms of Business Glossary
+
+
+Rate - the value of the Base Currency in the terms of the Quote Currency.
+
+Request - a request from the Customer to the Company given to get a Quote.
+
+Rollover - A charge that is incurred by Clients who move their positions to the next trading
+session.
+
+Server Log-File - the file created by the Server, which records all Requests and Instructions sent
+by the Customer to the Company.
+
+Server - the HF Markets (SV) MetaTrader Server version 4 program. The program is used to
+execute the Customer's Instructions or Requests.
+
+Short Position - the selling currency, with the expectation that the asset will fall in value.
+
+Spread - the difference between Ask and Bid.
+
+Stop Out - the closing of the Customer's Open Position(s) without the prior notice in a case of
+insufficient funds required to maintain Open Positions.
+
+Stop Order - there is no 100% guarantee of getting the desired entry/exit points. For instance, if
+a Quotes gaps down, the trader's stop order will be triggered (or filled) at the first available Quote
+which is presented in the Quotes Flow instantly after the Price Gap.
+
+Take Profit - the price to close an opened position at a more profitable price than the current
+price.
+
+Thin Market - a market with a low number of buyers and sellers; few transactions take place in a
+thin market; prices are often more volatile, and assets are less liquid. The low number of bids and
+asks will also typically result in a larger spread between the two quotes.
+
+Ticker - the unique number assigned to each Open Position, Pending Order or
+
+deposit/withdrawal transaction through the Trading Platform.
+
+Trading Account - an account held at a Company and administered by a Customer that the
+account holder uses to employ a trading or hedging strategy rather than a buy-and-hold
+investment strategy for physical delivery.
+
+
+                                                         7
+                     Licensed by the Financial Services Authority St. Vincent & the Grenadines.
+                                          License number 22747 IBC 2015
+                                                                                                       HF Markets (SV) Ltd
+                                                                                                 Terms of Business Glossary
+
+
+Transaction - any transaction entered into or executed by the Customer.
+
+Transaction Size - The number of Lots of any given transaction.
+
+Trading Platform Time Zone - the time zone in which the Server Log-File records any event. At
+the time of the release of this document the Trading Platform Time Zone is GMT+2:00.
+
+Written Notice - any notice which is made to the Customer by the Company via:
+
+     (a) HF Markets (SV) Platform internal mail system;
+
+     (b) email;
+
+     (c) facsimile transmission;
+
+     (d) post; or
+
+     (e) information published on the Company's News Webpage or Forum.
+
+
+
+
+Version: 2026/01
+
+
+
+
+                                                        8
+                    Licensed by the Financial Services Authority St. Vincent & the Grenadines.
+                                         License number 22747 IBC 2015
+
