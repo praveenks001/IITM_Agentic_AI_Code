@@ -1,6 +1,7 @@
 import os
 import numpy as np
 import re
+import json
 from openai import OpenAI
 from pathlib import Path
 
@@ -14,10 +15,10 @@ CHAT_MODEL  = "gpt-4o-mini"
 
 
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-# Method to Load the Reference documents
+# Method to Load the Reference documents in ascending order
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 def load_documents():
-    folder_path = Path("./reference_docs")
+    folder_path = Path("./data/corpus")
 
     documents = []
 
@@ -30,9 +31,23 @@ def load_documents():
             "text": text
         })
 
-    print(f"Loaded {len(documents)} documents")
-
     return documents
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to Load the golden set questions
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def load_golden_set():
+    """Load the golden set questions from JSON file."""
+
+    golden_path = Path("./data/goldenSet.json")
+
+    with open(golden_path, "r", encoding="utf-8") as f:
+        golden_set = json.load(f)
+
+    return golden_set
+
 
 
 
@@ -58,7 +73,7 @@ def chunk_text(text: str, size: int = 200, overlap: int = 40) -> list[str]:
 
 
 # b)Method to chunk the multiple documents 
-def chunk_text_documents(documents: list[dict], size: int = 200,
+def chunk_documents(documents: list[dict], size: int = 200,
                     overlap: int = 40) -> list[dict]:
     """Chunk every document. Returns flat list with source pointers."""
     all_chunks = []
@@ -165,23 +180,13 @@ def show_top_k(queries, all_chunks, k=3):
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Method to retrieve the top k results
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-def retrieve(queries, chunks, k=3):
+def retrieve(query: str, index: list[dict], k: int = 3,
+             embed_model: str = EMBED_MODEL) -> list[dict]:
     """Embed the query, rank chunks by cosine, return top-K with scores."""
-    q_vec = embed_batch(queries)
-    all_results = []
-    for query, q_vec in zip(queries, q_vec):
-        scored = [(cosine(q_vec, c["vector"]), c) for c in chunks]
-        scored.sort(key=lambda pair: pair[0], reverse=True)
-
-        top_k = [{**c, "score": score} for score, c in scored[:k]]
-
-        all_results.append({
-            "query": query,
-            "results": top_k
-        })
-    return all_results
-
-
+    q_vec = embed_batch([query], model=embed_model)[0]
+    scored = [(cosine(q_vec, c["vector"]), c) for c in index]
+    scored.sort(key=lambda pair: pair[0], reverse=True)
+    return [{**c, "score": s} for s, c in scored[:k]]
 
 
 
@@ -206,89 +211,45 @@ def build_prompt(question: str, retrieved: list[dict],
     return system, user_msg
 
 
-def ask_rag(question, chunks, k=3, system=SYSTEM):
-    retrieved = retrieve(question, chunks, k=k)
-    sys, user = build_prompt(question, retrieved, system=system)
-    resp = client.chat.completions.create(
-        model=CHAT_MODEL,
+def ask_rag(question: str, index: list[dict], k: int = 3,
+            system: str = SYSTEM,
+            embed_model: str = EMBED_MODEL,
+            chat_model: str = CHAT_MODEL) -> dict:
+    """Full pipeline: retrieve → prompt → generate. Returns dict with
+    answer, sources, cost, latency-relevant token counts."""
+    retrieved = retrieve(question, index, k=k, embed_model=embed_model)
+    system_msg, user_msg = build_prompt(question, retrieved, system=system)
+    resp = _client.chat.completions.create(
+        model=chat_model,
         temperature=0.0,
         messages=[
-            {"role": "system", "content": sys},
-            {"role": "user",   "content": user},
+            {"role": "system", "content": system_msg},
+            {"role": "user",   "content": user_msg},
         ],
     )
+     
+    # Token counts
+    tokens_in = resp.usage.prompt_tokens
+    tokens_out = resp.usage.completion_tokens
+
+    # Calculate chat cost
+    cost = (
+        tokens_in * PRICE_INPUT_PER_1M[chat_model] / 1_000_000 +
+        tokens_out * PRICE_OUTPUT_PER_1M[chat_model] / 1_000_000
+    )
+
     return {
         "question":   question,
         "answer":     resp.choices[0].message.content,
         "sources":    [hit["chunk_id"] for hit in retrieved],
         "tokens_in":  resp.usage.prompt_tokens,
         "tokens_out": resp.usage.completion_tokens,
+        "retrieved":  retrieved,  # full retrieved chunks for inspection,
+        "cost_usd": cost,
     }
 
 
-# ─── Corpus for Day 1 and Day 2 (shared) ─────────────────────────────
 
-CORPUS = [
-    # Coffee
-    {"id": "coffee_espresso",
-     "text": ("Espresso is a concentrated form of coffee made by forcing hot water "
-              "under about 9 bars of pressure through finely ground coffee beans. "
-              "A single shot is typically 25 to 30 millilitres and takes 25 to 30 "
-              "seconds to extract. Espresso forms the base of drinks like the "
-              "latte, cappuccino, and americano.")},
-    {"id": "coffee_beans",
-     "text": ("Coffee beans come primarily from two species: Arabica and Robusta. "
-              "Arabica accounts for about 60 percent of world production and is "
-              "prized for its smoother, more nuanced flavour. Robusta contains "
-              "roughly twice as much caffeine and has a stronger, more bitter taste. "
-              "Most commercial espresso blends mix the two.")},
-    {"id": "coffee_brewing",
-     "text": ("Pour-over coffee uses a filter cone to drip near-boiling water "
-              "through medium-ground coffee. It typically brews for three to four "
-              "minutes and produces a clean, light-bodied cup. French press coffee, "
-              "in contrast, steeps coarse grounds directly in hot water for four "
-              "minutes before pressing, producing a heavier, oil-rich cup.")},
-    # Tea
-    {"id": "tea_green",
-     "text": ("Green tea is made from unoxidised leaves of Camellia sinensis. It is "
-              "steeped in water at around 70 to 80 degrees Celsius for one to three "
-              "minutes. Hotter water or longer steeping produces a bitter, astringent "
-              "cup. Green tea is high in an antioxidant called EGCG.")},
-    {"id": "tea_black",
-     "text": ("Black tea comes from fully oxidised Camellia sinensis leaves. It is "
-              "brewed with water at or near boiling — 95 to 100 degrees Celsius — "
-              "for three to five minutes. Popular varieties include Assam, Darjeeling, "
-              "and Ceylon. Black tea typically contains more caffeine than green tea.")},
-    {"id": "tea_oolong",
-     "text": ("Oolong tea is partially oxidised, sitting between green and black tea "
-              "in strength and colour. It is brewed at 85 to 95 degrees Celsius for "
-              "two to four minutes. Oolong leaves are often rolled and can be re-steeped "
-              "several times, with each infusion revealing different flavour notes.")},
-    # Hot chocolate
-    {"id": "chocolate_traditional",
-     "text": ("Traditional hot chocolate is made from melted dark chocolate stirred "
-              "into hot milk. The ratio is usually 30 to 50 grams of chocolate per "
-              "200 millilitres of milk. Whisking prevents the chocolate from settling. "
-              "Some recipes add a pinch of chilli or cinnamon for warmth.")},
-    {"id": "chocolate_powder",
-     "text": ("Instant hot chocolate uses cocoa powder mixed with sugar, milk powder, "
-              "and stabilisers. Adding hot water dissolves the mix in seconds. It is "
-              "cheaper and faster than the traditional method but has a thinner mouthfeel "
-              "and less intense chocolate flavour.")},
-    {"id": "chocolate_history",
-     "text": ("Hot chocolate originated with the Maya and Aztec civilisations, who "
-              "drank it cold and bitter, spiced with chilli. Europeans encountered "
-              "cacao in the 16th century and gradually sweetened the drink and "
-              "served it hot. It remained a luxury until industrial cocoa processing "
-              "made it affordable in the 19th century.")},
-    # Milk-based drinks
-    {"id": "milk_latte",
-     "text": ("A caffè latte is made with one shot of espresso and around 200 "
-              "millilitres of steamed milk topped with a thin layer of microfoam. "
-              "The ratio is roughly one part espresso to five parts milk. A "
-              "cappuccino uses the same espresso base but has equal parts milk and "
-              "foam, giving it a lighter, airier texture.")},
-]
 
 # Pricing constants (from W4 multi-model week)
 PRICE_INPUT_PER_1M  = {"gpt-4o-mini": 0.15}
