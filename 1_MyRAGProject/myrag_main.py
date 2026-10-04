@@ -156,113 +156,96 @@ for item in golden_set:
 print(f"Loaded {len(QUERY)} questions")
 
 
-query_vector = pipeline.embed_batch(QUERY)
-
-for item, q_vec in zip(golden_set, query_vector):
-    question_id = item["id"]
-    question = item["question"]
-
-    scored = [(pipeline.cosine(q_vec, c["vector"]), c) for c in all_chunked_documents]
-    scored.sort(key=lambda pair: pair[0], reverse=True)
-
-
-# SCORE_OUTPUT_FILE = DATA_DIR /"05_chunk_score_for_extracted_goldenset_questions.txt"
-# with open(SCORE_OUTPUT_FILE, "w", encoding="utf-8") as f:
-
-#     for item, q_vec in zip(golden_set, query_vector):
-
-#         question_id = item["id"]
-#         question = item["question"]
-
-#         # Compare this question against all document chunks
-#         scored = [
-#             (pipeline.cosine(q_vec, c["vector"]), c)
-#             for c in all_chunked_documents
-#         ]
-
-#         # Highest cosine similarity first
-#         scored.sort(
-#             key=lambda pair: pair[0],
-#             reverse=True
-#         )
-
-#         # --------------------------------------------------
-#         # Console
-#         # --------------------------------------------------
-
-#         print("\n" + "=" * 100)
-#         print(f"ID: {question_id}")
-#         print(f"Query: {question}")
-#         print("=" * 100)
-
-#         # --------------------------------------------------
-#         # File
-#         # --------------------------------------------------
-
-#         f.write("=" * 100 + "\n")
-#         f.write(f"ID: {question_id}\n")
-#         f.write(f"Query: {question}\n")
-#         f.write("=" * 100 + "\n")
-
-#         # Top 10 chunks
-#         for rank, (score, chunk) in enumerate(
-#             scored[:10],
-#             start=1
-#         ):
-
-#             output_line = (
-#                 f"[{rank}] "
-#                 f"Cosine: {score:.3f} | "
-#                 f"Chunk ID: {chunk['chunk_id']} | "
-#                 f"Text: {chunk['text'][:200]}"
-#             )
-
-#             print(output_line)
-
-#             f.write(output_line + "\n")
-
-#         f.write("\n")
-
-
-# print(
-#     f"\nChunk scores written to: "
-#     f"{SCORE_OUTPUT_FILE}"
-# )
-
-
 
 
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Top K results
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-pipeline.show_top_k(QUERY)
+pipeline.show_top_k(
+    QUERY,
+    all_chunked_documents,
+    k=3
+)
 
 
-# OUTPUT_FILE = DATA_DIR / "06_top_k_query_results.txt"
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Retrieve top K results
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+top3 = pipeline.retrieve(QUERY, all_chunked_documents, k=3)
 
 
 
 
-#     # Append results to output file
-#     with open(OUTPUT_FILE, "a", encoding="utf-8") as f:
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Ask RAG now
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# result = ask_rag(QUERY, all_chunks, k=3)
 
-#         f.write("=" * 100 + "\n")
-#         f.write(f"Q: {query}\n")
-#         f.write("=" * 100 + "\n")
+OUTPUT_FILE = DATA_DIR / "07_rag_answers_goldenset.txt"
 
-#         for i, (score, chunk) in enumerate(scored[:k], 1):
+with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
 
-#             output = (
-#                 f"[{i}] "
-#                 f"{score:.3f}  "
-#                 f"{chunk['chunk_id']:<25s} "
-#                 f"{chunk['text'][:100]}..."
-#             )
+    total_questions = len(QUERY)
 
-#             # Print to console
-#             print(output)
+    for index, question in enumerate(QUERY, start=1):
 
-#             # Write to file
-#             f.write(output + "\n")
+        print(
+            f"Processing RAG question "
+            f"{index}/{total_questions}"
+        )
 
-#         f.write("\n")
+        # Run RAG for current question
+        result = pipeline.ask_rag(question,all_chunked_documents,k=3)
+
+        # ----------------------------------------------
+        # Console output
+        # ----------------------------------------------
+
+        print(f"\nQ: {result['question']}")
+        print(f"A: {result['answer']}")
+        print(
+            f"Sources retrieved: "
+            f"{result['sources']}"
+        )
+
+        # ----------------------------------------------
+        # File output
+        # ----------------------------------------------
+
+        f.write("=" * 120 + "\n")
+
+        f.write(
+            f"Question {index}/{total_questions}\n"
+        )
+
+        f.write(
+            f"Q: {result['question']}\n\n"
+        )
+
+        f.write(
+            f"A: {result['answer']}\n\n"
+        )
+
+        f.write(
+            "Sources retrieved:\n"
+        )
+
+        for source in result["sources"]:
+            f.write(f"  - {source}\n")
+
+        f.write(
+            f"\nPrompt tokens: "
+            f"{result['tokens_in']}\n"
+        )
+
+        f.write(
+            f"Completion tokens: "
+            f"{result['tokens_out']}\n"
+        )
+
+        f.write("=" * 120 + "\n\n")
+
+
+print("\nRAG processing completed.")
+print(f"Results saved to: {OUTPUT_FILE}")
