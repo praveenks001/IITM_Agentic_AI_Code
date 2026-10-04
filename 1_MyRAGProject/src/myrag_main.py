@@ -205,37 +205,35 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("=" * 120 + "\n")
 
         f.write(
-             f"Golden Set ID: {question_id}\n"
+            f"Golden Set ID: {question_id}\n"
         )
 
         f.write(
-            f"Q: {result['question']}\n\n"
+            f"question: {result['question']}\n"
         )
 
         f.write(
-            f"A: {result['answer']}\n\n"
+            f"answer: {result['answer']}\n"
         )
 
         f.write(
-            "Sources retrieved:\n"
-        )
-
-        for source in result["sources"]:
-            f.write(f"  - {source}\n")
-
-        f.write(
-            f"\nPrompt tokens: "
-            f"{result['tokens_in']}\n"
+            f"sources: {result['sources']}\n"
         )
 
         f.write(
-            f"Completion tokens: "
-            f"{result['tokens_out']}\n"
+            f"tokens_in: {result['tokens_in']}\n"
         )
 
         f.write(
-            f"Cost USD: "
-            f"${result['cost_usd']:.6f}\n"
+            f"tokens_out: {result['tokens_out']}\n"
+        )
+
+        f.write(
+            f"retrieved: {result['retrieved']}\n"
+        )
+
+        f.write(
+            f"cost_usd: {result['cost_usd']:.6f}\n"
         )
 
         f.write("=" * 120 + "\n\n")
