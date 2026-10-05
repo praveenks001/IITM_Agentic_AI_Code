@@ -2,6 +2,7 @@ import os
 import numpy as np
 import re
 import json
+import time
 from openai import OpenAI
 from pathlib import Path
 
@@ -217,6 +218,10 @@ def ask_rag(question: str, index: list[dict], k: int = 3,
             chat_model: str = CHAT_MODEL) -> dict:
     """Full pipeline: retrieve → prompt → generate. Returns dict with
     answer, sources, cost, latency-relevant token counts."""
+
+    # Start timer
+    start_time = time.perf_counter()
+
     retrieved = retrieve(question, index, k=k, embed_model=embed_model)
     system_msg, user_msg = build_prompt(question, retrieved, system=system)
     resp = _client.chat.completions.create(
@@ -238,6 +243,9 @@ def ask_rag(question: str, index: list[dict], k: int = 3,
         tokens_out * PRICE_OUTPUT_PER_1M[chat_model] / 1_000_000
     )
 
+    # Calculate total RAG latency in seconds
+    latency = time.perf_counter() - start_time
+
     return {
         "question":   question,
         "answer":     resp.choices[0].message.content,
@@ -246,6 +254,7 @@ def ask_rag(question: str, index: list[dict], k: int = 3,
         "tokens_out": resp.usage.completion_tokens,
         "retrieved":  retrieved,  # full retrieved chunks for inspection,
         "cost_usd": cost,
+        "latency_s":  latency,
     }
 
 

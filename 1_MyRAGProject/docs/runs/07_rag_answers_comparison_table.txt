@@ -1,0 +1,19 @@
+
+RAG processing completed for K=7.
+Total Latency for K=7: 152.006 seconds
+Average Latency for K=7: 1.974 seconds
+Total Tokens In for K=7: 61900
+Total Tokens Out for K=7: 4229
+Total Cost USD for K=7: $0.01182240
+Results saved to: docs/runs/07_rag_answers_goldenset_top7chunks.txt
+
+
+==========================================================================================
+K VALUE COMPARISON
+==========================================================================================
+  K   total latency     avg latency    tokens_in   tokens_out       cost_usd
+------------------------------------------------------------------------------------------
+  3         208.524           2.708        30337         3694     0.00676695
+  5         275.393           3.577        46141         4138     0.00940395
+  7         152.006           1.974        61900         4229     0.01182240
+==========================================================================================
