@@ -9,7 +9,7 @@ assert os.environ.get("OPENAI_API_KEY"), "Set OPENAI_API_KEY before running this
 
 client = OpenAI()
 
-EMBED_MODEL = "text-embedding-3-small"
+EMBED_MODEL = "text-embedding-3-large"  #"text-embedding-3-small"
 CHAT_MODEL  = "gpt-4o-mini"
 
 
