@@ -5,6 +5,10 @@ import json
 import time
 from openai import OpenAI
 from pathlib import Path
+from qdrant_client import QdrantClient
+from dotenv import load_dotenv
+from qdrant_client.models import Distance, VectorParams
+from qdrant_client.models import PointStruct
 
 assert os.environ.get("OPENAI_API_KEY"), "Set OPENAI_API_KEY before running this notebook"
 
@@ -12,6 +16,72 @@ _client = OpenAI()
 
 EMBED_MODEL = "text-embedding-3-large"  #"text-embedding-3-small"
 CHAT_MODEL  = "gpt-4o-mini"
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to get Qdrant key & URL
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def get_qdrant_client():
+    """Build a QdrantClient using QDRANT_URL + QDRANT_API_KEY env vars.
+
+    Resolution order (same as capstone src/rag/qdrant_store.py):
+      1. QDRANT_URL + QDRANT_API_KEY → Qdrant Cloud
+      2. QDRANT_URL only → local (no auth)
+      3. Default → http://localhost:6333 (local Docker fallback)
+    """
+
+    load_dotenv()
+
+    assert os.environ.get("OPENAI_API_KEY"), "Set OPENAI_API_KEY before running this notebook"
+    assert os.environ.get("QDRANT_URL"),     "Set QDRANT_URL — get free-tier at cloud.qdrant.io"
+    assert os.environ.get("QDRANT_API_KEY"), "Set QDRANT_API_KEY — from your Qdrant Cloud cluster"
+    print(f"Qdrant Keys loaded")
+
+    url = os.environ.get("QDRANT_URL", "http://localhost:6333")
+    api_key = os.environ.get("QDRANT_API_KEY") or None
+    if api_key:
+        return QdrantClient(url=url, api_key=api_key)
+    return QdrantClient(url=url)
+
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Qdrant - Method to check the exsiting collection and create a new collection
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def create_qdrant_collection(qdrant):
+    existing = qdrant.get_collections()
+    print(f"Connected to Qdrant at {os.environ['QDRANT_URL'][:40]}...")
+    print(f"Existing collections: {[c.name for c in existing.collections]}")
+    print("\nIf you see [] (empty), that's fine — this is a fresh cluster.")
+
+
+    COLLECTION_NAME = "myrag_collection"
+
+
+    # Delete any prior version — makes this cell re-runnable
+    try:
+        qdrant.delete_collection(COLLECTION_NAME)
+        print(f"Deleted existing {COLLECTION_NAME!r} collection.")
+    except Exception:
+        pass  # didn't exist yet
+
+    # Create fresh
+    qdrant.create_collection(
+        collection_name=COLLECTION_NAME,
+
+        #vectors_config=VectorParams(size=1536, distance=Distance.COSINE),         #For small embedding model
+         vectors_config=VectorParams(size=3072, distance=Distance.COSINE),         #For Large embedding model
+    )
+
+    info = qdrant.get_collection(COLLECTION_NAME)
+    print(f"Created collection {COLLECTION_NAME!r}")
+    print(f"  dim:      {info.config.params.vectors.size}")
+    print(f"  metric:   {info.config.params.vectors.distance}")
+    print(f"  points:   {info.points_count}")
+    return COLLECTION_NAME
+
 
 
 
@@ -152,6 +222,39 @@ def build_index(chunks: list[dict], model: str = EMBED_MODEL) -> list[dict]:
         chunk["vector"] = vec
     return chunks
 
+
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to upsert the embbeded chunks into Qdrant
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def upsert_embedded_chunks_into_qdrant(all_chunks, vectors,qdrantCollection):
+    points = [
+        PointStruct(
+            id=idx,
+            vector=vectors[idx],
+            payload={
+                "chunk_id": chunk["chunk_id"],
+                "source": chunk.get("source_id"),
+                "text": chunk["text"],
+            },
+        )
+        for idx, chunk in enumerate(all_chunks)
+    ]
+
+    print(f"Total corpus chunks : {len(all_chunks)}")
+    print(f"Total points created: {len(points)}")
+
+    qdrant.upsert(collection_name=qdrantCollection, points=points)
+    
+
+    # Verify
+    info = qdrant.get_collection(qdrantCollection)
+    print(f"Upserted {len(points)} points.")
+    print(f"Collection now has {info.points_count} points.")
+
+    
 
 
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
