@@ -51,23 +51,24 @@ def get_qdrant_client():
 # Qdrant - Method to check the exsiting collection and create a new collection
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 def create_qdrant_collection(qdrant):
-    existing = qdrant.get_collections()
-    print(f"Connected to Qdrant at {os.environ['QDRANT_URL'][:40]}...")
-    print(f"Existing collections: {[c.name for c in existing.collections]}")
-    print("\nIf you see [] (empty), that's fine — this is a fresh cluster.")
-
 
     COLLECTION_NAME = "myrag_collection"
 
+    existing = qdrant.get_collections()
+    existing_names = [c.name for c in existing.collections]
 
-    # Delete any prior version — makes this cell re-runnable
-    try:
-        qdrant.delete_collection(COLLECTION_NAME)
-        print(f"Deleted existing {COLLECTION_NAME!r} collection.")
-    except Exception:
-        pass  # didn't exist yet
+    if COLLECTION_NAME in existing_names:
 
-    # Create fresh
+        print(f"Collection {COLLECTION_NAME!r} already exists.")
+
+        info = qdrant.get_collection(COLLECTION_NAME)
+
+        print(f"  dim:      {info.config.params.vectors.size}")
+        print(f"  metric:   {info.config.params.vectors.distance}")
+        print(f"  points:   {info.points_count}")
+
+        return COLLECTION_NAME
+    
     qdrant.create_collection(
         collection_name=COLLECTION_NAME,
 
@@ -81,6 +82,19 @@ def create_qdrant_collection(qdrant):
     print(f"  metric:   {info.config.params.vectors.distance}")
     print(f"  points:   {info.points_count}")
     return COLLECTION_NAME
+
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to check if qdrant contains any points (meaning embedded chunks are upserted already)
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def is_qdrant_collection_populated(qdrant, collection_name):
+
+    info = qdrant.get_collection(collection_name)
+    print(f"Qdrant collection points: {info.points_count}")
+
+    return info.points_count > 0
 
 
 
@@ -246,15 +260,45 @@ def upsert_embedded_chunks_into_qdrant(all_chunks, vectors,qdrantCollection):
     print(f"Total corpus chunks : {len(all_chunks)}")
     print(f"Total points created: {len(points)}")
 
-    qdrant.upsert(collection_name=qdrantCollection, points=points)
+    # qdrant.upsert(collection_name=qdrantCollection, points=points)
     
+        
+    # ------------------------------------------------------------
+    # Upload to Qdrant in batches since it cannot upload all chunks in one time
+    # ------------------------------------------------------------
 
-    # Verify
+    BATCH_SIZE = 100
+
+    print(f"\nUploading to Qdrant in batches of {BATCH_SIZE}...\n")
+
+    for start in range(0, len(points), BATCH_SIZE):
+
+        end = min(
+            start + BATCH_SIZE,
+            len(points)
+        )
+
+        batch = points[start:end]
+
+        qdrant.upsert(
+            collection_name=qdrantCollection,
+            points=batch,
+            wait=True
+        )
+
+        print(
+            f"Uploaded {start + 1:4d} - {end:4d} "
+            f"({end}/{len(points)})"
+        )
+
+
+
+    # Verify exact number of points
     info = qdrant.get_collection(qdrantCollection)
     print(f"Upserted {len(points)} points.")
     print(f"Collection now has {info.points_count} points.")
 
-    
+
 
 
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
