@@ -4,7 +4,7 @@ import re
 import json
 import time
 from openai import OpenAI
-from pathlib import Path
+from pathlib import Path 
 from qdrant_client import QdrantClient
 from dotenv import load_dotenv
 from qdrant_client.models import Distance, VectorParams
@@ -147,6 +147,57 @@ def load_documents():
         })
 
     return documents
+
+
+
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to Load the PDF documents in ascending order
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def load_documents_PDF():
+    folder_path = Path("./data/corpus_pdf")
+
+    pdf_files = sorted(folder_path.glob("*.pdf"))
+    assert pdf_files, (f"No PDF files found in: {folder_path}")
+
+    documents = []
+
+    for file_path in pdf_files:
+
+        # Open PDF
+        pdf = pymupdf.open(file_path)
+
+        # Extract text from all pages
+        text = ""
+
+        for page in pdf:
+            text += page.get_text() + "\n"
+
+        documents.append({
+            "id": file_path.name,
+            "text": text
+        })
+
+        pdf.close()
+
+    print(f"Loaded {len(documents)} PDF documents")
+
+    #SAMPLE_HTML = SAMPLE_DIR / "product_page.html"
+    #SAMPLE_DOCX = SAMPLE_DIR / "onboarding.docx"
+
+    # Hard-fail if any are missing — the notebook depends on them
+    # for path in [SAMPLE_PDF]:    # SAMPLE_HTML, SAMPLE_DOCX
+    #     assert path.exists(), (
+    #         f"Missing {path.name}. Run: python demos/generate_sample_docs.py"
+    #     )
+
+    print("Sample Non txt documents ready:")
+
+    return documents
+
+
 
 
 
