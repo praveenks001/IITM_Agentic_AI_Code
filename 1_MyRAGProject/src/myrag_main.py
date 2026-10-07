@@ -7,6 +7,7 @@ from pipeline import myrag_pipeline as pipeline
 from dotenv import load_dotenv
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams
+from qdrant_client.models import HnswConfigDiff
 
 assert os.environ.get("OPENAI_API_KEY"), "Set OPENAI_API_KEY before running this notebook"
 
@@ -29,7 +30,16 @@ print("Qdrant isss:::", qdrant)
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Qdrant - Create collection to store the embedded chunks
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-qdrantCollection = pipeline.create_qdrant_collection(qdrant)
+qdrantCollection = pipeline.create_qdrant_collection(qdrant)  #Normal
+
+
+
+# hnsw_config = HnswConfigDiff(
+#     m=16, #32 16 is enough
+#     ef_construct=100  #200
+# )
+# qdrantCollection = pipeline.create_qdrant_collection_with_HNSW(qdrant, Distance.COSINE, hnsw_config)  #create a qdrant collection using HNSW
+
 
 
 

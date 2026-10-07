@@ -103,6 +103,33 @@ def is_qdrant_collection_populated(qdrant, collection_name):
 
 
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Qdrant - Method to delete and create a collection using HNSW
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def create_qdrant_collection_with_HNSW(qdrant, distance=Distance.COSINE, hnsw=None):
+    """Delete-then-create so cells are re-runnable."""
+
+    COLLECTION_NAME = "myrag_hnsw_collection"
+
+    if EMBED_MODEL == "text-embedding-3-large":
+        size = 3072
+    else:
+        size = 1536
+
+    try:
+        qdrant.delete_collection(COLLECTION_NAME)
+    except Exception:
+        pass
+    qdrant.create_collection(
+        collection_name=COLLECTION_NAME,
+        vectors_config=VectorParams(size=size, distance=distance),
+        hnsw_config=hnsw,
+    )
+
+    return COLLECTION_NAME
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Method to Load the Reference documents in ascending order
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 def load_documents():
@@ -229,6 +256,7 @@ def embed_batch(texts: list[str], model: str = EMBED_MODEL) -> list[list[float]]
     """One API call, list of vectors back."""
     resp = _client.embeddings.create(model=model, input=texts)
     return [item.embedding for item in resp.data]
+
 
 
 def build_index(chunks: list[dict], model: str = EMBED_MODEL) -> list[dict]:
