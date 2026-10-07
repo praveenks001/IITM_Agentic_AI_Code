@@ -243,7 +243,7 @@ def build_index(chunks: list[dict], model: str = EMBED_MODEL) -> list[dict]:
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Method to upsert the embbeded chunks into Qdrant
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-def upsert_embedded_chunks_into_qdrant(all_chunks, vectors,qdrantCollection):
+def upsert_embedded_chunks_into_qdrant(all_chunks, vectors,qdrantCollection,qdrant):
     points = [
         PointStruct(
             id=idx,
@@ -338,6 +338,44 @@ def retrieve(query: str, index: list[dict], k: int = 3,
 
 
 
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to retrieve Top K results from Qdrant
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def retrieve_from_qdrant(query: str, qdrant, collection_name: str, k: int = 3,
+                         embed_model: str = EMBED_MODEL) -> list[dict]:
+
+    # Embed the question
+    q_vec = embed_batch([query], model=embed_model)[0]
+
+    # Qdrant performs cosine similarity search
+    results = qdrant.query_points(
+        collection_name=collection_name,
+        query=q_vec,
+        limit=k,
+    ).points
+
+    # Convert Qdrant results into same structure used by existing RAG
+    retrieved = []
+
+    for hit in results:
+
+        payload = hit.payload
+
+        retrieved.append({
+            "chunk_id": payload.get("chunk_id", ""),
+            "source_id": payload.get("source", ""),
+            "text": payload.get("text", ""),
+            "score": hit.score,
+        })
+
+    return retrieved
+
+
+
+
+
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Method to Prompt + generate
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -362,14 +400,42 @@ def build_prompt(question: str, retrieved: list[dict],
 def ask_rag(question: str, index: list[dict], k: int = 3,
             system: str = SYSTEM,
             embed_model: str = EMBED_MODEL,
-            chat_model: str = CHAT_MODEL) -> dict:
+            chat_model: str = CHAT_MODEL,
+            qdrant=None,
+            collection_name=None) -> dict:
     """Full pipeline: retrieve → prompt → generate. Returns dict with
     answer, sources, cost, latency-relevant token counts."""
 
     # Start timer
     start_time = time.perf_counter()
 
-    retrieved = retrieve(question, index, k=k, embed_model=embed_model)
+    #retrieved = retrieve(question, index, k=k, embed_model=embed_model)
+
+        # If Qdrant contains embedded chunks, retrieve from Qdrant
+    if (qdrant is not None and collection_name is not None and is_qdrant_collection_populated(qdrant, collection_name)):
+        print(f"Retrieving Top {k} chunks from Qdrant...")
+
+        retrieved = retrieve_from_qdrant(
+            question,
+            qdrant,
+            collection_name,
+            k=k,
+            embed_model=embed_model
+        )
+
+    else:
+
+        # Existing non-Qdrant retrieval
+        print(f"Retrieving Top {k} chunks using local cosine similarity...")
+
+        retrieved = retrieve(
+            question,
+            index,
+            k=k,
+            embed_model=embed_model
+        )
+
+
     system_msg, user_msg = build_prompt(question, retrieved, system=system)
     resp = _client.chat.completions.create(
         model=chat_model,

@@ -159,7 +159,7 @@ if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
     print("Qdrant collection already contains embedded chunks.so we can skip")
 
 else:
-    pipeline.upsert_embedded_chunks_into_qdrant(all_chunks, vectors,qdrantCollection)
+    pipeline.upsert_embedded_chunks_into_qdrant(all_chunks, vectors,qdrantCollection, qdrant)
 
 
 
@@ -182,7 +182,7 @@ for item in golden_set:
         # --------------------------------------------------------
 
         results = qdrant.query_points(
-            collection_name=COLLECTION_NAME,
+            collection_name=qdrantCollection,
             query=query_vector,
             limit=5,
         ).points
@@ -211,7 +211,6 @@ for item in golden_set:
             )
 
             print(result_text)
-            lines.append(result_text)
 
     else:
             
@@ -266,165 +265,161 @@ else:
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Ask RAG now
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
-        print("Qdrant collection already contains embedded chunks.so retrive from qdrant to give cosine similarity chunks")
+# Store the final comparison values for each K
+comparison_results = []
 
-else:
-    # Store the final comparison values for each K
-    comparison_results = []
+for k in [5]:  #for k in [3, 5, 7]:
+    OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks.txt"
 
-    for k in [5]:  #for k in [3, 5, 7]:
-        OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks.txt"
+    total_cost = 0.0
+    total_latency = 0.0
+    total_tokens_in = 0
+    total_tokens_out = 0
 
-        total_cost = 0.0
-        total_latency = 0.0
-        total_tokens_in = 0
-        total_tokens_out = 0
-
-        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
 
 
-            total_questions = len(golden_set)
+        total_questions = len(golden_set)
 
-            for index, item in enumerate(golden_set, start=1):
-                question_id = item["id"]
-                question = item["question"]
+        for index, item in enumerate(golden_set, start=1):
+            question_id = item["id"]
+            question = item["question"]
 
-                print(
-                    f"Processing RAG question "
-                    f"{index}/{total_questions} with K={k}"
-                )
+            print(
+                f"Processing RAG question "
+                f"{index}/{total_questions} with K={k}"
+            )
 
-                # Run RAG for current question
-                result = pipeline.ask_rag(question,all_chunks,k=k)
+            # Run RAG for current question
+            result = pipeline.ask_rag(question,all_chunks,k=k, qdrant=qdrant,collection_name=qdrantCollection)
 
-                total_cost += result["cost_usd"]
-                total_latency += result["latency_s"]
-                total_tokens_in += result["tokens_in"]
-                total_tokens_out += result["tokens_out"]
+            total_cost += result["cost_usd"]
+            total_latency += result["latency_s"]
+            total_tokens_in += result["tokens_in"]
+            total_tokens_out += result["tokens_out"]
 
-                # ----------------------------------------------
-                # Console output
-                # ----------------------------------------------
+            # ----------------------------------------------
+            # Console output
+            # ----------------------------------------------
 
-                print(f"\nK: {k}")
-                print(f"\nQ: {result['question']}")
-                print(f"A: {result['answer']}")
-                print(
-                    f"Sources retrieved: "
-                    f"{result['sources']}"
-                )
+            print(f"\nK: {k}")
+            print(f"\nQ: {result['question']}")
+            print(f"A: {result['answer']}")
+            print(
+                f"Sources retrieved: "
+                f"{result['sources']}"
+            )
 
-                print(
-                    f"Latency: "
-                    f"{result['latency_s']:.3f} seconds"
-                )
+            print(
+                f"Latency: "
+                f"{result['latency_s']:.3f} seconds"
+            )
 
-                print(
-                    f"Cost USD: "
-                    f"${result['cost_usd']:.8f}"
-                )
+            print(
+                f"Cost USD: "
+                f"${result['cost_usd']:.8f}"
+            )
 
-                # ----------------------------------------------
-                # File output
-                # ----------------------------------------------
+            # ----------------------------------------------
+            # File output
+            # ----------------------------------------------
 
-                f.write("=" * 120 + "\n")
+            f.write("=" * 120 + "\n")
 
-                f.write(
-                    f"K: {k}\n"
-                )
+            f.write(
+                f"K: {k}\n"
+            )
 
-                f.write(
-                    f"Golden Set ID: {question_id}\n"
-                )
+            f.write(
+                f"Golden Set ID: {question_id}\n"
+            )
 
-                f.write(
-                    f"question: {result['question']}\n"
-                )
+            f.write(
+                f"question: {result['question']}\n"
+            )
 
-                f.write(
-                    f"answer: {result['answer']}\n"
-                )
+            f.write(
+                f"answer: {result['answer']}\n"
+            )
 
-                f.write(
-                    f"sources: {result['sources']}\n"
-                )
+            f.write(
+                f"sources: {result['sources']}\n"
+            )
 
-                f.write(
-                    f"tokens_in: {result['tokens_in']}\n"
-                )
+            f.write(
+                f"tokens_in: {result['tokens_in']}\n"
+            )
 
-                f.write(
-                    f"tokens_out: {result['tokens_out']}\n"
-                )
+            f.write(
+                f"tokens_out: {result['tokens_out']}\n"
+            )
 
-                f.write(
-                    f"retrieved: {result['retrieved']}\n"
-                )
+            f.write(
+                f"retrieved: {result['retrieved']}\n"
+            )
 
-                f.write(
-                    f"cost_usd: {result['cost_usd']:.8f}\n"
-                )
+            f.write(
+                f"cost_usd: {result['cost_usd']:.8f}\n"
+            )
 
-                f.write(
-                    f"latency_s: {result['latency_s']:.3f}\n"
-                )
+            f.write(
+                f"latency_s: {result['latency_s']:.3f}\n"
+            )
 
-                f.write("=" * 120 + "\n\n")
+            f.write("=" * 120 + "\n\n")
 
-        # Calculate average latency for this K
-        average_latency = total_latency / total_questions
+    # Calculate average latency for this K
+    average_latency = total_latency / total_questions
 
-        # Store comparison result
-        comparison_results.append({
-            "k": k,
-            "total_latency": total_latency,
-            "average_latency": average_latency,
-            "tokens_in": total_tokens_in,
-            "tokens_out": total_tokens_out,
-            "cost_usd": total_cost
-        })
+    # Store comparison result
+    comparison_results.append({
+        "k": k,
+        "total_latency": total_latency,
+        "average_latency": average_latency,
+        "tokens_in": total_tokens_in,
+        "tokens_out": total_tokens_out,
+        "cost_usd": total_cost
+    })
 
-        print(f"\nRAG processing completed for K={k}.")
-        print(f"Total Latency for K={k}: "f"{total_latency:.3f} seconds")
-        print(f"Average Latency for K={k}: "f"{average_latency:.3f} seconds")
-        print(f"Total Tokens In for K={k}: "f"{total_tokens_in}")
-        print(f"Total Tokens Out for K={k}: "f"{total_tokens_out}")
-        print(f"Total Cost USD for K={k}: "f"${total_cost:.8f}")
-        print(f"Results saved to: {OUTPUT_FILE}")
+    print(f"\nRAG processing completed for K={k}.")
+    print(f"Total Latency for K={k}: "f"{total_latency:.3f} seconds")
+    print(f"Average Latency for K={k}: "f"{average_latency:.3f} seconds")
+    print(f"Total Tokens In for K={k}: "f"{total_tokens_in}")
+    print(f"Total Tokens Out for K={k}: "f"{total_tokens_out}")
+    print(f"Total Cost USD for K={k}: "f"${total_cost:.8f}")
+    print(f"Results saved to: {OUTPUT_FILE}")
 
 
 
-    # #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-    # # Final comparison of K = 3, 5, 7
-    # #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# # Final comparison of K = 3, 5, 7
+# #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-    # print("\n")
-    # print("=" * 90)
-    # print("K VALUE COMPARISON")
-    # print("=" * 90)
+# print("\n")
+# print("=" * 90)
+# print("K VALUE COMPARISON")
+# print("=" * 90)
 
-    # print(
-    #     f"{'K':>3s} "
-    #     f"{'total latency':>15s} "
-    #     f"{'avg latency':>15s} "
-    #     f"{'tokens_in':>12s} "
-    #     f"{'tokens_out':>12s} "
-    #     f"{'cost_usd':>14s}"
-    # )
+# print(
+#     f"{'K':>3s} "
+#     f"{'total latency':>15s} "
+#     f"{'avg latency':>15s} "
+#     f"{'tokens_in':>12s} "
+#     f"{'tokens_out':>12s} "
+#     f"{'cost_usd':>14s}"
+# )
 
-    # print("-" * 90)
+# print("-" * 90)
 
-    # for r in comparison_results:
+# for r in comparison_results:
 
-    #     print(
-    #         f"{r['k']:>3d} "
-    #         f"{r['total_latency']:>15.3f} "
-    #         f"{r['average_latency']:>15.3f} "
-    #         f"{r['tokens_in']:>12d} "
-    #         f"{r['tokens_out']:>12d} "
-    #         f"{r['cost_usd']:>14.8f}"
-    #     )
+#     print(
+#         f"{r['k']:>3d} "
+#         f"{r['total_latency']:>15.3f} "
+#         f"{r['average_latency']:>15.3f} "
+#         f"{r['tokens_in']:>12d} "
+#         f"{r['tokens_out']:>12d} "
+#         f"{r['cost_usd']:>14.8f}"
+#     )
 
-    # print("=" * 90)
+# print("=" * 90)
