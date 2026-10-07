@@ -69,11 +69,14 @@ def create_qdrant_collection(qdrant):
 
         return COLLECTION_NAME
     
+    if EMBED_MODEL == "text-embedding-3-large":
+        size = 3072
+    else:
+        size = 1536
+
     qdrant.create_collection(
         collection_name=COLLECTION_NAME,
-
-        #vectors_config=VectorParams(size=1536, distance=Distance.COSINE),         #For small embedding model
-         vectors_config=VectorParams(size=3072, distance=Distance.COSINE),         #For Large embedding model
+         vectors_config=VectorParams(size=size, distance=Distance.COSINE),         #For Large embedding model
     )
 
     info = qdrant.get_collection(COLLECTION_NAME)
