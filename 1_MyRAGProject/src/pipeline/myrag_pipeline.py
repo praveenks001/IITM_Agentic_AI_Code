@@ -314,7 +314,7 @@ def cosine(a: list[float], b: list[float]) -> float:
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Method to determine the top k results
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-def show_top_k(queries, all_chunks, k=3):
+def show_top_k(queries, all_chunks, k=5):
     """Print top-K chunks for multiple queries."""
 
     query_vectors = embed_batch(queries)
