@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams
 from qdrant_client.models import HnswConfigDiff
+from rank_bm25 import BM25Okapi
 
 assert os.environ.get("OPENAI_API_KEY"), "Set OPENAI_API_KEY before running this notebook"
 
@@ -15,7 +16,8 @@ client = OpenAI()
 
 EMBED_MODEL = "text-embedding-3-large"  #"text-embedding-3-small"
 CHAT_MODEL  = "gpt-4o-mini"
-
+top_k=5
+search_method = "BM25"   #DENSE_SEARCH
 
 
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -39,8 +41,6 @@ qdrantCollection = pipeline.create_qdrant_collection(qdrant)  #Normal
 #     ef_construct=100  #200
 # )
 # qdrantCollection = pipeline.create_qdrant_collection_with_HNSW(qdrant, Distance.COSINE, hnsw_config)  #create a qdrant collection using HNSW
-
-
 
 
 
@@ -183,26 +183,48 @@ print(f"  ... and {len(all_chunks) - 8} more chunks")
 # Embedding the chunks
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-# check if qdrant collection has already embedding else embed the chunks
-if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
-    print("Qdrant collection already contains embedded chunks.so we can skip")
+if search_method == "DENSE_SEARCH":
+
+    # check if qdrant collection has already embedding else embed the chunks
+    if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
+        print("Qdrant collection already contains embedded chunks.so we can skip")
+
+    else:
+        # Dense search
+        chunk_texts = [c["text"] for c in all_chunks]
+        print(len(chunk_texts))
+
+        vectors = pipeline.embed_batch(chunk_texts)
+
+        for chunk, vec in zip(all_chunks, vectors):
+            chunk["vector"] = vec
+
+        print(f"Embedded {len(vectors)} chunks.")
+        print(f"Each embedding shape: {len(vectors[0])} dimensions")
+        print(f"\nFirst 8 dims of chunk 0 ({all_chunks[0]['chunk_id']}):")
+        print(f"  {vectors[0][:8]}")
+        print(f"\nFirst 8 dims of chunk 1 ({all_chunks[1]['chunk_id']}):")
+        print(f"  {vectors[1][:8]}")
+
 
 else:
+    print("══ BM25 Tokenization checks ══")
 
-    chunk_texts = [c["text"] for c in all_chunks]
-    print(len(chunk_texts))
+    for chunk in all_chunks[:top_k]:
+        text = chunk["text"]
+        tokens = pipeline.simple_tokenize(text)
 
-    vectors = pipeline.embed_batch(chunk_texts)
+        print(f"Chunk ID: {chunk['chunk_id']}")
+        print(f"Tokens: {tokens}\n")
 
-    for chunk, vec in zip(all_chunks, vectors):
-        chunk["vector"] = vec
 
-    print(f"Embedded {len(vectors)} chunks.")
-    print(f"Each embedding shape: {len(vectors[0])} dimensions")
-    print(f"\nFirst 8 dims of chunk 0 ({all_chunks[0]['chunk_id']}):")
-    print(f"  {vectors[0][:8]}")
-    print(f"\nFirst 8 dims of chunk 1 ({all_chunks[1]['chunk_id']}):")
-    print(f"  {vectors[1][:8]}")
+
+    print("\n══ Building BM25 index ══")
+
+    tokenized_corpus = [pipeline.simple_tokenize(d["text"])for d in all_chunks]
+    bm25 = BM25Okapi(tokenized_corpus)
+    print(f"Indexed {len(all_chunks)} chunks. Ready to query.")
+
 
 
 
@@ -239,7 +261,7 @@ for item in golden_set:
         results = qdrant.query_points(
             collection_name=qdrantCollection,
             query=query_vector,
-            limit=5,
+            limit=top_k,
         ).points
 
 
@@ -308,7 +330,7 @@ else:
 
     for item in golden_set:
         QUERY = item["question"]
-        top3 = pipeline.retrieve(QUERY, all_chunks, k=5)
+        top3 = pipeline.retrieve(QUERY, all_chunks, k=top_k)
 
     # for item in golden_set:
     #     QUERY = item["question"]
@@ -323,7 +345,7 @@ else:
 # Store the final comparison values for each K
 comparison_results = []
 
-for k in [5]:  #for k in [3, 5, 7]:
+for k in [top_k]:  #for k in [3, 5, 7]:
     OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks.txt"
 
     total_cost = 0.0

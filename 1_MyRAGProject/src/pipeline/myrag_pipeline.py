@@ -13,6 +13,7 @@ from qdrant_client.models import Distance, VectorParams
 from qdrant_client.models import PointStruct
 from bs4 import BeautifulSoup
 from docx import Document
+from rank_bm25 import BM25Okapi
 
 
 assert os.environ.get("OPENAI_API_KEY"), "Set OPENAI_API_KEY before running this notebook"
@@ -904,3 +905,54 @@ def cost_usd(result: dict, chat_model: str = CHAT_MODEL) -> float:
         result["tokens_in"]  * PRICE_INPUT_PER_1M[chat_model]  / 1_000_000 +
         result["tokens_out"] * PRICE_OUTPUT_PER_1M[chat_model] / 1_000_000
     )
+
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to do Dense search
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def dense_search(query: str, k: int = 3) -> list[dict]:
+    """Query Qdrant for top-K by cosine similarity."""
+    q_vec = openai_client.embeddings.create(
+        model="text-embedding-3-small", input=[query]
+    ).data[0].embedding
+    hits = qdrant.query_points(collection_name=COLLECTION, query=q_vec, limit=k).points
+    return [
+        {"id": h.payload["id"], "title": h.payload["title"], "score": h.score, "doc": h.payload}
+        for h in hits
+    ]
+
+print(f"══ Dense retrieval on all 6 queries (top-1) ══\n")
+print(f"  {'Expected':10s}  {'Query':<50s}  {'Retrieved':<20s}  Verdict")
+print(f"  {'--------':10s}  {'-----':<50s}  {'---------':<20s}  -------")
+
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to do BM25
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def simple_tokenize(text: str) -> list[str]:
+    """Lowercase + word-and-alphanumeric split, KEEPING hyphens/slashes inside tokens.
+    
+    Critical: this pattern preserves 'ac-1042' and 'v2/dashboards' as single
+    tokens rather than splitting them. That's what makes BM25 catch exact IDs.
+    """
+    return re.findall(r'[a-z0-9][a-z0-9\-/_]*', text.lower())
+
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to do BM25 search
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def bm25_search(query: str, k: int = 3) -> list[dict]:
+    """Query BM25 index; return top-K."""
+    tokens = simple_tokenize(query)
+    scores = bm25.get_scores(tokens)
+    ranked = sorted(zip(scores, corpus), key=lambda pair: pair[0], reverse=True)
+    return [
+        {"id": doc["id"], "title": doc["title"], "score": float(score), "doc": doc}
+        for score, doc in ranked[:k]
+    ]
