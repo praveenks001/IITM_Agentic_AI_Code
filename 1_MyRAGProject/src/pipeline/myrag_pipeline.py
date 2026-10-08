@@ -3,12 +3,17 @@ import numpy as np
 import re
 import json
 import time
+import pymupdf  # aka fitz
+import pdfplumber
 from openai import OpenAI
 from pathlib import Path 
 from qdrant_client import QdrantClient
 from dotenv import load_dotenv
 from qdrant_client.models import Distance, VectorParams
 from qdrant_client.models import PointStruct
+from bs4 import BeautifulSoup
+from docx import Document
+
 
 assert os.environ.get("OPENAI_API_KEY"), "Set OPENAI_API_KEY before running this notebook"
 
@@ -154,7 +159,7 @@ def load_documents():
 
 
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-# Method to Load the PDF documents in ascending order
+# Method to Load the PDF documents in ascending order - if the data contains is only text
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 def load_documents_PDF():
     folder_path = Path("./data/corpus_pdf")
@@ -172,7 +177,7 @@ def load_documents_PDF():
         # Extract text from all pages
         text = ""
 
-        for page in pdf:
+        for page_num, page in enumerate(pdf, 1):
             text += page.get_text() + "\n"
 
         documents.append({
@@ -181,8 +186,6 @@ def load_documents_PDF():
         })
 
         pdf.close()
-
-    print(f"Loaded {len(documents)} PDF documents")
 
     #SAMPLE_HTML = SAMPLE_DIR / "product_page.html"
     #SAMPLE_DOCX = SAMPLE_DIR / "onboarding.docx"
@@ -193,10 +196,188 @@ def load_documents_PDF():
     #         f"Missing {path.name}. Run: python demos/generate_sample_docs.py"
     #     )
 
-    print("Sample Non txt documents ready:")
+    return documents
+
+
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to Load the PDF documents in ascending order - if the data contains tabular data + text
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def load_documents_PDF_for_tabular_and_text():
+    folder_path = Path("./data/corpus_pdf")
+
+    pdf_files = sorted(folder_path.glob("*.pdf"))
+    assert pdf_files, (f"No PDF files found in: {folder_path}")
+
+    documents = []
+
+    for file_path in pdf_files:
+
+        with pdfplumber.open(file_path) as pdf:
+            
+            # Text extraction — similar to PyMuPDF for prose
+            text = ""
+
+            for page_num, page in enumerate(pdf.pages, 1):
+
+                page_text = page.extract_text() or ""
+                text += f"\n--- Page {page_num} ---\n"
+                text += page_text + "\n"
+
+                # Extract tables from current page
+                tables = page.extract_tables()
+                print(f"Tables detected on page {page_num}: {len(tables)}")
+
+                for i, table in enumerate(tables, 1):
+
+                    print(f"\n══ Table {i} ══")
+
+                    text += f"\nTable {i} (Page {page_num}):\n"
+
+                    for row in table:
+                        row_text = " | ".join(
+                            str(c) if c is not None else ""
+                            for c in row
+                        )
+
+                        print(row_text)
+
+                        # Add table content for RAG
+                        text += row_text + "\n"
+
+            documents.append({
+                "id": file_path.name,
+                "text": text
+            })
+
+            print(f"\nLoaded: {file_path.name}")
+            print(text[:300], "...\n")
 
     return documents
 
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to Load the PDF documents in ascending order - if the data contains image (scanned from paper documents)
+#─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def load_documents_PDF_scanned_images():
+    folder_path = Path("./data/corpus_pdf")
+
+    pdf_files = sorted(folder_path.glob("*.pdf"))
+    assert pdf_files, (f"No PDF files found in: {folder_path}")
+
+    documents = []
+
+    for file_path in pdf_files:
+
+        scanned_path = SAMPLE_DIR / "scanned_fake.pdf"
+        scan_doc = pymupdf.open()
+        page = scan_doc.new_page()
+        # Draw a filled rectangle to simulate a scanned image with no text layer
+        page.draw_rect(pymupdf.Rect(100, 100, 500, 700), fill=(0.9, 0.9, 0.9))
+        scan_doc.save(str(scanned_path))
+        scan_doc.close()
+
+        # Now try to extract text
+        doc = pymupdf.open(scanned_path)
+        extracted = doc[0].get_text()
+        doc.close()
+
+        print(f"Fake 'scanned' PDF: {scanned_path.name}")
+        print(f"Extracted text length: {len(extracted)} chars")
+        print(f"Extracted content: {extracted!r}")
+        print()
+        print("That's the trap. The parser succeeded — no crash. But zero content.")
+        print("Your ingestion silently produced 0 chunks from this document.")
+
+        # Cleanup — don't clutter sample_docs/
+        scanned_path.unlink()
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to Load the HTML documents in ascending order
+#─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def load_documents_HTML():
+
+    folder_path = Path("./data/corpus_html")
+    html_files = sorted(folder_path.glob("*.html"))
+    assert html_files, (f"No HTML files found in: {folder_path}")
+
+    documents = []
+
+    for file_path in html_files:
+        html = file_path.read_text()  # html = file_path.read_text(encoding="utf-8", errors="ignore")
+
+        # Naive: get all text, no stripping
+        # soup_naive = BeautifulSoup(html, "html.parser")
+        # text = soup_naive.get_text(separator="\n", strip=True)
+
+        soup_clean = BeautifulSoup(html, "html.parser")
+        for tag in soup_clean(["nav", "footer", "script", "style"]):
+            tag.decompose()
+
+        # Get <main> if present, else body
+        main = soup_clean.find("main") or soup_clean.find("body") or soup_clean
+        text = main.get_text(separator="\n", strip=True)
+
+        documents.append({
+            "id": file_path.name,
+            "text": text
+        })
+
+        print("══ CLEAN extraction (nav + footer + scripts included) ══")
+        print(text[:400])
+        print(f"\n... {len(text)} chars total\n")
+    
+    return documents
+
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to Load the docx documents in ascending order
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def load_documents_DOCX():
+
+    folder_path = Path("./data/corpus_docx")
+    docx_files = sorted(folder_path.glob("*.docx"))
+    assert docx_files, (f"No docx files found in: {folder_path}")
+   
+    documents = []
+
+    for file_path in docx_files:
+        
+        doc = Document(str(file_path))
+
+        print(f"DOCX: {file_path.name}")
+        print(f"Paragraphs: {len(doc.paragraphs)}\n")
+
+        text = ""
+
+        for i, para in enumerate(doc.paragraphs):
+            if para.text.strip():
+                style = para.style.name
+                preview = para.text[:70]
+                print(f"  [{i:2d}] {style:15s}  {preview}...")
+
+                # Preserve heading information for RAG
+                if style.startswith("Heading") or style == "Title":
+                    text += f"\n{style}: {para.text.strip()}\n"
+                else:
+                    text += para.text.strip() + "\n"
+
+        documents.append({
+            "id": file_path.name,
+            "text": text
+        })
+
+        print(f"\nLoaded: {file_path.name}")
+        print(f"Extracted {len(text)} characters\n")
+
+    return documents
 
 
 
@@ -297,6 +478,161 @@ def chunk_by_paragraph_documents(documents: list[dict]) -> list[dict]:
                 "text": chunk_by_sentence(doc["text"]),
             })
     return all_chunks
+
+
+
+# 4. Recursive chunking - First chunk by paragraph and if a paragraph is too long then fallback to sentence splits
+
+# a) Method to chunk a single document
+def chunk_recursive(text: str, max_size: int = 400) -> list[str]:
+    """Split by paragraphs. If a paragraph exceeds max_size, split by sentences."""
+
+    paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
+    chunks = []
+
+    for para in paragraphs:
+        if len(para) <= max_size:
+            chunks.append(para)
+
+        else:
+            # Sentence-level fallback
+            sentences = re.split(r'(?<=[.!?])\s+', para)
+
+            current = ""
+
+            for sent in sentences:
+
+                # Handle sentences longer than max_size
+                if len(sent) > max_size:
+
+                    if current:
+                        chunks.append(current)
+                        current = ""
+
+                    for start in range(0, len(sent), max_size):
+                        chunks.append(sent[start:start + max_size])
+
+                    continue
+
+                if len(current) + len(sent) + (1 if current else 0) <= max_size:
+                    current = (current + " " + sent).strip()
+
+                else:
+                    if current:
+                        chunks.append(current)
+
+                    current = sent
+
+            if current:
+                chunks.append(current)
+
+    return chunks
+
+
+# b) Method to chunk multiple documents
+def chunk_recursive_documents(documents: list[dict], max_size: int = 400) -> list[dict]:
+    """Recursively chunk every document. Returns flat list with source pointers."""
+
+    all_chunks = []
+
+    for doc in documents:
+
+        for chunk_idx, chunk in enumerate(chunk_recursive(doc["text"], max_size)):
+
+            all_chunks.append({
+                "chunk_id": f"{doc['id']}#{chunk_idx}",
+                "source_id": doc["id"],
+                "text": chunk
+            })
+
+    return all_chunks
+
+
+
+
+# 5. Structure aware chunking - Best for docx
+def chunk_docx_structure_aware(path):
+    """Split DOCX using Heading 1 / Heading 2 and preserve section metadata."""
+
+    doc = Document(str(path))
+
+    chunks = []
+    current_h1 = None
+    current_h2 = None
+    current_text = []
+
+    def flush():
+        if current_text:
+            section_path = " > ".join(
+                p for p in [current_h1, current_h2] if p
+            )
+
+            chunks.append({
+                "section_path": section_path,
+                "text": "\n".join(current_text)
+            })
+
+    for para in doc.paragraphs:
+
+        if not para.text.strip():
+            continue
+
+        style = para.style.name
+
+        if style == "Title" or style == "Heading 1":
+
+            flush()
+
+            current_text = []
+            current_h1 = para.text.strip()
+            current_h2 = None
+
+        elif style == "Heading 2":
+
+            flush()
+
+            current_text = []
+            current_h2 = para.text.strip()
+
+        else:
+            current_text.append(para.text.strip())
+
+    flush()
+
+    return chunks
+
+
+# b) Method to chunk multiple DOCX documents
+def chunk_docx_structure_aware_documents(folder_path="./data/corpus_docx"):
+    """Chunk all DOCX files and return chunks with source pointers."""
+
+    folder_path = Path(folder_path)
+
+    docx_files = sorted(folder_path.glob("*.docx"))
+    assert docx_files, f"No DOCX files found in: {folder_path}"
+
+    all_chunks = []
+
+    for file_path in docx_files:
+
+        chunks = chunk_docx_structure_aware(file_path)
+
+        for chunk_idx, chunk in enumerate(chunks):
+
+            all_chunks.append({
+                "chunk_id": f"{file_path.name}#{chunk_idx}",
+                "source_id": file_path.name,
+                "section_path": chunk["section_path"],
+                "text": chunk["text"]
+            })
+
+        print(f"Created {len(chunks)} structure-aware chunks from {file_path.name}")
+
+    print(f"Total DOCX structure-aware chunks: {len(all_chunks)}")
+
+    return all_chunks
+
+
 
 
 

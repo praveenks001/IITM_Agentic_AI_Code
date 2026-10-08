@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Acme Analytics Platform — Product Overview</title>
+  <script>
+    // Analytics tracking — should be stripped by BeautifulSoup
+    window.trackPageView('product_overview');
+  </script>
+  <style>body { font-family: Arial, sans-serif; }</style>
+</head>
+<body>
+  <nav id="site-nav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/products">Products</a></li>
+      <li><a href="/pricing">Pricing</a></li>
+      <li><a href="/docs">Docs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+      <h1>Acme Analytics Platform</h1>
+      <p class="lead">
+        Turn raw event data into actionable dashboards without writing SQL. The Acme
+        Analytics Platform sits on top of your data warehouse and gives every team
+        member a drag-and-drop interface for building charts, reports, and alerts.
+      </p>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li>Native connectors for Snowflake, BigQuery, Redshift, and Postgres</li>
+        <li>Real-time streaming ingestion with sub-second latency</li>
+        <li>Role-based access control with row-level security policies</li>
+        <li>Embedded analytics — drop dashboards into your own product</li>
+      </ul>
+
+      <h2>How It Works</h2>
+      <p>
+        Point the platform at your data warehouse. Our schema crawler catalogs
+        tables and infers relationships. Business users then build queries using
+        the visual interface. Behind the scenes, the platform compiles those
+        queries to optimised SQL and caches results at multiple layers.
+      </p>
+      <p>
+        For advanced use cases, engineers can drop into a code editor and write
+        Python or SQL directly. The platform supports version control, code
+        review, and CI/CD for analytics code.
+      </p>
+
+      <h2>Pricing</h2>
+      <p>
+        The platform is priced per active user per month, with volume discounts
+        starting at 50 seats. Enterprise contracts include SSO, audit logging,
+        and dedicated support. See the <a href="/pricing">pricing page</a> for
+        current rates.
+      </p>
+    </article>
+  </main>
+
+  <footer id="site-footer">
+    <p>© 2025 Acme Corp. All rights reserved.</p>
+    <ul>
+      <li><a href="/privacy">Privacy</a></li>
+      <li><a href="/terms">Terms</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </footer>
+</body>
+</html>

@@ -51,6 +51,30 @@ documents = pipeline.load_documents();
 print(f"Loaded {len(documents)} documents")
 
 
+# documents = pipeline.load_documents_PDF();
+# print(f"Loaded {len(documents)} documents")
+# print("Sample Non txt documents ready:")
+
+# documents = pipeline.load_documents_PDF_for_tabular_and_text();
+#print(f"Loaded {len(documents)} HTML documents")
+# print("Sample PDF text + tabular documents Loaded:")
+
+# documents = pipeline.load_documents_HTML();
+# print(f"Loaded {len(documents)} HTML documents")
+# print("Sample HTML documents Loaded:")
+
+
+# documents = pipeline.load_documents_DOCX();
+# print(f"Loaded {len(documents)} DOCX documents")
+# print("Sample DOCX documents Loaded:")
+
+
+# documents = pipeline.load_documents_PDF_scanned_images();
+# print(f"Loaded {len(documents)} DOCX documents")
+# print("Sample DOCX documents Loaded:")
+
+
+
 
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # The goldenSet Questions = Load it
@@ -131,6 +155,27 @@ print(f"  ... and {len(all_chunks) - 8} more chunks")
 #     marker = "…" if len(c["text"]) == 200 else " "
 #     print(f"  {c['chunk_id']:30s} [{len(c['text']):3d} chars] {c['text'][:60]}{marker}")
 # print(f"  ... and {len(all_chunks) - 8} more chunks")
+
+
+
+# #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# # Using chunk_text method - Chunk every document;
+# #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# #4.Chunk By Recursive Chunking
+
+# all_chunks = pipeline.chunk_recursive(page1_text, max_size=500)
+# print(f"Recursive chunking (max_size=500) → {len(all_chunks)} chunks\n")
+
+
+
+
+# #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# # Using chunk_text method - Chunk every document;
+# #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# #5.Chunk By Strucutre-aware
+# all_chunks = pipeline.chunk_docx_structure_aware_documents("./data/corpus_docx")
+# print(f"Total chunks created: {len(all_chunks)}")
+
 
 
 
