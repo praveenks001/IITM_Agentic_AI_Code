@@ -80,6 +80,7 @@ def create_qdrant_collection(qdrant):
     else:
         size = 1536
 
+    print(f"New Collection is going to create.")
     qdrant.create_collection(
         collection_name=COLLECTION_NAME,
          vectors_config=VectorParams(size=size, distance=Distance.COSINE),         #For Large embedding model

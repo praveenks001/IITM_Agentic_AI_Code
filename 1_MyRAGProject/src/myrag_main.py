@@ -384,7 +384,12 @@ else: # BM25
 comparison_results = []
 
 for k in [top_k]:  #for k in [3, 5, 7]:
-    OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks.txt"
+    if search_method == "DENSE_SEARCH":
+        if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
+            print("Qdrant is already created so output file name with qdrant creating")
+            OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks_with_qdrant_results.txt"
+        else:
+            OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks.txt"
 
     total_cost = 0.0
     total_latency = 0.0
