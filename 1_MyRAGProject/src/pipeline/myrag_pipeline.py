@@ -821,7 +821,9 @@ def ask_rag(question: str, index: list[dict], k: int = 3,
             embed_model: str = EMBED_MODEL,
             chat_model: str = CHAT_MODEL,
             qdrant=None,
-            collection_name=None) -> dict:
+            collection_name=None,
+            search_method="DENSE_SEARCH",
+            bm25=None) -> dict:
     """Full pipeline: retrieve → prompt → generate. Returns dict with
     answer, sources, cost, latency-relevant token counts."""
 
@@ -830,7 +832,7 @@ def ask_rag(question: str, index: list[dict], k: int = 3,
 
     #retrieved = retrieve(question, index, k=k, embed_model=embed_model)
 
-        # If Qdrant contains embedded chunks, retrieve from Qdrant
+    # If Qdrant contains embedded chunks, retrieve from Qdrant
     if (qdrant is not None and collection_name is not None and is_qdrant_collection_populated(qdrant, collection_name)):
         print(f"Retrieving Top {k} chunks from Qdrant...")
 
@@ -947,12 +949,20 @@ def simple_tokenize(text: str) -> list[str]:
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Method to do BM25 search
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-def bm25_search(query: str, k: int = 3) -> list[dict]:
+def bm25_search(query: str,bm25, all_chunks: list[dict], k: int = 3) -> list[dict]:
     """Query BM25 index; return top-K."""
     tokens = simple_tokenize(query)
     scores = bm25.get_scores(tokens)
-    ranked = sorted(zip(scores, corpus), key=lambda pair: pair[0], reverse=True)
-    return [
-        {"id": doc["id"], "title": doc["title"], "score": float(score), "doc": doc}
-        for score, doc in ranked[:k]
-    ]
+    top_indices = sorted(range(len(scores)),key=lambda i: scores[i],reverse=True)[:k]
+    
+    retrieved = []
+
+    for i in top_indices:
+        retrieved.append({
+            "chunk_id": all_chunks[i]["chunk_id"],
+            "source_id": all_chunks[i]["source_id"],
+            "text": all_chunks[i]["text"],
+            "score": float(scores[i])
+        })
+
+    return retrieved

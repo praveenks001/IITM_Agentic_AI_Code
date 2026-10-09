@@ -17,7 +17,10 @@ client = OpenAI()
 EMBED_MODEL = "text-embedding-3-large"  #"text-embedding-3-small"
 CHAT_MODEL  = "gpt-4o-mini"
 top_k=5
-search_method = "BM25"   #DENSE_SEARCH
+search_method = "DENSE_SEARCH"   #BM25
+qdrant_type = "NORMAL"  #HNSW
+document_type = "txt" #PDF,DOCX,HTML,PDF_WITH_TABLE
+chunking_strategy = "Sliding_window_Chunking" #
 
 
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -32,46 +35,61 @@ print("Qdrant isss:::", qdrant)
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Qdrant - Create collection to store the embedded chunks
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-qdrantCollection = pipeline.create_qdrant_collection(qdrant)  #Normal
-
-
-
-# hnsw_config = HnswConfigDiff(
-#     m=16, #32 16 is enough
-#     ef_construct=100  #200
-# )
-# qdrantCollection = pipeline.create_qdrant_collection_with_HNSW(qdrant, Distance.COSINE, hnsw_config)  #create a qdrant collection using HNSW
+if qdrant_type == "NORMAL":
+    qdrantCollection = pipeline.create_qdrant_collection(qdrant)  #Normal
+else:
+    hnsw_config = HnswConfigDiff(
+        m=16, #32 16 is enough
+        ef_construct=100  #200
+    )
+    qdrantCollection = pipeline.create_qdrant_collection_with_HNSW(qdrant, Distance.COSINE, hnsw_config)  #create a qdrant collection using HNSW
 
 
 
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # The corpus = Load the Reference documents
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-documents = pipeline.load_documents();
-print(f"Loaded {len(documents)} documents")
+if document_type == "txt":
+
+    print("Going to load txt documents")
+    documents = pipeline.load_documents();
+    print(f"Loaded {len(documents)} documents")
+
+elif document_type == "PDF":
+
+    print("Going to load PDF documents")
+    documents = pipeline.load_documents_PDF();
+    print(f"Loaded {len(documents)} documents")
+    print("Sample Non txt documents ready:")
+
+elif document_type == "PDF_WITH_TABLE":
+
+    print("Going to load txt documents")
+    documents = pipeline.load_documents_PDF_for_tabular_and_text();
+    print(f"Loaded {len(documents)} HTML documents")
+    print("Sample PDF text + tabular documents Loaded:")
 
 
-# documents = pipeline.load_documents_PDF();
-# print(f"Loaded {len(documents)} documents")
-# print("Sample Non txt documents ready:")
+elif document_type == "HTML":
 
-# documents = pipeline.load_documents_PDF_for_tabular_and_text();
-#print(f"Loaded {len(documents)} HTML documents")
-# print("Sample PDF text + tabular documents Loaded:")
-
-# documents = pipeline.load_documents_HTML();
-# print(f"Loaded {len(documents)} HTML documents")
-# print("Sample HTML documents Loaded:")
+    print("Going to load HTML documents")
+    documents = pipeline.load_documents_HTML();
+    print(f"Loaded {len(documents)} HTML documents")
+    print("Sample HTML documents Loaded:")
 
 
-# documents = pipeline.load_documents_DOCX();
-# print(f"Loaded {len(documents)} DOCX documents")
-# print("Sample DOCX documents Loaded:")
+elif document_type == "DOCX":
 
+    print("Going to load DOCX documents")
+    documents = pipeline.load_documents_DOCX();
+    print(f"Loaded {len(documents)} DOCX documents")
+    print("Sample DOCX documents Loaded:")
 
-# documents = pipeline.load_documents_PDF_scanned_images();
-# print(f"Loaded {len(documents)} DOCX documents")
-# print("Sample DOCX documents Loaded:")
+else:
+
+    documents = pipeline.load_documents_PDF_scanned_images();
+    print(f"Loaded {len(documents)} DOCX documents")
+    print("Sample DOCX documents Loaded:")
 
 
 
@@ -91,14 +109,16 @@ print(f"Loaded {len(golden_set)} golden-set questions")
 # and it supposed to be 2048 or lesser, so increase the chunking size to 500
 
 #1.Sliding window Chunking
-all_chunks = pipeline.chunk_documents(documents, 500); #chunked_documents = pipeline.chunk_text_documents(documents, 200);
-print(f"Total chunks from {len(documents)} documents: {len(all_chunks)}\n")
+if chunking_strategy == "Sliding_window_Chunking":
+
+    all_chunks = pipeline.chunk_documents(documents, 500); #chunked_documents = pipeline.chunk_text_documents(documents, 200);
+    print(f"Total chunks from {len(documents)} documents: {len(all_chunks)}\n")
 
 
 # Write the result chunk into an output file
 DATA_DIR = Path('./docs/runs')
 DATA_DIR.mkdir(parents=True, exist_ok=True)
-OUTPUT_FILE = DATA_DIR / "01_chunks_sliding_window.txt"
+OUTPUT_FILE = DATA_DIR / "01_chunks_using_sliding_window.txt"
 
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     for result in all_chunks:
@@ -244,75 +264,77 @@ else:
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Embed each questions and find cosine similarity with the embedded document chunks
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-for item in golden_set:
+if search_method == "DENSE_SEARCH":
 
-    QUERY = item["question"]
+    for item in golden_set:
 
-    # 1. Embed this question
-    query_vector = pipeline.embed_batch([QUERY])[0]
+        QUERY = item["question"]
 
-    if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
-        print("Qdrant collection already contains embedded chunks.so retrive from qdrant to give cosine similarity chunks")
-        
-        # --------------------------------------------------------
-        # Search Qdrant
-        # --------------------------------------------------------
+        # 1. Embed this question
+        query_vector = pipeline.embed_batch([QUERY])[0]
 
-        results = qdrant.query_points(
-            collection_name=qdrantCollection,
-            query=query_vector,
-            limit=top_k,
-        ).points
-
-
-        # --------------------------------------------------------
-        # Golden Set information
-        # --------------------------------------------------------
-
-        question_id = item["id"]
-
-
-        # --------------------------------------------------------
-        # Print Top 5 retrieved chunks
-        # --------------------------------------------------------
-
-        for rank, hit in enumerate(results, 1):
-            payload = hit.payload
-
-            result_text = (
-                f"\n[{rank}] "
-                f"score={hit.score:.4f}\n"
-                f"Chunk ID: {payload.get('chunk_id', '')}\n"
-                f"Source: {payload.get('source', '')}\n"
-                f"Text:\n{payload.get('text', '')}\n"
-            )
-
-            print(result_text)
-
-    else:
+        if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
+            print("Qdrant collection already contains embedded chunks.so retrive from qdrant to give cosine similarity chunks")
             
-        # 2. Compare this question against ALL chunks
-        scored = [(pipeline.cosine(query_vector, c["vector"]), c) for c in all_chunks]
+            # --------------------------------------------------------
+            # Search Qdrant
+            # --------------------------------------------------------
 
-        # 3. Sort highest cosine similarity first
-        scored.sort(key=lambda pair: pair[0], reverse=True)
+            results = qdrant.query_points(
+                collection_name=qdrantCollection,
+                query=query_vector,
+                limit=top_k,
+            ).points
 
-        # 4. Print results
-        print(f"\nQuestion: {QUERY}")
 
-        # Top 3 results
-        # for i, (score, chunk) in enumerate(scored[:3], 1):
-        #     print(f"  [{i}] {score:.3f}  {chunk['chunk_id']:<25s} {chunk['text'][:60]}...")
+            # --------------------------------------------------------
+            # Golden Set information
+            # --------------------------------------------------------
 
-        # # Top 5 results
-        for i, (score, chunk) in enumerate(scored[:5], 1):
-            print(f"  [{i}] {score:.3f}  {chunk['chunk_id']:<25s} {chunk['text'][:60]}...")
+            question_id = item["id"]
 
-        # # Top 7 results
-        # for i, (score, chunk) in enumerate(scored[:7], 1):
-        #     print(f"  [{i}] {score:.3f}  {chunk['chunk_id']:<25s} {chunk['text'][:60]}...")
 
-print(f"Embedded each questions and found cosine similarity with the embedded document chunks.")
+            # --------------------------------------------------------
+            # Print Top 5 retrieved chunks
+            # --------------------------------------------------------
+
+            for rank, hit in enumerate(results, 1):
+                payload = hit.payload
+
+                result_text = (
+                    f"\n[{rank}] "
+                    f"score={hit.score:.4f}\n"
+                    f"Chunk ID: {payload.get('chunk_id', '')}\n"
+                    f"Source: {payload.get('source', '')}\n"
+                    f"Text:\n{payload.get('text', '')}\n"
+                )
+
+                print(result_text)
+
+        else:
+                
+            # 2. Compare this question against ALL chunks
+            scored = [(pipeline.cosine(query_vector, c["vector"]), c) for c in all_chunks]
+
+            # 3. Sort highest cosine similarity first
+            scored.sort(key=lambda pair: pair[0], reverse=True)
+
+            # 4. Print results
+            print(f"\nQuestion: {QUERY}")
+
+            # Top 3 results
+            # for i, (score, chunk) in enumerate(scored[:3], 1):
+            #     print(f"  [{i}] {score:.3f}  {chunk['chunk_id']:<25s} {chunk['text'][:60]}...")
+
+            # # Top 5 results
+            for i, (score, chunk) in enumerate(scored[:top_k], 1):
+                print(f"  [{i}] {score:.3f}  {chunk['chunk_id']:<25s} {chunk['text'][:60]}...")
+
+            # # Top 7 results
+            # for i, (score, chunk) in enumerate(scored[:7], 1):
+            #     print(f"  [{i}] {score:.3f}  {chunk['chunk_id']:<25s} {chunk['text'][:60]}...")
+
+    print(f"Embedded each questions and found cosine similarity with the embedded document chunks.")
 
 
 
@@ -321,20 +343,36 @@ print(f"Embedded each questions and found cosine similarity with the embedded do
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Retrieve top K results
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
-        print("Qdrant collection already contains embedded chunks.so retrive from qdrant to give cosine similarity chunks")
-else:
-    # for item in golden_set:
-    #     QUERY = item["question"]
-    #     top3 = pipeline.retrieve(QUERY, all_chunks, k=3)
+if search_method == "DENSE_SEARCH":
+        
+    if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
+            print("Qdrant collection already contains embedded chunks.so retrive from qdrant to give cosine similarity chunks")
+    else:
+        # for item in golden_set:
+        #     QUERY = item["question"]
+        #     top3 = pipeline.retrieve(QUERY, all_chunks, k=3)
+
+        for item in golden_set:
+            QUERY = item["question"]
+            top3 = pipeline.retrieve(QUERY, all_chunks, k=top_k)
+
+        # for item in golden_set:
+        #     QUERY = item["question"]
+        #     top3 = pipeline.retrieve(QUERY, all_chunks, k=7)
+
+else: # BM25
 
     for item in golden_set:
         QUERY = item["question"]
-        top3 = pipeline.retrieve(QUERY, all_chunks, k=top_k)
+        hits = pipeline.bm25_search(QUERY,bm25,all_chunks,top_k)
+        print(f"\nQuestion: {QUERY}")
+    
+        for rank, hit in enumerate(hits, 1):
+            print(f"\nRank: {rank}")
+            print(f"BM25 Score: {hit['score']:.4f}")
+            print(f"Chunk ID: {hit['chunk_id']}")
+            print(f"Text: {hit['text'][:200]}")
 
-    # for item in golden_set:
-    #     QUERY = item["question"]
-    #     top3 = pipeline.retrieve(QUERY, all_chunks, k=7)
 
 
 
@@ -368,7 +406,14 @@ for k in [top_k]:  #for k in [3, 5, 7]:
             )
 
             # Run RAG for current question
-            result = pipeline.ask_rag(question,all_chunks,k=k, qdrant=qdrant,collection_name=qdrantCollection)
+            result = pipeline.ask_rag(
+                question,
+                all_chunks,
+                k=k,
+                qdrant=qdrant if search_method == "DENSE_SEARCH" else None,
+                collection_name=qdrantCollection if search_method == "DENSE_SEARCH" else None,
+                search_method=search_method,
+                bm25=bm25 if search_method == "BM25" else None)
 
             total_cost += result["cost_usd"]
             total_latency += result["latency_s"]
