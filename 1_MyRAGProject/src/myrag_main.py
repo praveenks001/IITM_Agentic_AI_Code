@@ -17,7 +17,7 @@ client = OpenAI()
 EMBED_MODEL = "text-embedding-3-large"  #"text-embedding-3-small"
 CHAT_MODEL  = "gpt-4o-mini"
 top_k=5
-search_method = "DENSE_SEARCH"   #BM25
+search_method = "BM25"   #  "DENSE_SEARCH"
 qdrant_type = "NORMAL"  #HNSW
 document_type = "txt" #PDF,DOCX,HTML,PDF_WITH_TABLE
 chunking_strategy = "Sliding_window_Chunking" #
@@ -36,7 +36,7 @@ print("Qdrant isss:::", qdrant)
 # Qdrant - Create collection to store the embedded chunks
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 if qdrant_type == "NORMAL":
-    qdrantCollection = pipeline.create_qdrant_collection(qdrant)  #Normal
+    qdrantCollection = pipeline.create_qdrant_collection(qdrant,search_method)  #Normal
 else:
     hnsw_config = HnswConfigDiff(
         m=16, #32 16 is enough
@@ -228,22 +228,27 @@ if search_method == "DENSE_SEARCH":
 
 
 else:
-    print("══ BM25 Tokenization checks ══")
+    # check if qdrant collection has already embedding else embed the chunks
+    if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
+        print("BM25 Qdrant collection already contains embedded chunks.so we can skip")
 
-    for chunk in all_chunks[:top_k]:
-        text = chunk["text"]
-        tokens = pipeline.simple_tokenize(text)
+    else:
+        print("══ BM25 Tokenization checks - Tokenize the chunks ══")
 
-        print(f"Chunk ID: {chunk['chunk_id']}")
-        print(f"Tokens: {tokens}\n")
+        for chunk in all_chunks[:top_k]:
+            text = chunk["text"]
+            tokens = pipeline.simple_tokenize(text)
+
+            print(f"Chunk ID: {chunk['chunk_id']}")
+            print(f"Tokens: {tokens}\n")
 
 
 
-    print("\n══ Building BM25 index ══")
+        print("\n══ Building BM25 index ══")
 
-    tokenized_corpus = [pipeline.simple_tokenize(d["text"])for d in all_chunks]
-    bm25 = BM25Okapi(tokenized_corpus)
-    print(f"Indexed {len(all_chunks)} chunks. Ready to query.")
+        tokenized_corpus = [pipeline.simple_tokenize(d["text"])for d in all_chunks]
+        bm25 = BM25Okapi(tokenized_corpus)
+        print(f"Indexed {len(all_chunks)} chunks. Ready to query.")
 
 
 
@@ -256,7 +261,10 @@ if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
     print("Qdrant collection already contains embedded chunks.so we can skip")
 
 else:
-    pipeline.upsert_embedded_chunks_into_qdrant(all_chunks, vectors,qdrantCollection, qdrant)
+    if search_method == "DENSE_SEARCH":
+        pipeline.upsert_embedded_chunks_into_qdrant(all_chunks, vectors,qdrantCollection, qdrant)
+    else:
+        pipeline.upsert_BM25_chunks_into_qdrant(all_chunks,qdrantCollection,qdrant)
 
 
 
@@ -361,17 +369,24 @@ if search_method == "DENSE_SEARCH":
         #     top3 = pipeline.retrieve(QUERY, all_chunks, k=7)
 
 else: # BM25
+    if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
+        for item in golden_set:
+            QUERY = item["question"]
 
-    for item in golden_set:
-        QUERY = item["question"]
-        hits = pipeline.bm25_search(QUERY,bm25,all_chunks,top_k)
-        print(f"\nQuestion: {QUERY}")
-    
-        for rank, hit in enumerate(hits, 1):
-            print(f"\nRank: {rank}")
-            print(f"BM25 Score: {hit['score']:.4f}")
-            print(f"Chunk ID: {hit['chunk_id']}")
-            print(f"Text: {hit['text'][:200]}")
+            hits = pipeline.retrieve_bm25_from_qdrant(QUERY,qdrant,qdrantCollection,top_k)
+
+    else  :
+                
+        for item in golden_set:
+            QUERY = item["question"]
+            hits = pipeline.bm25_search(QUERY,bm25,all_chunks,top_k)
+            print(f"\nQuestion: {QUERY}")
+        
+            for rank, hit in enumerate(hits, 1):
+                print(f"\nRank: {rank}")
+                print(f"BM25 Score: {hit['score']:.4f}")
+                print(f"Chunk ID: {hit['chunk_id']}")
+                print(f"Text: {hit['text'][:200]}")
 
 
 
@@ -390,6 +405,8 @@ for k in [top_k]:  #for k in [3, 5, 7]:
             OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks_with_qdrant_results.txt"
         else:
             OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks.txt"
+    else:
+        OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks_with_BM25_results.txt"
 
     total_cost = 0.0
     total_latency = 0.0
@@ -415,8 +432,8 @@ for k in [top_k]:  #for k in [3, 5, 7]:
                 question,
                 all_chunks,
                 k=k,
-                qdrant=qdrant if search_method == "DENSE_SEARCH" else None,
-                collection_name=qdrantCollection if search_method == "DENSE_SEARCH" else None,
+                qdrant=qdrant,
+                collection_name=qdrantCollection,
                 search_method=search_method,
                 bm25=bm25 if search_method == "BM25" else None)
 

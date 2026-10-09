@@ -9,11 +9,11 @@ from openai import OpenAI
 from pathlib import Path 
 from qdrant_client import QdrantClient
 from dotenv import load_dotenv
-from qdrant_client.models import Distance, VectorParams
-from qdrant_client.models import PointStruct
+from qdrant_client.models import Distance, VectorParams, PointStruct, SparseVector,SparseVectorParams, SparseIndexParams, Modifier
 from bs4 import BeautifulSoup
 from docx import Document
 from rank_bm25 import BM25Okapi
+from fastembed import SparseTextEmbedding
 
 
 assert os.environ.get("OPENAI_API_KEY"), "Set OPENAI_API_KEY before running this notebook"
@@ -22,7 +22,6 @@ _client = OpenAI()
 
 EMBED_MODEL = "text-embedding-3-large"  #"text-embedding-3-small"
 CHAT_MODEL  = "gpt-4o-mini"
-
 
 
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -56,40 +55,64 @@ def get_qdrant_client():
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Qdrant - Method to check the exsiting collection and create a new collection
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-def create_qdrant_collection(qdrant):
+def create_qdrant_collection(qdrant,search_method="DENSE_SEARCH"):
 
-    COLLECTION_NAME = "myrag_collection"
+    if search_method == "BM25":
+        COLLECTION_NAME = "myrag_collection_BM25"
+    else:
+        COLLECTION_NAME = "myrag_collection"
 
     existing = qdrant.get_collections()
     existing_names = [c.name for c in existing.collections]
 
     if COLLECTION_NAME in existing_names:
 
-        print(f"Collection {COLLECTION_NAME!r} already exists.")
+        print(f"Collection {COLLECTION_NAME!r} already exists, so no need to create new collection")
 
         info = qdrant.get_collection(COLLECTION_NAME)
 
-        print(f"  dim:      {info.config.params.vectors.size}")
-        print(f"  metric:   {info.config.params.vectors.distance}")
-        print(f"  points:   {info.points_count}")
+        if search_method == "DENSE_SEARCH":
+            print(f"Dimensions: {info.config.params.vectors.size}")
+            print(f"Distance: {info.config.params.vectors.distance}")
+            print(f"Points: {info.points_count}")
+
+        else:
+            sparse_config = info.config.params.sparse_vectors or {}
+            bm25_config = sparse_config.get("bm25")
+            print(f"Sparse vectors: {info.config.params.sparse_vectors}")
+            print(f"Points: {info.points_count}")
 
         return COLLECTION_NAME
-    
-    if EMBED_MODEL == "text-embedding-3-large":
-        size = 3072
-    else:
-        size = 1536
 
-    print(f"New Collection is going to create.")
-    qdrant.create_collection(
-        collection_name=COLLECTION_NAME,
-         vectors_config=VectorParams(size=size, distance=Distance.COSINE),         #For Large embedding model
-    )
+
+    if search_method == "BM25":
+
+        qdrant.create_collection(
+            collection_name=COLLECTION_NAME,
+            vectors_config={},
+            sparse_vectors_config={
+                "bm25": SparseVectorParams(
+                    index=SparseIndexParams(on_disk=False),
+                    modifier=Modifier.IDF
+                )
+            }
+        )
+
+    else:
+
+        if EMBED_MODEL == "text-embedding-3-large":
+            size = 3072
+        else:
+            size = 1536
+
+        print(f"New Collection is going to create.")
+        qdrant.create_collection(
+            collection_name=COLLECTION_NAME,
+            vectors_config=VectorParams(size=size, distance=Distance.COSINE),         #For Large embedding model
+        )
 
     info = qdrant.get_collection(COLLECTION_NAME)
     print(f"Created collection {COLLECTION_NAME!r}")
-    print(f"  dim:      {info.config.params.vectors.size}")
-    print(f"  metric:   {info.config.params.vectors.distance}")
     print(f"  points:   {info.points_count}")
     return COLLECTION_NAME
 
@@ -661,7 +684,7 @@ def build_index(chunks: list[dict], model: str = EMBED_MODEL) -> list[dict]:
 
 
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-# Method to upsert the embbeded chunks into Qdrant
+# Method to upsert the embbeded chunks into Qdrant - Dense Search
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 def upsert_embedded_chunks_into_qdrant(all_chunks, vectors,qdrantCollection,qdrant):
     points = [
@@ -717,6 +740,74 @@ def upsert_embedded_chunks_into_qdrant(all_chunks, vectors,qdrantCollection,qdra
     info = qdrant.get_collection(qdrantCollection)
     print(f"Upserted {len(points)} points.")
     print(f"Collection now has {info.points_count} points.")
+
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to upsert the embbeded chunks into Qdrant - Dense Search
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def upsert_BM25_chunks_into_qdrant(all_chunks,qdrantCollection,qdrant):
+    """
+    Generate BM25 sparse vectors and upload chunks into Qdrant.
+
+    Uses Qdrant FastEmbed integration.
+    """
+
+    model = SparseTextEmbedding(model_name="Qdrant/bm25")
+
+    documents = [chunk["text"] for chunk in all_chunks]
+
+    # Use the corpus average document length consistently.
+    # FastEmbed's BM25 encoder accepts avg_len as a model setting.
+    avg_len = sum(len(t.split()) for t in documents) / len(documents)
+
+    model = SparseTextEmbedding(
+        model_name="Qdrant/bm25",
+        avg_len=avg_len
+    )
+
+    BATCH_SIZE = 100
+
+    for start in range(0, len(all_chunks), BATCH_SIZE):
+
+        batch = all_chunks[start:start + BATCH_SIZE]
+        batch_vectors = list(
+            model.embed([c["text"] for c in batch])
+        )
+
+        points = []
+
+        for offset, (chunk, vec) in enumerate(zip(batch, batch_vectors)):
+
+            points.append(
+                PointStruct(
+                    id=start + offset + 1,
+                    vector={
+                        "bm25": SparseVector(
+                            indices=vec.indices.tolist(),
+                            values=vec.values.tolist()
+                        )
+                    },
+                    payload={
+                        "chunk_id": chunk["chunk_id"],
+                        "source_id": chunk["source_id"],
+                        "text": chunk["text"]
+                    }
+                )
+            )
+
+        qdrant.upsert(
+            collection_name=qdrantCollection,
+            points=points,
+            wait=True
+        )
+
+        print(
+            f"BM25 uploaded {start + len(batch)}/{len(all_chunks)}"
+        )
+
+    print("BM25 upsert completed.")
 
 
 
@@ -832,30 +923,40 @@ def ask_rag(question: str, index: list[dict], k: int = 3,
     start_time = time.perf_counter()
 
     #retrieved = retrieve(question, index, k=k, embed_model=embed_model)
+    if search_method == "BM25":
+        if (qdrant is not None and collection_name is not None and is_qdrant_collection_populated(qdrant, collection_name)):
+            retrieved = bm25_search(
+                question,
+                bm25,
+                index,
+                k=k
+            )
 
-    # If Qdrant contains embedded chunks, retrieve from Qdrant
-    if (qdrant is not None and collection_name is not None and is_qdrant_collection_populated(qdrant, collection_name)):
-        print(f"Retrieving Top {k} chunks from Qdrant...")
+    else:   
 
-        retrieved = retrieve_from_qdrant(
-            question,
-            qdrant,
-            collection_name,
-            k=k,
-            embed_model=embed_model
-        )
+        # If Qdrant contains embedded chunks, retrieve from Qdrant
+        if (qdrant is not None and collection_name is not None and is_qdrant_collection_populated(qdrant, collection_name)):
+            print(f"Retrieving Top {k} chunks from Qdrant...")
 
-    else:
+            retrieved = retrieve_from_qdrant(
+                question,
+                qdrant,
+                collection_name,
+                k=k,
+                embed_model=embed_model
+            )
 
-        # Existing non-Qdrant retrieval
-        print(f"Retrieving Top {k} chunks using local cosine similarity...")
+        else:
 
-        retrieved = retrieve(
-            question,
-            index,
-            k=k,
-            embed_model=embed_model
-        )
+            # Existing non-Qdrant retrieval
+            print(f"Retrieving Top {k} chunks using local cosine similarity...")
+
+            retrieved = retrieve(
+                question,
+                index,
+                k=k,
+                embed_model=embed_model
+            )
 
 
     system_msg, user_msg = build_prompt(question, retrieved, system=system)
@@ -967,3 +1068,37 @@ def bm25_search(query: str,bm25, all_chunks: list[dict], k: int = 3) -> list[dic
         })
 
     return retrieved
+
+
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to do retrieve BM25 search
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def retrieve_bm25_from_qdrant(query,qdrant,qdrantCollection,k=5):
+
+    model = SparseTextEmbedding(model_name="Qdrant/bm25")
+
+    query_vector = next(model.query_embed(query))
+
+    results = qdrant.query_points(
+        collection_name=qdrantCollection,
+        query=SparseVector(
+            indices=query_vector.indices.tolist(),
+            values=query_vector.values.tolist()
+        ),
+        using="bm25",
+        limit=k,
+        with_payload=True
+    ).points
+
+    return [
+        {
+            "chunk_id": hit.payload.get("chunk_id", ""),
+            "source_id": hit.payload.get("source_id", ""),
+            "text": hit.payload.get("text", ""),
+            "score": hit.score
+        }
+        for hit in results
+    ]
