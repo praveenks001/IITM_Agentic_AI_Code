@@ -1,0 +1,96 @@
+
+══ Dense vs BM25 side-by-side (Top-1) ══
+
+ID     Question                                      Dense Top-1                    BM25 Top-1                     Verdict             
+--------------------------------------------------------------------------------------------------------------------------------------------
+1      Where is the company located?                 General risk disclosure(1).txt Client agreement(1).txt        Different Source    
+2      Where is Chennai located?                     Account opening agreement 2(1) Client agreement(1).txt        Different Source    
+3      On what basis the clients are categorized as  Account opening agreement(1).t Account opening agreement 2(1) Different Source    
+4      Is my telephone call recorded?                Account opening agreement(1).t Account opening agreement(1).t Same Source         
+5      What are the limitations on withdrawals?      Client agreement(1).txt        Client agreement(1).txt        Same Source         
+6      What is a leverage and how can i change it?   Account opening agreement(1).t Account opening agreement(1).t Same Source         
+7      Will my account be archived any time?         Account opening agreement(1).t Account opening agreement(1).t Same Source         
+8      What is the contact support details?          Shield 500.txt                 Shield 500.txt                 Same Source         
+9      How do i test the trading in HFM?             Client agreement(1).txt        Client agreement(1).txt        Same Source         
+10     What is the company's official website?       Account opening agreement(1).t Client agreement(1).txt        Different Source    
+11     I am following a strategy account now, am i e Copy trading TC(1).txt         Copy trading TC(1).txt         Same Source         
+12     Who is the CEO of HFM?                        Client agreement(1).txt        Client agreement(1).txt        Same Source         
+13     Can i view the trades taken by other broker a Copy trading TC(1).txt         Client agreement(1).txt        Different Source    
+14     What are the advantage points for a trader to Client agreement(1).txt        Trading and Execution .txt     Different Source    
+15     What level of AI tools i can use in HFM? Give Client agreement(1).txt        Terms of Business Glossary.txt Different Source    
+16     What does Hyperactive trading means and as a  Client agreement(1).txt        Client agreement(1).txt        Same Source         
+17     If my withdrawal is not received , what shoul Account opening agreement(1).t Account opening agreement 2(1) Different Source    
+18     What is the legal name of the company referre Shield 500.txt                 Complaint handling(1).txt      Different Source    
+19     In which jurisdiction is HF Markets (SV) Ltd  Cookie policy (1).txt          General risk disclosure(1).txt Different Source    
+20     What is the registration number of HF Markets Shield 500.txt                 Terms of Business .txt         Different Source    
+21     What are cookies according to the HFM Cookie  Cookie policy (1).txt          Cookie policy (1).txt          Same Source         
+22     What are the four types of cookies used by HF Cookie policy (1).txt          Cookie policy (1).txt          Same Source         
+23     Do Necessary cookies require user consent?    Cookie policy (1).txt          Cookie policy (1).txt          Same Source         
+24     What is the purpose of Analytical cookies?    Cookie policy (1).txt          Cookie policy (1).txt          Same Source         
+25     What may happen if I block cookies on the HFM Cookie policy (1).txt          Cookie policy (1).txt          Same Source         
+26     Does HFM guarantee that the money I deposit f Account opening agreement(1).t General risk disclosure(1).txt Different Source    
+27     What should I do if I do not understand the r General risk disclosure(1).txt General risk disclosure(1).txt Same Source         
+28     How does high leverage affect trading risk?   Risk disclaimer (1).txt        Client agreement(1).txt        Different Source    
+29     Who acts as the execution venue for HFM clien Order exection policy(1).txt   Order exection policy(1).txt   Same Source         
+30     Are CFD transactions with HFM executed on a r Risk with CFDS.txt             Terms of Business .txt         Different Source    
+31     What is the difference between the BID and AS Order exection policy(1).txt   Client agreement(1).txt        Different Source    
+32     At which price are Buy Limit and Buy Stop ord Order exection policy(1).txt   Order exection policy(1).txt   Same Source         
+33     At which price are Sell Limit and Sell Stop o Order exection policy(1).txt   Order exection policy(1).txt   Same Source         
+34     What is the minimum available tradable lot si Order exection policy(1).txt   Order exection policy(1).txt   Same Source         
+35     Does placing a Stop Loss always guarantee tha Risk with CFDS 2.txt           Account opening agreement(1).t Different Source    
+36     Does HFM allow trading using Expert Advisors? Trading and Execution .txt     Trading and Execution .txt     Same Source         
+37     Who is responsible for ensuring that an Exper Trading and Execution .txt     Trading and Execution .txt     Same Source         
+38     Where should I send a formal complaint to HFM Complaint handling(1).txt      Client agreement(1).txt        Different Source    
+39     Within how many working days should HFM provi Complaint handling(1).txt      Complaint handling(1).txt      Same Source         
+40     Within how many business days should HFM norm Complaint handling(1).txt      Complaint handling(1).txt      Same Source         
+41     If a complaint needs further investigation, w Complaint handling(1).txt      Complaint handling(1).txt      Same Source         
+42     For how long does HFM keep records in its com Complaint handling(1).txt      Complaint handling(1).txt      Same Source         
+43     How often is the Conflicts of Interest Policy Conflicts of interest policy ( Conflicts of interest policy ( Same Source         
+44     Who makes the final decision when HFM's inter Conflicts of interest policy ( Conflicts of interest policy ( Same Source         
+45     What is the maximum return or loss coverage a Shield 500.txt                 Shield 500.txt                 Same Source         
+46     How many Shield 500 accounts can one client h Shield 500.txt                 Shield 500.txt                 Same Source         
+47     What is the standard leverage on a Shield 500 Shield 500.txt                 Shield 500.txt                 Same Source         
+48     What happens to Shield 500 leverage during ne Risk with CFDS.txt             Shield 500.txt                 Different Source    
+49     What is the maximum Performance Fee a Copy Tr Copy trading TC(1).txt         Copy trading TC(1).txt         Same Source         
+50     What is the maximum Rescue Level a Copy Tradi Copy trading TC(1).txt         Copy trading TC(1).txt         Same Source         
+51     Who is the current CEO of HF Markets?         Account opening agreement 2(1) Account opening agreement(1).t Different Source    
+52     Who is the current CFO of HF Markets?         Client agreement(1).txt        Account opening agreement(1).t Different Source    
+53     What is the annual salary of the CEO of HF Ma Client agreement(1).txt        Conflicts of interest policy ( Different Source    
+54     I submitted a complaint with my name, account Complaint handling(1).txt      Complaint handling(1).txt      Same Source         
+55     I filed a complaint but did not respond to an Complaint handling(1).txt      Complaint handling(1).txt      Same Source         
+56     Can my lawyer lodge a complaint with HFM on m Complaint handling(1).txt      Complaint handling(1).txt      Same Source         
+57     My Stop Loss was set at a specific price, but Risk with CFDS 2.txt           Terms of Business Glossary.txt Different Source    
+58     If I give HFM a specific instruction for exec Order exection policy(1).txt   Order exection policy(1).txt   Same Source         
+59     During an economic news release, the spread s Trading and Execution .txt     General risk disclosure(1).txt Different Source    
+60     My internet connection became unstable and my Trading and Execution .txt     Trading and Execution .txt     Same Source         
+61     After the 25th day of Shield 500, I withdraw  Shield 500.txt                 Shield 500.txt                 Same Source         
+62     Can I withdraw the Shield 500 bonus itself as Shield 500.txt                 Shield 500.txt                 Same Source         
+63     A Copy Trading follower has 400 USD equity, t Copy trading TC(1).txt         Copy trading TC(1).txt         Same Source         
+64     If the Copy Ratio is 0.08 and the Strategy Pr Copy trading TC(1).txt         Copy trading TC(1).txt         Same Source         
+65     Can I manually open my own additional trades  Copy trading TC(1).txt         Copy trading TC(1).txt         Same Source         
+66     Can one Copy Trading Follower Account follow  Copy trading TC(1).txt         Copy trading TC(1).txt         Same Source         
+67     I used a Stop Loss, so is it impossible for m Risk with CFDS 2.txt           General risk disclosure(1).txt Different Source    
+68     What was HF Markets' total global revenue in  Client agreement(1).txt        Terms of Business .txt         Different Source    
+69     A Strategy Provider has 5000 USD equity. A fo Copy trading TC(1).txt         Copy trading TC(1).txt         Same Source         
+70     A Copy Trading follower has 1000 USD in profi Copy trading TC(1).txt         Copy trading TC(1).txt         Same Source         
+71     A follower has 1000 USD in profits and 1200 U Copy trading TC(1).txt         Copy trading TC(1).txt         Same Source         
+72     A Strategy Provider already has three open tr Copy trading TC(1).txt         Copy trading TC(1).txt         Same Source         
+73     The Strategy Provider eventually closed a tra Copy trading TC(1).txt         Copy trading TC(1).txt         Same Source         
+74     A Strategy Provider opened a trade during a s Copy trading TC(1).txt         Copy trading TC(1).txt         Same Source         
+75     I deposit 1000 USD into a Copy Trading accoun Copy trading TC(1).txt         Copy trading TC(1).txt         Same Source         
+76     I use an Expert Advisor during a major news e Order exection policy(1).txt   Trading and Execution .txt     Different Source    
+77     The CEO personally approved my complaint and  Complaint handling(1).txt      Client agreement(1).txt        Different Source    
+
+=================================================================
+DENSE vs BM25 TOP-1 COMPARISON SUMMARY
+=================================================================
+Total Questions     : 77
+Evaluated Questions : 0
+Both Correct        : 0
+Dense Only          : 0
+BM25 Only           : 0
+Both Wrong          : 0
+Same Source         : 50
+Different Source    : 27
+Missing Result      : 0
+Accuracy unavailable: Golden Set lacks expected_source_id.

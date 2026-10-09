@@ -21,7 +21,8 @@ search_method = "BM25"   #  "DENSE_SEARCH"
 qdrant_type = "NORMAL"  #HNSW
 document_type = "txt" #PDF,DOCX,HTML,PDF_WITH_TABLE
 chunking_strategy = "Sliding_window_Chunking" #
-
+compare_search_methods = True  # Requires both Qdrant collections to be indexed
+bm25 = None
 
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Load Qdrant 
@@ -250,6 +251,336 @@ else:
         bm25 = BM25Okapi(tokenized_corpus)
         print(f"Indexed {len(all_chunks)} chunks. Ready to query.")
 
+
+
+    
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Dense vs BM25 Top-1 comparison (after Qdrant upsert)
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+if compare_search_methods:
+
+    DENSE_COLLECTION = "myrag_collection"
+    BM25_COLLECTION = "myrag_collection_BM25"
+
+    # --------------------------------------------------------
+    # 1. Configure output files
+    # --------------------------------------------------------
+
+    DATA_DIR = Path("./docs/runs")
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+    comparison_txt_file = (
+        DATA_DIR / "08_dense_vs_bm25_comparison.txt"
+    )
+
+    comparison_json_file = (
+        DATA_DIR / "08_dense_vs_bm25_comparison.json"
+    )
+
+    comparison_output_lines = []
+
+    # Print to console and collect text for output file
+    def log_comparison(message=""):
+        message = str(message)
+        print(message)
+        comparison_output_lines.append(message)
+
+    # --------------------------------------------------------
+    # 2. Verify both Qdrant collections
+    # --------------------------------------------------------
+
+    for collection in (DENSE_COLLECTION, BM25_COLLECTION):
+
+        if not qdrant.collection_exists(collection):
+            raise RuntimeError(
+                f"Collection {collection!r} is missing. "
+                "Run DENSE_SEARCH and BM25 indexing separately first."
+            )
+
+        if not pipeline.is_qdrant_collection_populated(
+            qdrant, collection
+        ):
+            raise RuntimeError(
+                f"Collection {collection!r} is empty."
+            )
+
+    # --------------------------------------------------------
+    # 3. Initialize comparison counters
+    # --------------------------------------------------------
+
+    retrieval_comparison_results = []
+
+    counts = {
+        "Both Correct": 0,
+        "Dense Only": 0,
+        "BM25 Only": 0,
+        "Both Wrong": 0,
+        "Same Source": 0,
+        "Different Source": 0,
+        "Missing Result": 0
+    }
+
+    # --------------------------------------------------------
+    # 4. Print comparison table header
+    # --------------------------------------------------------
+
+    log_comparison(
+        "\n══ Dense vs BM25 side-by-side (Top-1) ══\n"
+    )
+
+    log_comparison(
+        f"{'ID':<6} "
+        f"{'Question':<45} "
+        f"{'Dense Top-1':<30} "
+        f"{'BM25 Top-1':<30} "
+        f"{'Verdict':<20}"
+    )
+
+    log_comparison("-" * 140)
+
+    # --------------------------------------------------------
+    # 5. Compare all Golden Set questions
+    # --------------------------------------------------------
+
+    for item in golden_set:
+
+        question_id = item["id"]
+        question = item["question"]
+
+        # Dense Top-1 retrieval
+        dense_hits = pipeline.retrieve_from_qdrant(
+            question,
+            qdrant,
+            DENSE_COLLECTION,
+            k=1
+        )
+
+        # BM25 Top-1 retrieval
+        bm25_hits = pipeline.retrieve_bm25_from_qdrant(
+            question,
+            qdrant,
+            BM25_COLLECTION,
+            k=1
+        )
+
+        dense_top = dense_hits[0] if dense_hits else {}
+        bm25_top = bm25_hits[0] if bm25_hits else {}
+
+        dense_id = str(
+            dense_top.get("source_id") or "N/A"
+        )
+
+        bm25_id = str(
+            bm25_top.get("source_id") or "N/A"
+        )
+
+        dense_chunk_id = str(
+            dense_top.get("chunk_id") or ""
+        )
+
+        bm25_chunk_id = str(
+            bm25_top.get("chunk_id") or ""
+        )
+
+        # ----------------------------------------------------
+        # 6. Compare retrieved sources
+        # ----------------------------------------------------
+
+        expected_id = item.get("expected_source_id")
+
+        if expected_id is None:
+
+            dense_ok = None
+            bm25_ok = None
+
+            if not dense_hits or not bm25_hits:
+                verdict = "Missing Result"
+
+            elif dense_id == bm25_id:
+                verdict = "Same Source"
+
+            else:
+                verdict = "Different Source"
+
+        else:
+
+            dense_ok = (
+                bool(dense_hits)
+                and dense_id == str(expected_id)
+            )
+
+            bm25_ok = (
+                bool(bm25_hits)
+                and bm25_id == str(expected_id)
+            )
+
+            if dense_ok and bm25_ok:
+                verdict = "Both Correct"
+
+            elif dense_ok:
+                verdict = "Dense Only"
+
+            elif bm25_ok:
+                verdict = "BM25 Only"
+
+            else:
+                verdict = "Both Wrong"
+
+        counts[verdict] += 1
+
+        # ----------------------------------------------------
+        # 7. Store detailed comparison results
+        # ----------------------------------------------------
+
+        retrieval_comparison_results.append({
+
+            "question_id": question_id,
+            "question": question,
+            "expected_source_id": expected_id,
+
+            "dense_source": dense_id,
+            "dense_chunk_id": dense_chunk_id,
+            "dense_score": dense_top.get("score"),
+            "dense_text": dense_top.get("text", ""),
+
+            "bm25_source": bm25_id,
+            "bm25_chunk_id": bm25_chunk_id,
+            "bm25_score": bm25_top.get("score"),
+            "bm25_text": bm25_top.get("text", ""),
+
+            "same_source": (
+                bool(dense_hits)
+                and bool(bm25_hits)
+                and dense_id == bm25_id
+            ),
+
+            "same_chunk": (
+                bool(dense_hits)
+                and bool(bm25_hits)
+                and bool(dense_chunk_id)
+                and bool(bm25_chunk_id)
+                and dense_chunk_id == bm25_chunk_id
+            ),
+
+            "verdict": verdict
+
+        })
+
+        # ----------------------------------------------------
+        # 8. Print and collect comparison row
+        # ----------------------------------------------------
+
+        log_comparison(
+            f"{str(question_id):<6} "
+            f"{question[:45]:<45} "
+            f"{dense_id[:30]:<30} "
+            f"{bm25_id[:30]:<30} "
+            f"{verdict:<20}"
+        )
+
+    # --------------------------------------------------------
+    # 9. Calculate summary
+    # --------------------------------------------------------
+
+    total = len(golden_set)
+
+    evaluated = (
+        counts["Both Correct"]
+        + counts["Dense Only"]
+        + counts["BM25 Only"]
+        + counts["Both Wrong"]
+    )
+
+    log_comparison("\n" + "=" * 65)
+    log_comparison("DENSE vs BM25 TOP-1 COMPARISON SUMMARY")
+    log_comparison("=" * 65)
+
+    log_comparison(f"Total Questions     : {total}")
+    log_comparison(f"Evaluated Questions : {evaluated}")
+
+    for verdict, count in counts.items():
+        log_comparison(f"{verdict:<20}: {count}")
+
+    # --------------------------------------------------------
+    # 10. Calculate accuracy when expected IDs exist
+    # --------------------------------------------------------
+
+    if evaluated > 0:
+
+        dense_correct = (
+            counts["Both Correct"]
+            + counts["Dense Only"]
+        )
+
+        bm25_correct = (
+            counts["Both Correct"]
+            + counts["BM25 Only"]
+        )
+
+        dense_accuracy = (
+            dense_correct / evaluated * 100
+        )
+
+        bm25_accuracy = (
+            bm25_correct / evaluated * 100
+        )
+
+        log_comparison(
+            f"Dense Top-1 Accuracy: {dense_accuracy:.2f}%"
+        )
+
+        log_comparison(
+            f"BM25 Top-1 Accuracy : {bm25_accuracy:.2f}%"
+        )
+
+    else:
+
+        log_comparison(
+            "Accuracy unavailable: "
+            "Golden Set lacks expected_source_id."
+        )
+
+    # --------------------------------------------------------
+    # 11. Save comparison to TXT
+    # --------------------------------------------------------
+
+    with open(
+        comparison_txt_file,
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        f.write(
+            "\n".join(comparison_output_lines) + "\n"
+        )
+
+    # --------------------------------------------------------
+    # 12. Save detailed comparison to JSON
+    # --------------------------------------------------------
+
+    with open(
+        comparison_json_file,
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        json.dump(
+            retrieval_comparison_results,
+            f,
+            indent=4,
+            ensure_ascii=False
+        )
+
+    print("\nComparison completed successfully.")
+
+    print(
+        f"TXT output saved to: {comparison_txt_file}"
+    )
+
+    print(
+        f"JSON output saved to: {comparison_json_file}"
+    )
 
 
 
