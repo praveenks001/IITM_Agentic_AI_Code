@@ -922,8 +922,19 @@ def ask_rag(question: str, index: list[dict], k: int = 3,
     # Start timer
     start_time = time.perf_counter()
 
-    #retrieved = retrieve(question, index, k=k, embed_model=embed_model)
-    if search_method == "BM25":
+    if search_method == "HYBRID_RRF":
+
+        retrieved = retrieve_hybrid_from_qdrant(
+            question=question,
+            qdrant=qdrant,
+            dense_collection="myrag_collection",
+            bm25_collection="myrag_collection_BM25",
+            top_k=k,
+            candidate_k=max(10, k),
+            rrf_k=60
+        )
+
+    elif search_method == "BM25":
         if (qdrant is not None and collection_name is not None and is_qdrant_collection_populated(qdrant, collection_name)):
             retrieved = bm25_search(
                 question,
@@ -1102,3 +1113,72 @@ def retrieve_bm25_from_qdrant(query,qdrant,qdrantCollection,k=5):
         }
         for hit in results
     ]
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to do retrieve RRFranked list
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def rrf_fuse(ranked_lists: list[list[dict]], k: int = 60, top_n: int = 5) -> list[dict]:
+    """Fuse multiple ranked lists via Reciprocal Rank Fusion.
+    
+    Each entry in ranked_lists is a list of dicts with an 'id' key.
+    Returns the top-N fused results (with 'rrf_score' added).
+    """
+    scores = {}
+    docs   = {}
+    for ranked in ranked_lists:
+        for rank, hit in enumerate(ranked, start=1):
+            doc_id = hit["id"]
+            scores[doc_id] = scores.get(doc_id, 0.0) + 1.0 / (k + rank)
+            if doc_id not in docs:
+                docs[doc_id] = hit
+    
+    fused = sorted(scores.items(), key=lambda p: p[1], reverse=True)[:top_n]
+    return [{**docs[doc_id], "rrf_score": score} for doc_id, score in fused]
+
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to do retrieve RRFranked list
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+def retrieve_hybrid_from_qdrant(question,qdrant,
+    dense_collection="myrag_collection",
+    bm25_collection="myrag_collection_BM25",top_k=5,candidate_k=10,rrf_k=60):
+    """
+    Hybrid retrieval:
+    1. Dense Search
+    2. BM25 Search
+    3. RRF Fusion
+    4. Return Top-K fused chunks
+    """
+
+    # Dense retrieval
+    dense_results = retrieve_from_qdrant(
+        question,
+        qdrant,
+        dense_collection,
+        k=candidate_k
+    )
+
+    # BM25 retrieval
+    bm25_results = retrieve_bm25_from_qdrant(
+        question,
+        qdrant,
+        bm25_collection,
+        k=candidate_k
+    )
+
+    # RRF fusion
+    fused_results = rrf_fuse(
+        ranked_lists=[
+            dense_results,
+            bm25_results
+        ],
+        k=rrf_k,
+        top_n=top_k
+    )
+
+    return fused_results

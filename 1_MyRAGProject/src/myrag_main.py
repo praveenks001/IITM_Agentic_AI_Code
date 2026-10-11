@@ -17,7 +17,7 @@ client = OpenAI()
 EMBED_MODEL = "text-embedding-3-large"  #"text-embedding-3-small"
 CHAT_MODEL  = "gpt-4o-mini"
 top_k=5
-search_method = "BM25"   #  "DENSE_SEARCH"
+search_method = "HYBRID_RRF"   #  DENSE_SEARCH # BM25 # HYBRID_RRF
 qdrant_type = "NORMAL"  #HNSW
 document_type = "txt" #PDF,DOCX,HTML,PDF_WITH_TABLE
 chunking_strategy = "Sliding_window_Chunking" #
@@ -37,7 +37,12 @@ print("Qdrant isss:::", qdrant)
 # Qdrant - Create collection to store the embedded chunks
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 if qdrant_type == "NORMAL":
-    qdrantCollection = pipeline.create_qdrant_collection(qdrant,search_method)  #Normal
+    if search_method == "HYBRID_RRF": 
+        qdrantCollection_dense = pipeline.create_qdrant_collection(qdrant,"DENSE_SEARCH")  #Normal
+        qdrantCollection_bm25 = pipeline.create_qdrant_collection(qdrant,"BM25")  #Normal
+    else:
+        qdrantCollection = pipeline.create_qdrant_collection(qdrant,search_method)  #Normal
+
 else:
     hnsw_config = HnswConfigDiff(
         m=16, #32 16 is enough
@@ -203,9 +208,11 @@ print(f"  ... and {len(all_chunks) - 8} more chunks")
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Embedding the chunks
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+if search_method in ("DENSE_SEARCH", "HYBRID_RRF"):
 
-if search_method == "DENSE_SEARCH":
-
+    if search_method == HYBRID_RRF:
+        qdrantCollection = qdrantCollection_dense
+    
     # check if qdrant collection has already embedding else embed the chunks
     if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
         print("Qdrant collection already contains embedded chunks.so we can skip")
@@ -228,7 +235,11 @@ if search_method == "DENSE_SEARCH":
         print(f"  {vectors[1][:8]}")
 
 
-else:
+if search_method in ("BM25", "HYBRID_RRF"):
+
+    if search_method == HYBRID_RRF:
+        qdrantCollection = qdrantCollection_bm25
+
     # check if qdrant collection has already embedding else embed the chunks
     if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
         print("BM25 Qdrant collection already contains embedded chunks.so we can skip")
@@ -588,6 +599,8 @@ if compare_search_methods:
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Qdrant - Upsert the embedded chunks into Qdrant
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+if search_method != "HYBRID_RRF":
+
 if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
     print("Qdrant collection already contains embedded chunks.so we can skip")
 
