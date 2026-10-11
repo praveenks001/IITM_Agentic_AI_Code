@@ -1129,7 +1129,7 @@ def rrf_fuse(ranked_lists: list[list[dict]], k: int = 60, top_n: int = 5) -> lis
     docs   = {}
     for ranked in ranked_lists:
         for rank, hit in enumerate(ranked, start=1):
-            doc_id = hit["id"]
+            doc_id = hit["chunk_id"]
             scores[doc_id] = scores.get(doc_id, 0.0) + 1.0 / (k + rank)
             if doc_id not in docs:
                 docs[doc_id] = hit

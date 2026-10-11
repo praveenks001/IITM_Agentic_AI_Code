@@ -210,7 +210,7 @@ print(f"  ... and {len(all_chunks) - 8} more chunks")
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 if search_method in ("DENSE_SEARCH", "HYBRID_RRF"):
 
-    if search_method == HYBRID_RRF:
+    if search_method == "HYBRID_RRF":
         qdrantCollection = qdrantCollection_dense
     
     # check if qdrant collection has already embedding else embed the chunks
@@ -237,7 +237,7 @@ if search_method in ("DENSE_SEARCH", "HYBRID_RRF"):
 
 if search_method in ("BM25", "HYBRID_RRF"):
 
-    if search_method == HYBRID_RRF:
+    if search_method == "HYBRID_RRF":
         qdrantCollection = qdrantCollection_bm25
 
     # check if qdrant collection has already embedding else embed the chunks
@@ -264,6 +264,37 @@ if search_method in ("BM25", "HYBRID_RRF"):
 
 
 
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Qdrant - Upsert the embedded chunks into Qdrant
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+if search_method != "HYBRID_RRF":
+    if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
+        print("Qdrant collection already contains embedded chunks. Skipping upsert.")
+
+    else:
+        if search_method == "DENSE_SEARCH":
+            pipeline.upsert_embedded_chunks_into_qdrant(all_chunks, vectors, qdrantCollection, qdrant)
+        else:
+            pipeline.upsert_BM25_chunks_into_qdrant(all_chunks, qdrantCollection, qdrant)
+
+else:
+    if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection_dense):
+        print("Qdrant collection already contains embedded chunks. Skipping upsert.")
+
+    else:
+        pipeline.upsert_embedded_chunks_into_qdrant(all_chunks, vectors, qdrantCollection_dense, qdrant)
+
+    if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection_bm25):
+        print("Qdrant collection already contains embedded chunks. Skipping upsert.")
+
+    else:
+        pipeline.upsert_BM25_chunks_into_qdrant(all_chunks, qdrantCollection_bm25, qdrant)
+
+
+
+
+
     
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Dense vs BM25 Top-1 comparison (after Qdrant upsert)
@@ -271,8 +302,8 @@ if search_method in ("BM25", "HYBRID_RRF"):
 
 if compare_search_methods:
 
-    DENSE_COLLECTION = "myrag_collection"
-    BM25_COLLECTION = "myrag_collection_BM25"
+    DENSE_COLLECTION = qdrantCollection_dense
+    BM25_COLLECTION = qdrantCollection_bm25
 
     # --------------------------------------------------------
     # 1. Configure output files
@@ -596,27 +627,11 @@ if compare_search_methods:
 
 
 
-#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-# Qdrant - Upsert the embedded chunks into Qdrant
-#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-if search_method != "HYBRID_RRF":
-
-if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
-    print("Qdrant collection already contains embedded chunks.so we can skip")
-
-else:
-    if search_method == "DENSE_SEARCH":
-        pipeline.upsert_embedded_chunks_into_qdrant(all_chunks, vectors,qdrantCollection, qdrant)
-    else:
-        pipeline.upsert_BM25_chunks_into_qdrant(all_chunks,qdrantCollection,qdrant)
-
-
-
 
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Embed each questions and find cosine similarity with the embedded document chunks
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-if search_method == "DENSE_SEARCH":
+if search_method in ("DENSE_SEARCH", "HYBRID_RRF"):
 
     for item in golden_set:
 
@@ -624,6 +639,9 @@ if search_method == "DENSE_SEARCH":
 
         # 1. Embed this question
         query_vector = pipeline.embed_batch([QUERY])[0]
+
+        if search_method == "HYBRID_RRF":
+            qdrantCollection = qdrantCollection_dense
 
         if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
             print("Qdrant collection already contains embedded chunks.so retrive from qdrant to give cosine similarity chunks")
@@ -711,6 +729,7 @@ if search_method == "DENSE_SEARCH":
         # for item in golden_set:
         #     QUERY = item["question"]
         #     top3 = pipeline.retrieve(QUERY, all_chunks, k=7)
+
 
 else: # BM25
     if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
