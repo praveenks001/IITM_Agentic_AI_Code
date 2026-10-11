@@ -300,7 +300,7 @@ else:
 # Dense vs BM25 Top-1 comparison (after Qdrant upsert)
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-if compare_search_methods:
+if compare_search_methods and search_method == "HYBRID_RRF":
 
     DENSE_COLLECTION = qdrantCollection_dense
     BM25_COLLECTION = qdrantCollection_bm25
@@ -322,7 +322,6 @@ if compare_search_methods:
 
     comparison_output_lines = []
 
-    # Print to console and collect text for output file
     def log_comparison(message=""):
         message = str(message)
         print(message)
@@ -337,7 +336,7 @@ if compare_search_methods:
         if not qdrant.collection_exists(collection):
             raise RuntimeError(
                 f"Collection {collection!r} is missing. "
-                "Run DENSE_SEARCH and BM25 indexing separately first."
+                "Create and index both collections first."
             )
 
         if not pipeline.is_qdrant_collection_populated(
@@ -363,23 +362,28 @@ if compare_search_methods:
         "Missing Result": 0
     }
 
+    total_common_chunks = 0
+    total_overlap_percentage = 0.0
+
     # --------------------------------------------------------
     # 4. Print comparison table header
     # --------------------------------------------------------
 
     log_comparison(
-        "\n══ Dense vs BM25 side-by-side (Top-1) ══\n"
+        f"\n══ Dense vs BM25 side-by-side (Top-{top_k}) ══\n"
     )
 
     log_comparison(
         f"{'ID':<6} "
         f"{'Question':<45} "
-        f"{'Dense Top-1':<30} "
-        f"{'BM25 Top-1':<30} "
+        f"{'Dense Hits':<12} "
+        f"{'BM25 Hits':<12} "
+        f"{'Common':<10} "
+        f"{'Overlap':<10} "
         f"{'Verdict':<20}"
     )
 
-    log_comparison("-" * 140)
+    log_comparison("-" * 125)
 
     # --------------------------------------------------------
     # 5. Compare all Golden Set questions
@@ -390,43 +394,70 @@ if compare_search_methods:
         question_id = item["id"]
         question = item["question"]
 
-        # Dense Top-1 retrieval
+        # Dense Top-K retrieval
         dense_hits = pipeline.retrieve_from_qdrant(
             question,
             qdrant,
             DENSE_COLLECTION,
-            k=1
+            k=top_k
         )
 
-        # BM25 Top-1 retrieval
+        # BM25 Top-K retrieval
         bm25_hits = pipeline.retrieve_bm25_from_qdrant(
             question,
             qdrant,
             BM25_COLLECTION,
-            k=1
-        )
-
-        dense_top = dense_hits[0] if dense_hits else {}
-        bm25_top = bm25_hits[0] if bm25_hits else {}
-
-        dense_id = str(
-            dense_top.get("source_id") or "N/A"
-        )
-
-        bm25_id = str(
-            bm25_top.get("source_id") or "N/A"
-        )
-
-        dense_chunk_id = str(
-            dense_top.get("chunk_id") or ""
-        )
-
-        bm25_chunk_id = str(
-            bm25_top.get("chunk_id") or ""
+            k=top_k
         )
 
         # ----------------------------------------------------
-        # 6. Compare retrieved sources
+        # 6. Extract Top-K chunk IDs and sources
+        # ----------------------------------------------------
+
+        dense_chunk_ids = [
+            str(hit["chunk_id"])
+            for hit in dense_hits
+        ]
+
+        bm25_chunk_ids = [
+            str(hit["chunk_id"])
+            for hit in bm25_hits
+        ]
+
+        dense_sources = [
+            str(hit.get("source_id") or "")
+            for hit in dense_hits
+        ]
+
+        bm25_sources = [
+            str(hit.get("source_id") or "")
+            for hit in bm25_hits
+        ]
+
+        # Find common chunks
+        common_chunks = (
+            set(dense_chunk_ids) &
+            set(bm25_chunk_ids)
+        )
+
+        # Find common sources
+        common_sources = (
+            set(dense_sources) &
+            set(bm25_sources)
+        )
+
+        common_sources.discard("")
+
+        # Calculate Overlap@K
+        overlap_percentage = (
+            len(common_chunks) / top_k * 100
+        )
+
+        total_common_chunks += len(common_chunks)
+        total_overlap_percentage += overlap_percentage
+
+        # ----------------------------------------------------
+        # 7. Compare retrieved sources against Golden Set
         # ----------------------------------------------------
 
         expected_id = item.get("expected_source_id")
@@ -439,7 +470,7 @@ if compare_search_methods:
             if not dense_hits or not bm25_hits:
                 verdict = "Missing Result"
 
-            elif dense_id == bm25_id:
+            elif common_sources:
                 verdict = "Same Source"
 
             else:
@@ -447,15 +478,10 @@ if compare_search_methods:
 
         else:
 
-            dense_ok = (
-                bool(dense_hits)
-                and dense_id == str(expected_id)
-            )
+            expected_source = str(expected_id)
 
-            bm25_ok = (
-                bool(bm25_hits)
-                and bm25_id == str(expected_id)
-            )
+            dense_ok = expected_source in dense_sources
+            bm25_ok = expected_source in bm25_sources
 
             if dense_ok and bm25_ok:
                 verdict = "Both Correct"
@@ -472,7 +498,7 @@ if compare_search_methods:
         counts[verdict] += 1
 
         # ----------------------------------------------------
-        # 7. Store detailed comparison results
+        # 8. Store detailed Top-K results
         # ----------------------------------------------------
 
         retrieval_comparison_results.append({
@@ -481,48 +507,106 @@ if compare_search_methods:
             "question": question,
             "expected_source_id": expected_id,
 
-            "dense_source": dense_id,
-            "dense_chunk_id": dense_chunk_id,
-            "dense_score": dense_top.get("score"),
-            "dense_text": dense_top.get("text", ""),
+            "dense_top_k": [
+                {
+                    "rank": rank,
+                    "chunk_id": hit.get("chunk_id"),
+                    "source_id": hit.get("source_id"),
+                    "score": hit.get("score"),
+                    "text": hit.get("text", "")
+                }
+                for rank, hit in enumerate(dense_hits, 1)
+            ],
 
-            "bm25_source": bm25_id,
-            "bm25_chunk_id": bm25_chunk_id,
-            "bm25_score": bm25_top.get("score"),
-            "bm25_text": bm25_top.get("text", ""),
+            "bm25_top_k": [
+                {
+                    "rank": rank,
+                    "chunk_id": hit.get("chunk_id"),
+                    "source_id": hit.get("source_id"),
+                    "score": hit.get("score"),
+                    "text": hit.get("text", "")
+                }
+                for rank, hit in enumerate(bm25_hits, 1)
+            ],
 
-            "same_source": (
-                bool(dense_hits)
-                and bool(bm25_hits)
-                and dense_id == bm25_id
-            ),
+            "dense_chunk_ids": dense_chunk_ids,
+            "bm25_chunk_ids": bm25_chunk_ids,
 
-            "same_chunk": (
-                bool(dense_hits)
-                and bool(bm25_hits)
-                and bool(dense_chunk_id)
-                and bool(bm25_chunk_id)
-                and dense_chunk_id == bm25_chunk_id
-            ),
+            "dense_sources": dense_sources,
+            "bm25_sources": bm25_sources,
+
+            "common_chunks": sorted(common_chunks),
+            "common_sources": sorted(common_sources),
+
+            "common_chunk_count": len(common_chunks),
+            "overlap_percentage": overlap_percentage,
+
+            "dense_correct": dense_ok,
+            "bm25_correct": bm25_ok,
 
             "verdict": verdict
-
         })
 
         # ----------------------------------------------------
-        # 8. Print and collect comparison row
+        # 9. Print and collect comparison row
         # ----------------------------------------------------
 
         log_comparison(
             f"{str(question_id):<6} "
             f"{question[:45]:<45} "
-            f"{dense_id[:30]:<30} "
-            f"{bm25_id[:30]:<30} "
+            f"{len(dense_hits):<12} "
+            f"{len(bm25_hits):<12} "
+            f"{len(common_chunks):<10} "
+            f"{overlap_percentage:<9.2f}% "
             f"{verdict:<20}"
         )
 
+        # ----------------------------------------------------
+        # 10. Print detailed Top-K results
+        # ----------------------------------------------------
+
+        log_comparison(
+            f"\nQuestion {question_id}: {question}"
+        )
+
+        log_comparison(f"\nDense Top-{top_k}:")
+
+        for rank, hit in enumerate(dense_hits, 1):
+
+            log_comparison(
+                f"  {rank}. "
+                f"Chunk ID: {hit['chunk_id']} | "
+                f"Source: {hit.get('source_id', '')} | "
+                f"Score: {hit['score']:.4f}"
+            )
+
+        log_comparison(f"\nBM25 Top-{top_k}:")
+
+        for rank, hit in enumerate(bm25_hits, 1):
+
+            log_comparison(
+                f"  {rank}. "
+                f"Chunk ID: {hit['chunk_id']} | "
+                f"Source: {hit.get('source_id', '')} | "
+                f"Score: {hit['score']:.4f}"
+            )
+
+        log_comparison(
+            f"\nCommon Chunk IDs: {sorted(common_chunks)}"
+        )
+
+        log_comparison(
+            f"Common Sources: {sorted(common_sources)}"
+        )
+
+        log_comparison(
+            f"Overlap@{top_k}: {overlap_percentage:.2f}%"
+        )
+
+        log_comparison("-" * 125)
+
     # --------------------------------------------------------
-    # 9. Calculate summary
+    # 11. Calculate summary
     # --------------------------------------------------------
 
     total = len(golden_set)
@@ -535,7 +619,9 @@ if compare_search_methods:
     )
 
     log_comparison("\n" + "=" * 65)
-    log_comparison("DENSE vs BM25 TOP-1 COMPARISON SUMMARY")
+    log_comparison(
+        f"DENSE vs BM25 TOP-{top_k} COMPARISON SUMMARY"
+    )
     log_comparison("=" * 65)
 
     log_comparison(f"Total Questions     : {total}")
@@ -545,7 +631,31 @@ if compare_search_methods:
         log_comparison(f"{verdict:<20}: {count}")
 
     # --------------------------------------------------------
-    # 10. Calculate accuracy when expected IDs exist
+    # 12. Calculate average overlap
+    # --------------------------------------------------------
+
+    if total > 0:
+
+        average_common_chunks = (
+            total_common_chunks / total
+        )
+
+        average_overlap = (
+            total_overlap_percentage / total
+        )
+
+        log_comparison(
+            f"\nAverage Common Chunks : "
+            f"{average_common_chunks:.2f}"
+        )
+
+        log_comparison(
+            f"Average Overlap@{top_k}   : "
+            f"{average_overlap:.2f}%"
+        )
+
+    # --------------------------------------------------------
+    # 13. Calculate source-level Hit@K
     # --------------------------------------------------------
 
     if evaluated > 0:
@@ -569,22 +679,24 @@ if compare_search_methods:
         )
 
         log_comparison(
-            f"Dense Top-1 Accuracy: {dense_accuracy:.2f}%"
+            f"\nDense Source Hit@{top_k}: "
+            f"{dense_accuracy:.2f}%"
         )
 
         log_comparison(
-            f"BM25 Top-1 Accuracy : {bm25_accuracy:.2f}%"
+            f"BM25 Source Hit@{top_k} : "
+            f"{bm25_accuracy:.2f}%"
         )
 
     else:
 
         log_comparison(
-            "Accuracy unavailable: "
+            "Source Hit@K unavailable: "
             "Golden Set lacks expected_source_id."
         )
 
     # --------------------------------------------------------
-    # 11. Save comparison to TXT
+    # 14. Save comparison to TXT
     # --------------------------------------------------------
 
     with open(
@@ -598,7 +710,7 @@ if compare_search_methods:
         )
 
     # --------------------------------------------------------
-    # 12. Save detailed comparison to JSON
+    # 15. Save detailed comparison to JSON
     # --------------------------------------------------------
 
     with open(
@@ -623,7 +735,6 @@ if compare_search_methods:
     print(
         f"JSON output saved to: {comparison_json_file}"
     )
-
 
 
 
@@ -731,7 +842,7 @@ if search_method == "DENSE_SEARCH":
         #     top3 = pipeline.retrieve(QUERY, all_chunks, k=7)
 
 
-else: # BM25
+elif search_method == "BM25":
     if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
         for item in golden_set:
             QUERY = item["question"]
@@ -765,11 +876,18 @@ for k in [top_k]:  #for k in [3, 5, 7]:
     if search_method == "DENSE_SEARCH":
         if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
             print("Qdrant is already created so output file name with qdrant creating")
-            OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks_with_qdrant_results.txt"
+            OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks_with_dense_qdrant_results.txt"
         else:
-            OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks.txt"
-    else:
-        OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks_with_BM25_results.txt"
+            OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks_densetxt"
+    elif search_method == "BM25":
+        if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
+            print("Qdrant is already created so output file name with qdrant creating")
+            OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks_with_BM25_qdrant_results.txt"
+        else:
+            OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks_with_BM25_results.txt"
+    elif search_method == "HYBRID_RRF":
+        OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks_with_HYBRID_RRF_results.txt"
+
 
     total_cost = 0.0
     total_latency = 0.0

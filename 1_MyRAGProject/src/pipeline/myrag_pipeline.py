@@ -1173,10 +1173,7 @@ def retrieve_hybrid_from_qdrant(question,qdrant,
 
     # RRF fusion
     fused_results = rrf_fuse(
-        ranked_lists=[
-            dense_results,
-            bm25_results
-        ],
+        [dense_results,bm25_results],
         k=rrf_k,
         top_n=top_k
     )
