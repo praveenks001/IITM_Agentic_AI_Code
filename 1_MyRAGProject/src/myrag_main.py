@@ -23,6 +23,7 @@ document_type = "txt" #PDF,DOCX,HTML,PDF_WITH_TABLE
 chunking_strategy = "Sliding_window_Chunking" #
 compare_search_methods = True  # Requires both Qdrant collections to be indexed
 bm25 = None
+use_reranker = True
 
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Load Qdrant 
@@ -916,7 +917,8 @@ for k in [top_k]:  #for k in [3, 5, 7]:
                 qdrant=qdrant,
                 collection_name=qdrantCollection,
                 search_method=search_method,
-                bm25=bm25 if search_method == "BM25" else None)
+                bm25=bm25 if search_method == "BM25" else None,
+                use_reranker= use_reranker)
 
             total_cost += result["cost_usd"]
             total_latency += result["latency_s"]

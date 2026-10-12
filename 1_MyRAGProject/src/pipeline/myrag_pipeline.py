@@ -915,7 +915,8 @@ def ask_rag(question: str, index: list[dict], k: int = 3,
             qdrant=None,
             collection_name=None,
             search_method="DENSE_SEARCH",
-            bm25=None) -> dict:
+            bm25=None,
+            use_reranker: bool = False) -> dict:
     """Full pipeline: retrieve → prompt → generate. Returns dict with
     answer, sources, cost, latency-relevant token counts."""
 
@@ -929,10 +930,17 @@ def ask_rag(question: str, index: list[dict], k: int = 3,
             qdrant=qdrant,
             dense_collection="myrag_collection",
             bm25_collection="myrag_collection_BM25",
-            top_k=k,
-            candidate_k=max(10, k),
+            top_k=max(10, k) if use_reranker else k,
+            candidate_k=20 if use_reranker else max(10, k),
             rrf_k=60
         )
+
+        if use_reranker:
+            retrieved = rerank(
+                query=question,
+                candidates=retrieved,
+                top_k=k
+            )
 
     elif search_method == "BM25":
         if (qdrant is not None and collection_name is not None and is_qdrant_collection_populated(qdrant, collection_name)):
@@ -1179,3 +1187,34 @@ def retrieve_hybrid_from_qdrant(question,qdrant,
     )
 
     return fused_results
+
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to do re-ranking
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+RERANKER_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
+
+_reranker = None
+def load_reranker():
+    """Lazy-load the cross-encoder. Downloads ~80MB on first use."""
+    global _reranker
+    if _reranker is None:
+        from sentence_transformers import CrossEncoder
+        _reranker = CrossEncoder(RERANKER_MODEL)
+    return _reranker
+
+
+def rerank(query: str, candidates: list[dict], top_k: int = 3) -> list[dict]:
+    """Score each (query, candidate.text) pair, return top_k by score.
+    
+    Candidates must have a 'doc' key with 'text' inside.
+    Adds a 'rerank_score' field to each returned dict.
+    """
+    reranker = load_reranker()
+    pairs = [(query, hit["text"]) for hit in candidates]
+    scores = reranker.predict(pairs)
+    scored = [{**hit, "rerank_score": float(s)} for hit, s in zip(candidates, scores)]
+    scored.sort(key=lambda h: h["rerank_score"], reverse=True)
+    return scored[:top_k]

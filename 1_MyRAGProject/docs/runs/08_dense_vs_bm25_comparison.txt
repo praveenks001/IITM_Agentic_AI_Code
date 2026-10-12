@@ -999,10 +999,10 @@ Question 46: How many Shield 500 accounts can one client have?
 
 Dense Top-5:
   1. Chunk ID: Shield 500.txt#5 | Source: Shield 500.txt | Score: 0.5110
-  2. Chunk ID: Shield 500.txt#7 | Source: Shield 500.txt | Score: 0.4856
+  2. Chunk ID: Shield 500.txt#7 | Source: Shield 500.txt | Score: 0.4855
   3. Chunk ID: Copy trading TC(1).txt#87 | Source: Copy trading TC(1).txt | Score: 0.4527
   4. Chunk ID: Shield 500.txt#1 | Source: Shield 500.txt | Score: 0.4290
-  5. Chunk ID: Copy trading TC(1).txt#56 | Source: Copy trading TC(1).txt | Score: 0.4203
+  5. Chunk ID: Copy trading TC(1).txt#56 | Source: Copy trading TC(1).txt | Score: 0.4204
 
 BM25 Top-5:
   1. Chunk ID: Shield 500.txt#7 | Source: Shield 500.txt | Score: 17.5911
