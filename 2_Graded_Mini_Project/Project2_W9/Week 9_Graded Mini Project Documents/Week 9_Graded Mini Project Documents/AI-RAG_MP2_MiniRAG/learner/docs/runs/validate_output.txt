@@ -1,0 +1,68 @@
+
+Qdrant Keys loaded
+Qdrant is::: <qdrant_client.qdrant_client.QdrantClient object at 0x7f494973b670>
+calling main
+Executing main:::
+sys.argv is::: ['mp2_rag.py', 'validate']
+calling main cmd validate
+
+  Validating 2 questions from predefined_questions.jsonl…
+
+Qdrant collection points: 67
+Qdrant collection already contains embedded chunks. so pass the embeeded query to retrieve the cosine similarity chunks
+The answer for below question is:: The assistant working at Jabez Wilson's pawnshop was named Spaulding. His real identity, however, is not explicitly mentioned in the provided excerpts. Therefore, I cannot provide that information. (The Red-Headed League + section 5)
+  ✓ q1_red_headed_league_assistant
+      Q: Who was the assistant working at Jabez Wilson's pawnshop, and what was his real identity?
+      Cited: 01_red_headed_league.txt
+      Expected: 01_red_headed_league.txt
+      Facts matched: 0/5
+      Latency: 2433.8899979920825ms
+
+Qdrant collection points: 67
+Qdrant collection already contains embedded chunks. so pass the embeeded query to retrieve the cosine similarity chunks
+The answer for below question is:: The excerpts do not provide a clear answer regarding what specifically killed Julia Stoner at Stoke Moran or how the method was discovered. They mention that Julia cried out about "the band" and that she died without any apparent cause, but they do not detail the method of her death or how it was uncovered. Therefore, I cannot provide an answer based on the provided excerpts. (The Adventure of the Speckled Band)
+  ✓ q2_speckled_band_murder_weapon
+      Q: What killed Julia Stoner at Stoke Moran, and how was the method discovered?
+      Cited: 02_speckled_band.txt
+      Expected: 02_speckled_band.txt
+      Facts matched: 0/6
+      Latency: 2270.858132003923ms
+
+  Source-match: 2/2
+
+
+  Validating 3 questions from learner_questions.jsonl…
+
+Qdrant collection points: 67
+Qdrant collection already contains embedded chunks. so pass the embeeded query to retrieve the cosine similarity chunks
+The answer for below question is:: The Blue Carbuncle was discovered by Peterson's wife, who found it embedded in the bird's crop. (The Adventure of the Blue Carbuncle, section 3)
+  ✓ q3_blue_carbuncle
+      Q: Who discovered the Blue Carbuncle inside the goose, and where in the bird was it found?
+      Cited: 03_blue_carbuncle.txt
+      Expected: 03_blue_carbuncle.txt
+      Facts matched: 3/4
+      Latency: 2014.315558000817ms
+
+Qdrant collection points: 67
+Qdrant collection already contains embedded chunks. so pass the embeeded query to retrieve the cosine similarity chunks
+The answer for below question is:: Victor Hatherley realized that Colonel Stark's hydraulic press was not being used for fuller's earth because the floor of the press chamber was marked by a metallic crust rather than the residue of earth. This indicated that the press had been used to compress metal, specifically to stamp half-crowns from a base alloy of nickel and tin. The "fuller's earth" cover story was a ruse to explain the press's presence without raising suspicion (source: "The Engineer's Thumb" + sections 6 and 12).
+  ✓ q4_engineers_thumb
+      Q: What evidence showed Victor Hatherley that Colonel Stark's hydraulic press was not being used for fuller's earth, and what was its actual purpose?
+      Cited: 04_engineers_thumb.txt
+      Expected: 04_engineers_thumb.txt
+      Facts matched: 2/6
+      Latency: 2365.5427080084337ms
+
+Qdrant collection points: 67
+Qdrant collection already contains embedded chunks. so pass the embeeded query to retrieve the cosine similarity chunks
+The answer for below question is:: Irene Adler recognized Sherlock Holmes in his groom disguise and again in the clergyman disguise when he was carried into her house. She was aware of his presence and the fire trick he employed was an old tactic that she was familiar with. As for the compromising photograph, she retained it as a safeguard in case the King ever tried to harm her or her husband (source: "A Scandal in Bohemia" + sections 12 and 14).
+  ✓ q5_scandal_bohemia
+      Q: How did Irene Adler recognize and outmaneuver Sherlock Holmes despite his disguises and fire ruse, and why did she retain the compromising photograph after leaving England?
+      Cited: 05_scandal_in_bohemia.txt
+      Expected: 05_scandal_in_bohemia.txt
+      Facts matched: 0/7
+      Latency: 2793.7014769995585ms
+
+  Source-match: 3/3
+
+
