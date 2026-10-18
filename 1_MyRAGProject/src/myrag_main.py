@@ -10,20 +10,32 @@ from qdrant_client.models import Distance, VectorParams
 from qdrant_client.models import HnswConfigDiff
 from rank_bm25 import BM25Okapi
 
+from config import (
+    EMBED_MODEL,
+    CHAT_MODEL,
+    TOP_K,
+    SEARCH_METHOD,
+    QDRANT_TYPE,
+    DOCUMENT_TYPE,
+    CHUNKING_STRATEGY,
+    COMPARE_SEARCH_METHODS,
+    USE_RERANKER
+)
+
+top_k = TOP_K
+search_method = SEARCH_METHOD
+qdrant_type = QDRANT_TYPE
+document_type = DOCUMENT_TYPE
+chunking_strategy = CHUNKING_STRATEGY
+compare_search_methods = COMPARE_SEARCH_METHODS
+use_reranker = USE_RERANKER
+bm25 = None
+
 assert os.environ.get("OPENAI_API_KEY"), "Set OPENAI_API_KEY before running this notebook"
 
 client = OpenAI()
 
-EMBED_MODEL = "text-embedding-3-large"  #"text-embedding-3-small"
-CHAT_MODEL  = "gpt-4o-mini"
-top_k=5
-search_method = "HYBRID_RRF"   #  DENSE_SEARCH # BM25 # HYBRID_RRF
-qdrant_type = "NORMAL"  #HNSW
-document_type = "txt" #PDF,DOCX,HTML,PDF_WITH_TABLE
-chunking_strategy = "Sliding_window_Chunking" #
-compare_search_methods = True  # Requires both Qdrant collections to be indexed
-bm25 = None
-use_reranker = True
+
 
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Load Qdrant 

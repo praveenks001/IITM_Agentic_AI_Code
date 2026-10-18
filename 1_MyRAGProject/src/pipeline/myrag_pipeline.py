@@ -14,14 +14,12 @@ from bs4 import BeautifulSoup
 from docx import Document
 from rank_bm25 import BM25Okapi
 from fastembed import SparseTextEmbedding
-
+from config import EMBED_MODEL, CHAT_MODEL, RERANKER_MODEL
 
 assert os.environ.get("OPENAI_API_KEY"), "Set OPENAI_API_KEY before running this notebook"
 
 _client = OpenAI()
 
-EMBED_MODEL = "text-embedding-3-large"  #"text-embedding-3-small"
-CHAT_MODEL  = "gpt-4o-mini"
 
 
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -1194,7 +1192,6 @@ def retrieve_hybrid_from_qdrant(question,qdrant,
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Method to do re-ranking
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-RERANKER_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 
 _reranker = None
 def load_reranker():
