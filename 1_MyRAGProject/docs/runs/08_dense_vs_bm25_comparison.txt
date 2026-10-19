@@ -8,10 +8,10 @@ ID     Question                                      Dense Hits   BM25 Hits    C
 Question 1: Where is the company located?
 
 Dense Top-5:
-  1. Chunk ID: General risk disclosure(1).txt#5 | Source: General risk disclosure(1).txt | Score: 0.3998
-  2. Chunk ID: Risk with CFDS.txt#6 | Source: Risk with CFDS.txt | Score: 0.3864
-  3. Chunk ID: Risk with CFDS 2.txt#6 | Source: Risk with CFDS 2.txt | Score: 0.3706
-  4. Chunk ID: Complaint handling(1).txt#6 | Source: Complaint handling(1).txt | Score: 0.3683
+  1. Chunk ID: General risk disclosure(1).txt#5 | Source: General risk disclosure(1).txt | Score: 0.3999
+  2. Chunk ID: Risk with CFDS.txt#6 | Source: Risk with CFDS.txt | Score: 0.3865
+  3. Chunk ID: Risk with CFDS 2.txt#6 | Source: Risk with CFDS 2.txt | Score: 0.3707
+  4. Chunk ID: Complaint handling(1).txt#6 | Source: Complaint handling(1).txt | Score: 0.3689
   5. Chunk ID: Account opening agreement(1).txt#17 | Source: Account opening agreement(1).txt | Score: 0.3520
 
 BM25 Top-5:
@@ -31,8 +31,8 @@ Question 2: Where is Chennai located?
 
 Dense Top-5:
   1. Chunk ID: Account opening agreement 2(1).txt#17 | Source: Account opening agreement 2(1).txt | Score: 0.1258
-  2. Chunk ID: Account opening agreement(1).txt#17 | Source: Account opening agreement(1).txt | Score: 0.1222
-  3. Chunk ID: Account opening agreement(1).txt#18 | Source: Account opening agreement(1).txt | Score: 0.0996
+  2. Chunk ID: Account opening agreement(1).txt#17 | Source: Account opening agreement(1).txt | Score: 0.1227
+  3. Chunk ID: Account opening agreement(1).txt#18 | Source: Account opening agreement(1).txt | Score: 0.0997
   4. Chunk ID: Client agreement(1).txt#377 | Source: Client agreement(1).txt | Score: 0.0941
   5. Chunk ID: Client agreement(1).txt#200 | Source: Client agreement(1).txt | Score: 0.0894
 
@@ -53,9 +53,9 @@ Question 3: On what basis the clients are categorized as Partially Approved?
 
 Dense Top-5:
   1. Chunk ID: Account opening agreement(1).txt#67 | Source: Account opening agreement(1).txt | Score: 0.5868
-  2. Chunk ID: Account opening agreement 2(1).txt#66 | Source: Account opening agreement 2(1).txt | Score: 0.5786
+  2. Chunk ID: Account opening agreement 2(1).txt#66 | Source: Account opening agreement 2(1).txt | Score: 0.5793
   3. Chunk ID: Account opening agreement(1).txt#66 | Source: Account opening agreement(1).txt | Score: 0.5505
-  4. Chunk ID: Account opening agreement(1).txt#65 | Source: Account opening agreement(1).txt | Score: 0.5283
+  4. Chunk ID: Account opening agreement(1).txt#65 | Source: Account opening agreement(1).txt | Score: 0.5284
   5. Chunk ID: Account opening agreement 2(1).txt#63 | Source: Account opening agreement 2(1).txt | Score: 0.5100
 
 BM25 Top-5:
@@ -75,10 +75,10 @@ Question 4: Is my telephone call recorded?
 
 Dense Top-5:
   1. Chunk ID: Account opening agreement(1).txt#103 | Source: Account opening agreement(1).txt | Score: 0.5491
-  2. Chunk ID: Account opening agreement 2(1).txt#102 | Source: Account opening agreement 2(1).txt | Score: 0.4871
+  2. Chunk ID: Account opening agreement 2(1).txt#102 | Source: Account opening agreement 2(1).txt | Score: 0.4870
   3. Chunk ID: Client agreement(1).txt#333 | Source: Client agreement(1).txt | Score: 0.4406
   4. Chunk ID: Client agreement(1).txt#331 | Source: Client agreement(1).txt | Score: 0.4237
-  5. Chunk ID: Account opening agreement(1).txt#99 | Source: Account opening agreement(1).txt | Score: 0.4203
+  5. Chunk ID: Account opening agreement(1).txt#99 | Source: Account opening agreement(1).txt | Score: 0.4202
 
 BM25 Top-5:
   1. Chunk ID: Account opening agreement(1).txt#103 | Source: Account opening agreement(1).txt | Score: 21.8775
@@ -100,7 +100,7 @@ Dense Top-5:
   2. Chunk ID: Client agreement(1).txt#284 | Source: Client agreement(1).txt | Score: 0.4921
   3. Chunk ID: Client agreement(1).txt#102 | Source: Client agreement(1).txt | Score: 0.4686
   4. Chunk ID: Account opening agreement(1).txt#109 | Source: Account opening agreement(1).txt | Score: 0.4591
-  5. Chunk ID: Client agreement(1).txt#285 | Source: Client agreement(1).txt | Score: 0.4523
+  5. Chunk ID: Client agreement(1).txt#285 | Source: Client agreement(1).txt | Score: 0.4518
 
 BM25 Top-5:
   1. Chunk ID: Client agreement(1).txt#279 | Source: Client agreement(1).txt | Score: 7.5846
@@ -121,8 +121,8 @@ Dense Top-5:
   1. Chunk ID: Account opening agreement(1).txt#131 | Source: Account opening agreement(1).txt | Score: 0.5439
   2. Chunk ID: Account opening agreement 2(1).txt#129 | Source: Account opening agreement 2(1).txt | Score: 0.5380
   3. Chunk ID: Account opening agreement(1).txt#132 | Source: Account opening agreement(1).txt | Score: 0.5260
-  4. Chunk ID: Risk with CFDS.txt#2 | Source: Risk with CFDS.txt | Score: 0.5104
-  5. Chunk ID: Risk with CFDS 2.txt#2 | Source: Risk with CFDS 2.txt | Score: 0.5103
+  4. Chunk ID: Risk with CFDS 2.txt#2 | Source: Risk with CFDS 2.txt | Score: 0.5106
+  5. Chunk ID: Risk with CFDS.txt#2 | Source: Risk with CFDS.txt | Score: 0.5103
 
 BM25 Top-5:
   1. Chunk ID: Account opening agreement(1).txt#131 | Source: Account opening agreement(1).txt | Score: 10.3961
@@ -162,7 +162,7 @@ Overlap@5: 20.00%
 Question 8: What is the contact support details?
 
 Dense Top-5:
-  1. Chunk ID: Shield 500.txt#19 | Source: Shield 500.txt | Score: 0.3240
+  1. Chunk ID: Shield 500.txt#19 | Source: Shield 500.txt | Score: 0.3239
   2. Chunk ID: Client agreement(1).txt#125 | Source: Client agreement(1).txt | Score: 0.2879
   3. Chunk ID: Shield 500.txt#18 | Source: Shield 500.txt | Score: 0.2861
   4. Chunk ID: Account opening agreement 2(1).txt#161 | Source: Account opening agreement 2(1).txt | Score: 0.2829
@@ -187,8 +187,8 @@ Dense Top-5:
   1. Chunk ID: Client agreement(1).txt#474 | Source: Client agreement(1).txt | Score: 0.4630
   2. Chunk ID: Client agreement(1).txt#11 | Source: Client agreement(1).txt | Score: 0.4575
   3. Chunk ID: Client agreement(1).txt#19 | Source: Client agreement(1).txt | Score: 0.4518
-  4. Chunk ID: Client agreement(1).txt#215 | Source: Client agreement(1).txt | Score: 0.4434
-  5. Chunk ID: Client agreement(1).txt#103 | Source: Client agreement(1).txt | Score: 0.4433
+  4. Chunk ID: Client agreement(1).txt#215 | Source: Client agreement(1).txt | Score: 0.4433
+  5. Chunk ID: Client agreement(1).txt#103 | Source: Client agreement(1).txt | Score: 0.4432
 
 BM25 Top-5:
   1. Chunk ID: Client agreement(1).txt#122 | Source: Client agreement(1).txt | Score: 7.5747
@@ -210,7 +210,7 @@ Dense Top-5:
   2. Chunk ID: Copy trading TC(1).txt#54 | Source: Copy trading TC(1).txt | Score: 0.4004
   3. Chunk ID: General risk disclosure(1).txt#5 | Source: General risk disclosure(1).txt | Score: 0.3834
   4. Chunk ID: Client agreement(1).txt#406 | Source: Client agreement(1).txt | Score: 0.3802
-  5. Chunk ID: Client agreement(1).txt#88 | Source: Client agreement(1).txt | Score: 0.3755
+  5. Chunk ID: Client agreement(1).txt#88 | Source: Client agreement(1).txt | Score: 0.3756
 
 BM25 Top-5:
   1. Chunk ID: Client agreement(1).txt#405 | Source: Client agreement(1).txt | Score: 10.3001
@@ -250,18 +250,18 @@ Overlap@5: 20.00%
 Question 12: Who is the CEO of HFM?
 
 Dense Top-5:
-  1. Chunk ID: Client agreement(1).txt#474 | Source: Client agreement(1).txt | Score: 0.5785
-  2. Chunk ID: Client agreement(1).txt#11 | Source: Client agreement(1).txt | Score: 0.5725
-  3. Chunk ID: Client agreement(1).txt#103 | Source: Client agreement(1).txt | Score: 0.5353
-  4. Chunk ID: Client agreement(1).txt#42 | Source: Client agreement(1).txt | Score: 0.5256
-  5. Chunk ID: Client agreement(1).txt#335 | Source: Client agreement(1).txt | Score: 0.5224
+  1. Chunk ID: Client agreement(1).txt#474 | Source: Client agreement(1).txt | Score: 0.5788
+  2. Chunk ID: Client agreement(1).txt#11 | Source: Client agreement(1).txt | Score: 0.5728
+  3. Chunk ID: Client agreement(1).txt#103 | Source: Client agreement(1).txt | Score: 0.5356
+  4. Chunk ID: Client agreement(1).txt#42 | Source: Client agreement(1).txt | Score: 0.5258
+  5. Chunk ID: Client agreement(1).txt#335 | Source: Client agreement(1).txt | Score: 0.5227
 
 BM25 Top-5:
   1. Chunk ID: Client agreement(1).txt#474 | Source: Client agreement(1).txt | Score: 4.1558
   2. Chunk ID: Client agreement(1).txt#11 | Source: Client agreement(1).txt | Score: 4.1558
   3. Chunk ID: Client agreement(1).txt#283 | Source: Client agreement(1).txt | Score: 4.1327
-  4. Chunk ID: Client agreement(1).txt#399 | Source: Client agreement(1).txt | Score: 4.1099
-  5. Chunk ID: Client agreement(1).txt#423 | Source: Client agreement(1).txt | Score: 4.1099
+  4. Chunk ID: Client agreement(1).txt#423 | Source: Client agreement(1).txt | Score: 4.1099
+  5. Chunk ID: Client agreement(1).txt#268 | Source: Client agreement(1).txt | Score: 4.1099
 
 Common Chunk IDs: ['Client agreement(1).txt#11', 'Client agreement(1).txt#474']
 Common Sources: ['Client agreement(1).txt']
@@ -274,9 +274,9 @@ Question 13: Can i view the trades taken by other broker account
 Dense Top-5:
   1. Chunk ID: Copy trading TC(1).txt#99 | Source: Copy trading TC(1).txt | Score: 0.4709
   2. Chunk ID: Trading and Execution .txt#30 | Source: Trading and Execution .txt | Score: 0.4458
-  3. Chunk ID: Copy trading TC(1).txt#90 | Source: Copy trading TC(1).txt | Score: 0.4229
+  3. Chunk ID: Copy trading TC(1).txt#90 | Source: Copy trading TC(1).txt | Score: 0.4228
   4. Chunk ID: Account opening agreement 2(1).txt#151 | Source: Account opening agreement 2(1).txt | Score: 0.4106
-  5. Chunk ID: Account opening agreement(1).txt#153 | Source: Account opening agreement(1).txt | Score: 0.4043
+  5. Chunk ID: Account opening agreement(1).txt#153 | Source: Account opening agreement(1).txt | Score: 0.4044
 
 BM25 Top-5:
   1. Chunk ID: Client agreement(1).txt#272 | Source: Client agreement(1).txt | Score: 9.5182
@@ -294,11 +294,11 @@ Overlap@5: 0.00%
 Question 14: What are the advantage points for a trader to escape from any sort of penalty?
 
 Dense Top-5:
-  1. Chunk ID: Terms of Business .txt#58 | Source: Terms of Business .txt | Score: 0.4056
-  2. Chunk ID: Client agreement(1).txt#202 | Source: Client agreement(1).txt | Score: 0.4047
-  3. Chunk ID: Terms of Business Glossary.txt#28 | Source: Terms of Business Glossary.txt | Score: 0.4034
+  1. Chunk ID: Client agreement(1).txt#202 | Source: Client agreement(1).txt | Score: 0.4047
+  2. Chunk ID: Terms of Business .txt#58 | Source: Terms of Business .txt | Score: 0.4046
+  3. Chunk ID: Terms of Business Glossary.txt#28 | Source: Terms of Business Glossary.txt | Score: 0.4033
   4. Chunk ID: Client agreement(1).txt#217 | Source: Client agreement(1).txt | Score: 0.4030
-  5. Chunk ID: Account opening agreement 2(1).txt#223 | Source: Account opening agreement 2(1).txt | Score: 0.3911
+  5. Chunk ID: Account opening agreement 2(1).txt#223 | Source: Account opening agreement 2(1).txt | Score: 0.3920
 
 BM25 Top-5:
   1. Chunk ID: Trading and Execution .txt#27 | Source: Trading and Execution .txt | Score: 11.0702
@@ -363,7 +363,7 @@ Dense Top-5:
   1. Chunk ID: Account opening agreement(1).txt#116 | Source: Account opening agreement(1).txt | Score: 0.4418
   2. Chunk ID: Client agreement(1).txt#294 | Source: Client agreement(1).txt | Score: 0.4312
   3. Chunk ID: Account opening agreement 2(1).txt#115 | Source: Account opening agreement 2(1).txt | Score: 0.4253
-  4. Chunk ID: Terms of Business .txt#101 | Source: Terms of Business .txt | Score: 0.4251
+  4. Chunk ID: Terms of Business .txt#101 | Source: Terms of Business .txt | Score: 0.4252
   5. Chunk ID: Account opening agreement(1).txt#110 | Source: Account opening agreement(1).txt | Score: 0.4193
 
 BM25 Top-5:
@@ -385,8 +385,8 @@ Dense Top-5:
   1. Chunk ID: Shield 500.txt#25 | Source: Shield 500.txt | Score: 0.4762
   2. Chunk ID: General risk disclosure(1).txt#5 | Source: General risk disclosure(1).txt | Score: 0.4710
   3. Chunk ID: Complaint handling(1).txt#8 | Source: Complaint handling(1).txt | Score: 0.4653
-  4. Chunk ID: Account opening agreement(1).txt#16 | Source: Account opening agreement(1).txt | Score: 0.4555
-  5. Chunk ID: Copy trading TC(1).txt#18 | Source: Copy trading TC(1).txt | Score: 0.4538
+  4. Chunk ID: Account opening agreement(1).txt#16 | Source: Account opening agreement(1).txt | Score: 0.4552
+  5. Chunk ID: Copy trading TC(1).txt#18 | Source: Copy trading TC(1).txt | Score: 0.4537
 
 BM25 Top-5:
   1. Chunk ID: Complaint handling(1).txt#11 | Source: Complaint handling(1).txt | Score: 9.2830
@@ -405,7 +405,7 @@ Question 19: In which jurisdiction is HF Markets (SV) Ltd incorporated?
 
 Dense Top-5:
   1. Chunk ID: Cookie policy (1).txt#4 | Source: Cookie policy (1).txt | Score: 0.7343
-  2. Chunk ID: Shield 500.txt#6 | Source: Shield 500.txt | Score: 0.7096
+  2. Chunk ID: Shield 500.txt#6 | Source: Shield 500.txt | Score: 0.7094
   3. Chunk ID: Terms of Business .txt#7 | Source: Terms of Business .txt | Score: 0.7089
   4. Chunk ID: Terms of Business Glossary.txt#5 | Source: Terms of Business Glossary.txt | Score: 0.6996
   5. Chunk ID: Shield 500.txt#12 | Source: Shield 500.txt | Score: 0.6989
@@ -426,11 +426,11 @@ Overlap@5: 20.00%
 Question 20: What is the registration number of HF Markets (SV) Ltd?
 
 Dense Top-5:
-  1. Chunk ID: Shield 500.txt#6 | Source: Shield 500.txt | Score: 0.7870
+  1. Chunk ID: Shield 500.txt#6 | Source: Shield 500.txt | Score: 0.7868
   2. Chunk ID: Shield 500.txt#12 | Source: Shield 500.txt | Score: 0.7802
   3. Chunk ID: Terms of Business Glossary.txt#5 | Source: Terms of Business Glossary.txt | Score: 0.7507
   4. Chunk ID: Cookie policy (1).txt#4 | Source: Cookie policy (1).txt | Score: 0.7344
-  5. Chunk ID: Shield 500.txt#18 | Source: Shield 500.txt | Score: 0.7298
+  5. Chunk ID: Shield 500.txt#18 | Source: Shield 500.txt | Score: 0.7299
 
 BM25 Top-5:
   1. Chunk ID: Terms of Business .txt#6 | Source: Terms of Business .txt | Score: 14.8039
@@ -474,7 +474,7 @@ Dense Top-5:
   2. Chunk ID: Cookie policy (1).txt#7 | Source: Cookie policy (1).txt | Score: 0.4441
   3. Chunk ID: Cookie policy (1).txt#2 | Source: Cookie policy (1).txt | Score: 0.4434
   4. Chunk ID: Cookie policy (1).txt#39 | Source: Cookie policy (1).txt | Score: 0.4337
-  5. Chunk ID: Cookie policy (1).txt#1 | Source: Cookie policy (1).txt | Score: 0.4302
+  5. Chunk ID: Cookie policy (1).txt#1 | Source: Cookie policy (1).txt | Score: 0.4303
 
 BM25 Top-5:
   1. Chunk ID: Cookie policy (1).txt#9 | Source: Cookie policy (1).txt | Score: 19.6626
@@ -495,8 +495,8 @@ Dense Top-5:
   1. Chunk ID: Cookie policy (1).txt#9 | Source: Cookie policy (1).txt | Score: 0.5115
   2. Chunk ID: Cookie policy (1).txt#10 | Source: Cookie policy (1).txt | Score: 0.5107
   3. Chunk ID: Cookie policy (1).txt#39 | Source: Cookie policy (1).txt | Score: 0.4781
-  4. Chunk ID: Cookie policy (1).txt#33 | Source: Cookie policy (1).txt | Score: 0.4724
-  5. Chunk ID: Cookie policy (1).txt#35 | Source: Cookie policy (1).txt | Score: 0.4407
+  4. Chunk ID: Cookie policy (1).txt#33 | Source: Cookie policy (1).txt | Score: 0.4723
+  5. Chunk ID: Cookie policy (1).txt#35 | Source: Cookie policy (1).txt | Score: 0.4413
 
 BM25 Top-5:
   1. Chunk ID: Cookie policy (1).txt#9 | Source: Cookie policy (1).txt | Score: 23.6146
@@ -518,11 +518,11 @@ Dense Top-5:
   2. Chunk ID: Cookie policy (1).txt#10 | Source: Cookie policy (1).txt | Score: 0.5269
   3. Chunk ID: Cookie policy (1).txt#61 | Source: Cookie policy (1).txt | Score: 0.5154
   4. Chunk ID: Cookie policy (1).txt#71 | Source: Cookie policy (1).txt | Score: 0.4923
-  5. Chunk ID: Cookie policy (1).txt#50 | Source: Cookie policy (1).txt | Score: 0.4848
+  5. Chunk ID: Cookie policy (1).txt#50 | Source: Cookie policy (1).txt | Score: 0.4850
 
 BM25 Top-5:
-  1. Chunk ID: Cookie policy (1).txt#51 | Source: Cookie policy (1).txt | Score: 12.0320
-  2. Chunk ID: Cookie policy (1).txt#61 | Source: Cookie policy (1).txt | Score: 12.0320
+  1. Chunk ID: Cookie policy (1).txt#61 | Source: Cookie policy (1).txt | Score: 12.0320
+  2. Chunk ID: Cookie policy (1).txt#51 | Source: Cookie policy (1).txt | Score: 12.0320
   3. Chunk ID: Cookie policy (1).txt#60 | Source: Cookie policy (1).txt | Score: 11.9015
   4. Chunk ID: Cookie policy (1).txt#44 | Source: Cookie policy (1).txt | Score: 11.8374
   5. Chunk ID: Cookie policy (1).txt#47 | Source: Cookie policy (1).txt | Score: 11.7111
@@ -538,7 +538,7 @@ Question 25: What may happen if I block cookies on the HFM website?
 Dense Top-5:
   1. Chunk ID: Cookie policy (1).txt#82 | Source: Cookie policy (1).txt | Score: 0.4655
   2. Chunk ID: Cookie policy (1).txt#0 | Source: Cookie policy (1).txt | Score: 0.4291
-  3. Chunk ID: Cookie policy (1).txt#16 | Source: Cookie policy (1).txt | Score: 0.4103
+  3. Chunk ID: Cookie policy (1).txt#16 | Source: Cookie policy (1).txt | Score: 0.4101
   4. Chunk ID: Cookie policy (1).txt#5 | Source: Cookie policy (1).txt | Score: 0.4001
   5. Chunk ID: Cookie policy (1).txt#1 | Source: Cookie policy (1).txt | Score: 0.3983
 
@@ -559,10 +559,10 @@ Question 26: Does HFM guarantee that the money I deposit for trading cannot be l
 
 Dense Top-5:
   1. Chunk ID: Account opening agreement(1).txt#145 | Source: Account opening agreement(1).txt | Score: 0.5010
-  2. Chunk ID: Risk with CFDS.txt#61 | Source: Risk with CFDS.txt | Score: 0.4979
-  3. Chunk ID: General risk disclosure(1).txt#49 | Source: General risk disclosure(1).txt | Score: 0.4959
-  4. Chunk ID: Client agreement(1).txt#281 | Source: Client agreement(1).txt | Score: 0.4850
-  5. Chunk ID: Risk disclaimer (1).txt#20 | Source: Risk disclaimer (1).txt | Score: 0.4805
+  2. Chunk ID: General risk disclosure(1).txt#49 | Source: General risk disclosure(1).txt | Score: 0.4959
+  3. Chunk ID: Risk with CFDS.txt#61 | Source: Risk with CFDS.txt | Score: 0.4956
+  4. Chunk ID: Client agreement(1).txt#281 | Source: Client agreement(1).txt | Score: 0.4848
+  5. Chunk ID: Risk disclaimer (1).txt#20 | Source: Risk disclaimer (1).txt | Score: 0.4806
 
 BM25 Top-5:
   1. Chunk ID: General risk disclosure(1).txt#10 | Source: General risk disclosure(1).txt | Score: 23.5066
@@ -583,15 +583,15 @@ Dense Top-5:
   1. Chunk ID: General risk disclosure(1).txt#8 | Source: General risk disclosure(1).txt | Score: 0.5977
   2. Chunk ID: Risk with CFDS 2.txt#10 | Source: Risk with CFDS 2.txt | Score: 0.5446
   3. Chunk ID: General risk disclosure(1).txt#7 | Source: General risk disclosure(1).txt | Score: 0.5434
-  4. Chunk ID: General risk disclosure(1).txt#51 | Source: General risk disclosure(1).txt | Score: 0.5277
-  5. Chunk ID: Risk with CFDS.txt#10 | Source: Risk with CFDS.txt | Score: 0.5266
+  4. Chunk ID: General risk disclosure(1).txt#51 | Source: General risk disclosure(1).txt | Score: 0.5275
+  5. Chunk ID: Risk with CFDS.txt#10 | Source: Risk with CFDS.txt | Score: 0.5260
 
 BM25 Top-5:
   1. Chunk ID: General risk disclosure(1).txt#8 | Source: General risk disclosure(1).txt | Score: 21.1636
   2. Chunk ID: Shield 500.txt#23 | Source: Shield 500.txt | Score: 17.3141
   3. Chunk ID: General risk disclosure(1).txt#7 | Source: General risk disclosure(1).txt | Score: 16.6570
-  4. Chunk ID: Risk with CFDS 2.txt#12 | Source: Risk with CFDS 2.txt | Score: 16.6101
-  5. Chunk ID: Risk with CFDS.txt#12 | Source: Risk with CFDS.txt | Score: 16.6101
+  4. Chunk ID: Risk with CFDS.txt#12 | Source: Risk with CFDS.txt | Score: 16.6101
+  5. Chunk ID: Risk with CFDS 2.txt#12 | Source: Risk with CFDS 2.txt | Score: 16.6101
 
 Common Chunk IDs: ['General risk disclosure(1).txt#7', 'General risk disclosure(1).txt#8']
 Common Sources: ['General risk disclosure(1).txt', 'Risk with CFDS 2.txt', 'Risk with CFDS.txt']
@@ -603,8 +603,8 @@ Question 28: How does high leverage affect trading risk?
 
 Dense Top-5:
   1. Chunk ID: Risk disclaimer (1).txt#6 | Source: Risk disclaimer (1).txt | Score: 0.6133
-  2. Chunk ID: Trading and Execution .txt#24 | Source: Trading and Execution .txt | Score: 0.5457
-  3. Chunk ID: Account opening agreement(1).txt#194 | Source: Account opening agreement(1).txt | Score: 0.5190
+  2. Chunk ID: Trading and Execution .txt#24 | Source: Trading and Execution .txt | Score: 0.5459
+  3. Chunk ID: Account opening agreement(1).txt#194 | Source: Account opening agreement(1).txt | Score: 0.5191
   4. Chunk ID: Risk with CFDS 2.txt#14 | Source: Risk with CFDS 2.txt | Score: 0.5132
   5. Chunk ID: Risk with CFDS.txt#14 | Source: Risk with CFDS.txt | Score: 0.5057
 
@@ -646,11 +646,11 @@ Overlap@5: 20.00%
 Question 30: Are CFD transactions with HFM executed on a recognised exchange?
 
 Dense Top-5:
-  1. Chunk ID: Risk with CFDS.txt#50 | Source: Risk with CFDS.txt | Score: 0.5697
-  2. Chunk ID: Risk with CFDS 2.txt#46 | Source: Risk with CFDS 2.txt | Score: 0.5604
-  3. Chunk ID: Risk with CFDS.txt#0 | Source: Risk with CFDS.txt | Score: 0.5529
+  1. Chunk ID: Risk with CFDS.txt#50 | Source: Risk with CFDS.txt | Score: 0.5696
+  2. Chunk ID: Risk with CFDS 2.txt#46 | Source: Risk with CFDS 2.txt | Score: 0.5603
+  3. Chunk ID: Risk with CFDS.txt#0 | Source: Risk with CFDS.txt | Score: 0.5527
   4. Chunk ID: Risk with CFDS 2.txt#0 | Source: Risk with CFDS 2.txt | Score: 0.5527
-  5. Chunk ID: Risk with CFDS 2.txt#5 | Source: Risk with CFDS 2.txt | Score: 0.5516
+  5. Chunk ID: Risk with CFDS 2.txt#5 | Source: Risk with CFDS 2.txt | Score: 0.5517
 
 BM25 Top-5:
   1. Chunk ID: Terms of Business .txt#52 | Source: Terms of Business .txt | Score: 15.1552
@@ -672,14 +672,14 @@ Dense Top-5:
   2. Chunk ID: Terms of Business Glossary.txt#24 | Source: Terms of Business Glossary.txt | Score: 0.5358
   3. Chunk ID: Order exection policy(1).txt#15 | Source: Order exection policy(1).txt | Score: 0.4974
   4. Chunk ID: Account opening agreement 2(1).txt#45 | Source: Account opening agreement 2(1).txt | Score: 0.4780
-  5. Chunk ID: Client agreement(1).txt#51 | Source: Client agreement(1).txt | Score: 0.4745
+  5. Chunk ID: Client agreement(1).txt#51 | Source: Client agreement(1).txt | Score: 0.4746
 
 BM25 Top-5:
   1. Chunk ID: Client agreement(1).txt#51 | Source: Client agreement(1).txt | Score: 16.7172
   2. Chunk ID: Terms of Business Glossary.txt#24 | Source: Terms of Business Glossary.txt | Score: 16.4207
   3. Chunk ID: Order exection policy(1).txt#15 | Source: Order exection policy(1).txt | Score: 16.2948
-  4. Chunk ID: Account opening agreement(1).txt#45 | Source: Account opening agreement(1).txt | Score: 16.1153
-  5. Chunk ID: Terms of Business .txt#28 | Source: Terms of Business .txt | Score: 16.1153
+  4. Chunk ID: Terms of Business .txt#28 | Source: Terms of Business .txt | Score: 16.1153
+  5. Chunk ID: Account opening agreement(1).txt#45 | Source: Account opening agreement(1).txt | Score: 16.1153
 
 Common Chunk IDs: ['Client agreement(1).txt#51', 'Order exection policy(1).txt#15', 'Terms of Business Glossary.txt#24']
 Common Sources: ['Client agreement(1).txt', 'Order exection policy(1).txt', 'Terms of Business Glossary.txt']
@@ -693,8 +693,8 @@ Dense Top-5:
   1. Chunk ID: Order exection policy(1).txt#31 | Source: Order exection policy(1).txt | Score: 0.6197
   2. Chunk ID: Order exection policy(1).txt#17 | Source: Order exection policy(1).txt | Score: 0.5832
   3. Chunk ID: Account opening agreement 2(1).txt#83 | Source: Account opening agreement 2(1).txt | Score: 0.5678
-  4. Chunk ID: Risk with CFDS 2.txt#42 | Source: Risk with CFDS 2.txt | Score: 0.5644
-  5. Chunk ID: Order exection policy(1).txt#28 | Source: Order exection policy(1).txt | Score: 0.5644
+  4. Chunk ID: Order exection policy(1).txt#28 | Source: Order exection policy(1).txt | Score: 0.5644
+  5. Chunk ID: Risk with CFDS 2.txt#42 | Source: Risk with CFDS 2.txt | Score: 0.5644
 
 BM25 Top-5:
   1. Chunk ID: Order exection policy(1).txt#31 | Source: Order exection policy(1).txt | Score: 26.8179
@@ -716,7 +716,7 @@ Dense Top-5:
   2. Chunk ID: Risk with CFDS 2.txt#42 | Source: Risk with CFDS 2.txt | Score: 0.5894
   3. Chunk ID: Order exection policy(1).txt#17 | Source: Order exection policy(1).txt | Score: 0.5754
   4. Chunk ID: Account opening agreement 2(1).txt#83 | Source: Account opening agreement 2(1).txt | Score: 0.5723
-  5. Chunk ID: Account opening agreement(1).txt#83 | Source: Account opening agreement(1).txt | Score: 0.5718
+  5. Chunk ID: Account opening agreement(1).txt#83 | Source: Account opening agreement(1).txt | Score: 0.5713
 
 BM25 Top-5:
   1. Chunk ID: Order exection policy(1).txt#31 | Source: Order exection policy(1).txt | Score: 26.7797
@@ -738,7 +738,7 @@ Dense Top-5:
   2. Chunk ID: Order exection policy(1).txt#37 | Source: Order exection policy(1).txt | Score: 0.5355
   3. Chunk ID: Terms of Business Glossary.txt#18 | Source: Terms of Business Glossary.txt | Score: 0.5026
   4. Chunk ID: Risk with CFDS.txt#33 | Source: Risk with CFDS.txt | Score: 0.4941
-  5. Chunk ID: Risk with CFDS 2.txt#33 | Source: Risk with CFDS 2.txt | Score: 0.4932
+  5. Chunk ID: Risk with CFDS.txt#18 | Source: Risk with CFDS.txt | Score: 0.4911
 
 BM25 Top-5:
   1. Chunk ID: Order exection policy(1).txt#36 | Source: Order exection policy(1).txt | Score: 39.8306
@@ -758,9 +758,9 @@ Question 35: Does placing a Stop Loss always guarantee that my loss will be limi
 Dense Top-5:
   1. Chunk ID: Risk with CFDS 2.txt#42 | Source: Risk with CFDS 2.txt | Score: 0.6035
   2. Chunk ID: Risk with CFDS.txt#46 | Source: Risk with CFDS.txt | Score: 0.5912
-  3. Chunk ID: General risk disclosure(1).txt#35 | Source: General risk disclosure(1).txt | Score: 0.5477
-  4. Chunk ID: General risk disclosure(1).txt#18 | Source: General risk disclosure(1).txt | Score: 0.5313
-  5. Chunk ID: General risk disclosure(1).txt#17 | Source: General risk disclosure(1).txt | Score: 0.5232
+  3. Chunk ID: General risk disclosure(1).txt#35 | Source: General risk disclosure(1).txt | Score: 0.5472
+  4. Chunk ID: General risk disclosure(1).txt#18 | Source: General risk disclosure(1).txt | Score: 0.5320
+  5. Chunk ID: General risk disclosure(1).txt#17 | Source: General risk disclosure(1).txt | Score: 0.5231
 
 BM25 Top-5:
   1. Chunk ID: Account opening agreement(1).txt#83 | Source: Account opening agreement(1).txt | Score: 22.9411
@@ -811,7 +811,7 @@ BM25 Top-5:
   2. Chunk ID: Trading and Execution .txt#5 | Source: Trading and Execution .txt | Score: 14.6753
   3. Chunk ID: Cookie policy (1).txt#83 | Source: Cookie policy (1).txt | Score: 12.2246
   4. Chunk ID: Client agreement(1).txt#217 | Source: Client agreement(1).txt | Score: 11.4445
-  5. Chunk ID: Account opening agreement(1).txt#220 | Source: Account opening agreement(1).txt | Score: 11.0259
+  5. Chunk ID: Account opening agreement 2(1).txt#219 | Source: Account opening agreement 2(1).txt | Score: 11.0259
 
 Common Chunk IDs: ['Trading and Execution .txt#32']
 Common Sources: ['Client agreement(1).txt', 'Trading and Execution .txt']
@@ -845,9 +845,9 @@ Question 39: Within how many working days should HFM provide a unique complaint 
 
 Dense Top-5:
   1. Chunk ID: Complaint handling(1).txt#13 | Source: Complaint handling(1).txt | Score: 0.6804
-  2. Chunk ID: Complaint handling(1).txt#17 | Source: Complaint handling(1).txt | Score: 0.5767
-  3. Chunk ID: Complaint handling(1).txt#21 | Source: Complaint handling(1).txt | Score: 0.5326
-  4. Chunk ID: Complaint handling(1).txt#18 | Source: Complaint handling(1).txt | Score: 0.5262
+  2. Chunk ID: Complaint handling(1).txt#17 | Source: Complaint handling(1).txt | Score: 0.5766
+  3. Chunk ID: Complaint handling(1).txt#21 | Source: Complaint handling(1).txt | Score: 0.5329
+  4. Chunk ID: Complaint handling(1).txt#18 | Source: Complaint handling(1).txt | Score: 0.5263
   5. Chunk ID: Complaint handling(1).txt#15 | Source: Complaint handling(1).txt | Score: 0.5075
 
 BM25 Top-5:
@@ -867,9 +867,9 @@ Question 40: Within how many business days should HFM normally provide its initi
 
 Dense Top-5:
   1. Chunk ID: Complaint handling(1).txt#13 | Source: Complaint handling(1).txt | Score: 0.6463
-  2. Chunk ID: Complaint handling(1).txt#17 | Source: Complaint handling(1).txt | Score: 0.6368
-  3. Chunk ID: Complaint handling(1).txt#18 | Source: Complaint handling(1).txt | Score: 0.5871
-  4. Chunk ID: Complaint handling(1).txt#21 | Source: Complaint handling(1).txt | Score: 0.5282
+  2. Chunk ID: Complaint handling(1).txt#17 | Source: Complaint handling(1).txt | Score: 0.6367
+  3. Chunk ID: Complaint handling(1).txt#18 | Source: Complaint handling(1).txt | Score: 0.5872
+  4. Chunk ID: Complaint handling(1).txt#21 | Source: Complaint handling(1).txt | Score: 0.5285
   5. Chunk ID: Complaint handling(1).txt#15 | Source: Complaint handling(1).txt | Score: 0.5067
 
 BM25 Top-5:
@@ -889,9 +889,9 @@ Question 41: If a complaint needs further investigation, within how many busines
 
 Dense Top-5:
   1. Chunk ID: Complaint handling(1).txt#17 | Source: Complaint handling(1).txt | Score: 0.6490
-  2. Chunk ID: Complaint handling(1).txt#18 | Source: Complaint handling(1).txt | Score: 0.6329
+  2. Chunk ID: Complaint handling(1).txt#18 | Source: Complaint handling(1).txt | Score: 0.6328
   3. Chunk ID: Complaint handling(1).txt#13 | Source: Complaint handling(1).txt | Score: 0.5940
-  4. Chunk ID: Complaint handling(1).txt#21 | Source: Complaint handling(1).txt | Score: 0.5021
+  4. Chunk ID: Complaint handling(1).txt#21 | Source: Complaint handling(1).txt | Score: 0.5016
   5. Chunk ID: Complaint handling(1).txt#15 | Source: Complaint handling(1).txt | Score: 0.4925
 
 BM25 Top-5:
@@ -910,10 +910,10 @@ Overlap@5: 60.00%
 Question 42: For how long does HFM keep records in its complaints register?
 
 Dense Top-5:
-  1. Chunk ID: Complaint handling(1).txt#24 | Source: Complaint handling(1).txt | Score: 0.5884
+  1. Chunk ID: Complaint handling(1).txt#24 | Source: Complaint handling(1).txt | Score: 0.5907
   2. Chunk ID: Complaint handling(1).txt#13 | Source: Complaint handling(1).txt | Score: 0.5481
-  3. Chunk ID: Complaint handling(1).txt#23 | Source: Complaint handling(1).txt | Score: 0.5030
-  4. Chunk ID: Complaint handling(1).txt#21 | Source: Complaint handling(1).txt | Score: 0.5029
+  3. Chunk ID: Complaint handling(1).txt#21 | Source: Complaint handling(1).txt | Score: 0.5030
+  4. Chunk ID: Complaint handling(1).txt#23 | Source: Complaint handling(1).txt | Score: 0.5025
   5. Chunk ID: Complaint handling(1).txt#0 | Source: Complaint handling(1).txt | Score: 0.4889
 
 BM25 Top-5:
@@ -934,9 +934,9 @@ Question 43: How often is the Conflicts of Interest Policy reviewed?
 Dense Top-5:
   1. Chunk ID: Conflicts of interest policy (1).txt#57 | Source: Conflicts of interest policy (1).txt | Score: 0.5968
   2. Chunk ID: Conflicts of interest policy (1).txt#40 | Source: Conflicts of interest policy (1).txt | Score: 0.5498
-  3. Chunk ID: Conflicts of interest policy (1).txt#56 | Source: Conflicts of interest policy (1).txt | Score: 0.5362
-  4. Chunk ID: Conflicts of interest policy (1).txt#18 | Source: Conflicts of interest policy (1).txt | Score: 0.5350
-  5. Chunk ID: Conflicts of interest policy (1).txt#32 | Source: Conflicts of interest policy (1).txt | Score: 0.4951
+  3. Chunk ID: Conflicts of interest policy (1).txt#56 | Source: Conflicts of interest policy (1).txt | Score: 0.5361
+  4. Chunk ID: Conflicts of interest policy (1).txt#18 | Source: Conflicts of interest policy (1).txt | Score: 0.5349
+  5. Chunk ID: Conflicts of interest policy (1).txt#32 | Source: Conflicts of interest policy (1).txt | Score: 0.4950
 
 BM25 Top-5:
   1. Chunk ID: Conflicts of interest policy (1).txt#56 | Source: Conflicts of interest policy (1).txt | Score: 18.3980
@@ -954,11 +954,11 @@ Overlap@5: 60.00%
 Question 44: Who makes the final decision when HFM's internal conflict-of-interest procedures are not sufficient?
 
 Dense Top-5:
-  1. Chunk ID: Conflicts of interest policy (1).txt#0 | Source: Conflicts of interest policy (1).txt | Score: 0.4804
+  1. Chunk ID: Conflicts of interest policy (1).txt#0 | Source: Conflicts of interest policy (1).txt | Score: 0.4803
   2. Chunk ID: Conflicts of interest policy (1).txt#48 | Source: Conflicts of interest policy (1).txt | Score: 0.4728
-  3. Chunk ID: Conflicts of interest policy (1).txt#57 | Source: Conflicts of interest policy (1).txt | Score: 0.4675
+  3. Chunk ID: Conflicts of interest policy (1).txt#57 | Source: Conflicts of interest policy (1).txt | Score: 0.4674
   4. Chunk ID: Conflicts of interest policy (1).txt#50 | Source: Conflicts of interest policy (1).txt | Score: 0.4583
-  5. Chunk ID: Conflicts of interest policy (1).txt#17 | Source: Conflicts of interest policy (1).txt | Score: 0.4541
+  5. Chunk ID: Conflicts of interest policy (1).txt#17 | Source: Conflicts of interest policy (1).txt | Score: 0.4539
 
 BM25 Top-5:
   1. Chunk ID: Conflicts of interest policy (1).txt#48 | Source: Conflicts of interest policy (1).txt | Score: 26.2689
@@ -976,10 +976,10 @@ Overlap@5: 20.00%
 Question 45: What is the maximum return or loss coverage available under the Shield 500 program?
 
 Dense Top-5:
-  1. Chunk ID: Shield 500.txt#5 | Source: Shield 500.txt | Score: 0.6005
-  2. Chunk ID: Shield 500.txt#7 | Source: Shield 500.txt | Score: 0.5851
-  3. Chunk ID: Shield 500.txt#1 | Source: Shield 500.txt | Score: 0.4671
-  4. Chunk ID: Shield 500.txt#10 | Source: Shield 500.txt | Score: 0.4423
+  1. Chunk ID: Shield 500.txt#5 | Source: Shield 500.txt | Score: 0.6009
+  2. Chunk ID: Shield 500.txt#7 | Source: Shield 500.txt | Score: 0.5864
+  3. Chunk ID: Shield 500.txt#1 | Source: Shield 500.txt | Score: 0.4670
+  4. Chunk ID: Shield 500.txt#10 | Source: Shield 500.txt | Score: 0.4437
   5. Chunk ID: Client agreement(1).txt#311 | Source: Client agreement(1).txt | Score: 0.3689
 
 BM25 Top-5:
@@ -998,9 +998,9 @@ Overlap@5: 80.00%
 Question 46: How many Shield 500 accounts can one client have?
 
 Dense Top-5:
-  1. Chunk ID: Shield 500.txt#5 | Source: Shield 500.txt | Score: 0.5110
-  2. Chunk ID: Shield 500.txt#7 | Source: Shield 500.txt | Score: 0.4855
-  3. Chunk ID: Copy trading TC(1).txt#87 | Source: Copy trading TC(1).txt | Score: 0.4527
+  1. Chunk ID: Shield 500.txt#5 | Source: Shield 500.txt | Score: 0.5109
+  2. Chunk ID: Shield 500.txt#7 | Source: Shield 500.txt | Score: 0.4849
+  3. Chunk ID: Copy trading TC(1).txt#87 | Source: Copy trading TC(1).txt | Score: 0.4529
   4. Chunk ID: Shield 500.txt#1 | Source: Shield 500.txt | Score: 0.4290
   5. Chunk ID: Copy trading TC(1).txt#56 | Source: Copy trading TC(1).txt | Score: 0.4204
 
@@ -1020,11 +1020,11 @@ Overlap@5: 60.00%
 Question 47: What is the standard leverage on a Shield 500 account?
 
 Dense Top-5:
-  1. Chunk ID: Shield 500.txt#7 | Source: Shield 500.txt | Score: 0.5819
-  2. Chunk ID: Risk with CFDS 2.txt#36 | Source: Risk with CFDS 2.txt | Score: 0.5654
-  3. Chunk ID: Shield 500.txt#5 | Source: Shield 500.txt | Score: 0.5588
+  1. Chunk ID: Shield 500.txt#7 | Source: Shield 500.txt | Score: 0.5812
+  2. Chunk ID: Risk with CFDS 2.txt#36 | Source: Risk with CFDS 2.txt | Score: 0.5657
+  3. Chunk ID: Shield 500.txt#5 | Source: Shield 500.txt | Score: 0.5589
   4. Chunk ID: Risk with CFDS.txt#33 | Source: Risk with CFDS.txt | Score: 0.5447
-  5. Chunk ID: Risk with CFDS 2.txt#33 | Source: Risk with CFDS 2.txt | Score: 0.5406
+  5. Chunk ID: Risk with CFDS 2.txt#33 | Source: Risk with CFDS 2.txt | Score: 0.5396
 
 BM25 Top-5:
   1. Chunk ID: Shield 500.txt#7 | Source: Shield 500.txt | Score: 17.9272
@@ -1042,7 +1042,7 @@ Overlap@5: 40.00%
 Question 48: What happens to Shield 500 leverage during news events?
 
 Dense Top-5:
-  1. Chunk ID: Risk with CFDS.txt#20 | Source: Risk with CFDS.txt | Score: 0.5375
+  1. Chunk ID: Risk with CFDS.txt#20 | Source: Risk with CFDS.txt | Score: 0.5376
   2. Chunk ID: Risk with CFDS.txt#19 | Source: Risk with CFDS.txt | Score: 0.5358
   3. Chunk ID: Risk with CFDS 2.txt#20 | Source: Risk with CFDS 2.txt | Score: 0.5311
   4. Chunk ID: Risk with CFDS 2.txt#19 | Source: Risk with CFDS 2.txt | Score: 0.5310
@@ -1108,8 +1108,8 @@ Overlap@5: 40.00%
 Question 51: Who is the current CEO of HF Markets?
 
 Dense Top-5:
-  1. Chunk ID: Account opening agreement 2(1).txt#17 | Source: Account opening agreement 2(1).txt | Score: 0.6265
-  2. Chunk ID: Account opening agreement(1).txt#17 | Source: Account opening agreement(1).txt | Score: 0.6251
+  1. Chunk ID: Account opening agreement 2(1).txt#17 | Source: Account opening agreement 2(1).txt | Score: 0.6263
+  2. Chunk ID: Account opening agreement(1).txt#17 | Source: Account opening agreement(1).txt | Score: 0.6247
   3. Chunk ID: Client agreement(1).txt#335 | Source: Client agreement(1).txt | Score: 0.6207
   4. Chunk ID: Client agreement(1).txt#42 | Source: Client agreement(1).txt | Score: 0.6195
   5. Chunk ID: Client agreement(1).txt#19 | Source: Client agreement(1).txt | Score: 0.6185
@@ -1133,8 +1133,8 @@ Dense Top-5:
   1. Chunk ID: Client agreement(1).txt#103 | Source: Client agreement(1).txt | Score: 0.6074
   2. Chunk ID: Client agreement(1).txt#335 | Source: Client agreement(1).txt | Score: 0.6072
   3. Chunk ID: Client agreement(1).txt#42 | Source: Client agreement(1).txt | Score: 0.6071
-  4. Chunk ID: Client agreement(1).txt#215 | Source: Client agreement(1).txt | Score: 0.6037
-  5. Chunk ID: Client agreement(1).txt#19 | Source: Client agreement(1).txt | Score: 0.6022
+  4. Chunk ID: Client agreement(1).txt#215 | Source: Client agreement(1).txt | Score: 0.6036
+  5. Chunk ID: Client agreement(1).txt#19 | Source: Client agreement(1).txt | Score: 0.6021
 
 BM25 Top-5:
   1. Chunk ID: Account opening agreement(1).txt#278 | Source: Account opening agreement(1).txt | Score: 7.8931
@@ -1152,15 +1152,15 @@ Overlap@5: 0.00%
 Question 53: What is the annual salary of the CEO of HF Markets?
 
 Dense Top-5:
-  1. Chunk ID: Client agreement(1).txt#335 | Source: Client agreement(1).txt | Score: 0.5565
+  1. Chunk ID: Client agreement(1).txt#335 | Source: Client agreement(1).txt | Score: 0.5566
   2. Chunk ID: Client agreement(1).txt#42 | Source: Client agreement(1).txt | Score: 0.5563
   3. Chunk ID: Client agreement(1).txt#19 | Source: Client agreement(1).txt | Score: 0.5551
   4. Chunk ID: Client agreement(1).txt#215 | Source: Client agreement(1).txt | Score: 0.5518
   5. Chunk ID: Client agreement(1).txt#103 | Source: Client agreement(1).txt | Score: 0.5509
 
 BM25 Top-5:
-  1. Chunk ID: Conflicts of interest policy (1).txt#57 | Source: Conflicts of interest policy (1).txt | Score: 7.3507
-  2. Chunk ID: Order exection policy(1).txt#46 | Source: Order exection policy(1).txt | Score: 7.3507
+  1. Chunk ID: Order exection policy(1).txt#46 | Source: Order exection policy(1).txt | Score: 7.3507
+  2. Chunk ID: Conflicts of interest policy (1).txt#57 | Source: Conflicts of interest policy (1).txt | Score: 7.3507
   3. Chunk ID: Account opening agreement 2(1).txt#118 | Source: Account opening agreement 2(1).txt | Score: 4.9292
   4. Chunk ID: Account opening agreement(1).txt#119 | Source: Account opening agreement(1).txt | Score: 4.7955
   5. Chunk ID: Risk disclaimer (1).txt#9 | Source: Risk disclaimer (1).txt | Score: 4.7842
@@ -1174,11 +1174,11 @@ Overlap@5: 0.00%
 Question 54: I submitted a complaint with my name, account ID and description of the issue, but I did not provide the relevant supporting evidence. Can HFM ask me for additional information before investigating?
 
 Dense Top-5:
-  1. Chunk ID: Complaint handling(1).txt#13 | Source: Complaint handling(1).txt | Score: 0.5131
+  1. Chunk ID: Complaint handling(1).txt#13 | Source: Complaint handling(1).txt | Score: 0.5132
   2. Chunk ID: Complaint handling(1).txt#16 | Source: Complaint handling(1).txt | Score: 0.4789
-  3. Chunk ID: Complaint handling(1).txt#12 | Source: Complaint handling(1).txt | Score: 0.4679
+  3. Chunk ID: Complaint handling(1).txt#12 | Source: Complaint handling(1).txt | Score: 0.4680
   4. Chunk ID: Complaint handling(1).txt#15 | Source: Complaint handling(1).txt | Score: 0.4646
-  5. Chunk ID: Complaint handling(1).txt#0 | Source: Complaint handling(1).txt | Score: 0.4617
+  5. Chunk ID: Complaint handling(1).txt#0 | Source: Complaint handling(1).txt | Score: 0.4618
 
 BM25 Top-5:
   1. Chunk ID: Complaint handling(1).txt#11 | Source: Complaint handling(1).txt | Score: 31.6059
@@ -1197,10 +1197,10 @@ Question 55: I filed a complaint but did not respond to any requests from the in
 
 Dense Top-5:
   1. Chunk ID: Complaint handling(1).txt#16 | Source: Complaint handling(1).txt | Score: 0.5141
-  2. Chunk ID: Complaint handling(1).txt#17 | Source: Complaint handling(1).txt | Score: 0.5139
-  3. Chunk ID: Complaint handling(1).txt#18 | Source: Complaint handling(1).txt | Score: 0.5046
-  4. Chunk ID: Complaint handling(1).txt#19 | Source: Complaint handling(1).txt | Score: 0.4972
-  5. Chunk ID: Complaint handling(1).txt#22 | Source: Complaint handling(1).txt | Score: 0.4931
+  2. Chunk ID: Complaint handling(1).txt#17 | Source: Complaint handling(1).txt | Score: 0.5138
+  3. Chunk ID: Complaint handling(1).txt#18 | Source: Complaint handling(1).txt | Score: 0.5043
+  4. Chunk ID: Complaint handling(1).txt#19 | Source: Complaint handling(1).txt | Score: 0.4946
+  5. Chunk ID: Complaint handling(1).txt#22 | Source: Complaint handling(1).txt | Score: 0.4930
 
 BM25 Top-5:
   1. Chunk ID: Complaint handling(1).txt#22 | Source: Complaint handling(1).txt | Score: 40.1647
@@ -1221,7 +1221,7 @@ Dense Top-5:
   1. Chunk ID: Complaint handling(1).txt#0 | Source: Complaint handling(1).txt | Score: 0.4750
   2. Chunk ID: Complaint handling(1).txt#13 | Source: Complaint handling(1).txt | Score: 0.4743
   3. Chunk ID: Complaint handling(1).txt#15 | Source: Complaint handling(1).txt | Score: 0.4632
-  4. Chunk ID: Complaint handling(1).txt#21 | Source: Complaint handling(1).txt | Score: 0.4579
+  4. Chunk ID: Complaint handling(1).txt#21 | Source: Complaint handling(1).txt | Score: 0.4583
   5. Chunk ID: Complaint handling(1).txt#10 | Source: Complaint handling(1).txt | Score: 0.4382
 
 BM25 Top-5:
@@ -1244,7 +1244,7 @@ Dense Top-5:
   2. Chunk ID: Risk with CFDS.txt#46 | Source: Risk with CFDS.txt | Score: 0.5358
   3. Chunk ID: Terms of Business Glossary.txt#28 | Source: Terms of Business Glossary.txt | Score: 0.5347
   4. Chunk ID: Trading and Execution .txt#10 | Source: Trading and Execution .txt | Score: 0.5331
-  5. Chunk ID: Trading and Execution .txt#11 | Source: Trading and Execution .txt | Score: 0.5268
+  5. Chunk ID: Trading and Execution .txt#11 | Source: Trading and Execution .txt | Score: 0.5267
 
 BM25 Top-5:
   1. Chunk ID: Terms of Business Glossary.txt#11 | Source: Terms of Business Glossary.txt | Score: 23.7030
@@ -1266,7 +1266,7 @@ Dense Top-5:
   2. Chunk ID: Order exection policy(1).txt#0 | Source: Order exection policy(1).txt | Score: 0.5217
   3. Chunk ID: Order exection policy(1).txt#4 | Source: Order exection policy(1).txt | Score: 0.4990
   4. Chunk ID: Order exection policy(1).txt#38 | Source: Order exection policy(1).txt | Score: 0.4910
-  5. Chunk ID: Account opening agreement(1).txt#96 | Source: Account opening agreement(1).txt | Score: 0.4887
+  5. Chunk ID: Account opening agreement(1).txt#96 | Source: Account opening agreement(1).txt | Score: 0.4888
 
 BM25 Top-5:
   1. Chunk ID: Order exection policy(1).txt#45 | Source: Order exection policy(1).txt | Score: 21.3401
@@ -1286,16 +1286,16 @@ Question 59: During an economic news release, the spread suddenly became much wi
 Dense Top-5:
   1. Chunk ID: Trading and Execution .txt#19 | Source: Trading and Execution .txt | Score: 0.5437
   2. Chunk ID: Trading and Execution .txt#18 | Source: Trading and Execution .txt | Score: 0.5194
-  3. Chunk ID: Client agreement(1).txt#203 | Source: Client agreement(1).txt | Score: 0.4486
-  4. Chunk ID: Trading and Execution .txt#3 | Source: Trading and Execution .txt | Score: 0.4323
+  3. Chunk ID: Client agreement(1).txt#203 | Source: Client agreement(1).txt | Score: 0.4485
+  4. Chunk ID: Trading and Execution .txt#3 | Source: Trading and Execution .txt | Score: 0.4322
   5. Chunk ID: Account opening agreement(1).txt#221 | Source: Account opening agreement(1).txt | Score: 0.4207
 
 BM25 Top-5:
   1. Chunk ID: General risk disclosure(1).txt#23 | Source: General risk disclosure(1).txt | Score: 18.5400
   2. Chunk ID: Trading and Execution .txt#19 | Source: Trading and Execution .txt | Score: 16.5416
-  3. Chunk ID: Risk with CFDS 2.txt#19 | Source: Risk with CFDS 2.txt | Score: 13.9279
-  4. Chunk ID: Risk with CFDS.txt#19 | Source: Risk with CFDS.txt | Score: 13.9279
-  5. Chunk ID: Risk with CFDS 2.txt#20 | Source: Risk with CFDS 2.txt | Score: 13.4154
+  3. Chunk ID: Risk with CFDS.txt#19 | Source: Risk with CFDS.txt | Score: 13.9279
+  4. Chunk ID: Risk with CFDS 2.txt#19 | Source: Risk with CFDS 2.txt | Score: 13.9279
+  5. Chunk ID: Risk with CFDS.txt#20 | Source: Risk with CFDS.txt | Score: 13.4154
 
 Common Chunk IDs: ['Trading and Execution .txt#19']
 Common Sources: ['Trading and Execution .txt']
@@ -1306,7 +1306,7 @@ Overlap@5: 20.00%
 Question 60: My internet connection became unstable and my market order reached HFM with an outdated price. What may happen?
 
 Dense Top-5:
-  1. Chunk ID: Trading and Execution .txt#13 | Source: Trading and Execution .txt | Score: 0.5641
+  1. Chunk ID: Trading and Execution .txt#13 | Source: Trading and Execution .txt | Score: 0.5640
   2. Chunk ID: Order exection policy(1).txt#24 | Source: Order exection policy(1).txt | Score: 0.5332
   3. Chunk ID: Trading and Execution .txt#11 | Source: Trading and Execution .txt | Score: 0.5317
   4. Chunk ID: Trading and Execution .txt#10 | Source: Trading and Execution .txt | Score: 0.5282
@@ -1328,10 +1328,10 @@ Overlap@5: 20.00%
 Question 61: After the 25th day of Shield 500, I withdraw 40 percent of my available withdrawable funds. What percentage of my applicable Shield bonus may be removed?
 
 Dense Top-5:
-  1. Chunk ID: Shield 500.txt#10 | Source: Shield 500.txt | Score: 0.6181
-  2. Chunk ID: Shield 500.txt#5 | Source: Shield 500.txt | Score: 0.5903
-  3. Chunk ID: Shield 500.txt#9 | Source: Shield 500.txt | Score: 0.5081
-  4. Chunk ID: Shield 500.txt#7 | Source: Shield 500.txt | Score: 0.4148
+  1. Chunk ID: Shield 500.txt#10 | Source: Shield 500.txt | Score: 0.6196
+  2. Chunk ID: Shield 500.txt#5 | Source: Shield 500.txt | Score: 0.5901
+  3. Chunk ID: Shield 500.txt#9 | Source: Shield 500.txt | Score: 0.5080
+  4. Chunk ID: Shield 500.txt#7 | Source: Shield 500.txt | Score: 0.4152
   5. Chunk ID: Client agreement(1).txt#282 | Source: Client agreement(1).txt | Score: 0.4125
 
 BM25 Top-5:
@@ -1350,11 +1350,11 @@ Overlap@5: 80.00%
 Question 62: Can I withdraw the Shield 500 bonus itself as cash?
 
 Dense Top-5:
-  1. Chunk ID: Shield 500.txt#10 | Source: Shield 500.txt | Score: 0.6070
-  2. Chunk ID: Shield 500.txt#5 | Source: Shield 500.txt | Score: 0.5887
-  3. Chunk ID: Shield 500.txt#7 | Source: Shield 500.txt | Score: 0.5021
+  1. Chunk ID: Shield 500.txt#10 | Source: Shield 500.txt | Score: 0.6080
+  2. Chunk ID: Shield 500.txt#5 | Source: Shield 500.txt | Score: 0.5892
+  3. Chunk ID: Shield 500.txt#7 | Source: Shield 500.txt | Score: 0.5019
   4. Chunk ID: Shield 500.txt#1 | Source: Shield 500.txt | Score: 0.4650
-  5. Chunk ID: Shield 500.txt#9 | Source: Shield 500.txt | Score: 0.3974
+  5. Chunk ID: Shield 500.txt#9 | Source: Shield 500.txt | Score: 0.3973
 
 BM25 Top-5:
   1. Chunk ID: Shield 500.txt#10 | Source: Shield 500.txt | Score: 24.2319
@@ -1374,8 +1374,8 @@ Question 63: A Copy Trading follower has 400 USD equity, the Strategy Provider h
 Dense Top-5:
   1. Chunk ID: Copy trading TC(1).txt#123 | Source: Copy trading TC(1).txt | Score: 0.7359
   2. Chunk ID: Copy trading TC(1).txt#124 | Source: Copy trading TC(1).txt | Score: 0.7167
-  3. Chunk ID: Copy trading TC(1).txt#121 | Source: Copy trading TC(1).txt | Score: 0.7090
-  4. Chunk ID: Copy trading TC(1).txt#122 | Source: Copy trading TC(1).txt | Score: 0.7073
+  3. Chunk ID: Copy trading TC(1).txt#121 | Source: Copy trading TC(1).txt | Score: 0.7084
+  4. Chunk ID: Copy trading TC(1).txt#122 | Source: Copy trading TC(1).txt | Score: 0.7032
   5. Chunk ID: Copy trading TC(1).txt#117 | Source: Copy trading TC(1).txt | Score: 0.6809
 
 BM25 Top-5:
@@ -1395,10 +1395,10 @@ Question 64: If the Copy Ratio is 0.08 and the Strategy Provider opens a 0.50 lo
 
 Dense Top-5:
   1. Chunk ID: Copy trading TC(1).txt#123 | Source: Copy trading TC(1).txt | Score: 0.7541
-  2. Chunk ID: Copy trading TC(1).txt#122 | Source: Copy trading TC(1).txt | Score: 0.7261
+  2. Chunk ID: Copy trading TC(1).txt#122 | Source: Copy trading TC(1).txt | Score: 0.7216
   3. Chunk ID: Copy trading TC(1).txt#124 | Source: Copy trading TC(1).txt | Score: 0.7020
-  4. Chunk ID: Copy trading TC(1).txt#120 | Source: Copy trading TC(1).txt | Score: 0.6345
-  5. Chunk ID: Copy trading TC(1).txt#121 | Source: Copy trading TC(1).txt | Score: 0.6181
+  4. Chunk ID: Copy trading TC(1).txt#120 | Source: Copy trading TC(1).txt | Score: 0.6346
+  5. Chunk ID: Copy trading TC(1).txt#121 | Source: Copy trading TC(1).txt | Score: 0.6175
 
 BM25 Top-5:
   1. Chunk ID: Copy trading TC(1).txt#123 | Source: Copy trading TC(1).txt | Score: 56.4871
@@ -1438,11 +1438,11 @@ Overlap@5: 60.00%
 Question 66: Can one Copy Trading Follower Account follow two Strategy Providers at the same time?
 
 Dense Top-5:
-  1. Chunk ID: Copy trading TC(1).txt#89 | Source: Copy trading TC(1).txt | Score: 0.7054
+  1. Chunk ID: Copy trading TC(1).txt#89 | Source: Copy trading TC(1).txt | Score: 0.7058
   2. Chunk ID: Copy trading TC(1).txt#30 | Source: Copy trading TC(1).txt | Score: 0.6457
   3. Chunk ID: Copy trading TC(1).txt#56 | Source: Copy trading TC(1).txt | Score: 0.6292
   4. Chunk ID: Copy trading TC(1).txt#85 | Source: Copy trading TC(1).txt | Score: 0.5848
-  5. Chunk ID: Copy trading TC(1).txt#90 | Source: Copy trading TC(1).txt | Score: 0.5745
+  5. Chunk ID: Copy trading TC(1).txt#90 | Source: Copy trading TC(1).txt | Score: 0.5747
 
 BM25 Top-5:
   1. Chunk ID: Copy trading TC(1).txt#89 | Source: Copy trading TC(1).txt | Score: 25.4121
@@ -1462,9 +1462,9 @@ Question 67: I used a Stop Loss, so is it impossible for me to lose more than th
 Dense Top-5:
   1. Chunk ID: Risk with CFDS 2.txt#42 | Source: Risk with CFDS 2.txt | Score: 0.5169
   2. Chunk ID: Risk with CFDS.txt#46 | Source: Risk with CFDS.txt | Score: 0.4968
-  3. Chunk ID: General risk disclosure(1).txt#35 | Source: General risk disclosure(1).txt | Score: 0.4711
-  4. Chunk ID: General risk disclosure(1).txt#18 | Source: General risk disclosure(1).txt | Score: 0.4646
-  5. Chunk ID: General risk disclosure(1).txt#17 | Source: General risk disclosure(1).txt | Score: 0.4599
+  3. Chunk ID: General risk disclosure(1).txt#35 | Source: General risk disclosure(1).txt | Score: 0.4710
+  4. Chunk ID: General risk disclosure(1).txt#18 | Source: General risk disclosure(1).txt | Score: 0.4659
+  5. Chunk ID: General risk disclosure(1).txt#17 | Source: General risk disclosure(1).txt | Score: 0.4595
 
 BM25 Top-5:
   1. Chunk ID: General risk disclosure(1).txt#34 | Source: General risk disclosure(1).txt | Score: 20.7688
@@ -1484,7 +1484,7 @@ Question 68: What was HF Markets' total global revenue in 2025?
 Dense Top-5:
   1. Chunk ID: Client agreement(1).txt#335 | Source: Client agreement(1).txt | Score: 0.5236
   2. Chunk ID: Client agreement(1).txt#42 | Source: Client agreement(1).txt | Score: 0.5234
-  3. Chunk ID: Client agreement(1).txt#192 | Source: Client agreement(1).txt | Score: 0.5226
+  3. Chunk ID: Client agreement(1).txt#192 | Source: Client agreement(1).txt | Score: 0.5223
   4. Chunk ID: Client agreement(1).txt#215 | Source: Client agreement(1).txt | Score: 0.5222
   5. Chunk ID: Client agreement(1).txt#19 | Source: Client agreement(1).txt | Score: 0.5222
 
@@ -1493,7 +1493,7 @@ BM25 Top-5:
   2. Chunk ID: Account opening agreement 2(1).txt#18 | Source: Account opening agreement 2(1).txt | Score: 10.3011
   3. Chunk ID: Account opening agreement(1).txt#18 | Source: Account opening agreement(1).txt | Score: 10.1126
   4. Chunk ID: Account opening agreement(1).txt#251 | Source: Account opening agreement(1).txt | Score: 10.0638
-  5. Chunk ID: Risk with CFDS.txt#3 | Source: Risk with CFDS.txt | Score: 7.3165
+  5. Chunk ID: Risk with CFDS 2.txt#3 | Source: Risk with CFDS 2.txt | Score: 7.3165
 
 Common Chunk IDs: []
 Common Sources: []
@@ -1506,9 +1506,9 @@ Question 69: A Strategy Provider has 5000 USD equity. A follower has 400 USD equ
 Dense Top-5:
   1. Chunk ID: Copy trading TC(1).txt#123 | Source: Copy trading TC(1).txt | Score: 0.7509
   2. Chunk ID: Copy trading TC(1).txt#124 | Source: Copy trading TC(1).txt | Score: 0.7178
-  3. Chunk ID: Copy trading TC(1).txt#122 | Source: Copy trading TC(1).txt | Score: 0.6609
-  4. Chunk ID: Copy trading TC(1).txt#121 | Source: Copy trading TC(1).txt | Score: 0.6397
-  5. Chunk ID: Copy trading TC(1).txt#120 | Source: Copy trading TC(1).txt | Score: 0.6345
+  3. Chunk ID: Copy trading TC(1).txt#122 | Source: Copy trading TC(1).txt | Score: 0.6558
+  4. Chunk ID: Copy trading TC(1).txt#121 | Source: Copy trading TC(1).txt | Score: 0.6396
+  5. Chunk ID: Copy trading TC(1).txt#120 | Source: Copy trading TC(1).txt | Score: 0.6346
 
 BM25 Top-5:
   1. Chunk ID: Copy trading TC(1).txt#123 | Source: Copy trading TC(1).txt | Score: 64.3707
@@ -1573,8 +1573,8 @@ Dense Top-5:
   1. Chunk ID: Copy trading TC(1).txt#72 | Source: Copy trading TC(1).txt | Score: 0.6025
   2. Chunk ID: Copy trading TC(1).txt#71 | Source: Copy trading TC(1).txt | Score: 0.5841
   3. Chunk ID: Copy trading TC(1).txt#103 | Source: Copy trading TC(1).txt | Score: 0.5733
-  4. Chunk ID: Copy trading TC(1).txt#90 | Source: Copy trading TC(1).txt | Score: 0.5653
-  5. Chunk ID: Copy trading TC(1).txt#96 | Source: Copy trading TC(1).txt | Score: 0.5488
+  4. Chunk ID: Copy trading TC(1).txt#90 | Source: Copy trading TC(1).txt | Score: 0.5652
+  5. Chunk ID: Copy trading TC(1).txt#96 | Source: Copy trading TC(1).txt | Score: 0.5487
 
 BM25 Top-5:
   1. Chunk ID: Copy trading TC(1).txt#103 | Source: Copy trading TC(1).txt | Score: 21.5206
@@ -1596,7 +1596,7 @@ Dense Top-5:
   2. Chunk ID: Copy trading TC(1).txt#73 | Source: Copy trading TC(1).txt | Score: 0.5680
   3. Chunk ID: Copy trading TC(1).txt#74 | Source: Copy trading TC(1).txt | Score: 0.5649
   4. Chunk ID: Copy trading TC(1).txt#90 | Source: Copy trading TC(1).txt | Score: 0.5602
-  5. Chunk ID: Copy trading TC(1).txt#101 | Source: Copy trading TC(1).txt | Score: 0.5334
+  5. Chunk ID: Copy trading TC(1).txt#101 | Source: Copy trading TC(1).txt | Score: 0.5333
 
 BM25 Top-5:
   1. Chunk ID: Copy trading TC(1).txt#90 | Source: Copy trading TC(1).txt | Score: 28.9346
@@ -1614,11 +1614,11 @@ Overlap@5: 60.00%
 Question 74: A Strategy Provider opened a trade during a server maintenance interruption. My copied trade opened later at a worse price. Does the Copy Trading Agreement guarantee identical entry price and profit or loss?
 
 Dense Top-5:
-  1. Chunk ID: Copy trading TC(1).txt#95 | Source: Copy trading TC(1).txt | Score: 0.5589
-  2. Chunk ID: Copy trading TC(1).txt#96 | Source: Copy trading TC(1).txt | Score: 0.5453
+  1. Chunk ID: Copy trading TC(1).txt#95 | Source: Copy trading TC(1).txt | Score: 0.5590
+  2. Chunk ID: Copy trading TC(1).txt#96 | Source: Copy trading TC(1).txt | Score: 0.5452
   3. Chunk ID: Copy trading TC(1).txt#78 | Source: Copy trading TC(1).txt | Score: 0.5448
   4. Chunk ID: Copy trading TC(1).txt#72 | Source: Copy trading TC(1).txt | Score: 0.5443
-  5. Chunk ID: Copy trading TC(1).txt#94 | Source: Copy trading TC(1).txt | Score: 0.5380
+  5. Chunk ID: Copy trading TC(1).txt#94 | Source: Copy trading TC(1).txt | Score: 0.5381
 
 BM25 Top-5:
   1. Chunk ID: Copy trading TC(1).txt#78 | Source: Copy trading TC(1).txt | Score: 28.0246
@@ -1661,7 +1661,7 @@ Dense Top-5:
   1. Chunk ID: Order exection policy(1).txt#32 | Source: Order exection policy(1).txt | Score: 0.5319
   2. Chunk ID: Trading and Execution .txt#10 | Source: Trading and Execution .txt | Score: 0.5286
   3. Chunk ID: Trading and Execution .txt#11 | Source: Trading and Execution .txt | Score: 0.5150
-  4. Chunk ID: Order exection policy(1).txt#27 | Source: Order exection policy(1).txt | Score: 0.5139
+  4. Chunk ID: Order exection policy(1).txt#27 | Source: Order exection policy(1).txt | Score: 0.5135
   5. Chunk ID: Trading and Execution .txt#13 | Source: Trading and Execution .txt | Score: 0.4914
 
 BM25 Top-5:
@@ -1683,8 +1683,8 @@ Dense Top-5:
   1. Chunk ID: Complaint handling(1).txt#0 | Source: Complaint handling(1).txt | Score: 0.4957
   2. Chunk ID: Complaint handling(1).txt#13 | Source: Complaint handling(1).txt | Score: 0.4774
   3. Chunk ID: Client agreement(1).txt#470 | Source: Client agreement(1).txt | Score: 0.4729
-  4. Chunk ID: Complaint handling(1).txt#5 | Source: Complaint handling(1).txt | Score: 0.4606
-  5. Chunk ID: Shield 500.txt#19 | Source: Shield 500.txt | Score: 0.4569
+  4. Chunk ID: Complaint handling(1).txt#5 | Source: Complaint handling(1).txt | Score: 0.4608
+  5. Chunk ID: Shield 500.txt#19 | Source: Shield 500.txt | Score: 0.4572
 
 BM25 Top-5:
   1. Chunk ID: Client agreement(1).txt#25 | Source: Client agreement(1).txt | Score: 14.2506

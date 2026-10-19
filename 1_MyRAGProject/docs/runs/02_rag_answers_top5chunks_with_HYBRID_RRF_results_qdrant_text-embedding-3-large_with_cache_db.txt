@@ -1,0 +1,165 @@
+rocessing RAG question 1/77 with K=5
+✓ CACHE HIT: Where is the company located?
+Processing RAG question 2/77 with K=5
+✓ CACHE HIT: Where is Chennai located?
+Processing RAG question 3/77 with K=5
+✓ CACHE HIT: On what basis the clients are categorized as Partially Approved?
+Processing RAG question 4/77 with K=5
+✓ CACHE HIT: Is my telephone call recorded?
+Processing RAG question 5/77 with K=5
+✓ CACHE HIT: What are the limitations on withdrawals?
+Processing RAG question 6/77 with K=5
+✓ CACHE HIT: What is a leverage and how can i change it?
+Processing RAG question 7/77 with K=5
+✓ CACHE HIT: Will my account be archived any time?
+Processing RAG question 8/77 with K=5
+✓ CACHE HIT: What is the contact support details?
+Processing RAG question 9/77 with K=5
+✓ CACHE HIT: How do i test the trading in HFM?
+Processing RAG question 10/77 with K=5
+✓ CACHE HIT: What is the company's official website?
+Processing RAG question 11/77 with K=5
+✓ CACHE HIT: I am following a strategy account now, am i eligible to cancel the terms & conditions given by the company?
+Processing RAG question 12/77 with K=5
+✓ CACHE HIT: Who is the CEO of HFM?
+Processing RAG question 13/77 with K=5
+✓ CACHE HIT: Can i view the trades taken by other broker account
+Processing RAG question 14/77 with K=5
+✓ CACHE HIT: What are the advantage points for a trader to escape from any sort of penalty?
+Processing RAG question 15/77 with K=5
+✓ CACHE HIT: What level of AI tools i can use in HFM? Give me a valid use case.
+Processing RAG question 16/77 with K=5
+✓ CACHE HIT: What does Hyperactive trading means and as a trader how do i use it?
+Processing RAG question 17/77 with K=5
+✓ CACHE HIT: If my withdrawal is not received , what should i do?
+Processing RAG question 18/77 with K=5
+✓ CACHE HIT: What is the legal name of the company referred to in these policies?
+Processing RAG question 19/77 with K=5
+✓ CACHE HIT: In which jurisdiction is HF Markets (SV) Ltd incorporated?
+Processing RAG question 20/77 with K=5
+✓ CACHE HIT: What is the registration number of HF Markets (SV) Ltd?
+Processing RAG question 21/77 with K=5
+✓ CACHE HIT: What are cookies according to the HFM Cookie Policy?
+Processing RAG question 22/77 with K=5
+✓ CACHE HIT: What are the four types of cookies used by HFM?
+Processing RAG question 23/77 with K=5
+✓ CACHE HIT: Do Necessary cookies require user consent?
+Processing RAG question 24/77 with K=5
+✓ CACHE HIT: What is the purpose of Analytical cookies?
+Processing RAG question 25/77 with K=5
+✓ CACHE HIT: What may happen if I block cookies on the HFM website?
+Processing RAG question 26/77 with K=5
+✓ CACHE HIT: Does HFM guarantee that the money I deposit for trading cannot be lost?
+Processing RAG question 27/77 with K=5
+✓ CACHE HIT: What should I do if I do not understand the risks involved in trading a financial instrument?
+Processing RAG question 28/77 with K=5
+✓ CACHE HIT: How does high leverage affect trading risk?
+Processing RAG question 29/77 with K=5
+✓ CACHE HIT: Who acts as the execution venue for HFM client CFD orders?
+Processing RAG question 30/77 with K=5
+✓ CACHE HIT: Are CFD transactions with HFM executed on a recognised exchange?
+Processing RAG question 31/77 with K=5
+✓ CACHE HIT: What is the difference between the BID and ASK price called?
+Processing RAG question 32/77 with K=5
+✓ CACHE HIT: At which price are Buy Limit and Buy Stop orders executed?
+Processing RAG question 33/77 with K=5
+✓ CACHE HIT: At which price are Sell Limit and Sell Stop orders executed?
+Processing RAG question 34/77 with K=5
+✓ CACHE HIT: What is the minimum available tradable lot size unless otherwise stated in the contract specifications?
+Processing RAG question 35/77 with K=5
+✓ CACHE HIT: Does placing a Stop Loss always guarantee that my loss will be limited to the price I selected?
+Processing RAG question 36/77 with K=5
+✓ CACHE HIT: Does HFM allow trading using Expert Advisors?
+Processing RAG question 37/77 with K=5
+✓ CACHE HIT: Who is responsible for ensuring that an Expert Advisor works properly?
+Processing RAG question 38/77 with K=5
+✓ CACHE HIT: Where should I send a formal complaint to HFM?
+Processing RAG question 39/77 with K=5
+✓ CACHE HIT: Within how many working days should HFM provide a unique complaint reference number?
+Processing RAG question 40/77 with K=5
+✓ CACHE HIT: Within how many business days should HFM normally provide its initial response to a complaint?
+Processing RAG question 41/77 with K=5
+✓ CACHE HIT: If a complaint needs further investigation, within how many business days should HFM normally provide a final response?
+Processing RAG question 42/77 with K=5
+✓ CACHE HIT: For how long does HFM keep records in its complaints register?
+Processing RAG question 43/77 with K=5
+✓ CACHE HIT: How often is the Conflicts of Interest Policy reviewed?
+Processing RAG question 44/77 with K=5
+✓ CACHE HIT: Who makes the final decision when HFM's internal conflict-of-interest procedures are not sufficient?
+Processing RAG question 45/77 with K=5
+✓ CACHE HIT: What is the maximum return or loss coverage available under the Shield 500 program?
+Processing RAG question 46/77 with K=5
+✓ CACHE HIT: How many Shield 500 accounts can one client have?
+Processing RAG question 47/77 with K=5
+✓ CACHE HIT: What is the standard leverage on a Shield 500 account?
+Processing RAG question 48/77 with K=5
+✓ CACHE HIT: What happens to Shield 500 leverage during news events?
+Processing RAG question 49/77 with K=5
+✓ CACHE HIT: What is the maximum Performance Fee a Copy Trading Strategy Provider can set?
+Processing RAG question 50/77 with K=5
+✓ CACHE HIT: What is the maximum Rescue Level a Copy Trading follower can set?
+Processing RAG question 51/77 with K=5
+✓ CACHE HIT: Who is the current CEO of HF Markets?
+Processing RAG question 52/77 with K=5
+✓ CACHE HIT: Who is the current CFO of HF Markets?
+Processing RAG question 53/77 with K=5
+✓ CACHE HIT: What is the annual salary of the CEO of HF Markets?
+Processing RAG question 54/77 with K=5
+✓ CACHE HIT: I submitted a complaint with my name, account ID and description of the issue, but I did not provide the relevant supporting evidence. Can HFM ask me for additional information before investigating?
+Processing RAG question 55/77 with K=5
+✓ CACHE HIT: I filed a complaint but did not respond to any requests from the investigating officer for four weeks. What may happen to my complaint?
+Processing RAG question 56/77 with K=5
+✓ CACHE HIT: Can my lawyer lodge a complaint with HFM on my behalf?
+Processing RAG question 57/77 with K=5
+✓ CACHE HIT: My Stop Loss was set at a specific price, but major news caused the market to gap through that level. Does HFM have to execute my Stop Loss exactly at the requested price?
+Processing RAG question 58/77 with K=5
+✓ CACHE HIT: If I give HFM a specific instruction for executing an order, can that instruction affect the normal best-execution process?
+Processing RAG question 59/77 with K=5
+✓ CACHE HIT: During an economic news release, the spread suddenly became much wider. Does this alone prove that HFM manipulated the price?
+Processing RAG question 60/77 with K=5
+✓ CACHE HIT: My internet connection became unstable and my market order reached HFM with an outdated price. What may happen?
+Processing RAG question 61/77 with K=5
+✓ CACHE HIT: After the 25th day of Shield 500, I withdraw 40 percent of my available withdrawable funds. What percentage of my applicable Shield bonus may be removed?
+Processing RAG question 62/77 with K=5
+✓ CACHE HIT: Can I withdraw the Shield 500 bonus itself as cash?
+Processing RAG question 63/77 with K=5
+✓ CACHE HIT: A Copy Trading follower has 400 USD equity, the Strategy Provider has 5000 USD equity and the follower selects 100 percent Volume Allocation. What is the Copy Ratio?
+Processing RAG question 64/77 with K=5
+✓ CACHE HIT: If the Copy Ratio is 0.08 and the Strategy Provider opens a 0.50 lot trade, what lot size should be copied to the follower?
+Processing RAG question 65/77 with K=5
+✓ CACHE HIT: Can I manually open my own additional trades inside a Copy Trading Follower Account?
+Processing RAG question 66/77 with K=5
+✓ CACHE HIT: Can one Copy Trading Follower Account follow two Strategy Providers at the same time?
+Processing RAG question 67/77 with K=5
+✓ CACHE HIT: I used a Stop Loss, so is it impossible for me to lose more than the loss amount I intended?
+Processing RAG question 68/77 with K=5
+✓ CACHE HIT: What was HF Markets' total global revenue in 2025?
+Processing RAG question 69/77 with K=5
+✓ CACHE HIT: A Strategy Provider has 5000 USD equity. A follower has 400 USD equity and selects 50 percent Volume Allocation. The Strategy Provider opens 0.10 lot. What is the theoretical follower position and what actually happens?
+Processing RAG question 70/77 with K=5
+✓ CACHE HIT: A Copy Trading follower has 1000 USD in profits and 500 USD in losses. The Strategy Provider charges a 25 percent Performance Fee. How much Performance Fee is payable?
+Processing RAG question 71/77 with K=5
+✓ CACHE HIT: A follower has 1000 USD in profits and 1200 USD in losses. The Strategy Provider charges a 30 percent Performance Fee. Is any Performance Fee payable?
+Processing RAG question 72/77 with K=5
+✓ CACHE HIT: A Strategy Provider already has three open trades when I start following the strategy. Will those three existing trades automatically appear in my Follower Account?
+Processing RAG question 73/77 with K=5
+✓ CACHE HIT: The Strategy Provider eventually closed a trade in profit, but my Follower Account was stopped out earlier because I did not have enough margin. Can I claim that the copy service failed simply because the Strategy Provider made a profit?
+Processing RAG question 74/77 with K=5
+✓ CACHE HIT: A Strategy Provider opened a trade during a server maintenance interruption. My copied trade opened later at a worse price. Does the Copy Trading Agreement guarantee identical entry price and profit or loss?
+Processing RAG question 75/77 with K=5
+✓ CACHE HIT: I deposit 1000 USD into a Copy Trading account and choose a 20 percent Rescue Level. At what equity should it theoretically trigger, and is exactly 200 USD guaranteed to remain?
+Processing RAG question 76/77 with K=5
+✓ CACHE HIT: I use an Expert Advisor during a major news event. My EA sends an order at one price but it executes at a very different price. Since HFM allows EAs, must HFM guarantee the EA's requested execution price?
+Processing RAG question 77/77 with K=5
+✓ CACHE HIT: The CEO personally approved my complaint and promised me 10000 USD compensation. Can you confirm this from the HFM policy documents?
+
+RAG processing completed for K=5.
+Total Questions: 77
+Cache Hits: 77
+Cache Misses: 0
+Total Latency for K=5: 0.000 seconds
+Average Latency for K=5: 0.000 seconds
+Total Tokens In for K=5: 0
+Total Tokens Out for K=5: 0
+Total Cost USD for K=5: $0.00000000
+Results saved to: docs/runs/02_rag_answers_top5chunks_with_HYBRID_RRF_results_qdrant_text-embedding-3-large.txt

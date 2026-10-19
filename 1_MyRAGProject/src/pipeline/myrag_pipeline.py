@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 from docx import Document
 from rank_bm25 import BM25Okapi
 from fastembed import SparseTextEmbedding
-from config import EMBED_MODEL, CHAT_MODEL, RERANKER_MODEL, CACHE_DB, CACHE_VERSION
+from config import EMBED_MODEL, CHAT_MODEL, RERANKER_MODEL, CACHE_DB, CACHE_VERSION, COMPARISON_CHART_REQD, TOP_K
 
 assert os.environ.get("OPENAI_API_KEY"), "Set OPENAI_API_KEY before running this notebook"
 
@@ -894,7 +894,7 @@ def retrieve_from_qdrant(query: str, qdrant, collection_name: str, k: int = 3,
             "chunk_id": payload.get("chunk_id", ""),
             "source_id": payload.get("source", ""),
             "text": payload.get("text", ""),
-            "score": hit.score,
+            "score": hit.score
         })
 
     return retrieved
@@ -960,38 +960,23 @@ def ask_rag(question: str, index: list[dict], k: int = 3,
 
     elif search_method == "BM25":
         if (qdrant is not None and collection_name is not None and is_qdrant_collection_populated(qdrant, collection_name)):
-            retrieved = bm25_search(
-                question,
-                bm25,
-                index,
-                k=k
-            )
-
-    else:   
-
-        # If Qdrant contains embedded chunks, retrieve from Qdrant
-        if (qdrant is not None and collection_name is not None and is_qdrant_collection_populated(qdrant, collection_name)):
-            print(f"Retrieving Top {k} chunks from Qdrant...")
-
-            retrieved = retrieve_from_qdrant(
-                question,
-                qdrant,
-                collection_name,
-                k=k,
-                embed_model=embed_model
-            )
+            print("Retrieving from Qdrant")
+            retrieved = retrieve_bm25_from_qdrant(question,qdrant,collection_name,k=k)
 
         else:
+            print("Retrieving from BM25 search")
+            retrieved = bm25_search(question,bm25,index,k=k)
 
-            # Existing non-Qdrant retrieval
-            print(f"Retrieving Top {k} chunks using local cosine similarity...")
 
-            retrieved = retrieve(
-                question,
-                index,
-                k=k,
-                embed_model=embed_model
-            )
+    else:   
+        if (qdrant is not None and collection_name is not None and is_qdrant_collection_populated(qdrant, collection_name)):
+            print("Retrieving from Qdrant")
+            retrieved = retrieve_from_qdrant(question,qdrant,collection_name,k=k,embed_model=embed_model)
+
+        else:
+            print("Retrieving from cosine similarity")
+            retrieved = retrieve(question,index,k=k,embed_model=embed_model)
+
 
 
     system_msg, user_msg = build_prompt(question, retrieved, system=system)
@@ -1293,7 +1278,7 @@ def cache_put(conn: sqlite3.Connection, question: str,
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 def cached_rag_answer(q: str, q_vec, threshold: float = 0.95) -> tuple[str, dict]:
     """Cache-first RAG. Miss → full pipeline + store. Hit → return cached."""
-    #q_vec = embed_query(q)
+    #q_vec = embed_batch(q, model=embed_model)
     hit = cache_lookup(cache, q_vec, threshold=threshold)
     if hit:
         return hit["answer"], {
