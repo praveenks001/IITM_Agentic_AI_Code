@@ -5,6 +5,9 @@ import json
 import time
 import pymupdf  # aka fitz
 import pdfplumber
+import sqlite3
+import hashlib
+
 from openai import OpenAI
 from pathlib import Path 
 from qdrant_client import QdrantClient
@@ -14,7 +17,7 @@ from bs4 import BeautifulSoup
 from docx import Document
 from rank_bm25 import BM25Okapi
 from fastembed import SparseTextEmbedding
-from config import EMBED_MODEL, CHAT_MODEL, RERANKER_MODEL
+from config import EMBED_MODEL, CHAT_MODEL, RERANKER_MODEL, CACHE_DB, CACHE_VERSION
 
 assert os.environ.get("OPENAI_API_KEY"), "Set OPENAI_API_KEY before running this notebook"
 
@@ -54,6 +57,12 @@ def get_qdrant_client():
 # Qdrant - Method to check the exsiting collection and create a new collection
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 def create_qdrant_collection(qdrant,search_method="DENSE_SEARCH"):
+    """
+    1. It will create collection name based on search_method
+    2. If created collection name already exists in Qdrant, then it will simply return the collection name
+    3. If not, it will create the collection in Qdrant, For Dense search: if EMBED_MODEL is Large then use dims=3072 else use dims=1536
+       For BM25:  create a qdrant with SparseVectorParams                                                   
+    """
 
     if search_method == "BM25":
         COLLECTION_NAME = "myrag_collection_BM25"
@@ -161,6 +170,12 @@ def create_qdrant_collection_with_HNSW(qdrant, distance=Distance.COSINE, hnsw=No
 # Method to Load the Reference documents in ascending order
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 def load_documents():
+    """
+    1. Check the corpus path
+    2. Iterate each txt extension files in sorted asc
+    3. Append the id, text under documents and return it                                                  
+    """
+
     folder_path = Path("./data/corpus")
 
     documents = []
@@ -409,7 +424,10 @@ def load_documents_DOCX():
 # Method to Load the golden set questions
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 def load_golden_set():
-    """Load the golden set questions from JSON file."""
+    """
+    1. Check the goldenset path
+    2. Load the file using json.load and return it                                                 
+    """
 
     golden_path = Path("./data/goldenSet.json")
 
@@ -1215,3 +1233,134 @@ def rerank(query: str, candidates: list[dict], top_k: int = 3) -> list[dict]:
     scored = [{**hit, "rerank_score": float(s)} for hit, s in zip(candidates, scores)]
     scored.sort(key=lambda h: h["rerank_score"], reverse=True)
     return scored[:top_k]
+
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to create cache DB
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def cache_init(db_path: str = CACHE_DB) -> sqlite3.Connection:
+    """Create the query_cache table if absent; return an open connection."""
+    conn = sqlite3.connect(db_path)
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS query_cache (
+            id                 TEXT PRIMARY KEY,
+            question           TEXT NOT NULL,
+            embedding_blob     BLOB NOT NULL,
+            answer             TEXT NOT NULL,
+            hit_count          INTEGER NOT NULL DEFAULT 0,
+            created_ts         REAL NOT NULL,
+            last_hit_ts        REAL
+        )
+    """)
+    conn.commit()
+    return conn
+
+
+
+
+def cache_clear(conn: sqlite3.Connection) -> int:
+    """Wipe the cache table. Returns rows deleted. Used on document update."""
+    cur = conn.execute("DELETE FROM query_cache")
+    conn.commit()
+    return cur.rowcount
+
+
+def cache_key(question: str) -> str:
+    """Deterministic id for a question — sha256 of normalised question."""
+    normalised = question.lower().strip()
+    return hashlib.sha256(normalised.encode()).hexdigest()[:16]
+
+
+def cache_put(conn: sqlite3.Connection, question: str,
+              embedding: list[float], answer: str) -> None:
+    """Insert (or replace) a cache row."""
+    import struct
+    emb_blob = struct.pack(f"{len(embedding)}f", *embedding)
+    conn.execute("""
+        INSERT OR REPLACE INTO query_cache
+        (id, question, embedding_blob, answer, hit_count, created_ts, last_hit_ts)
+        VALUES (?, ?, ?, ?, 0, ?, NULL)
+    """, (cache_key(question), question, emb_blob, answer, time.time()))
+    conn.commit()
+
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to retrieve cached answer from DB
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def cached_rag_answer(q: str, q_vec, threshold: float = 0.95) -> tuple[str, dict]:
+    """Cache-first RAG. Miss → full pipeline + store. Hit → return cached."""
+    #q_vec = embed_query(q)
+    hit = cache_lookup(cache, q_vec, threshold=threshold)
+    if hit:
+        return hit["answer"], {
+            "cache_hit": True,
+            "similarity": hit["similarity"],
+            "matched": hit["matched_question"],
+        }
+
+    return None, {
+        "cache_hit": False,
+        "similarity": None,
+        "matched": None
+    }
+
+print("✓ Cache-first RAG function ready")
+print("\nSanity check — first call MISSES (empty cache), second call HITS:")
+
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to retrieve cached answer from DB
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def cache_lookup(conn: sqlite3.Connection, query_embedding: list[float],
+                 threshold: float = 0.95) -> dict | None:
+    """Scan all cache entries; return the best cosine match if ≥ threshold, else None.
+    
+    On a hit: increment hit_count, update last_hit_ts, and include the similarity
+    score in the returned dict.
+    
+    On production scale this would be a vector index (Qdrant, pgvector), not a
+    full scan. For teaching + capstone scale (<1K cached questions) a scan is fine.
+    """
+    import math
+    import struct
+    
+    def cosine(a: list[float], b: list[float]) -> float:
+        dot   = sum(x*y for x, y in zip(a, b))
+        norm_a = math.sqrt(sum(x*x for x in a))
+        norm_b = math.sqrt(sum(y*y for y in b))
+        if norm_a == 0 or norm_b == 0:
+            return 0.0
+        return dot / (norm_a * norm_b)
+    
+    best_score, best_row = -1.0, None
+    for row in conn.execute("SELECT id, question, embedding_blob, answer FROM query_cache"):
+        row_id, row_q, emb_blob, row_ans = row
+        n_floats = len(emb_blob) // 4
+        row_emb = list(struct.unpack(f"{n_floats}f", emb_blob))
+        s = cosine(query_embedding, row_emb)
+        if s > best_score:
+            best_score, best_row = s, (row_id, row_q, row_ans)
+    
+    if best_row is None or best_score < threshold:
+        return None
+    
+    row_id, matched_q, cached_ans = best_row
+    conn.execute("""
+        UPDATE query_cache 
+        SET hit_count = hit_count + 1, last_hit_ts = ?
+        WHERE id = ?
+    """, (time.time(), row_id))
+    conn.commit()
+    
+    return {
+        "answer":         cached_ans,
+        "matched_question": matched_q,
+        "similarity":     best_score,
+        "cache_hit":      True,
+    }

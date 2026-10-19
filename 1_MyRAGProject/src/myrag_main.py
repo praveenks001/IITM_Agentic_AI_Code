@@ -1,13 +1,14 @@
 import os
 import numpy as np
 import json
+import time
+
 from openai import OpenAI
 from pathlib import Path
 from pipeline import myrag_pipeline as pipeline
 from dotenv import load_dotenv
 from qdrant_client import QdrantClient
-from qdrant_client.models import Distance, VectorParams
-from qdrant_client.models import HnswConfigDiff
+from qdrant_client.models import Distance, VectorParams, HnswConfigDiff
 from rank_bm25 import BM25Okapi
 
 from config import (
@@ -19,7 +20,8 @@ from config import (
     DOCUMENT_TYPE,
     CHUNKING_STRATEGY,
     COMPARE_SEARCH_METHODS,
-    USE_RERANKER
+    USE_RERANKER,
+    CACHE_DB
 )
 
 top_k = TOP_K
@@ -303,6 +305,21 @@ else:
 
     else:
         pipeline.upsert_BM25_chunks_into_qdrant(all_chunks, qdrantCollection_bm25, qdrant)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -752,14 +769,27 @@ if compare_search_methods and search_method == "HYBRID_RRF":
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Embed each questions and find cosine similarity with the embedded document chunks
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-if search_method in ("DENSE_SEARCH", "HYBRID_RRF"):
+if search_method in ("HYBRID_RRF"):
 
     for item in golden_set:
 
         QUERY = item["question"]
+
 
         # 1. Embed this question
         query_vector = pipeline.embed_batch([QUERY])[0]
@@ -805,28 +835,8 @@ if search_method in ("DENSE_SEARCH", "HYBRID_RRF"):
 
                 print(result_text)
 
-        else:
-                
-            # 2. Compare this question against ALL chunks
-            scored = [(pipeline.cosine(query_vector, c["vector"]), c) for c in all_chunks]
-
-            # 3. Sort highest cosine similarity first
-            scored.sort(key=lambda pair: pair[0], reverse=True)
-
-            # 4. Print results
-            print(f"\nQuestion: {QUERY}")
-
-            # Top 3 results
-            # for i, (score, chunk) in enumerate(scored[:3], 1):
-            #     print(f"  [{i}] {score:.3f}  {chunk['chunk_id']:<25s} {chunk['text'][:60]}...")
-
-            # # Top 5 results
-            for i, (score, chunk) in enumerate(scored[:top_k], 1):
-                print(f"  [{i}] {score:.3f}  {chunk['chunk_id']:<25s} {chunk['text'][:60]}...")
-
-            # # Top 7 results
-            # for i, (score, chunk) in enumerate(scored[:7], 1):
-            #     print(f"  [{i}] {score:.3f}  {chunk['chunk_id']:<25s} {chunk['text'][:60]}...")
+        #else:
+            #topk = pipeline.retrieve(QUERY, all_chunks, k=top_k, query_vector)
 
     print(f"Embedded each questions and found cosine similarity with the embedded document chunks.")
 
@@ -837,25 +847,7 @@ if search_method in ("DENSE_SEARCH", "HYBRID_RRF"):
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Retrieve top K results
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-if search_method == "DENSE_SEARCH":
-        
-    if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
-            print("Qdrant collection already contains embedded chunks.so retrive from qdrant to give cosine similarity chunks")
-    else:
-        # for item in golden_set:
-        #     QUERY = item["question"]
-        #     top3 = pipeline.retrieve(QUERY, all_chunks, k=3)
-
-        for item in golden_set:
-            QUERY = item["question"]
-            top3 = pipeline.retrieve(QUERY, all_chunks, k=top_k)
-
-        # for item in golden_set:
-        #     QUERY = item["question"]
-        #     top3 = pipeline.retrieve(QUERY, all_chunks, k=7)
-
-
-elif search_method == "BM25":
+if search_method == "BM25":
     if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
         for item in golden_set:
             QUERY = item["question"]
@@ -883,36 +875,50 @@ elif search_method == "BM25":
 # Ask RAG now
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 # Store the final comparison values for each K
+
+# # Initialize cache once
+# cache = pipeline.cache_init(CACHE_DB)
+
+# # Make the same SQLite connection available inside pipeline.py
+# pipeline.cache = cache
+
+# print(f"✓ Cache ready: {CACHE_DB}")
+
+# Store the final comparison values for each K
 comparison_results = []
 
-for k in [top_k]:  #for k in [3, 5, 7]:
+for k in [top_k]:  # for k in [3, 5, 7]:
+
     if search_method == "DENSE_SEARCH":
         if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
             print("Qdrant is already created so output file name with qdrant creating")
-            OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks_with_dense_qdrant_results.txt"
+            OUTPUT_FILE = DATA_DIR / f"02_rag_answers_goldenset_top{k}chunks_with_dense_qdrant_results.txt"
         else:
-            OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks_densetxt"
+            OUTPUT_FILE = DATA_DIR / f"02_rag_answers_goldenset_top{k}chunks_densetxt"
+
     elif search_method == "BM25":
         if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection):
             print("Qdrant is already created so output file name with qdrant creating")
             OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks_with_BM25_qdrant_results.txt"
         else:
             OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks_with_BM25_results.txt"
+
     elif search_method == "HYBRID_RRF":
         OUTPUT_FILE = DATA_DIR / f"07_rag_answers_goldenset_top{k}chunks_with_HYBRID_RRF_results.txt"
-
 
     total_cost = 0.0
     total_latency = 0.0
     total_tokens_in = 0
     total_tokens_out = 0
+    total_cache_hits = 0
+    total_cache_misses = 0
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-
 
         total_questions = len(golden_set)
 
         for index, item in enumerate(golden_set, start=1):
+
             question_id = item["id"]
             question = item["question"]
 
@@ -921,7 +927,50 @@ for k in [top_k]:  #for k in [3, 5, 7]:
                 f"{index}/{total_questions} with K={k}"
             )
 
-            # Run RAG for current question
+            # ----------------------------------------------------
+            # 1. Generate question embedding
+            # ----------------------------------------------------
+            #start_time = time.perf_counter()
+
+            #query_vector = pipeline.embed_batch([question])[0]
+
+            # ----------------------------------------------------
+            # 2. Check SQLite cache
+            # ----------------------------------------------------
+            # answer, meta = pipeline.cached_rag_answer(
+            #     question,
+            #     query_vector
+            # )
+
+            # if meta["cache_hit"] and meta["matched"] == question:
+
+            #     # ------------------------------------------------
+            #     # 3A. Cache HIT - No LLM call
+            #     # ------------------------------------------------
+            #     total_cache_hits += 1
+
+            #     print(f"✓ CACHE HIT: {question}")
+
+            #     result = {
+            #         "question": question,
+            #         "answer": answer,
+            #         "sources": [],
+            #         "tokens_in": 0,
+            #         "tokens_out": 0,
+            #         "retrieved": [],
+            #         "cost_usd": 0.0,
+            #         "latency_s": time.perf_counter() - start_time
+            #     }
+
+            # else:
+
+                # ------------------------------------------------
+                # 3B. Cache MISS - Execute existing RAG pipeline
+                # ------------------------------------------------
+            #    total_cache_misses += 1
+
+            #    print(f"✗ CACHE MISS: {question}")
+
             result = pipeline.ask_rag(
                 question,
                 all_chunks,
@@ -930,20 +979,40 @@ for k in [top_k]:  #for k in [3, 5, 7]:
                 collection_name=qdrantCollection,
                 search_method=search_method,
                 bm25=bm25 if search_method == "BM25" else None,
-                use_reranker= use_reranker)
+                use_reranker=use_reranker
+            )
 
+            # ------------------------------------------------
+            # 4. Save generated answer to SQLite
+            # ------------------------------------------------
+            # pipeline.cache_put(
+            #     cache,
+            #     question,
+            #     query_vector,
+            #     result["answer"]
+            # )
+
+            # # Include cache lookup time in elapsed time
+            # result["latency_s"] = time.perf_counter() - start_time
+
+            # print(f"✓ Answer stored in cache: {question}")
+
+            # ----------------------------------------------------
+            # 5. Calculate totals
+            # ----------------------------------------------------
             total_cost += result["cost_usd"]
             total_latency += result["latency_s"]
             total_tokens_in += result["tokens_in"]
             total_tokens_out += result["tokens_out"]
 
-            # ----------------------------------------------
-            # Console output
-            # ----------------------------------------------
-
+            # ----------------------------------------------------
+            # 6. Console output
+            # ----------------------------------------------------
             print(f"\nK: {k}")
             print(f"\nQ: {result['question']}")
             print(f"A: {result['answer']}")
+            print(f"Cache Hit: {meta['cache_hit']}")
+
             print(
                 f"Sources retrieved: "
                 f"{result['sources']}"
@@ -959,58 +1028,46 @@ for k in [top_k]:  #for k in [3, 5, 7]:
                 f"${result['cost_usd']:.8f}"
             )
 
-            # ----------------------------------------------
-            # File output
-            # ----------------------------------------------
-
+            # ----------------------------------------------------
+            # 7. File output
+            # ----------------------------------------------------
             f.write("=" * 120 + "\n")
 
-            f.write(
-                f"K: {k}\n"
-            )
+            f.write(f"K: {k}\n")
 
-            f.write(
-                f"Golden Set ID: {question_id}\n"
-            )
+            f.write(f"Golden Set ID: {question_id}\n")
 
-            f.write(
-                f"question: {result['question']}\n"
-            )
+            f.write(f"question: {result['question']}\n")
 
-            f.write(
-                f"answer: {result['answer']}\n"
-            )
+            f.write(f"answer: {result['answer']}\n")
 
-            f.write(
-                f"sources: {result['sources']}\n"
-            )
+            f.write(f"cache_hit: {meta['cache_hit']}\n")
 
-            f.write(
-                f"tokens_in: {result['tokens_in']}\n"
-            )
+            f.write(f"sources: {result['sources']}\n")
 
-            f.write(
-                f"tokens_out: {result['tokens_out']}\n"
-            )
+            f.write(f"tokens_in: {result['tokens_in']}\n")
 
-            f.write(
-                f"retrieved: {result['retrieved']}\n"
-            )
+            f.write(f"tokens_out: {result['tokens_out']}\n")
 
-            f.write(
-                f"cost_usd: {result['cost_usd']:.8f}\n"
-            )
+            f.write(f"retrieved: {result['retrieved']}\n")
 
-            f.write(
-                f"latency_s: {result['latency_s']:.3f}\n"
-            )
+            f.write(f"cost_usd: {result['cost_usd']:.8f}\n")
+
+            f.write(f"latency_s: {result['latency_s']:.3f}\n")
 
             f.write("=" * 120 + "\n\n")
 
-    # Calculate average latency for this K
-    average_latency = total_latency / total_questions
+    # ------------------------------------------------------------
+    # 8. Calculate average latency for this K
+    # ------------------------------------------------------------
+    average_latency = (
+        total_latency / total_questions
+        if total_questions > 0 else 0.0
+    )
 
-    # Store comparison result
+    # ------------------------------------------------------------
+    # 9. Store comparison result
+    # ------------------------------------------------------------
     comparison_results.append({
         "k": k,
         "total_latency": total_latency,
@@ -1018,16 +1075,25 @@ for k in [top_k]:  #for k in [3, 5, 7]:
         "tokens_in": total_tokens_in,
         "tokens_out": total_tokens_out,
         "cost_usd": total_cost
+        #"cache_hits": total_cache_hits,
+        #"cache_misses": total_cache_misses
     })
 
+    # ------------------------------------------------------------
+    # 10. Final summary
+    # ------------------------------------------------------------
     print(f"\nRAG processing completed for K={k}.")
-    print(f"Total Latency for K={k}: "f"{total_latency:.3f} seconds")
-    print(f"Average Latency for K={k}: "f"{average_latency:.3f} seconds")
-    print(f"Total Tokens In for K={k}: "f"{total_tokens_in}")
-    print(f"Total Tokens Out for K={k}: "f"{total_tokens_out}")
-    print(f"Total Cost USD for K={k}: "f"${total_cost:.8f}")
+    # print(f"Total Questions: {total_questions}")
+    # print(f"Cache Hits: {total_cache_hits}")
+    # print(f"Cache Misses: {total_cache_misses}")
+    print(f"Total Latency for K={k}: {total_latency:.3f} seconds")
+    print(f"Average Latency for K={k}: {average_latency:.3f} seconds")
+    print(f"Total Tokens In for K={k}: {total_tokens_in}")
+    print(f"Total Tokens Out for K={k}: {total_tokens_out}")
+    print(f"Total Cost USD for K={k}: ${total_cost:.8f}")
     print(f"Results saved to: {OUTPUT_FILE}")
 
+# cache.close()
 
 
 # #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
