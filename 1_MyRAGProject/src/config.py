@@ -31,4 +31,4 @@ CACHE_VERSION = "v1"
 
 # Tombstone / Document Refresh
 REFRESH_DOCUMENT = True
-REFRESH_DOCUMENT_NAME = "Client agreement(1).txt"
+AUTO_SYNC_DOCUMENTS = True
