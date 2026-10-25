@@ -880,6 +880,7 @@ def retrieve_from_qdrant(query: str, qdrant, collection_name: str, k: int = 3,
     results = qdrant.query_points(
         collection_name=collection_name,
         query=q_vec,
+        query_filter=make_live_filter(),
         limit=k,
     ).points
 
@@ -1109,6 +1110,7 @@ def retrieve_bm25_from_qdrant(query,qdrant,qdrantCollection,k=5):
             values=query_vector.values.tolist()
         ),
         using="bm25",
+        query_filter=make_live_filter(),
         limit=k,
         with_payload=True
     ).points
@@ -1349,3 +1351,26 @@ def cache_lookup(conn: sqlite3.Connection, query_embedding: list[float],
         "similarity":     best_score,
         "cache_hit":      True,
     }
+
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to retrieve cached answer from DB
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def make_live_filter():
+    """Return a Qdrant Filter that matches only live (not-yet-tombstoned) chunks.
+    
+    Uses IsEmptyCondition (NOT IsNullCondition). Rationale:
+    - IsNullCondition matches ONLY rows where the field EXISTS with value null.
+    - IsEmptyCondition matches rows where the field is absent OR null OR empty.
+    
+    Because fresh chunks may not have `deleted_at` set at all (depending on
+    ingestion path), IsEmpty is the robust choice. Using IsNull creates a
+    silent bug: live chunks get filtered OUT, retrieval returns nothing.
+    
+    We learn this the hard way in Day 2 Cell 4 (bug demo) and fix in Cell 5.
+    """
+    from qdrant_client.models import Filter, IsEmptyCondition, PayloadField
+    return Filter(must=[
+        IsEmptyCondition(is_empty=PayloadField(key="deleted_at"))
+    ])

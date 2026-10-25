@@ -27,3 +27,8 @@ RERANKER_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 ENABLE_CACHE_DB = True
 CACHE_DB = "myrag_query_cache.db"
 CACHE_VERSION = "v1"
+
+
+# Tombstone / Document Refresh
+REFRESH_DOCUMENT = True
+REFRESH_DOCUMENT_NAME = "Client agreement(1).txt"

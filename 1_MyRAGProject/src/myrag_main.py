@@ -8,8 +8,10 @@ from pathlib import Path
 from pipeline import myrag_pipeline as pipeline
 from dotenv import load_dotenv
 from qdrant_client import QdrantClient
-from qdrant_client.models import Distance, VectorParams, HnswConfigDiff
+from qdrant_client.models import Distance, VectorParams, HnswConfigDiff, Filter, FieldCondition, MatchValue,IsEmptyCondition, PayloadField
 from rank_bm25 import BM25Okapi
+from pipeline.document_refresh import refresh_document
+
 
 from config import (
     EMBED_MODEL,
@@ -22,7 +24,9 @@ from config import (
     COMPARISON_CHART_REQD,
     USE_RERANKER,
     CACHE_DB,
-    ENABLE_CACHE_DB
+    ENABLE_CACHE_DB,
+    REFRESH_DOCUMENT,
+    REFRESH_DOCUMENT_NAME
 )
 
 embed_model = EMBED_MODEL
@@ -301,6 +305,8 @@ else:
     else:
         pipeline.upsert_embedded_chunks_into_qdrant(all_chunks, vectors, qdrantCollection_dense, qdrant)
 
+
+
     if pipeline.is_qdrant_collection_populated(qdrant, qdrantCollection_bm25):
         print("Qdrant collection already contains embedded chunks. Skipping upsert.")
 
@@ -309,8 +315,78 @@ else:
 
 
 
-    
+
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Tombstone - Refresh Updated Document
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+if REFRESH_DOCUMENT:
+
+    updated = refresh_document(
+        qdrant=qdrant,
+        filename=REFRESH_DOCUMENT_NAME,
+        embed_model=embed_model
+    )
+
+    if updated:
+        cache_conn = pipeline.cache_init(CACHE_DB)
+        deleted = pipeline.cache_clear(cache_conn)
+        cache_conn.close()
+
+        print("✓ Document refresh completed")
+        print(f"✓ Invalidated {deleted} cached answers")
+    else:
+        print("✓ No document changes. Cache retained.")
+    
+
+
+
+
+# ============================================================
+# ADD YOUR VERIFICATION CODE HERE
+# ============================================================
+if REFRESH_DOCUMENT:
+
+    filename = REFRESH_DOCUMENT_NAME
+
+    for collection, source_field in [
+        ("myrag_collection", "source"),
+        ("myrag_collection_BM25", "source_id"),
+    ]:
+        source_condition = FieldCondition(
+            key=source_field,
+            match=MatchValue(value=filename)
+        )
+
+        live_filter = Filter(
+            must=[
+                source_condition,
+                IsEmptyCondition(
+                    is_empty=PayloadField(key="deleted_at")
+                )
+            ]
+        )
+
+        total = qdrant.count(
+            collection_name=collection,
+            count_filter=Filter(must=[source_condition]),
+            exact=True
+        ).count
+
+        active = qdrant.count(
+            collection_name=collection,
+            count_filter=live_filter,
+            exact=True
+        ).count
+
+        print(f"\nCollection: {collection}")
+        print(f"Total agreement chunks: {total}")
+        print(f"Active agreement chunks: {active}")
+        print(f"Tombstoned chunks: {total - active}")
+
+
+
+
+#────────────────────────────────────────────────────────────────────────────────────────
 # Dense vs BM25 Top-1 comparison (after Qdrant upsert)
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
