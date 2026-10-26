@@ -24,7 +24,7 @@ COMPARISON_CHART_REQD = False # Requires if dense / BM25 comparison is required
 USE_RERANKER = True
 RERANKER_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 
-ENABLE_CACHE_DB = True
+ENABLE_CACHE_DB = False # Make it False when you want to see the metrics from real LLM call
 CACHE_DB = "myrag_query_cache.db"
 CACHE_VERSION = "v1"
 
@@ -32,3 +32,8 @@ CACHE_VERSION = "v1"
 # Tombstone / Document Refresh
 REFRESH_DOCUMENT = True
 AUTO_SYNC_DOCUMENTS = True
+
+
+# RAGAS Evaluation
+ENABLE_RAGAS_EVALUATION = True
+RAGAS_OUTPUT_DIR = "./docs/runs"

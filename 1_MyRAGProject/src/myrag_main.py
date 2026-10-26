@@ -11,6 +11,14 @@ from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams, HnswConfigDiff, Filter, FieldCondition, MatchValue,IsEmptyCondition, PayloadField
 from rank_bm25 import BM25Okapi
 from pipeline.document_refresh import sync_documents
+from datasets import Dataset
+from ragas import evaluate
+from ragas.metrics import (
+    faithfulness,
+    answer_relevancy,
+    context_precision,
+    context_recall,
+)
 
 
 from config import (
@@ -26,8 +34,12 @@ from config import (
     CACHE_DB,
     ENABLE_CACHE_DB,
     REFRESH_DOCUMENT,
-    REFRESH_DOCUMENT_NAME
+    AUTO_SYNC_DOCUMENTS,
+    ENABLE_RAGAS_EVALUATION,
+    RAGAS_OUTPUT_DIR,
 )
+
+        
 
 embed_model = EMBED_MODEL
 top_k = TOP_K
@@ -126,7 +138,7 @@ else:
 #──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 golden_set = pipeline.load_golden_set()
 print(f"Loaded {len(golden_set)} golden-set questions")
-
+print("Golden Set fields:", golden_set[0].keys())
 
 
 
@@ -794,6 +806,7 @@ print(f"✓ Cache ready: {CACHE_DB}")
 
 
 comparison_results = []
+ragas_rows = []
 
 for k in [top_k]:  
 
@@ -943,6 +956,37 @@ for k in [top_k]:
 
                 f.write("=" * 120 + "\n\n")
 
+            # ------------------------------------------------------------
+            # Collect actual RAGAS evaluation data
+            # ------------------------------------------------------------
+            if ENABLE_RAGAS_EVALUATION:
+
+                ground_truth = item.get("ideal_answer")
+
+                if not ground_truth:
+                    raise ValueError(f"Missing ideal_answer for question {question_id}")
+
+                contexts = [
+                    hit["text"]
+                    for hit in result.get("retrieved", [])
+                    if isinstance(hit, dict)
+                    and isinstance(hit.get("text"), str)
+                    and hit["text"].strip()
+                ]
+
+                if not contexts:
+                    raise RuntimeError(f"No retrieved contexts for question {question_id}")
+
+                ragas_rows.append({
+                    "id": str(question_id),
+                    "question": question,
+                    "answer": str(result["answer"]),
+                    "contexts": contexts,
+                    "ground_truth": str(ground_truth),
+                })      
+
+
+
     # ------------------------------------------------------------
     # 8. Calculate average latency for this K
     # ------------------------------------------------------------
@@ -978,6 +1022,93 @@ for k in [top_k]:
     print(f"Total Tokens Out for K={k}: {total_tokens_out}")
     print(f"Total Cost USD for K={k}: ${total_cost:.8f}")
     print(f"Results saved to: {OUTPUT_FILE}")
+
+
+# ============================================================
+# RAGAS Evaluation - Four Metrics
+# ============================================================
+
+if ENABLE_RAGAS_EVALUATION:
+
+    if not ragas_rows:
+        raise RuntimeError("No RAGAS evaluation rows collected.")
+
+    print("\n========== RAGAS EVALUATION STARTED ==========")
+    print(f"Total Questions: {len(ragas_rows)}")
+
+    dataset = Dataset.from_list([
+        {
+            "question": row["question"],
+            "answer": row["answer"],
+            "contexts": row["contexts"],
+            "ground_truth": row["ground_truth"],
+        }
+        for row in ragas_rows
+    ])
+
+    ragas_result = evaluate(
+        dataset=dataset,
+        metrics=[
+            faithfulness,
+            answer_relevancy,
+            context_precision,
+            context_recall,
+        ],
+        raise_exceptions=True,
+    )
+
+    score_df = ragas_result.to_pandas()
+
+    score_df.insert(
+        0,
+        "id",
+        [row["id"] for row in ragas_rows]
+    )
+
+    metric_names = [
+        "faithfulness",
+        "answer_relevancy",
+        "context_precision",
+        "context_recall",
+    ]
+
+    output_dir = Path(RAGAS_OUTPUT_DIR)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    csv_path = output_dir / "11_ragas_live.csv"
+    json_path = output_dir / "11_ragas_live.json"
+
+    score_df.to_csv(csv_path, index=False, encoding="utf-8-sig")
+
+    summary = {
+        metric: float(score_df[metric].mean())
+        for metric in metric_names
+    }
+
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(
+            {
+                "mode": "live",
+                "total_questions": len(ragas_rows),
+                "summary": summary,
+                "questions": json.loads(
+                    score_df.to_json(orient="records")
+                ),
+            },
+            f,
+            indent=2,
+            ensure_ascii=False,
+        )
+
+    print("\n========== RAGAS RESULTS ==========")
+
+    for metric, score in summary.items():
+        print(f"{metric:<20}: {score:.4f}")
+
+    print(f"\nCSV saved: {csv_path}")
+    print(f"JSON saved: {json_path}")
+    print("========== RAGAS EVALUATION COMPLETED ==========")
+
 
 
 if cache is not None:
