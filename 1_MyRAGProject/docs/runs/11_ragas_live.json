@@ -2,22 +2,22 @@
   "mode": "live",
   "total_questions": 77,
   "summary": {
-    "faithfulness": 0.8686908329765474,
-    "answer_relevancy": 0.746703714632041,
-    "context_precision": 0.8079184703839491,
-    "context_recall": 0.9095031952174808
+    "faithfulness": 0.8533085961657391,
+    "answer_relevancy": 0.735594886846941,
+    "context_precision": 0.8102453102094213,
+    "context_recall": 0.9224902082044938
   },
   "questions": [
     {
       "id": "1",
       "question": "Where is the company located?",
-      "answer": "The company is located at Suite 305, Griffith Corporate Centre, P.O. Box 1510, Beachmont, Kingstown, Saint Vincent and the Grenadines [Risk with CFDS.txt#6@45ddd4cb872e4b4d86408bd71f5a6d04].",
+      "answer": "The company is located at 22/F, 3 Lockhart Road, Wanchai, Hong Kong [Account opening agreement(1).txt#19@db975ecc10394c498d9fce5c4b8cab12].",
       "contexts": [
         ", a company located at 22/F, 3 Lockhart Road,\n     Wanchai, Hong Kong with contact email support@billmont.com , provides the card and\n     payment processing services.\n\n1.4. The Account Opening Agreement (herein the “Agreement”) sets out the terms and\n\n                                                            4\n                       Registered in the Financial Services Authority St. Vincent & the Grenadines.\n                                           Registration number 22747 IBC 2015\n\f      ",
-        "s (SV) Ltd (hereinafter referred to as the “Company”), is incorporated under the\n     laws of Saint Vincent and the Grenadines with Registration 22747 IBC 2015 having its\n     registered office at Suite 305, Griffith Corporate Centre, P.O. Box 1510, Beachmont,\n     Kingstown, Saint Vincent and the Grenadines. The Company is authorised as an\n     International Business Company under the International Business Companies (Amendment\n     and Consolidation) Act, Chapter 149 of the Revised Laws of Sai",
         "ts (SV) Ltd (hereinafter referred to as the “Company”), is incorporated under the\n     laws of Saint Vincent and the Grenadines with Registration 22747 IBC 2015 having its\n     registered office at Suite 305, Griffith Corporate Centre, P.O. Box 1510, Beachmont,\n     Kingstown, Saint Vincent and the Grenadines. The Company is authorised as an\n     International Business Company under the International Business Companies (Amendment\n     and Consolidation) Act, Chapter 149 of the Revised Laws of Sa",
         " having its\n     registered office at Suite 305, Griffith Corporate Centre, P.O. Box 1510, Beachmont,\n     Kingstown, Saint Vincent and the Grenadines. The Company is authorised as an\n     International Business Company under the International Business Companies\n     (Amendment and Consolidation) Act, Chapter 149 of the Revised Laws of Saint Vincent and\n     Grenadines, 2009 (herein the “Law”).\n1.2. The objects of the Company are all subject matters not forbidden by International Business\n     C",
-        "Company”), is incorporated under the\n     laws of Saint Vincent and the Grenadines with Registration 22747 IBC 2015 having its\n     registered office at Suite 305, Griffith Corporate Centre, P.O. Box 1510, Beachmont,\n     Kingstown, Saint Vincent and the Grenadines. The Company is authorised as an\n     International Business Company under the International Business Companies (Amendment\n     and Consolidation) Act, Chapter 149 of the Revised Laws of Saint Vincent and Grenadines,\n     2009 (herein"
+        "Company”), is incorporated under the\n     laws of Saint Vincent and the Grenadines with Registration 22747 IBC 2015 having its\n     registered office at Suite 305, Griffith Corporate Centre, P.O. Box 1510, Beachmont,\n     Kingstown, Saint Vincent and the Grenadines. The Company is authorised as an\n     International Business Company under the International Business Companies (Amendment\n     and Consolidation) Act, Chapter 149 of the Revised Laws of Saint Vincent and Grenadines,\n     2009 (herein",
+        "anou 50, Irida 3\n         Tower 10th Floor, Larnaca 6057, Cyprus.\n     (f) HF Markets Ltd regulated by the Financial Services Commission (FSC) of the Republic of\n         Mauritius, category 1 Global Business No. C110008214 License | Company Reg. No.\n         094286/GBL.\n     (g) HF Markets (UK) Ltd authorised and regulated by the Financial Conduct Authority (FCA)\n         under firm reference number 801701.\n1.3. As part of this Agreement, Billmont Limited, a company located at 22/F, 3 Lockhart "
       ],
       "ground_truth": "(a)\tHFMarkets (SV) Ltd withregistered addressSuite 305,Griffith CorporateCentre,P.O. Box 1510, Beachmont Kingstown, St. Vincent and the Grenadines.\n(b)\tHF Markets (Europe) Ltd with registered address Spyrou Kyprianou 50, Irida 3 Tower 10th Floor, Larnaca 6057, Cyprus.\n(c)\tHFMarketsSA(PTY)LtdwithregisteredaddressKatherine&WestSuite18Secondfloor 114 West Street Sandton, Johannesburg 2031.\n(d)\tHFMarkets(Seychelles)LtdwithregisteredaddressRoom107,OrionComplex.POBox 1228, Victoria Mahe, Republic of Seychelles.\n(e)\tHF Markets Fintech Services Ltd with registered address Spyrou Kyprianou 50, Irida 3 Tower 10th Floor, Larnaca 6057, Cyprus.\n(f)\tHFMarketsLtdregulatedbytheFinancialServicesCommission(FSC)oftheRepublicof Mauritius, category 1 Global Business No. C110008214 License | Company Reg. No. 094286/GBL\n(g)\tHFMarkets(UK)LtdauthorisedandregulatedbytheFinancialConductAuthority(FCA) under firm reference number 801701.",
       "faithfulness": 1.0,
@@ -45,7 +45,7 @@
     {
       "id": "3",
       "question": "On what basis the clients are categorized as Partially Approved?",
-      "answer": "Clients are categorized as Partially Approved based on their ability to deposit and trade before providing the required KYC (Know Your Customer) documentation to the Company for their account to be Approved. Additionally, only Individual and Joint Accounts are eligible to be categorized as Partially Approved; PAMM Accounts, Copy Trading Strategy Providers, and Partners are not allowed to be categorized as such [Account opening agreement 2(1).txt#66@0e779d229c5144c2ac379445b3566afa].",
+      "answer": "Clients are categorized as Partially Approved based on their ability to provide the required KYC (Know Your Customer) documentation. Specifically, only Individual and Joint Accounts are eligible to be Partially Approved, and these clients can deposit and trade before providing the necessary KYC documentation for their account to be fully approved [Account opening agreement(1).txt#65@db975ecc10394c498d9fce5c4b8cab12].",
       "contexts": [
         "he Company;\n      (g) specific time frame.\n4.8. Partially Approved Clients, are not entitled to withdraw any amount until they provide their\n      KYC documents and their account to be Approved by the Company.\n4.9. Only Individual and Joint Accounts are eligible to be Partially Approved. PAMM Accounts,\n      Copy Trading Strategy Providers and Partners are not allowed to be categorised as Partially\n      Approved.\n\n4.10. The Prospective Client will be able to use the Electronic Verification for ",
         "                                                         HF Markets (SV) Ltd\n                                                                                            Account Opening Agreement\n\n\n4.6. Clients that are categorised as Partially Approved can deposit and trade before they provide\n      the required KYC documentation to the Company for their account to be Approved.\n4.7. Limits for Partially Approved Clients will be in place and showed in Client Area in regard to:\n      (a) maximum d",
@@ -62,7 +62,7 @@
     {
       "id": "4",
       "question": "Is my telephone call recorded?",
-      "answer": "Yes, your telephone call may be recorded. The company has the right to record the content of any telephone call between you and them, and they may use these recordings as deemed necessary, including in the event of a dispute [Account opening agreement(1).txt#103@db975ecc10394c498d9fce5c4b8cab12].",
+      "answer": "Yes, your telephone call may be recorded. The company has the right to record the content of any telephone call between you and them, and these recordings can be used as deemed necessary, including in the event of a dispute [Account opening agreement(1).txt#103@db975ecc10394c498d9fce5c4b8cab12].",
       "contexts": [
         "   Recording of Telephone Calls\n\n 10.1. The content of any telephone call (‘The telephone record’) between the Client and the\n       company may be recorded and saves as a magnetic or electronic record. The Client agrees\n       that the company has the right to use the telephone records as it deems necessary, including\n       but not limited to instances when a dispute arises between the Client and the company.\n\n 10.2. All instructions received from the Client during a telephone call, in relatio",
         "asis and thereby consequently all incur a cost for such roll-over.\n\n\n 10.   Recording of Telephone Calls\n\n 10.1. The content of any telephone call (‘The telephone record’) between the Client and the\n       company may be recorded and saves as a magnetic or electronic record. The Client agrees\n       that the company has the right to use the telephone records as it deems necessary, including\n       but not limited to instances when a dispute arises between the Client and the company.\n\n 10.2. All ",
@@ -72,7 +72,7 @@
       ],
       "ground_truth": "The content of any telephone call (‘The telephone record’) between the Client and the company may be recorded and saves as a magnetic or electronic record. The Client agrees that the company has the right to use the telephone records as it deems necessary, includingbut not limited to instances when a dispute arises between the Client and the company",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9552227868,
+      "answer_relevancy": 0.9494484687,
       "context_precision": 1.0,
       "context_recall": 1.0
     },
@@ -96,7 +96,7 @@
     {
       "id": "6",
       "question": "What is a leverage and how can i change it?",
-      "answer": "Leverage is a financial tool that allows a client to control a larger position in the market with a smaller amount of capital. It essentially amplifies both potential gains and potential losses.\n\nYou can change the leverage of each trading account in your Client Area. According to the context provided, you can adjust the leverage up to five times without any additional requests. If you wish to change it more than five times, you need to send a request to tradingdesk@hfm.com. For demo accounts, you can change the leverage as many times as you want. Additionally, there are no restrictions on increasing the leverage, but you can only decrease it under certain conditions, such as if the margin is zero or if the margin level is more than 100% [Account opening agreement(1).txt#131@db975ecc10394c498d9fce5c4b8cab12][Client agreement(1).txt#158@95e450ef44aa49f980a3fe0a51cd2e2e].",
+      "answer": "Leverage is a financial tool that allows a client to control a larger position in the market with a smaller amount of capital. It essentially amplifies both potential gains and potential losses.\n\nYou can change the leverage of each trading account in your Client Area. According to the context provided, you can adjust the leverage up to five times without any additional requests. If you wish to change it more than five times, you need to send a request to tradingdesk@hfm.com. For demo accounts, you can change the leverage as many times as you want. Additionally, there are no restrictions on increasing the leverage, but you can only decrease it under specific conditions, such as if the margin is zero or if the margin level is more than 100% [Account opening agreement(1).txt#131@db975ecc10394c498d9fce5c4b8cab12][Client agreement(1).txt#158@95e450ef44aa49f980a3fe0a51cd2e2e].",
       "contexts": [
         "rough their at Client Area.\n\n\n13.   Leverage\n\n13.1. A Client can change the leverage within his Client Area of each trading account up to five (5)\n      times. For changing more than five (5) times the Client needs to send a request at\n      tradingdesk@hfm.com. The Company has the option at its own discretion to disable this\n      option.\n\n13.2. A Client can change the leverage on demo accounts as many times as he wants.\n\n13.3. A Client has no restrictions to increase the leverage.\n\n13.4. A Cli",
         "verage\n\n13.1. A Client can change the leverage within his Client Area of each trading account up to five (5)\n      times. For changing more than five (5) times the Client needs to send a request at\n      tradingdesk@hfm.com. The Company has the option at its own discretion to disable this\n\n                                                            23\n                        Registered in the Financial Services Authority St. Vincent & the Grenadines.\n                                            R",
@@ -105,8 +105,8 @@
         "hfm.com . The Company reserves the right, at its discretion, to disable this option.\n        18.2    A Client may change the leverage on demo accounts as many times as desired.\n        18.3    A Client is not subject to any restrictions when increasing leverage.\n        18.4    A Client is permitted to decrease the leverage under the following conditions:\n                       a) if the Margin is zero;\n                       b) if the Margin is greater than zero and the Margin Level exceeds 100"
       ],
       "ground_truth": "Leverage is a ratio of amount used in a transaction to the required deposit.A Client can change the leverage within his Client Area of each trading account up to five (5) times. For changing more than five (5) times the Client needs to send a request at tradingdesk@hfm.com. The Company has the option at its own discretion to disable this option. A Client can change the leverage on demo accounts as many times as he wants. A Client has no restrictions to increase the leverage; however, the Company reserves the right to impose restrictions at its sole discretion. A Client is allowed to decrease the leverage in the following cases:(a) If margin is zero;(b) If margin is more than zero and the margin level is more than 100%. A Client may adjust the leverage of each Trading Account up to thirty (30) times via their Client Area. For changes exceeding thirty (30) times, the Client must submit a request to support@hfm.com",
-      "faithfulness": 0.6153846154,
-      "answer_relevancy": 0.9044836673,
+      "faithfulness": 0.6666666667,
+      "answer_relevancy": 0.901033482,
       "context_precision": 1.0,
       "context_recall": 0.8888888889
     },
@@ -147,7 +147,7 @@
     {
       "id": "9",
       "question": "How do i test the trading in HFM?",
-      "answer": "To test trading in HFM, you can open a Demo Account, which is designed to closely simulate a real trading environment based on actual market conditions. This allows you to test your trading skills before opening a live trading account [Client agreement(1).txt#263@0e779d229c5144c2ac379445b3566afa].",
+      "answer": "You can test trading in HFM by using a Demo Account, which is a type of virtual account designed to closely simulate a real trading environment based on actual market conditions. This account allows you to test your trading skills before opening a live trading account [Client agreement(1).txt#263@0e779d229c5144c2ac379445b3566afa].",
       "contexts": [
         "                                          HF Markets (SV) Ltd\n                            TRADING AND EXECUTION RISKS\n\n\n\n\n___                                                    ___                             ___\n\nSuite 305, Griffith Corporate Centre, P.O. Box 1510,   T. +44-2030978571   support@hfm.com\nBeachmont, Kingstown, St. Vincent and the Grenadines   F. +44-2030978570      www.hfm.com\n\f                                                                                                        ",
         "unt type to\n                  both existing Clients and prospective clients to allow them to test their trading skills before\n                  opening a live Trading Account.\n        28.2      The Balance of a demo account can be adjusted by Clients and/or prospective clients, subject\n                  to the restrictions outlined in clauses 28.3 and 28.4 below.\n        28.3      A demo account Balance can be increased up to three (3) times per day, provided that each\n                  deposit ",
@@ -181,7 +181,7 @@
     {
       "id": "11",
       "question": "I am following a strategy account now, am i eligible to cancel the terms & conditions given by the company?",
-      "answer": "The provided context does not contain information regarding the eligibility to cancel the terms and conditions after following a strategy account. Therefore, I cannot answer your question based on the given context.",
+      "answer": "The provided context does not contain information regarding the eligibility to cancel the terms and conditions after following a strategy account.",
       "contexts": [
         "count via the\ndesignated page on the Company’s website and has been assessed and approved as a Strategy\nProvider by the Company as per the terms and conditions of this Agreement. A Client can select\nto open either a Public or a Private Strategy Provider account;\n\n“Volume Allocation Percentage” is the percentage selected by the Follower which, alongside his\nequity ratio between the Follower and the Strategy Provider, is used to determine the volume of\nthe trades to be copied.\n\n2.2. All references",
         " Copy Trading Agreement\n\n\n3.5. Any attempt by a Follower to circumvent the agreed-upon performance fees or other\n       remuneration payable to the Strategy Provider by replicating their trades on a separate\n       account will be considered a material breach of these Terms and Conditions.\n3.6. In the event of a breach of this clause, the Company reserves the right, at its sole discretion,\n       to take any or all of the following actions without prior notice to the Follower:\n       (d) Immedia",
@@ -190,7 +190,7 @@
         "that the Service does not constitute an asset management tool and\n       under no circumstances shall it be considered as Investment Advice or Portfolio\n       Management.\n\n3.2. A Client may register with the Company to become a Strategy Provider and choose to\n       publish his trading strategy through the designated page on the Company’s website to any\n       Client who wishes to become his Follower, under the terms and conditions set out herein.\n\n3.3. A Follower has the opportunity to follow "
       ],
       "ground_truth": "The Client has the right to cancel the Terms by providing the Company with written notice within [14] days of the Trading Account ID activation. To exercise the right of cancellation, the Client needs to submit their notice electronically to support@hfm.com . This right is only available provided the Client has not engaged in any trading activity.",
-      "faithfulness": 0.6666666667,
+      "faithfulness": 0.3333333333,
       "answer_relevancy": 0.0,
       "context_precision": 0.7,
       "context_recall": 0.0
@@ -210,12 +210,12 @@
       "faithfulness": 1.0,
       "answer_relevancy": 1.0,
       "context_precision": 0.0,
-      "context_recall": 0.0
+      "context_recall": 1.0
     },
     {
       "id": "13",
       "question": "Can i view the trades taken by other broker account",
-      "answer": "The provided context does not contain information about whether you can view trades taken by other broker accounts.",
+      "answer": "The provided context does not contain information regarding whether you can view trades taken by other broker accounts.",
       "contexts": [
         " Introducer, which may\n                               include commissions or fees paid by the Company to the Introducer;\n                         •     the Introducer may be granted ‘view-only’ access to the Trading Accounts of\n                               referred Clients, through one or more platforms, for the purpose of monitoring\n                               Trading Account activity;\n                  j)     The Client acknowledges that the Introducer is not an agent, employee, or\n      ",
         "reasonably\n          taken by the Company as a result of such acts or omission unless the Company has\n          exercised gross negligence in connection hereby.\n\n      (j) The Company offers various trading account types, the specifications of which are\n          available on the Company’s website. The Company reserves the right to change the\n          specification of the Trading Account and publish any changes made to a specific trading\n          account type on the relevant page of its.\n\n\n24.",
@@ -224,9 +224,9 @@
         "ient. Trade Confirmations will normally\n      be available instantly following the execution of the transaction through the Trading\n      Platform.\n\n17.2. An Account Detailed Report is available to the Client through the Trading Platform. The\n      Account Detailed Report will normally be updated periodically during the Company’s\n\n                                                             27\n                         Registered in the Financial Services Authority St. Vincent & the Grenadines.\n "
       ],
       "ground_truth": "Answer is not available in the document",
-      "faithfulness": 1.0,
+      "faithfulness": 0.5,
       "answer_relevancy": 0.0,
-      "context_precision": 0.75,
+      "context_precision": 0.9999999999,
       "context_recall": 1.0
     },
     {
@@ -243,7 +243,7 @@
       "ground_truth": "Answer is not available in the document",
       "faithfulness": 1.0,
       "answer_relevancy": 0.0,
-      "context_precision": 0.3333333333,
+      "context_precision": 0.0,
       "context_recall": 1.0
     },
     {
@@ -266,7 +266,7 @@
     {
       "id": "16",
       "question": "What does Hyperactive trading means and as a trader how do i use it?",
-      "answer": "\"Hyperactive Trading\" refers to the execution of an excessive number of trading actions within a certain timeframe. It is important to note that if the Company determines that a client is engaging in Hyperactive Trading, it may take action if such activity places undue strain on the Company's trading systems and infrastructure [Client agreement(1).txt#133@95e450ef44aa49f980a3fe0a51cd2e2e].\n\nThe context does not provide specific guidance on how to use Hyperactive Trading as a trader.",
+      "answer": "\"Hyperactive Trading\" refers to the execution of an excessive number of trading actions within a certain timeframe. However, the context does not provide specific guidance on how to use Hyperactive Trading as a trader. It is important to note that the Company may determine, at its discretion, if a client is engaging in Hyperactive Trading that could place undue strain on its trading systems [Client agreement(1).txt#133@95e450ef44aa49f980a3fe0a51cd2e2e].",
       "contexts": [
         "sters, acts of\n                government or regulatory authorities, statutory requirements, strikes, lock-outs, boycotts,\n                blockades, or any other similar or dissimilar events beyond the Company’s reasonable control.\n                “Free Margin” refers to funds not used as a guarantee to Open Positions, calculated as: Free\n                Margin = Equity - Margin.\n                “Hyperactive Trading” means the execution of an excessive number of trading actions within\n         ",
         "            www.hfm.com\n\f                                                                                              HF Markets (SV) Ltd\n                                                                                                Client Agreement\n\n\n        12.7.1 If the Company determines, at its sole and absolute discretion, that a Client is engaging in\n                Hyperactive Trading where such activity may place undue strain on the Company’s trading\n                systems and infras",
@@ -277,7 +277,7 @@
       "ground_truth": "“Hyperactive Trading” means the execution of an excessive number of trading actions within a short period of time. This includes, but is not limited to, the frequent placement, modification, or cancellation of orders, as well as the submission of orders without sufficient available funds",
       "faithfulness": 0.75,
       "answer_relevancy": 0.0,
-      "context_precision": 1.0,
+      "context_precision": 0.9999999999,
       "context_recall": 1.0
     },
     {
@@ -292,15 +292,15 @@
         "         the Client to resubmit his withdrawal request.\n\n     (d) If the Client has selected incorrect withdrawal method, the Company shall inform the\n         Client that the reason for the cancellation is the selection of incorrect withdrawal\n         method. The Company will ask the Client to resubmit his withdrawal request using the\n         correct withdrawal method.\n\n     (e) Funds cannot be refunded to an expired credit/debit card.\n\n     (f) In case a card that the Client used to deposit "
       ],
       "ground_truth": "Contact HFM support relevant team",
-      "faithfulness": 0.8333333333,
-      "answer_relevancy": 0.9561456185,
+      "faithfulness": 0.8571428571,
+      "answer_relevancy": 0.9561509745,
       "context_precision": 1.0,
       "context_recall": 0.0
     },
     {
       "id": "18",
       "question": "What is the legal name of the company referred to in these policies?",
-      "answer": "The legal name of the company referred to in these policies is HF Markets (SV) Ltd. [Account opening agreement(1).txt#16@0e779d229c5144c2ac379445b3566afa]",
+      "answer": "The legal name of the company referred to in these policies is HF Markets (SV) Ltd. [Account opening agreement 2(1).txt#16@0e779d229c5144c2ac379445b3566afa]",
       "contexts": [
         "nancial instruments.\n1.3. The Company has implemented and maintains a Complaints Handling Policy (the “Policy”),\n     which is described in this document.\n\n\n2.   Interpretation of Terms\n2.1. Unless the context requires otherwise, all terms included in this Policy shall have the\n     meaning given to them herein. Where the context requires, (a) words importing the\n     singular shall include the plural and vice versa and (b) words importing the masculine shall\n     include the feminine and vice v",
         "le Client\n                (whether opened under his/her own name, using variations of his/her personal details, or\n                utilizing the identities of third parties) is strictly prohibited. Any violation of this policy will be\n                treated as an Event of Default and may result in the immediate termination of all associated\n                accounts, cancellation of generated profits, and voiding of any promotional bonuses.\n        10.10 Notwithstanding Clause 10.9, the Company ",
@@ -344,7 +344,7 @@
       ],
       "ground_truth": "22747 IBC 2015.",
       "faithfulness": 0.5,
-      "answer_relevancy": 1.0,
+      "answer_relevancy": 0.9999984948,
       "context_precision": 1.0,
       "context_recall": 1.0
     },
@@ -402,7 +402,7 @@
     {
       "id": "24",
       "question": "What is the purpose of Analytical cookies?",
-      "answer": "The purpose of Analytical cookies is to distinguish unique users and pages that users have seen, as well as to count the number of visits to a page or post. They help in analyzing user behavior on the website to improve the user experience and track conversions [Cookie policy (1).txt#51@6ca254b3c05c42b48b85e7fd03bfd632][Cookie policy (1).txt#47@6ca254b3c05c42b48b85e7fd03bfd632].",
+      "answer": "The purpose of Analytical cookies is to distinguish unique users and pages that users have seen, as well as to count the number of visits to a page or post. They help in analyzing user behavior on the website to improve the user experience and track marketing conversions [Cookie policy (1).txt#51@6ca254b3c05c42b48b85e7fd03bfd632][Cookie policy (1).txt#47@6ca254b3c05c42b48b85e7fd03bfd632].",
       "contexts": [
         "        Party      Marketing/\n                   conversions can be attributed outside                                               Targeting\n                               the landing page.\n     _gid         Google Analytics uses the _ga and _gid                     1 day           3rd        Analytical\n                  cookies to distinguish unique users and                                   Party\n                   pages that users have seen. The _gid\n                     cookie prevents re",
         "                         months           Party\n      _ga      Google Analytics uses the _ga and _gid                     2 years           3rd        Analytical\n               cookies to distinguish unique users and                                     Party\n                pages that users have seen. The _ga\n               cookie counts the number of visits to a\n                            page or post.\n_gac_gb_<conta Contains campaign related information.                       3               ",
@@ -430,7 +430,7 @@
       "ground_truth": "Some website services or functionalities may not work properly and you may need to manually adjust preferences.",
       "faithfulness": 1.0,
       "answer_relevancy": 0.9844426112,
-      "context_precision": 0.7555555555,
+      "context_precision": 0.95,
       "context_recall": 1.0
     },
     {
@@ -458,8 +458,8 @@
         "ully whether investing in a specific Financial Instrument is\n     suitable for him in the light of his circumstances and financial resources.\n\n2.2. If the Client does not understand the risks involved he/she should seek advice and\n     consultation from an independent financial advisor. If the Client still does not understand\n     the risks involved in trading in any Financial Instruments, he/she should not trade at all.\n\n\n3.   General Risks and Acknowledgements\n\n3.1. The Client is warned of the",
         "Derivative Financial Instruments (CFDs)\n\n\n     not provide such advice. If the Client does not understand the risks involved in trading in\n     CFDs, he should not trade at all.\n\n\n2.   Definition\n\n2.1. “CFDs” or “Contract for Differences” is an agreement between two parties to exchange the\n     difference between the opening price and closing price of a contract including but not\n     limited to shares, currencies, commodities and index. CFDs provide Investors with all the\n     benefits and risk",
         "erivative Financial Instruments (CFDs)\n\n\n     not provide such advice. If the Client does not understand the risks involved in trading in\n     CFDs, he should not trade at all.\n\n\n2.   Definition\n\n2.1. “CFDs” or “Contract for Differences” is an agreement between two parties to exchange the\n     difference between the opening price and closing price of a contract including but not\n     limited to shares, currencies, commodities and index. CFDs provide Investors with all the\n     benefits and risks",
-        " dealing in\n     Derivative Financial Instruments offered by the Company for (such as CFDs). The notice was\n     designed to explain in general terms the nature of the risks involved when dealing in\n     Financial Instruments on a fair and non-misleading basis, according to the Law. The Client\n     should be aware of all the risks associated with trading in CFDs and seek advice and\n     consultation from an independent financial advisor if he has any doubts. The Company does\n\n                   ",
-        "dealing in\n     Derivative Financial Instruments offered by the Company for (such as CFDs). The notice was\n     designed to explain in general terms the nature of the risks involved when dealing in\n     Financial Instruments on a fair and non-misleading basis, according to the Law. The Client\n     should be aware of all the risks associated with trading in CFDs and seek advice and\n     consultation from an independent financial advisor if he has any doubts. The Company does\n\n                    "
+        " accept the\n         financial risks involved. CFDs financial instruments may not be suitable for everyone and\n         Clients should ensure that they properly understand the risks involved. Clients should\n         seek independent advice if necessary.\n6.5. All Clients’ orders will be executed by the Company as per its Order Execution Policy,\n\n\n                                                          5\n                     Registered in the Financial Services Authority St. Vincent & the Grenad",
+        " dealing in\n     Derivative Financial Instruments offered by the Company for (such as CFDs). The notice was\n     designed to explain in general terms the nature of the risks involved when dealing in\n     Financial Instruments on a fair and non-misleading basis, according to the Law. The Client\n     should be aware of all the risks associated with trading in CFDs and seek advice and\n     consultation from an independent financial advisor if he has any doubts. The Company does\n\n                   "
       ],
       "ground_truth": "Seek advice from an independent financial adviser. If you still do not understand the risks, you should not trade.",
       "faithfulness": 1.0,
@@ -470,7 +470,7 @@
     {
       "id": "28",
       "question": "How does high leverage affect trading risk?",
-      "answer": "High leverage allows traders to hold positions much larger than their actual account value, which can magnify both losses and profits. This means that while high leverage can increase potential gains, it also significantly increases the risk of substantial losses, potentially exceeding the initial margin funds and any additional deposits made to maintain open positions. If the market trend goes against the trader, they may sustain a total loss of their margin funds [Risk disclaimer (1).txt#6@a980eeae471d4efe8b3b92e8bd478bd5][Trading and Execution .txt#24@0b2d6d6b81274968950b05ecb72f95c4].",
+      "answer": "High leverage allows traders to hold positions much larger than their actual account value, which can magnify both losses and profits. This means that while high leverage can increase potential gains, it also significantly increases the risk of substantial losses, potentially exceeding the initial margin funds and any additional deposits made to maintain open positions. If the market trend goes against the trader, they may sustain a total loss of their margin funds [Risk disclaimer (1).txt#6@a980eeae471d4efe8b3b92e8bd478bd5], [Trading and Execution .txt#24@0b2d6d6b81274968950b05ecb72f95c4].",
       "contexts": [
         "ow Margin can result in significant losses due to small price fluctuations\n      in the traded products. High Leverage allows the Customer to assume more risk, magnifying\n      both losses and profits; which can result in loss up to and in excess of Deposits and Margin.\n      The Customer must consider that if the trend on the market is against him/her the\n      Customer may sustain a total loss of the initial margin funds and any additional funds\n      deposited to maintain open positions. The ",
         "al value of your position. Margin trading allows traders to hold a position much\n      larger than their actual account value. The Company offers Leverage of up to 1:2000\n      depending on the account type. Obviously, trading on margin comes with risk, since high\n      leverage may work against you as much as it works for you. If account equity falls below\n      margin requirements, the Trading Station will trigger an order to close all open positions.\n      When positions have been over-levera",
@@ -497,7 +497,7 @@
       ],
       "ground_truth": "HF Markets (SV) Ltd itself acts as the execution venue.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9197199179,
+      "answer_relevancy": 0.9291740982,
       "context_precision": 1.0,
       "context_recall": 1.0
     },
@@ -531,7 +531,7 @@
       ],
       "ground_truth": "The spread.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9276820504,
+      "answer_relevancy": 0.9616992594,
       "context_precision": 1.0,
       "context_recall": 1.0
     },
@@ -623,7 +623,7 @@
     {
       "id": "37",
       "question": "Who is responsible for ensuring that an Expert Advisor works properly?",
-      "answer": "The responsibility for the proper functioning of an Expert Advisor (EA) lies with the client, as the company does not offer support regarding their installation, implementation, and proper functioning [Trading and Execution .txt#32@0b2d6d6b81274968950b05ecb72f95c4].",
+      "answer": "The responsibility for the proper functioning of an Expert Advisor (EA) lies with the client, as the company does not offer support regarding their installation, implementation, and proper functioning due to the large number of EAs released [Trading and Execution .txt#32@0b2d6d6b81274968950b05ecb72f95c4].",
       "contexts": [
         "uthority St. Vincent & the Grenadines.\n                                      License number 22747 IBC 2015\n\f14.   Expert Advisor Trading (EA)\n14.1 The Company allows trading via Expert advisors but does not offer support regarding their\n      installation, implementation and proper functioning. This is due to the large number of EA’s\n      that are released which makes it impossible for the Company to support them. Therefore,\n      any responsibility for proper functioning of an EA lies with the",
         "....................................................................... 7\n\n13.      Differences in Pricing Between Brokers ....................................................................... 7\n\n14.      Expert Advisor Trading (EA) ......................................................................................... 8\n\n15.      Bonus Offerings........................................................................................................... 8\n\n\n\n\n                                  ",
@@ -632,9 +632,9 @@
         "and bona fide trading;\n           b) Intentionally allowing positions to reach stop-out levels or extreme drawdowns as part of a\n                trading strategy.\n         24.3.9. Arbitrage and Automation Abuse\n           c) Engaging in abusive, latency-based, or system-based arbitrage strategies designed to exploit\n                pricing or execution inefficiencies;\n           d) Using automated trading systems (including Expert Advisors or APIs) in a manner that\n                conceals, disg"
       ],
       "ground_truth": "The user of the Expert Advisor is responsible for its proper functioning.",
-      "faithfulness": 1.0,
-      "answer_relevancy": 0.9653321709,
-      "context_precision": 0.75,
+      "faithfulness": 0.8,
+      "answer_relevancy": 0.9653233561,
+      "context_precision": 0.7,
       "context_recall": 1.0
     },
     {
@@ -650,8 +650,8 @@
       ],
       "ground_truth": "Send the complaint in writing to [complaints@hfm.com](mailto:complaints@hfm.com).",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.8626732393,
-      "context_precision": 1.0,
+      "answer_relevancy": 0.8628259315,
+      "context_precision": 0.9999999999,
       "context_recall": 1.0
     },
     {
@@ -736,13 +736,13 @@
       "ground_truth": "At least annually.",
       "faithfulness": 1.0,
       "answer_relevancy": 0.9835679893,
-      "context_precision": 1.0,
+      "context_precision": 0.9999999999,
       "context_recall": 1.0
     },
     {
       "id": "44",
       "question": "Who makes the final decision when HFM's internal conflict-of-interest procedures are not sufficient?",
-      "answer": "The final decision is made by the Head of the Compliance Department when HFM's internal conflict-of-interest procedures are not adequate to manage the conflict to an acceptable level [Conflicts of interest policy (1).txt#48@153bbdf8d14f4085889f6c3d2370b123].",
+      "answer": "The final decision is made by the Head of the Compliance Department when HFM's internal conflict-of-interest procedures are not sufficient to manage the conflict to an acceptable level [Conflicts of interest policy (1).txt#48@153bbdf8d14f4085889f6c3d2370b123].",
       "contexts": [
         "    be found on the Company’s website under section ‘Legal Documentation’);\n\n      (r) procedures for taking all reasonable steps to obtain the best possible results when\n          executing Client Orders.\n\n\n10.   Final Resolution of Conflicts\n\n10.1. Where Conflicts of Interest exist and the established internal procedures for minimizing\n      any potential conflicts of interest are not adequate to manage the conflict to an\n      acceptable level then the Head of the Compliance Department will t",
         "c service.\n\n8.4. Where the Company is for any reason incapable of preventing or managing a possible\n     conflict of interest it may choose to refuse to continue with the provision of the\n     requested service from the Client.\n\n\n9.   Management of Conflicts of Interest\n\n9.1. The Company has established adequate and appropriate internal procedures for\n     minimizing any potential conflicts of interest which include the following:\n\n     (a) the Company maintains a Compliance Department which is ",
@@ -752,14 +752,14 @@
       ],
       "ground_truth": "The Head of the Compliance Department.",
       "faithfulness": 0.5,
-      "answer_relevancy": 0.9601325833,
-      "context_precision": 0.9999999999,
+      "answer_relevancy": 0.9468160816,
+      "context_precision": 1.0,
       "context_recall": 1.0
     },
     {
       "id": "45",
       "question": "What is the maximum return or loss coverage available under the Shield 500 program?",
-      "answer": "The maximum return payable under the Shield 500 program is 500 USD or equivalent, which also represents the maximum coverage for potential losses [Shield 500.txt#5@3937dd92ecdc4543b27f7480dad1caea].",
+      "answer": "The maximum return payable under the Shield 500 program is 500 USD or equivalent, and it covers potential losses up to the same amount of 500 USD or equivalent [Shield 500.txt#5@3937dd92ecdc4543b27f7480dad1caea].",
       "contexts": [
         "                                                 Terms and Conditions\n\n\n 2.8. The Losses covered under the Shield 500 program are considered a tradable bonus, with\n        a maximum coverage of up to 500 USD or equivalent.\n 2.9. The Bonus Program can be applied to one (1) Account per Client.\n 2.10.          The leverage is fixed at 1:1000.\n2.11. During news the leverage is decreased to 500.\n  2.12. The Bonuses of this Bonus Program is for trading purposes only and cannot be\n         withdrawn un",
         "a trading period of 25 days.\n2.5. The Shield 500 Amount will be calculated and deposited only at midnight on the 25th day\n     since the Shield 500 Account opening.\n2.6. Under this Bonus Program, the amount of the bonus is variable and depends on all\n     internal transfers and covers potential losses up to the 25th day.\n2.7. The maximum return payable under this program is 500 USD or equivalent.\n\n\n\n                                                      2\n                 Registered in the Financ",
@@ -768,7 +768,7 @@
         "vices Authority St. Vincent & the Grenadines.\n                                         Registration number 22747 IBC 2015\n\f                                                                                                    HF Markets (SV) Ltd\n                                                                                                            Shield 500\n                                                                                                  Terms and Conditions\n\n\n       which is a"
       ],
       "ground_truth": "A maximum of 500 USD or equivalent.",
-      "faithfulness": 0.5,
+      "faithfulness": 1.0,
       "answer_relevancy": 0.9623019308,
       "context_precision": 1.0,
       "context_recall": 1.0
@@ -786,7 +786,7 @@
       ],
       "ground_truth": "One Shield 500 account per client.",
       "faithfulness": 1.0,
-      "answer_relevancy": 1.0,
+      "answer_relevancy": 0.9999982699,
       "context_precision": 0.8666666666,
       "context_recall": 1.0
     },
@@ -802,15 +802,15 @@
         "nt) please also see Clause 6.8. of the Company’s Terms of Business\n\nB. Cent Accounts (excluding Copy Cent)\n\n     Trading Account’s Equity                                   Maximum Leverage\n              (USD)\n\n  0.00 – 499.99                                                          1:2000\n\n  500.00 – 999.99                                                        1:1000\n\n  1000 – 1499.99                                                          1:500\n\n  1,500.00 or more                             "
       ],
       "ground_truth": "1:1000.",
-      "faithfulness": 1.0,
-      "answer_relevancy": 0.9999982802,
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
       "context_precision": 0.7555555555,
       "context_recall": 1.0
     },
     {
       "id": "48",
       "question": "What happens to Shield 500 leverage during news events?",
-      "answer": "During news events, the leverage for the Shield 500 program is decreased to 500. This is specified in the terms and conditions of the program [Shield 500.txt#7@3937dd92ecdc4543b27f7480dad1caea].",
+      "answer": "During news events, the leverage for the Shield 500 program is decreased to 500 [Shield 500.txt#7@3937dd92ecdc4543b27f7480dad1caea].",
       "contexts": [
         "                                                 Terms and Conditions\n\n\n 2.8. The Losses covered under the Shield 500 program are considered a tradable bonus, with\n        a maximum coverage of up to 500 USD or equivalent.\n 2.9. The Bonus Program can be applied to one (1) Account per Client.\n 2.10.          The leverage is fixed at 1:1000.\n2.11. During news the leverage is decreased to 500.\n  2.12. The Bonuses of this Bonus Program is for trading purposes only and cannot be\n         withdrawn un",
         "                                  1:200\n\n       *Please refer to the website for the complete list of instrument-specific applicable\n        leverage\n\nThe Client acknowledges that the Company reserves the right, at its sole discretion, to\nreduce the above leverage limits under any non-exhaustive circumstances listed below.\n\n(a) News and Session Events\n\nThe Leverage limits in the below table shall apply during major news releases and trading\nsessions events:\n\n     1. News releases - within 15 min",
@@ -855,7 +855,7 @@
       "ground_truth": "Up to 50 percent of the follower's equity at the time of a deposit or withdrawal.",
       "faithfulness": 1.0,
       "answer_relevancy": 1.0,
-      "context_precision": 0.8875,
+      "context_precision": 0.95,
       "context_recall": 1.0
     },
     {
@@ -921,15 +921,15 @@
         "per month for a period of five (5) years. The following\n     information is recorded in the complaints register:\n     (a)   Unique Reference Number\n     (b)   Date of the complaint;\n     (c)   Client’s full name;\n     (d)   Client’s trading account ID;\n     (e)   Client’s country of residence;\n     (f)   Disputed amount;\n     (g)   Complaint cause;\n     (h)   any comments thereof.\n\n\n\n\nVersion: 2025/01\n\n\n                                                        6\n\n                    Licensed by th"
       ],
       "ground_truth": "Yes. HFM may request missing supporting information or clarification before it can properly investigate the complaint.",
-      "faithfulness": 0.3333333333,
-      "answer_relevancy": 0.9044608135,
+      "faithfulness": 0.6666666667,
+      "answer_relevancy": 0.9044778508,
       "context_precision": 1.0,
       "context_recall": 1.0
     },
     {
       "id": "55",
       "question": "I filed a complaint but did not respond to any requests from the investigating officer for four weeks. What may happen to my complaint?",
-      "answer": "Your complaint may be considered closed since four (4) weeks have passed since its submission and you have not responded to the Company’s investigating officer’s requests, preventing further investigation [Complaint handling(1).txt#22@89d388c70a664088808675e9042b9e60].",
+      "answer": "Your complaint may be considered closed since four (4) weeks have passed since its submission and you have not responded to the Company’s investigating officer’s requests, which prevents further investigation [Complaint handling(1).txt#22@89d388c70a664088808675e9042b9e60].",
       "contexts": [
         "considered closed if four (4) weeks have passed since its submission\n     and the Client has not responded to the Company’s investigating officer’s requests,\n     preventing further investigation.\n8.2. Only the account holder may lodge a complaint related to his trading account. The\n     Company may, however, accept complaints from third parties (such as legal\n     representatives) acting on behalf of the Client, provided that the Client has granted written\n     authorization, which must be pres",
         "handle or investigate a complaint, if the requirements\n     included in paragraphs 4.2 and 4.3 above are not fulfilled. In such an event the Company\n     shall revert back to the Client and request him to send any additional information. In any\n     event, one of the Company’s officers may contact the Client directly in order to obtain\n     further clarifications and information relating to his complaint. The Company shall need\n     the Client’s cooperation in order to handle the complaint.\n5.6.",
@@ -955,7 +955,7 @@
         "                                         HF Markets (SV) Ltd\n\n                            COMPLAINTS HANDLING POLICY\n\n\n\n\n___                                                    ___                             ___\n\nSuite 305, Griffith Corporate Centre, P.O. Box 1510,   T. +44-2030978571   support@hfm.com\nBeachmont, Kingstown, St. Vincent and the Grenadines   F. +44-2030978570      www.hfm.com\n\f                                                                                                         "
       ],
       "ground_truth": "Yes, provided you have given the lawyer written authorisation and that authorisation is provided to HFM.",
-      "faithfulness": 0.5,
+      "faithfulness": 1.0,
       "answer_relevancy": 1.0,
       "context_precision": 0.5,
       "context_recall": 1.0
@@ -963,7 +963,7 @@
     {
       "id": "57",
       "question": "My Stop Loss was set at a specific price, but major news caused the market to gap through that level. Does HFM have to execute my Stop Loss exactly at the requested price?",
-      "answer": "No, HFM does not have to execute your Stop Loss exactly at the requested price. Under certain market conditions, it may be impossible to execute any type of order at the declared price, and once a Stop Loss order is triggered, it turns into a market order, which may be filled at the best possible price, potentially lower than the requested price. This means that the execution of a Stop Loss order may be worse than its stipulated price, leading to realized losses larger than expected [Risk with CFDS 2.txt#42@6d5ed3fabfc740f0af7c78e3a06][General risk disclosure(1).txt#35@e2d37ef877634605a9f433ae10739688].",
+      "answer": "No, HFM does not have to execute your Stop Loss exactly at the requested price. Market conditions, such as significant movements or gaps, may prevent the execution of orders at the declared price. Once a Stop Loss order is triggered, it becomes a market order and may be filled at the next best price, which could be worse than the stipulated price. Therefore, realized losses can be larger than expected [Risk with CFDS 2.txt#42@6d5ed3fabfc740f0af7c78e3a06][General risk disclosure(1).txt#35@e2d37ef877634605a9f433ae10739688].",
       "contexts": [
         "en ‘stop-loss orders’, whereby your trade will be\n       executed only when the CFD you want to buy or sell reaches a particular price (the stop\n       price), cannot guarantee the limit of loss. ‘Stop-loss orders’ are not guaranteed to be filled\n       at the price you state. Once the ‘stop-loss orders’ has been triggered, it turns into a market\n       order, which is filled at the best possible price. This price may be lower than the price\n\n                                                     ",
         "n be controlled by you or by the Company. Those movements will affect the Company’s\n       prices, whether or not you can open or close a position and the price at which you can do\n       so. So, under certain market conditions, it may be impossible to execute any type of order\n       at the declared price. Therefore, even ‘stop-loss orders’, whereby your trade will be\n       executed only when the CFD you want to buy or sell reaches a particular price (the stop\n       price), cannot guarantee t",
@@ -980,7 +980,7 @@
     {
       "id": "58",
       "question": "If I give HFM a specific instruction for executing an order, can that instruction affect the normal best-execution process?",
-      "answer": "Yes, if you give HFM a specific instruction for executing an order, that instruction may prevent the Company from taking the steps designed to obtain the best possible result for the execution of those orders. The Company will execute the order in accordance with your specific instructions, which satisfies its obligation to provide you with best execution [Order exection policy(1).txt#45@4967f7dae41f449582adf68373bf4720].",
+      "answer": "Yes, if you give HFM a specific instruction for executing an order, that instruction may prevent the Company from taking the steps designed to obtain the best possible result for the execution of those orders. The Company will execute the order in accordance with your specific instructions, which satisfies its obligation to provide you with best execution, but may not align with the normal best-execution process [Order exection policy(1).txt#44@4967f7dae41f449582adf68373bf4720].",
       "contexts": [
         "om the\n      client the Company shall make sure that the Client’s order shall be executed following the\n      specific instruction from the Client (See section 6 for Client’s Specific Instruction).\n\n\n5.    Best Execution Criteria\n\n5.1   The Company will determine the relative importance of the above factors by using its\n      commercial judgment and experience in the light of the information available on the\n      market and taking into account the criteria described below:\n\n      (a) the charac",
         "                    Registration number 22747 IBC 2015\n\f                                                                                                     HF Markets (SV) Ltd\n                                                                                                   Order Execution Policy\n\n\n6.    Client’s Specific Instruction\n6.1   Any specific instructions from a Client may prevent the Company from taking the steps that\n      it has designed and implemented in this Policy to obtain the",
@@ -990,14 +990,14 @@
       ],
       "ground_truth": "Yes. A specific client instruction may prevent HFM from applying some of its normal best-execution procedures for the elements covered by that instruction.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9537868879,
+      "answer_relevancy": 0.0,
       "context_precision": 1.0,
       "context_recall": 1.0
     },
     {
       "id": "59",
       "question": "During an economic news release, the spread suddenly became much wider. Does this alone prove that HFM manipulated the price?",
-      "answer": "The provided context does not contain information that confirms or denies whether HFM manipulated the price during an economic news release. It only discusses that spreads may widen during such events due to increased volatility and other market conditions [Trading and Execution .txt#19@0b2d6d6b81274968950b05ecb72f95c4]. Therefore, the answer is not available in the context.",
+      "answer": "The provided context does not contain information that confirms or denies whether HFM manipulated the price during an economic news release. It only discusses that spreads may widen during such events due to increased volatility and market conditions [Trading and Execution .txt#19@0b2d6d6b81274968950b05ecb72f95c4]. Therefore, the answer is no, this alone does not prove manipulation.",
       "contexts": [
         "ical spread. During news events\n      spreads may widen substantially in order to compensate for the tremendous amount of\n      volatility in the market. The widened spreads may only last a few seconds or as long as a\n      few minutes.\n7.2   The Company strongly encourages traders to use caution when trading around news events\n      and economic announcements and always be aware of their account equity, usable margin\n      and market exposure. Widened spreads can adversely affect all positions ",
         "the spread may occur due to a loss of connectivity with a\n      liquidity provider or due to an announcement that has a dramatic effect on the market that\n      dries out liquidity. Such graying out of prices or increased spreads may result in margin calls\n      on a trader's account.\n\n\n7.    Widened Spreads\n7.1   The Company’s aim is to provide traders with tight, competitive spreads; however, there\n      may be instances when spreads widen beyond the typical spread. During news events\n      sp",
@@ -1006,7 +1006,7 @@
         " the Client with investment advice relating to\n          investments or possible transactions in investments or make investment\n          recommendations of any kind.\n\n     (t) There may be situations, movements and/or conditions occurring at the weekend, at\n          the beginning of the week or intra-day after the release of significant macroeconomic\n          figures, economic or political news that make currency markets to open with price\n          levels that substantially differ from previ"
       ],
       "ground_truth": "No. HFM's policies state that spreads may widen significantly during news events because of increased volatility and reduced liquidity.",
-      "faithfulness": 0.8333333333,
+      "faithfulness": 0.8571428571,
       "answer_relevancy": 0.0,
       "context_precision": 0.8875,
       "context_recall": 1.0
@@ -1014,7 +1014,7 @@
     {
       "id": "60",
       "question": "My internet connection became unstable and my market order reached HFM with an outdated price. What may happen?",
-      "answer": "If your internet connection became unstable and your market order reached HF Markets (HFM) with an outdated price, the order might be declined by the Company. This is due to the possibility of sending out-of-date market orders caused by poor or interrupted connectivity [Order exection policy(1).txt#24@4967f7dae41f449582adf68373bf4720].",
+      "answer": "If your internet connection became unstable and your market order reached HF Markets (HFM) with an outdated price, the order might be declined by the Company. This is due to the possibility of sending out-of-date market orders caused by connectivity issues, which can result in poor or interrupted connectivity [Order execution policy(1).txt#24@4967f7dae41f449582adf68373bf4720].",
       "contexts": [
         "                                                                HF Markets (SV) Ltd\n                                                                                                      Terms of Business\n\n\n7.     Arbitrage\n\n7.1. Internet, connectivity delays, and price feed errors sometimes create a situation where the\n       price displayed on the Trading Platform does not accurately reflect the market rates. The\n       concept of arbitrage and or taking advantage of these internet delays canno",
         "s will be\n                  automatically closed during market breaks. If any orders on these specific assets remain\n                  pending at the end of the day, they shall be automatically deleted following the daily market\n                  closure time.\n\n\n        24     Arbitrage and Prohibited Trading Practices\n\n        24.1      Internet connectivity issues, delays, and price feed errors may occasionally result in a\n                  situation where the price displayed on the Trading Pl",
@@ -1024,14 +1024,14 @@
       ],
       "ground_truth": "HFM may update the price and execute the order at the best available market price.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9325378904,
+      "answer_relevancy": 0.9325452747,
       "context_precision": 1.0,
       "context_recall": 1.0
     },
     {
       "id": "61",
       "question": "After the 25th day of Shield 500, I withdraw 40 percent of my available withdrawable funds. What percentage of my applicable Shield bonus may be removed?",
-      "answer": "If you withdraw 40% of your available withdrawable funds after the 25th day, then 40% of your applicable Shield bonus may be removed as well, since the bonus removal is proportional to the percentage of the withdrawal amount [Shield 500.txt#9@3937dd92ecdc4543b27f7480dad1caea].",
+      "answer": "If you withdraw 40% of your available withdrawable funds after the 25th day, then 40% of your applicable Shield bonus may be removed as well. This is because the bonus removal is proportional to the percentage of the withdrawal amount [Shield 500.txt#9@3937dd92ecdc4543b27f7480dad1caea].",
       "contexts": [
         " of his available withdrawable funds, 50% of the\n       bonus shall be also removed.\nTotal Transfer in     Shield 500 Bonus              Available             Removal of funds          Bonus removal\n  till 25th day                                   Withdrawable               requested\n                                                     amount\n      $500.00               $200.00                 $300.00                    $150.00                 $100.00\n\n\n\n\n 3.      Termination\n 3.1. The Company ",
         "etween bonus programs offered by the company. If\n       you no longer wish to use a trading account with bonus, please archive the bonus account\n       or send an email to support@hfm.com in order to archive the bonus account.\n2.17. Any withdrawal of funds from the trading account after the 25th day is subject to a bonus\n       removal. The bonus removal is proportional to the percentage of the withdrawal amount.\n       For example, if a client removes 50% of his available withdrawable funds, 50",
@@ -1041,7 +1041,7 @@
       ],
       "ground_truth": "40 percent of the applicable bonus may be removed because bonus removal is proportional to the percentage withdrawn.",
       "faithfulness": 0.3333333333,
-      "answer_relevancy": 0.9023016705,
+      "answer_relevancy": 0.9474522377,
       "context_precision": 1.0,
       "context_recall": 1.0
     },
@@ -1092,7 +1092,7 @@
       ],
       "ground_truth": "0.04 lot.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.923644659,
+      "answer_relevancy": 0.9235678852,
       "context_precision": 1.0,
       "context_recall": 1.0
     },
@@ -1109,7 +1109,7 @@
       ],
       "ground_truth": "No. A Follower Account is designed for copied trades. The follower may close copied trades but cannot independently open additional trades in that account.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9857653135,
+      "answer_relevancy": 0.9873164276,
       "context_precision": 0.95,
       "context_recall": 1.0
     },
@@ -1133,7 +1133,7 @@
     {
       "id": "67",
       "question": "I used a Stop Loss, so is it impossible for me to lose more than the loss amount I intended?",
-      "answer": "Using a Stop Loss does not guarantee that you will not lose more than the intended amount. Market conditions or technological limitations may prevent the Stop Loss from executing at the desired price, and once triggered, it becomes a market order that may be filled at a worse price. Therefore, you could sustain larger losses than expected [General risk disclosure(1).txt#35@e2d37ef877634605a9f433ae10739688][Risk with CFDS 2.txt#42@6d5ed3fabfc740f0af7c78e3a06d1c00].",
+      "answer": "Using a Stop Loss does not guarantee that you will not lose more than the intended amount. Market conditions or technological limitations may prevent the Stop Loss from executing at the desired price, and the realized losses can be larger than expected. Therefore, it is possible to lose more than the amount you intended to limit with a Stop Loss order [General risk disclosure(1).txt#35@e2d37ef877634605a9f433ae10739688].",
       "contexts": [
         "cause market\n     conditions or technological limitations may make it impossible to execute such orders.\n     Please also note that for all orders (including guaranteed stop loss orders) you may sustain\n     the loss (which your order is intended to limit) in a short period of time. In other cases the\n     execution of a Stop Loss orders may be worse than its stipulated price and the realized\n     losses can be larger than expected.\n\n\n6.   Technical Risks\n\n6.1. The Client and not the Company sha",
         "e of the Quotes simply may not reach the\n     Client Terminal.\n\n5.4. The Client acknowledges that when an Order is closed or being executed, it may not be\n     cancelled or modified.\n\n5.5. The Client may lose all amounts he has deposited with the Company as margin. The placing\n     of certain orders available on the Trading Platform (e.g. “stop-loss” or “limit” orders) that\n     are intended to limit losses to certain amounts may not always be effective because market\n     conditions or technolo",
@@ -1167,7 +1167,7 @@
     {
       "id": "69",
       "question": "A Strategy Provider has 5000 USD equity. A follower has 400 USD equity and selects 50 percent Volume Allocation. The Strategy Provider opens 0.10 lot. What is the theoretical follower position and what actually happens?",
-      "answer": "The theoretical follower position size can be calculated as follows:\n\n1. Calculate the trade copy ratio:\n   \\[\n   \\text{Trade Copy Ratio} = \\frac{\\text{Follower Equity}}{\\text{Strategy Provider Equity}} \\times \\frac{\\text{Volume Allocation}}{100} = \\frac{400}{5000} \\times \\frac{50}{100} = 0.04\n   \\]\n\n2. Calculate the follower position size:\n   \\[\n   \\text{Follower Position Size} = \\text{Strategy Provider Position Size} \\times \\text{Trade Copy Ratio} = 0.10 \\times 0.04 = 0.004 \\text{ lots}\n   \\]\n\nHowever, the minimum trade size is subject to the follower's approval and confirmation, and it states that the trade will open with a minimum trade size of 0.01 lot. Therefore, if the follower does not approve the trade size of 0.004 lots, the trade will not be copied.\n\nIn summary, the theoretical follower position is 0.004 lots, but practically, the trade will not be copied unless the follower approves a minimum trade size of 0.01 lot [Copy trading TC(1).txt#123@68336238a917439b8c3a0db802e35ec9][Copy trading TC(1).txt#124@68336238a917439b8c3a0db802e35ec9].",
+      "answer": "The theoretical follower position size can be calculated as follows:\n\n1. Calculate the trade copy ratio:\n   \\[\n   \\text{Trade Copy Ratio} = \\frac{\\text{Follower Equity}}{\\text{Strategy Provider Equity}} \\times \\frac{\\text{Volume Allocation}}{100} = \\frac{400}{5000} \\times \\frac{50}{100} = 0.04\n   \\]\n\n2. Calculate the follower position size:\n   \\[\n   \\text{Follower Position Size} = \\text{Strategy Provider Position Size} \\times \\text{Trade Copy Ratio} = 0.10 \\times 0.04 = 0.004 \\text{ lots}\n   \\]\n\nHowever, the minimum trade size is 0.01 lot, and the trade will only open with this minimum size subject to the follower's approval and confirmation. If the follower does not approve, the trade will not be copied at all [Copy trading TC(1).txt#124@68336238a917439b8c3a0db802e35ec9].\n\nTherefore, the theoretical follower position is 0.004 lots, but practically, the trade will open with a minimum size of 0.01 lot if approved, or it will not be copied if not approved.",
       "contexts": [
         "ovider A opens position size of 0.50 lot\n\n      Follower A position size will be 0.50 x 0.08 = 0.04 lot\n\nCopy Ratio Example B:\n\n      Follower B deposits 400 USD and selects Volume Allocation of 50%\n\n      Strategy Provider B deposits 5,000 USD\n\n      The Follower’s trade copy ratio will be 400/5,000 x 50/100 = 0.04\n\n      Strategy Provider B opens position size of 0.10 lot\n\n      Follower B position size will be 0.10 x 0.04 = 0.004 lot, therefore the trade will open with\n      minimum trade siz",
         "e will open with\n      minimum trade size of 0.01 lot subject to the Followers approval and confirmation,\n      otherwise the trade will not be copied.\n\nCopy Ratio Example C:\n\n      Follower C deposits 10,000 USD and selects Volume Allocation of 100%\n\n      Strategy Provider C deposits 5,000 USD\n\n      The Follower’s trade copy ratio will be 10,000/5,000 x 100/100 = 2\n\n      Strategy Provider C opens position size of 1.00 lot\n\n      Follower C position size will be 1.00 x 2 = 2.00 lots\n\n\n15.   P",
@@ -1184,7 +1184,7 @@
     {
       "id": "70",
       "question": "A Copy Trading follower has 1000 USD in profits and 500 USD in losses. The Strategy Provider charges a 25 percent Performance Fee. How much Performance Fee is payable?",
-      "answer": "The Performance Fee payable by the Follower is calculated as follows:\n\nProfit = 1000 USD  \nLoss = 500 USD  \nPerformance Fee = 25%\n\nThe calculation is:  \n(1000 - 500) * 25% = 125 USD\n\nTherefore, the Performance Fee payable is 125 USD. [Copy trading TC(1).txt#128@68336238a917439b8c3a0db802e35ec9]",
+      "answer": "The Performance Fee payable by the Follower is 125 USD. This is calculated as follows: (1,000 USD profit - 500 USD loss) * 25% = 125 USD payable to the Strategy Provider [Copy trading TC(1).txt#128@68336238a917439b8c3a0db802e35ec9].",
       "contexts": [
         "                                                            HF Markets (SV) Ltd\n                                                                                                  Copy Trading Agreement\n\n\n     Performance fee payable by Follower to the Strategy Provider\n\nExample A:\n\n     Strategy Provider A chosen Performance Fee is 20%\n\n     Follower A profit = 1,000 USD\n\n     Follower A loss = 0 USD\n\n     (1,000 – 0)*20% = 200 USD payable by the Follower to the Strategy Provider\n\nExample B:\n\n   ",
         "o the Strategy Provider\n\nExample B:\n\n     Strategy Provider B chosen Performance Fee is 25%\n\n     Follower B profit = 1,000 USD\n\n     Follower B loss = 500 USD\n\n     (1,000 – 500) * 25% = 125 USD payable by the Follower to the Strategy Provider\n\nExample C:\n\n     Strategy Provider C chosen Performance Fee is 30%\n\n     Follower C profit = 1,000 USD\n\n     Follower C loss = 1,200 USD\n\n     (1,000 – 1,200) * 30% = -60 USD, therefore No fee payable by the Follower to the Strategy\n     Provider for neg",
@@ -1194,7 +1194,7 @@
       ],
       "ground_truth": "125 USD. The calculation is (1000 - 500) x 25 percent = 125 USD.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.8556716136,
+      "answer_relevancy": 0.8984270545,
       "context_precision": 1.0,
       "context_recall": 1.0
     },
@@ -1211,14 +1211,14 @@
       ],
       "ground_truth": "No. The follower has negative net performance, so no Performance Fee is payable.",
       "faithfulness": 0.75,
-      "answer_relevancy": 0.9011846709,
+      "answer_relevancy": 0.9011769589,
       "context_precision": 0.9166666666,
       "context_recall": 1.0
     },
     {
       "id": "72",
       "question": "A Strategy Provider already has three open trades when I start following the strategy. Will those three existing trades automatically appear in my Follower Account?",
-      "answer": "No, the three existing trades will not automatically appear in your Follower Account. Only subsequent trades opened by the Strategy Provider after you start following will be copied to your account. The trades opened prior to your following will not be opened on your Follower Account [Copy trading TC(1).txt#72@68336238a917439b8c3a0db802e35ec9].",
+      "answer": "No, the three existing trades will not automatically appear in your Follower Account. Only subsequent trades opened by the Strategy Provider after you start following will be copied to your account. The trades that were opened prior to your following will not be opened on your Follower Account [Copy trading TC(1).txt#72@68336238a917439b8c3a0db802e35ec9].",
       "contexts": [
         "pened prior to\n     the Follower choosing to follow a Strategy Provider, those trades will not be opened on the\n     Follower Account. The Follower shall be able to copy any subsequent trades opened by the\n     Strategy Provider. It is further understood that the ratio between profits and losses of the\n     Strategy Provider shall not be the same as the ratio between profits and losses of the\n     Follower.\n\n8.9. The Follower will receive a Margin Call in case the minimum margin requirement to c",
         " to automatically close\n      all open positions, provided that the markets are open.\n\n11.3. In order for a Follower to follow a different Strategy Provider, he must first select to\n      unfollow the current Strategy Provider as per Clause 11.2 of this Agreement or open a new\n      Follower Account, in case the limit of the number of Follower Accounts per Follower has\n      not been reached.\n\n11.4. Upon unfollowing a Strategy Provider:\n\n      (a) The Follower’s funds will be moved automatically",
@@ -1227,9 +1227,9 @@
         " Follower has the opportunity to follow a Strategy Provider of the Company or a Strategy\n       Provider of other entities of HF Markets Group. On the same note, a Strategy Provider can\n       have Followers of both the Company and Followers of other entities of HF Markets Group.\n\n3.4. . A Follower is strictly prohibited from replicating, mirroring, or otherwise duplicating the\n       trades from their copy trading account linked to a Strategy Provider.\n\n\n\n\n                                      "
       ],
       "ground_truth": "No. Trades opened before you started following the Strategy Provider are not copied. Only subsequent trades are eligible to be copied.",
-      "faithfulness": 1.0,
-      "answer_relevancy": 0.946526266,
-      "context_precision": 0.7,
+      "faithfulness": 0.6666666667,
+      "answer_relevancy": 0.9344168771,
+      "context_precision": 0.7555555555,
       "context_recall": 1.0
     },
     {
@@ -1245,7 +1245,7 @@
       ],
       "ground_truth": "No. The follower is responsible for maintaining sufficient margin. A follower can be stopped out because of insufficient margin even if the Strategy Provider's position later becomes profitable.",
       "faithfulness": 0.75,
-      "answer_relevancy": 0.9135297413,
+      "answer_relevancy": 0.9135615857,
       "context_precision": 1.0,
       "context_recall": 1.0
     },
@@ -1269,7 +1269,7 @@
     {
       "id": "75",
       "question": "I deposit 1000 USD into a Copy Trading account and choose a 20 percent Rescue Level. At what equity should it theoretically trigger, and is exactly 200 USD guaranteed to remain?",
-      "answer": "If you deposit 1,000 USD and choose a 20% Rescue Level, it would theoretically trigger when your equity reaches 200 USD, as that is the amount secured in case of loss. However, it is important to note that due to high volatility, the actual amount that remains may not be exactly 200 USD, as the company is not liable for differences caused by volatile market conditions [Copy trading TC(1).txt#114@68336238a917439b8c3a0db802e35ec9].",
+      "answer": "If you deposit 1,000 USD and choose a 20% Rescue Level, it theoretically triggers when your equity reaches 200 USD. However, it is not guaranteed that exactly 200 USD will remain, as the context states that due to high volatility, the Rescue Level can be triggered below or above the expected amount, and the company shall not be held liable for any difference in volatile market conditions [Copy trading TC(1).txt#114@68336238a917439b8c3a0db802e35ec9].",
       "contexts": [
         " no longer available to be placed on trades.\n\nExample A:\n\n      Follower deposits 1,000 USD and selects Rescue Level of 20%, therefore 200 USD is secured\n      in case of loss, subject to Clause 13.4. When Follower’s equity reaches 200 USD all open\n      trades are closed and the remaining funds are no longer available to be placed on trades.\n\nExample B:\n\n      Follower deposits 1,000 USD and selects Rescue Lever of 25%, therefore 250 USD is secured\n      in case of loss, subject to Clause 13.4.",
         "                                                                               HF Markets (SV) Ltd\n                                                                                                   Copy Trading Agreement\n\n\n      Account and can be set to a maximum of 50% of the equity at the time of each deposit or\n      withdrawal.\n\n13.3. Once the Rescue Level is reached, all open trades on the Follower Account are closed and\n      the remaining funds are no longer available to be placed on tra",
@@ -1278,7 +1278,7 @@
         "equity that a Follower can keep secured in case of loss on\n      the copied trades in the Follower Account.\n\n13.2. Rescue Level can be adjusted during each deposit or withdrawal to/from the Follower\n\n\n                                                         20\n                     Registered in the Financial Services Authority St. Vincent & the Grenadines.\n                                         Registration number 22747 IBC 2015\n\f                                                                "
       ],
       "ground_truth": "The theoretical Rescue Level is 200 USD. However, exactly 200 USD is not guaranteed because high volatility may cause the Rescue Level to trigger above or below the expected amount.",
-      "faithfulness": 1.0,
+      "faithfulness": 0.75,
       "answer_relevancy": 0.0,
       "context_precision": 1.0,
       "context_recall": 1.0
@@ -1286,7 +1286,7 @@
     {
       "id": "76",
       "question": "I use an Expert Advisor during a major news event. My EA sends an order at one price but it executes at a very different price. Since HFM allows EAs, must HFM guarantee the EA's requested execution price?",
-      "answer": "No, HFM does not guarantee the EA's requested execution price. The company allows trading via Expert Advisors but does not offer support regarding their installation, implementation, and proper functioning. Additionally, during volatile market conditions, such as major news events, orders may be subject to slippage, meaning they can execute at a different price than requested due to market volatility [Trading and Execution .txt#32@0b2d6d6b81274968950b05ecb72f95c4][Trading and Execution .txt#10@0b2d6d6b81274968950b05ecb72f95c4].",
+      "answer": "No, HFM does not guarantee the EA's requested execution price. The company allows trading via Expert Advisors but does not offer support regarding their installation, implementation, and proper functioning. Therefore, any responsibility for the proper functioning of an EA lies with the user. Additionally, during volatile market conditions, orders may be subject to slippage, which can result in execution at a different price than requested [Trading and Execution .txt#32@0b2d6d6b81274968950b05ecb72f95c4][Trading and Execution .txt#10@0b2d6d6b81274968950b05ecb72f95c4].",
       "contexts": [
         "uthority St. Vincent & the Grenadines.\n                                      License number 22747 IBC 2015\n\f14.   Expert Advisor Trading (EA)\n14.1 The Company allows trading via Expert advisors but does not offer support regarding their\n      installation, implementation and proper functioning. This is due to the large number of EA’s\n      that are released which makes it impossible for the Company to support them. Therefore,\n      any responsibility for proper functioning of an EA lies with the",
         "he declared price. In this case the Company has\n    the right to execute the Client Order at the first available price. This may occur, for\n    example, at the following cases:\n\n    o Trading Session start moments / opening gaps,\n\n    o During news times,\n\n    o During volatile markets where prices may move significantly up or down and away\n\n\n                                                   7\n              Registered in the Financial Services Authority St. Vincent & the Grenadines.\n           ",
@@ -1296,7 +1296,7 @@
       ],
       "ground_truth": "No. HFM permits EA trading, but the user is responsible for the EA. News, volatility and insufficient liquidity can also cause slippage and execution at the first or next available market price.",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.9258952281,
+      "answer_relevancy": 0.9259047612,
       "context_precision": 1.0,
       "context_recall": 1.0
     },

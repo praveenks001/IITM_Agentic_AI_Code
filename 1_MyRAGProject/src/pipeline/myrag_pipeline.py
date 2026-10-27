@@ -1377,3 +1377,90 @@ def make_live_filter():
 
 
 
+
+
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Method to evaluate KPIs
+#──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+def kpi_percentile(values, p):
+    """Calculate nearest-rank-style percentile."""
+    if not values:
+        return None
+
+    values = sorted(float(v) for v in values)
+    index = round((p / 100.0) * (len(values) - 1))
+    return float(values[index])
+
+
+def kpi_success_rate(rows):
+    """Calculate task success rate from judged rows."""
+    if not rows:
+        return None
+
+    return round(
+        sum(bool(row["task_success"]) for row in rows) / len(rows),
+        4
+    )
+
+
+def compute_kpis(kpi_rows, ragas_summary, kb_version="v1"):
+    """
+    Calculate the eight KPIs using already-evaluated RAGAS scores
+    and task-success judge results.
+    """
+
+    faithfulness = float(ragas_summary["faithfulness"])
+    context_precision = float(ragas_summary["context_precision"])
+
+    costs = [float(r["cost_usd"]) for r in kpi_rows]
+    latencies = [float(r["latency_ms"]) for r in kpi_rows]
+
+    cache_hits = [r for r in kpi_rows if r["cache_hit"]]
+    cache_misses = [r for r in kpi_rows if not r["cache_hit"]]
+
+    kpis = {
+        "1_task_success_rate": kpi_success_rate(kpi_rows),
+        "2_grounded_response_rate": faithfulness,
+        "3_hallucination_rate": round(1.0 - faithfulness, 4),
+        "4_retrieval_hit_rate": context_precision,
+        "5_tool_success_rate": "N/A (W13 - no tools yet)",
+        "6_cost_per_query_usd": (
+            round(sum(costs) / len(costs), 6) if costs else None
+        ),
+        "7_latency_p50_ms": kpi_percentile(latencies, 50),
+        "7_latency_p95_ms": kpi_percentile(latencies, 95),
+        "8_escalation_rate": "N/A (W17 - no HITL yet)",
+    }
+
+    extras = {
+        "kb_version": kb_version,
+        "eval_mode": "live",
+        "cache_hit_rate": (
+            round(len(cache_hits) / len(kpi_rows), 4)
+            if kpi_rows else None
+        ),
+        "cache_hit_accuracy": kpi_success_rate(cache_hits),
+        "cache_miss_accuracy": kpi_success_rate(cache_misses),
+        "n": len(kpi_rows),
+    }
+
+    return {
+        "kpis": kpis,
+        "extras": extras,
+    }
+
+
+def reportable_count(kpis):
+    """Count distinct numeric and N/A KPIs."""
+
+    na = sum(
+        1 for value in kpis.values()
+        if isinstance(value, str) and value.startswith("N/A")
+    )
+
+    distinct = {
+        key.split("_", 1)[0]
+        for key in kpis
+    }
+
+    return len(distinct) - na, na

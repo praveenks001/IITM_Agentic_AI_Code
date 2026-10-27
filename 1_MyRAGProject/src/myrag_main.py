@@ -13,6 +13,7 @@ from rank_bm25 import BM25Okapi
 from pipeline.document_refresh import sync_documents
 from datasets import Dataset
 from ragas import evaluate
+from eval.judge import judge_one_sync
 from ragas.metrics import (
     faithfulness,
     answer_relevancy,
@@ -807,6 +808,7 @@ print(f"✓ Cache ready: {CACHE_DB}")
 
 comparison_results = []
 ragas_rows = []
+kpi_rows = []
 
 for k in [top_k]:  
 
@@ -983,8 +985,17 @@ for k in [top_k]:
                     "answer": str(result["answer"]),
                     "contexts": contexts,
                     "ground_truth": str(ground_truth),
-                })      
+                }) 
 
+                kpi_rows.append({
+                    "id": str(question_id),
+                    "question": question,
+                    "answer": str(result["answer"]),
+                    "ground_truth": str(ground_truth),
+                    "cost_usd": float(result["cost_usd"]),
+                    "latency_ms": float(result["latency_s"]) * 1000,
+                    "cache_hit": bool(meta["cache_hit"]),
+                })  
 
 
     # ------------------------------------------------------------
@@ -1108,6 +1119,65 @@ if ENABLE_RAGAS_EVALUATION:
     print(f"\nCSV saved: {csv_path}")
     print(f"JSON saved: {json_path}")
     print("========== RAGAS EVALUATION COMPLETED ==========")
+
+
+    # ============================================================
+    # KPI Evaluation
+    # ============================================================
+    for row in kpi_rows:
+        score = judge_one_sync(
+            question=row["question"],
+            candidate_answer=row["answer"],
+            ideal_answer=row["ground_truth"],
+            judge_model="gpt-4o",
+        )
+
+        row["judge_accuracy"] = score.accuracy
+        row["judge_groundedness"] = score.groundedness
+        row["judge_format"] = score.format
+        row["task_success"] = score.task_success
+
+    # ============================================================
+    # Calculate 8 KPIs
+    # ============================================================
+
+    kpi_result = pipeline.compute_kpis(
+        kpi_rows=kpi_rows,
+        ragas_summary=summary,
+        kb_version="v1"
+    )
+
+    kpis = kpi_result["kpis"]
+    extras = kpi_result["extras"]
+
+    print("\n========== 8 KPI DASHBOARD ==========")
+
+    for name, value in kpis.items():
+        print(f"{name:<30}: {value}")
+
+    print("\n========== W11 EXTENSIONS ==========")
+
+    for name, value in extras.items():
+        print(f"{name:<25}: {value}")
+
+    numeric, na = pipeline.reportable_count(kpis)
+    print(f"\nReportable: {numeric} numeric + {na} N/A")
+
+    kpi_path = output_dir / "12_kpi_dashboard.json"
+
+    with open(kpi_path, "w", encoding="utf-8") as f:
+        json.dump(
+            {
+                "kpis": kpis,
+                "extras": extras,
+                "questions": kpi_rows,
+            },
+            f,
+            indent=2,
+            ensure_ascii=False
+        )
+
+
 
 
 
