@@ -20,6 +20,7 @@ from ragas.metrics import (
     context_precision,
     context_recall,
 )
+from rag.trace import Trace
 
 
 from config import (
@@ -809,6 +810,7 @@ print(f"✓ Cache ready: {CACHE_DB}")
 comparison_results = []
 ragas_rows = []
 kpi_rows = []
+trace_results = {}
 
 for k in [top_k]:  
 
@@ -882,6 +884,10 @@ for k in [top_k]:
                     bm25=bm25 if search_method == "BM25" else None,
                     use_reranker=use_reranker
                 )
+
+                tr = result["trace"]
+                print(tr.render())
+                trace_results[str(question_id)] = json.loads(tr.to_json())
 
                 # ------------------------------------------------
                 # 4. Save generated answer to SQLite
@@ -1057,6 +1063,7 @@ if ENABLE_RAGAS_EVALUATION:
         for row in ragas_rows
     ])
 
+
     ragas_result = evaluate(
         dataset=dataset,
         metrics=[
@@ -1096,15 +1103,38 @@ if ENABLE_RAGAS_EVALUATION:
         for metric in metric_names
     }
 
+    # with open(json_path, "w", encoding="utf-8") as f:
+    #     json.dump(
+    #         {
+    #             "mode": "live",
+    #             "total_questions": len(ragas_rows),
+    #             "summary": summary,
+    #             "questions": json.loads(
+    #                 score_df.to_json(orient="records")
+    #             ),
+    #         },
+    #         f,
+    #         indent=2,
+    #         ensure_ascii=False,
+    #     )
+
+    # Merge W12 traces into the existing RAGAS question records
+    ragas_records = json.loads(
+    score_df.to_json(orient="records")
+    )
+
+    for record in ragas_records:
+        question_id = str(record["id"])
+        record["trace"] = trace_results.get(question_id)
+
+    # Save RAGAS metrics + W12 traces in one JSON
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(
             {
                 "mode": "live",
                 "total_questions": len(ragas_rows),
                 "summary": summary,
-                "questions": json.loads(
-                    score_df.to_json(orient="records")
-                ),
+                "questions": ragas_records,
             },
             f,
             indent=2,

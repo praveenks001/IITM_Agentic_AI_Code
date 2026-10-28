@@ -18,6 +18,7 @@ from docx import Document
 from rank_bm25 import BM25Okapi
 from fastembed import SparseTextEmbedding
 from config import EMBED_MODEL, CHAT_MODEL, RERANKER_MODEL, CACHE_DB, CACHE_VERSION, COMPARISON_CHART_REQD, TOP_K
+from rag.trace import Trace
 
 assert os.environ.get("OPENAI_API_KEY"), "Set OPENAI_API_KEY before running this notebook"
 
@@ -937,8 +938,11 @@ def ask_rag(question: str, index: list[dict], k: int = 3,
     """Full pipeline: retrieve → prompt → generate. Returns dict with
     answer, sources, cost, latency-relevant token counts."""
 
-    # Start timer
+    # Start timercd II
     start_time = time.perf_counter()
+
+    tr = Trace(question=question)
+    retrieve_start = time.perf_counter()
 
     if search_method == "HYBRID_RRF":
 
@@ -953,10 +957,43 @@ def ask_rag(question: str, index: list[dict], k: int = 3,
         )
 
         if use_reranker:
+            retrieval_ms = (time.perf_counter() - retrieve_start) * 1000
+
+            tr.add(
+                "retrieve",
+                f"Hybrid RRF retrieval completed",
+                {
+                    "search_method": search_method,
+                    "chunk_ids": [h["chunk_id"] for h in retrieved],
+                    "scores": [
+                        h.get("rrf_score", h.get("score"))
+                        for h in retrieved
+                    ],
+                },
+                latency_ms=round(retrieval_ms, 2),
+            )
+
+            rerank_start = time.perf_counter()
+
             retrieved = rerank(
                 query=question,
                 candidates=retrieved,
-                top_k=k
+                top_k=k,
+            )
+
+            tr.add(
+                "rerank",
+                "Cross-encoder reranking completed",
+                {
+                    "order": [h["chunk_id"] for h in retrieved],
+                    "top1_score": (
+                        retrieved[0].get("rerank_score")
+                        if retrieved else None
+                    ),
+                },
+                latency_ms=round(
+                    (time.perf_counter() - rerank_start) * 1000, 2
+                ),
             )
 
     elif search_method == "BM25":
@@ -979,8 +1016,45 @@ def ask_rag(question: str, index: list[dict], k: int = 3,
             retrieved = retrieve(question,index,k=k,embed_model=embed_model)
 
 
+    if not (search_method == "HYBRID_RRF" and use_reranker):
+        tr.add(
+            "retrieve",
+            f"{search_method} retrieval completed",
+            {
+                "chunk_ids": [h["chunk_id"] for h in retrieved],
+                "scores": [h.get("score") for h in retrieved],
+            },
+            latency_ms=round(
+                (time.perf_counter() - retrieve_start) * 1000, 2
+            ),
+        )
+
+        tr.add(
+            "rerank",
+            "Skipped — reranker not applied",
+            {"enabled": False},
+            latency_ms=0,
+        )
+    
+    prompt_start = time.perf_counter()
 
     system_msg, user_msg = build_prompt(question, retrieved, system=system)
+
+    tr.add(
+        "prompt",
+        "Prompt constructed",
+        {
+            "has_grounding_instruction": "ONLY" in system_msg,
+            "context_count": len(retrieved),
+            "prompt_preview": user_msg[:120],
+        },
+        latency_ms=round(
+            (time.perf_counter() - prompt_start) * 1000, 2
+        ),
+    )
+
+    generate_start = time.perf_counter()
+
     resp = _client.chat.completions.create(
         model=chat_model,
         temperature=0.0,
@@ -1000,6 +1074,25 @@ def ask_rag(question: str, index: list[dict], k: int = 3,
         tokens_out * PRICE_OUTPUT_PER_1M[chat_model] / 1_000_000
     )
 
+
+    answer = resp.choices[0].message.content or ""
+
+    tr.add(
+        "generate",
+        "OpenAI answer generated",
+        {
+            "model": chat_model,
+            "tokens_in": tokens_in,
+            "tokens_out": tokens_out,
+            "cost_usd": cost,
+        },
+        latency_ms=round(
+            (time.perf_counter() - generate_start) * 1000, 2
+        ),
+    )
+
+    tr.answer = answer
+
     # Calculate total RAG latency in seconds
     latency = time.perf_counter() - start_time
 
@@ -1012,6 +1105,7 @@ def ask_rag(question: str, index: list[dict], k: int = 3,
         "retrieved":  retrieved,  # full retrieved chunks for inspection,
         "cost_usd": cost,
         "latency_s":  latency,
+        "trace": tr,
     }
 
 
